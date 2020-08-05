@@ -1,5 +1,5 @@
 # eleventy-stock-gallery
-A starter repository intended to help you build a photo gallery using the [Eleventy](https://github.com/11ty/eleventy) static site generator. I would like to work on making this more of a "template" in the future. My hopes are that newcomers to 11ty can clone this repo and quickly get a stock photo gallery static site up and running.
+A starter repository intended to help you build a photo gallery using the [Eleventy](https://github.com/11ty/eleventy) static site generator. I would like to work on making this more of a "template" in the future. My hopes are that newcomers to 11ty can clone this repo and quickly get a stock photo gallery static site up and running. 
 
 Currently scoring 100s across the board using [Lighthouse](https://developers.google.com/web/tools/lighthouse)!
 
@@ -28,17 +28,17 @@ cd my-gallery
 
 * .eleventy.js is currently configured to use manual passthrough file copy to include `/images` and `/css` directories in the _site output. 
 
-* Templating markdown engine used is [Nunjucks](https://mozilla.github.io/nunjucks/). This may be "barebones" so feel free to modify the .eleventy.js configuraton however you like.
+* Templating markdown engine used is [Nunjucks](https://mozilla.github.io/nunjucks/)
 
 ## 3. Install dependencies
 ```
 npm install
 ```
 
-## 4. Add photos into the /images folder to create your own photo gallery or skip to step 5! 
-If you choose to add your own photos, update the `_includes/layouts/base.njk` layout to include the appropiate `src` and `alt` attributes for the new images added. 
+## 4. Add your own photos or skip to step 5! 
+Update the `_includes/layouts/base.njk` layout to include the appropiate `src` and `alt` attributes for the new images added. 
 
-Also, within `/gallery` lives all of the markdown files for each separate image page within the gallery. Update each featured image ie `/gallery/image-one/index.md` with the image data you added to `base.njk`. 
+Also, within `/gallery` lives all of the markdown template files for each separate image page within the gallery. Update each featured image ie `/gallery/image-one/index.md` with the image data you added to `base.njk`. 
 
 Updating the --formats flag to be ` --formats=md,jpg,png` inside `package.json` will tell eleventy to recognize images of .jpg and .png extension types.
 
@@ -46,6 +46,7 @@ Updating the --formats flag to be ` --formats=md,jpg,png` inside `package.json` 
 1. Navigate to the `base.njk` file 
 2. At the top of the file within the three opening and closing hypens (---)
 3. Update the front matter image data for imageOne through imageTwelve to include the image path and alt text for the new photos.
+
 ```
 ---
 imageOne:
@@ -85,13 +86,12 @@ npm run debug
 ```
 
 ## Project notes
-`/gallery` holds all of the markdown files for each gallery photo's details. Everything inside the /gallery folder uses the layout `feature.njk`.
+`/gallery` holds all of the markdown template files and front matter for each image in the gallery. These templates are using the layout `feature.njk` by utilizing the directory data file `gallery.11tydata.json`.
 
-`/_includes` houses the two templates for this project.
+`/_includes` houses the two layouts for this project.
+- _includes/layouts/base.njk: the home page template
+- _includes/layouts/feature.njk: the featured image page template
 
-This demo project uses two layouts:
-* _includes/layouts/base.njk: the home page template
-* _includes/layouts/feature.njk: the featured image page template
-
-## Motivations
-An introduction to Eleventy with [Jason Lengstrof](https://twitter.com/jlengstorf) and [Zach Leatherman](https://twitter.com/zachleat) - [Lets Learn Eleventy](https://www.learnwithjason.dev/let-s-learn-eleventy)
+### Sources of Data
+Front matter data in a template - all of the `/gallery/.../index.md` files
+Front matter data in layouts - `_includes/layouts/base.njk` and `_includes/layouts/feature.njk`
