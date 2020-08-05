@@ -34,7 +34,9 @@ npm install
 ```
 
 ## 4. Add any 12 photos (.jpg preferred) into the `/images` folder to create your own photo gallery or skip to step 5! 
-If you choose to add your own photos, update the `_includes/layouts/base.njk` layout to include the appropiate `src` and `alt` attributes for the new images added. Also, within `/gallery` lives all of the markdown files for each image within the gallery. Update each featured image ie `/gallery/image-one/index.md` with the image data you added to `base.njk`. 
+If you choose to add your own photos, update the `_includes/layouts/base.njk` layout to include the appropiate `src` and `alt` attributes for the new images added. 
+
+Also, within `/gallery` lives all of the markdown files for each separate image page within the gallery. Update each featured image ie `/gallery/image-one/index.md` with the image data you added to `base.njk`. 
 
 Updating the --formats flag to be ` --formats=md,jpg,png` inside `package.json` will tell eleventy to recognize images of .jpg and .png extension types.
 
