@@ -90,4 +90,4 @@ This demo project uses two layouts:
 * _includes/layouts/feature.njk: the featured image page template
 
 ## Motivations
-An introduction to Eleventy with Jason Lengstrog and Zach Leatherman - [Lets Learn Eleventy](https://www.learnwithjason.dev/let-s-learn-eleventy)
+An introduction to Eleventy with [Jason Lengstrof](https://twitter.com/jlengstorf) and [Zach Leatherman](https://twitter.com/zachleat) - [Lets Learn Eleventy](https://www.learnwithjason.dev/let-s-learn-eleventy)
