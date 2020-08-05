@@ -1,0 +1,19 @@
+{
+  "name": "11ty-starter",
+  "version": "1.0.0",
+  "description": "My starter 11ty static site",
+  "main": ".eleventy.js",
+  "scripts": {
+    "build": "eleventy",
+    "serve": "eleventy --serve",
+    "start": "eleventy --serve",
+    "watch": "eleventy --watch",
+    "debug": "DEBUG=* eleventy"
+  },
+  "keywords": ["11ty", "eleventy"],
+  "author": "Tanner Dolby",
+  "license": "ISC",
+  "dependencies": {
+    "@11ty/eleventy": "^0.11.0"
+  }
+}

@@ -1,0 +1,114 @@
+---
+imageOne:
+    src: images/pexels-aldiyar-seitkassymov-3100835.jpg
+    alt: Terrace outside shop window with green plants and pink tree on night street
+imageTwo:
+    src: /images/pexels-josh-hild-2524368.jpg
+    alt: Skybridge over highway covered in water
+imageThree:
+    src: /images/pexels-lukas-hartmann-1055613.jpg
+    alt: Brown painted wall with two benches and dim light above
+imageFour:
+    src: /images/pexels-jan-kopřiva-3290601.jpg
+    alt: Red light streaks across a street intersection at night
+imageFive:
+    src: /images/pexels-pixabay-262367.jpg
+    alt: Abstract architecture black and white boardwalk with glass like floor
+imageSix:
+    src: /images/pexels-rakicevic-nenad-1274260.jpg
+    alt: Person holding glass mason jar with night sky background
+imageSeven:
+    src: /images/pexels-bao-dang-3700369.jpg
+    alt: Music hall with bright lights during night time
+imageEight:
+    src: /images/pexels-jayson-marquez-4850412.jpg
+    alt: Building office with winding architecture
+imageNine:
+    src: /images/pexels-aleksandar-pasaric-2603464.jpg
+    alt: Buildings during nighttime with orange lighting and water below
+imageTen:
+    src: /images/pexels-sourav-mishra-1100946.jpg
+    alt: Rain drop bursting water particles upwards
+imageEleven:
+    src: /images/pexels-marco-trinidad-3295140.jpg
+    alt: An empty road during daytime with fog in background
+imageTwelve:
+    src: /images/pexels-artem-saranin-1453781.jpg
+    alt: Gasoline station during nighttime with glowing red roof lights
+---
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <script src="https://kit.fontawesome.com/e03d7ac5cf.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="/css/style.css">
+        <title>{{title}}</title>
+    </head>
+    <body>
+        <header>
+            <div class="home-btn">
+                <a href="/">{{homeBtnTxt}}</a>
+            </div>
+            <div>
+                <a class="twitter-icon" href="https://twitter.com/tannerdolby" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a class="github-icon" href="https://github.com/tannerdolby/eleventy-stock-gallery" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+            </div>
+        </header>
+        <main>
+            <div class="page-banner">
+                {{ content | safe}}
+            </div>
+            <section class="gallery">
+                <div class="image-grid">
+                    <div class="image-container">
+                        <a href="/gallery/image-one"><img src="{{imageOne.src}}" alt="{{imageOne.alt}}"></a>
+                    </div>
+                    <div class="image-container">
+                        <a href="/gallery/image-two"><img src="{{imageTwo.src}}" alt="{{imageTwo.alt}}"></a>
+                    </div>
+                    <div class="image-container">
+                        <a href="/gallery/image-three"><img src="{{imageThree.src}}" alt="{{imageThree.alt}}"></a>
+                    </div>
+                    <div class="image-container">
+                        <a href="/gallery/image-four"><img src="{{imageFour.src}}" alt="{{imageFour.alt}}"></a>
+                    </div>
+                    <div class="image-container">
+                        <a href="/gallery/image-five/"><img src="{{imageFive.src}}" alt="{{imageFive.alt}}" /></a>
+                    </div>
+                    <div class="image-container">
+                        <a href="/gallery/image-six"><img src="{{imageSix.src}}" alt="{{imageSix.alt}}" /></a>
+                    </div>
+                    <div class="image-container">
+                        <a href="/gallery/image-seven"><img src="{{imageSeven.src}}" alt="{{imageSeven.alt}}" /></a>
+                    </div>
+                    <div class="image-container">
+                        <a href="/gallery/image-eight"><img src="{{imageEight.src}}" alt="{imageEight.alt}}" /></a>
+                    </div>
+                    <div class="image-container">
+                        <a href="/gallery/image-nine"><img src="{{imageNine.src}}" alt="{{imageEight.alt}}"></a>
+                    </div>
+                    <div class="image-container">
+                        <a href="/gallery/image-ten"><img src="{{imageTen.src}}" alt="{{imageTen.alt}}" /></a>
+                    </div>
+                    <div class="image-container">
+                        <a href="/gallery/image-eleven"><img src="{{imageEleven.src}}" alt="{{imageEleven.alt}}" /></a>
+                    </div>
+                    <div class="image-container">
+                        <a href="/gallery/image-twelve/"><img src="{{imageTwelve.src}}" alt="{{imageTwelve.alt}}" /></a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="credits">
+            <div class="credits-text">
+                <hr class="colorful-bar">
+                <div class="footer-info">
+                    <p>{{footerTxt}} Built with <a href="https://www.11ty.dev/" target="_blank">11ty</a> and hosted on <a href="https://www.netlify.com/" target="_blank">Netlify</a>.</p>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

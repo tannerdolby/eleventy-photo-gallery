@@ -1,0 +1,38 @@
+---
+credits: Created by Tanner Dolby.
+---
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/e03d7ac5cf.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/style.css">
+    <title>{{title}}</title>
+</head>
+<body class="feature">
+    <header>
+        <div class="home-btn">
+            <a href="/">My Gallery</a>
+        </div>
+        <div>
+            <a class="twitter-icon" href="https://twitter.com/tannerdolby" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a class="github-icon" href="https://github.com/tannerdolby/eleventy-stock-gallery" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+        </div>
+    </header>
+    <main class="container">
+        <section class="featured-img">
+            {{content | safe}}
+        </section>
+    </main>
+    <footer class="credits">
+        <div class="credits-text">
+            <hr class="colorful-bar">
+            <div class="footer-info">
+                <p>{{credits}} Built with <a href="https://www.11ty.dev/" target="_blank">11ty</a> and hosted on <a href="https://www.netlify.com/" target="_blank">Netlify</a>.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
