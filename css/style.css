@@ -1,9 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
-
-:root {
-    --font-krona: "Krona One", sans-serif;
-}
-
 * {
     box-sizing: border-box;
 }
@@ -70,7 +64,7 @@ header div i {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    margin: 0 6rem 0 6rem;
+    margin: 1rem 6rem 1rem 6rem;
     height: 20rem;
     color: #000;
 }
@@ -246,10 +240,41 @@ footer .credits-text {
     }
 }
 
-@media screen and (max-width: 320px) {
+/* Moto G4 width width=360px which Lighthouse runs audit on */
+@media screen and (max-width: 375px) {
+    header {
+        margin: 3rem 2rem 3rem 2rem;
+    }
+    header .socials a {
+        padding: 0.5rem;
+    }
+    .page-banner {
+        height: 25rem;
+        margin: 1rem 3rem 1rem 3rem;
+    }
     .featured-img h1 {
         font-size: 36px;
         text-align:center;
     }
+    .gallery {
+        margin: 3rem;
+    }
+    .image-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+        margin: 1rem;
+        gap: 3px;
+    }
+    .image-grid .image-container {
+        height: 15rem;
+    }
+    
+    .image-grid .image-container a img {
+        object-fit: cover;
+        height: 15rem;
+        width: 100%;
+    }
+
+
 }
 
