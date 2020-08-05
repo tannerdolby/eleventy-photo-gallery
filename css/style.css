@@ -250,7 +250,7 @@ footer .credits-text {
     }
     .page-banner {
         height: 25rem;
-        margin: 1rem 3rem 1rem 3rem;
+        margin: 1rem 2rem 1rem 2rem;
     }
     .featured-img h1 {
         font-size: 36px;
@@ -268,7 +268,6 @@ footer .credits-text {
     .image-grid .image-container {
         height: 15rem;
     }
-    
     .image-grid .image-container a img {
         object-fit: cover;
         height: 15rem;
