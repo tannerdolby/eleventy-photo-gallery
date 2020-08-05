@@ -28,12 +28,12 @@ cd my-gallery
 
 * Templating markdown engine used is [Nunjucks](https://mozilla.github.io/nunjucks/). This may be "barebones" so feel free to modify the .eleventy.js configuraton however you like.
 
-## 3. Install dependencies (Eleventy is all this project needs)
+## 3. Install dependencies
 ```
 npm install
 ```
 
-## 4. Add any 12 photos (.jpg preferred) into the `/images` folder to create your own photo gallery or skip to step 5! 
+## 4. Add any 12 photos into the `/images` folder to create your own photo gallery or skip to Step 5! 
 If you choose to add your own photos, update the `_includes/layouts/base.njk` layout to include the appropiate `src` and `alt` attributes for the new images added. 
 
 Also, within `/gallery` lives all of the markdown files for each separate image page within the gallery. Update each featured image ie `/gallery/image-one/index.md` with the image data you added to `base.njk`. 
