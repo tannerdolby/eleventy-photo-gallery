@@ -1,7 +1,5 @@
 # Eleventy starter - Stock Photo Gallery
-This repo contains minimal markdown and a few stock images from [Pexels](https://pexels.com) to create a small photo gallery.
-
-I would like to work on making this repo more of a "template" in the future. My hopes are that newcomers to 11ty can clone this repo and quickly get a stock photo gallery static site up and running.
+This repository contains minimal markdown and a few stock images from [Pexels](https://pexels.com) to create a small photo gallery. I would like to work on making this more of a "template" in the future. My hopes are that newcomers to 11ty can clone this repo and quickly get a stock photo gallery static site up and running.
 
 # Getting started
 ## 1. Clone this Repository (SSH example)
