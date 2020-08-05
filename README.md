@@ -1,5 +1,5 @@
 # Eleventy starter - Stock Photo Gallery
-A starter repository intended to help you build a photo gallery site using the [Eleventy](https://github.com/11ty/eleventy) static site generator. I would like to work on making this more of a "template" in the future. My hopes are that newcomers to 11ty can clone this repo and quickly get a stock photo gallery static site up and running.
+A starter repository intended to help you build a photo gallery using the [Eleventy](https://github.com/11ty/eleventy) static site generator. I would like to work on making this more of a "template" in the future. My hopes are that newcomers to 11ty can clone this repo and quickly get a stock photo gallery static site up and running.
 
 # Getting started
 ## 1. Clone this Repository (SSH example)
