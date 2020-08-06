@@ -26,9 +26,7 @@ Or whichever new directory you cloned into,
 cd my-gallery
 ```
 
-* .eleventy.js is currently configured to use manual passthrough file copy to include `/images` and `/css` directories in the _site output. 
-
-* Templating markdown engine used is [Nunjucks](https://mozilla.github.io/nunjucks/)
+.eleventy.js is currently configured to use manual passthrough file copy to include `/images` and `/css` directories in the _site output. 
 
 ## 3. Install dependencies
 ```
@@ -39,8 +37,6 @@ npm install
 Update the `_includes/layouts/base.njk` layout to include the appropiate `src` and `alt` attributes for the new images added. 
 
 Also, within `/gallery` lives all of the markdown template files for each separate image page within the gallery. Update each featured image ie `/gallery/image-one/index.md` with the image data you added to `base.njk`. 
-
-Updating the --formats flag to be ` --formats=md,jpg,png` inside `package.json` will tell eleventy to recognize images of .jpg and .png extension types.
 
 ### How to add new images
 1. Navigate to the `base.njk` file 
@@ -91,6 +87,8 @@ npm run debug
 `/_includes` houses the two layouts for this project.
 - _includes/layouts/base.njk: the home page template
 - _includes/layouts/feature.njk: the featured image page template
+
+Templating markdown engine used is [Nunjucks](https://mozilla.github.io/nunjucks/)
 
 ### Sources of Data
 Front matter data in a template - all of the `/gallery/.../index.md` files
