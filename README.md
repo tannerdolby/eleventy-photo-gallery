@@ -51,7 +51,7 @@ imageTwelve:
 ```
 - Make sure and update markdown files within `/gallery` to reflect the image metadata introducted into `base.njk` for new gallery images.
 
-### Serving responsinve images
+### Serving responsive images
 Utilize the sharp package for creating three versions of the original image.
 
 ```sharpImages("./images/road-fog.jpg");```
