@@ -1,8 +1,8 @@
 ---
-title: 11ty Photo Gallery
+pageTitle: Your Gallery Name
+title: Photo Gallery
 purpose: Stock photos currently provided from Pexels. Add or remove images from the grid and customize your own image gallery! 
-homeBtnTxt: My Gallery
-footerTxt: Created by Tanner Dolby.
+footerTxt: Created by your name.
 layout: ./layouts/base.njk
 ---
 

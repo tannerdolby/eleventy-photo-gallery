@@ -6,8 +6,8 @@ imgSrc: /images/shop-plants.jpg
 alt: Terrace outside shop window with green plants and pink tree on night street
 ---
 
-# {{title}}
-
 ![{{ alt }}]({{ imgSrc }})
+
+# {{title}}
 
 {{credit}} on [Pexels]({{url}})
