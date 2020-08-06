@@ -3,25 +3,25 @@ A starter repository intended to help you build a photo gallery using the [Eleve
 
 Currently scoring 100s across the board using [Lighthouse](https://developers.google.com/web/tools/lighthouse)!
 
-# Getting started
-## 1. Clone this Repository (SSH example)
+## Getting started
+### 1. Clone this Repository (SSH example)
 ```
 git clone git@github.com:tannerdolby/eleventy-stock-gallery.git
 ```
 
-## 2. Navigate to project folder
+### 2. Navigate to project folder
 ```
 cd-eleventy-stock-gallery
 ``` 
 
 .eleventy.js is currently configured to use manual passthrough file copy to include `/images` and `/css` directories in the _site output. 
 
-## 3. Install dependencies
+### 3. Install dependencies
 ```
 npm install
 ```
 
-## 4. Add your own photos or skip to step 5! 
+### 4. Add your own photos or skip to step 5! 
 Update the `_includes/layouts/base.njk` layout to include the appropiate `src` and `alt` attributes for the new images added. 
 
 Also, within `/gallery` lives all of the markdown template files for each separate image page within the gallery. Update each featured image ie `/gallery/image-one/index.md` with the image data you added to `base.njk`. 
@@ -69,7 +69,7 @@ To run in debug mode
 npm run debug
 ```
 
-## Project notes
+### Project notes
 `/gallery` holds all of the markdown template files and front matter for each image in the gallery. These templates are using the layout `feature.njk` by utilizing the directory data file `gallery.11tydata.json`.
 
 `/_includes` houses the two layouts for this project.
