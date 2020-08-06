@@ -9,22 +9,10 @@ Currently scoring 100s across the board using [Lighthouse](https://developers.go
 git clone git@github.com:tannerdolby/eleventy-stock-gallery.git
 ```
 
-- The above git command by default clones the repository into your root directory as a new folder named `eleventy-stock-gallery`.
-- To specify a destination directory (ie my-gallery) use the follow syntax:
-```
-git clone git@github.com:tannerdolby/eleventy-stock-gallery.git my-gallery
-```
-
 ## 2. Navigate to project folder
 ```
 cd-eleventy-stock-gallery
 ``` 
-
-Or whichever new directory you cloned into,
-
-```
-cd my-gallery
-```
 
 .eleventy.js is currently configured to use manual passthrough file copy to include `/images` and `/css` directories in the _site output. 
 
