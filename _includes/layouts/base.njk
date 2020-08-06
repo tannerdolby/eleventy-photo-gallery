@@ -1,39 +1,75 @@
 ---
 imageOne:
     src: /images/shop-plants.jpg
+    largeSrc: /images/shop-plants-large.jpg 1024w
+    medSrc: /images/shop-plants-med.jpg 640w
+    smallSrc: /images/shop-plants-small.jpg 320w
     alt: Terrace outside shop window with green plants and pink tree on night street
 imageTwo:
     src: /images/wet-street.jpg
+    largeSrc: /images/wet-street-large.jpg 1024w
+    medSrc: /images/wet-street-med.jpg 640w
+    smallSrc: /images/wet-street-small.jpg 320w
     alt: Skybridge over highway covered in water
 imageThree:
     src: /images/bench-light.jpg
+    largeSrc: /images/bench-light-large.jpg 1024w
+    medSrc: /images/bench-light-med.jpg 640w
+    smallSrc: /images/bench-light-small.jpg 320w
     alt: Brown painted wall with two benches and dim light above
 imageFour:
     src: /images/street-flash.jpg
+    largeSrc: /images/street-flash-large.jpg 1024w
+    medSrc: /images/street-flash-med.jpg 640w
+    smallSrc: /images/street-flash-small.jpg 320w
     alt: Red light streaks across a street intersection at night
 imageFive:
     src: /images/boardwalk.jpg
+    largeSrc: /images/boardwalk-large.jpg 1024w
+    medSrc: /images/boardwalk-med.jpg 640w
+    smallSrc: /images/boardwalk-small.jpg 320w
     alt: Abstract architecture black and white boardwalk with glass like floor
 imageSix:
     src: /images/glass-jar-sky.jpg
+    largeSrc: /images/glass-jar-sky-large.jpg 1024w
+    medSrc: /images/glass-jar-sky-med.jpg 640w
+    smallSrc: /images/glass-jar-sky-small.jpg 320w
     alt: Person holding glass mason jar with night sky background
 imageSeven:
     src: /images/radio-city.jpg
+    largeSrc: /images/radio-city-large.jpg 1024w
+    medSrc: /images/radio-city-med.jpg 640w
+    smallSrc: /images/radio-city-small.jpg 320w
     alt: Music hall with bright lights during night time
 imageEight:
     src: /images/city-center.jpg
+    largeSrc: /images/city-center-large.jpg 1024w
+    medSrc: /images/city-center-med.jpg 640w
+    smallSrc: /images/city-center-small.jpg 320w
     alt: Tall highrise office building with winding architecture
 imageNine:
     src: /images/highrise-orange.jpg
+    largeSrc: /images/highrise-orange-large.jpg 1024w
+    medSrc: /images/highrise-orange-med.jpg 640w
+    smallSrc: /images/highrise-orange-small.jpg 320w
     alt: Buildings during nighttime with orange lighting and water below
 imageTen:
     src: /images/water-droplet.jpg
+    largeSrc: /images/water-droplet-large.jpg 1024w
+    medSrc: /images/water-droplet-med.jpg 640w
+    smallSrc: /images/water-droplet-small.jpg 320w
     alt: Rain drop bursting water particles upwards into the air
 imageEleven:
     src: /images/road-fog.jpg
+    largeSrc: /images/road-fog-large.jpg 1024w
+    medSrc: /images/road-fog-med.jpg 640w
+    smallSrc: /images/road-fog-small.jpg 320w
     alt: An empty road during daytime with fog in the background
 imageTwelve:
     src: /images/gas-station.jpg
+    largeSrc: /images/gas-station-large.jpg 1024w
+    medSrc: /images/gas-station-med.jpg 640w
+    smallSrc: /images/gas-station-small.jpg 320w
     alt: Gasoline station during nighttime with glowing red roof lights
 ---
 <!DOCTYPE html>
@@ -42,11 +78,11 @@ imageTwelve:
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <meta 
-        name="description" 
-        content="Tanner's stock photo gallery with images provided by Pexels. Built with 
+        <meta name="description" 
+            content="Tanner's stock photo gallery with images provided by Pexels. Built with 
                 the static site generator Eleventy. Replace my name with yours above if 
-                you've cloned this starter repository. Always make sure to have a meta description tag for each page to improve SEO :)">
+                you've cloned this starter repository. Always make sure to have a meta 
+                description tag with content for each page to improve SEO :)">
         <link rel="stylesheet" type="text/css" href="/css/style.css">
         <title>{{title}}</title>
     </head>
@@ -67,49 +103,119 @@ imageTwelve:
                 <div class="image-grid">
                     <div class="image-container">
                         <a href="/gallery/image-one">
-                            <img srcset="/images/shop-plants-large.jpg 1024w,
-                                    /images/shop-plants-med.jpg 640w,
-                                    /images/shop-plants-small.jpg 320w"
-                                sizes="(min-width 15rem) 33.3vw, 100w"
+                            <img srcset="{{imageOne.largeSrc}},
+                                    {{imageOne.medSrc}},
+                                    {{imageOne.smallSrc}}"
+                                sizes="(min-width 400px) 33.3vw, 100w"
                                 src="{{imageOne.src}}" 
                                 alt="{{imageOne.alt}}" />
                         </a>
                     </div>
                     <div class="image-container">
-                        <a href="/gallery/image-two"><img src="{{imageTwo.src}}" alt="{{imageTwo.alt}}"></a>
+                        <a href="/gallery/image-two">
+                            <img srcset="{{imageTwo.largeSrc}},
+                                    {{imageTwo.medSrc}},
+                                    {{imageTwo.smallSrc}}"
+                                sizes="(min-width 400px) 33.3vw, 100w"
+                                src="{{imageTwo.src}}" 
+                                alt="{{imageTwo.alt}}" />
+                        </a>
                     </div>
                     <div class="image-container">
-                        <a href="/gallery/image-three"><img src="{{imageThree.src}}" alt="{{imageThree.alt}}"></a>
+                        <a href="/gallery/image-three">
+                            <img srcset="{{imageThree.largeSrc}},
+                                    {{imageThree.medSrc}},
+                                    {{imageThree.smallSrc}}}"
+                                sizes="(min-width: 400px) 33.3vw, 100w"
+                                src="{{imageThree.src}}" 
+                                alt="{{imageThree.alt}}" />
+                        </a>
                     </div>
                     <div class="image-container">
-                        <a href="/gallery/image-four"><img src="{{imageFour.src}}" alt="{{imageFour.alt}}"></a>
+                        <a href="/gallery/image-four">
+                            <img srcset="{{imageFour.largeSrc}},
+                                    {{imageFour.medSrc}},
+                                    {{imageFour.smallSrc}}"
+                                sizes="(min-width: 400px) 33.3vw, 100w" 
+                                src="{{imageFour.src}}" 
+                                alt="{{imageFour.alt}}" />
+                        </a>
                     </div>
                     <div class="image-container">
-                        <a href="/gallery/image-five/"><img src="{{imageFive.src}}" alt="{{imageFive.alt}}" /></a>
+                        <a href="/gallery/image-five/">
+                            <img srcset="{{imageFive.largeSrc}},
+                                    {{imageFive.medSrc}},
+                                    {{imageFive.smallSrc}}"  
+                                sizes="(min-width: 400px) 33.3vw, 100w" 
+                                src="{{imageFive.src}}" 
+                                alt="{{imageFive.alt}}" />
+                        </a>
                     </div>
                     <div class="image-container">
-                        <a href="/gallery/image-six"><img src="{{imageSix.src}}" alt="{{imageSix.alt}}" /></a>
+                        <a href="/gallery/image-six">
+                            <img srcset="{{imageSix.largeSrc}},
+                                    {{imageSix.medSrc}},
+                                    {{imageSix.smallSrc}}"   
+                                sizes="(min-width: 400px) 33.3vw, 100w"
+                                src="{{imageSix.src}}" 
+                                alt="{{imageSix.alt}}" />
+                        </a>
                     </div>
                     <div class="image-container">
-                        <a href="/gallery/image-seven"><img src="{{imageSeven.src}}" alt="{{imageSeven.alt}}" /></a>
+                        <a href="/gallery/image-seven">
+                            <img srcset="{{imageSeven.largeSrc}},
+                                    {{imageSeven.medSrc}},
+                                    {{imageSeven.smallSrc}}" 
+                                sizes="(min-width: 400px) 33.3vw, 100w"
+                                src="{{imageSeven.src}}"
+                                alt="{{imageSeven.alt}}" />
+                        </a>
                     </div>
                     <div class="image-container">
-                        <a href="/gallery/image-eight"><img src="{{imageEight.src}}" alt="{imageEight.alt}}" /></a>
+                        <a href="/gallery/image-eight">
+                            <img srcset="{{imageEight.largeSrc}},
+                                    {{imageEight.medSrc}},
+                                    {{imageEight.smallSrc}}" 
+                                sizes="(min-width: 400px) 33.3vw, 100w"
+                                src="{{imageEight.src}}" 
+                                alt="{imageEight.alt}}" />
+                        </a>
                     </div>
                     <div class="image-container">
-                        <a href="/gallery/image-nine"><img src="{{imageNine.src}}" alt="{{imageEight.alt}}"></a>
+                        <a href="/gallery/image-nine">
+                            <img srcset="{{imageNine.largeSrc}},
+                                    {{imageNine.medSrc}},
+                                    {{imageNine.smallSrc}}" 
+                                sizes="(min-width: 400px) 33.3vw, 100w"
+                                src="{{imageNine.src}}" 
+                                alt="{{imageEight.alt}}" />
+                        </a>
                     </div>
                     <div class="image-container">
-                        <a href="/gallery/image-ten"><img src="{{imageTen.src}}" alt="{{imageTen.alt}}" /></a>
+                        <a href="/gallery/image-ten">
+                            <img srcset="{{imageTen.largeSrc}},
+                                    {{imageTen.medSrc}},
+                                    {{imageTen.smallSrc}}" 
+                                sizes="(min-width: 400px) 33.3vw, 100w"
+                                src="{{imageTen.src}}" 
+                                alt="{{imageTen.alt}}" />
+                        </a>
                     </div>
                     <div class="image-container">
-                        <a href="/gallery/image-eleven"><img src="{{imageEleven.src}}" alt="{{imageEleven.alt}}" /></a>
+                        <a href="/gallery/image-eleven">
+                            <img srcset="{{imageEleven.largeSrc}},
+                                    {{imageEleven.medSrc}},
+                                    {{imageEleven.smallSrc}}" 
+                                sizes="(min-width: 400px) 33.3vw, 100w"
+                                src="{{imageEleven.src}}" 
+                                alt="{{imageEleven.alt}}" />
+                        </a>
                     </div>
                     <div class="image-container">
                         <a href="/gallery/image-twelve/">
-                            <img srcset="/images/gas-station-large.jpg 1024w,
-                                    /images/gas-station-med.jpg 640w,
-                                    /images/gas-station-small.jpg 320w"
+                            <img srcset="{{imageTwelve.largeSrc}},
+                                    {{imageTwelve.medSrc}},
+                                    {{imageTwelve.smallSrc}}"
                                 sizes="(min-width 400px) 33.3vw, 100w"
                                 src="{{imageTwelve.src}}" 
                                 alt="{{imageTwelve.alt}}" />
