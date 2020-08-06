@@ -94,4 +94,5 @@ npm run debug
 
 ### Sources of Data
 Front matter data in a template - all of the `/gallery/.../index.md` files
-Front matter data in layouts - `_includes/layouts/base.njk` and `_includes/layouts/feature.njk`
+
+Front matter data in layouts -`_includes/layouts/base.njk` and `_includes/layouts/feature.njk`
