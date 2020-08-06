@@ -1,9 +1,9 @@
-* {
-    box-sizing: border-box;
+:root {
+    --system-font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-p {
-    font-family: Helvetica;
+* {
+    box-sizing: border-box;
 }
 
 body {
@@ -18,54 +18,54 @@ a {
 }
 
 h1, p {
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    /* font-family: system-ui, sans-serif; */
+    font-family: var(--system-font);
     color: #000;
 }
 
 header {
-    margin: 3rem 6rem 2rem 6rem;
+    margin: 2rem 6rem 2rem 6rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
 }
 
 header .home-btn a {
-    font-size: 28px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3em;
+    font-family: var(--system-font);
+    font-weight: 600;
     color: #000;
 }
 
-
-header div i {
-    padding: 0 0.8rem 0 0.8rem;
-    font-size: 30px;
+header .socials {
+    padding-left: 2rem;
 }
 
 .socials a {
     color: #000;
+    font-family: var(--system-font);
     padding: 0 1rem 0 1rem;
-    font-size: 26px;
+    font-size: 1.3em;
 }
-
-
 
 .page-banner {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    margin: 1rem 6rem 1rem 6rem;
-    height: 20rem;
+    align-items: flex-start;
+    margin: 1em 6em 1em 6em;
+    height: 20em;
     color: #000;
 }
 
 .page-banner h1 {
-    font-size: 48px;
+    font-size: 3.5em;
 }
 
 .page-banner p {
     text-align: left;
-    font-size: 22px;
+    font-size: 1.5em;
     line-height: 1.5;
 }
 
@@ -94,13 +94,14 @@ header div i {
 }
 
 .image-grid .image-container a img:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
     transform-origin: 50% 50%;
     cursor: pointer;
 }
 
 .large {
     object-fit: cover;
+    display: block;
     width: 100%;
     height: 400px;
     margin: 1rem auto 2rem auto;
@@ -127,12 +128,10 @@ header div i {
 }
 
 .featured-img h1 {
-    font-size: 46px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
 }
-
 .featured-img p {
-    font-size: 22px;
+    font-size: 1.5em;
 }
 
 .featured-img img {
@@ -221,15 +220,15 @@ footer .credits-text {
 @media screen and (max-width: 565px) {
 
     header {
-        margin: 3rem 2rem 1rem 2rem;
+        margin: 3rem 4em 1rem 4em;
     }
 
-    header .home-btn a {
+    /* header .home-btn a {
         font-size: 26px;
-    }
+    } */
 
     .page-banner {
-        margin: 1rem 3rem 1rem 3rem;
+        margin: 1rem 4em 1rem 4em;
     }
 
     .page-banner h1 {
@@ -241,11 +240,17 @@ footer .credits-text {
     }
 
     .image-grid {
-        margin: 1rem 3rem 1rem 3rem;
+        margin: 1rem 4em 1rem 4em;
     }
 
     footer {
         margin: 3rem 3rem 2rem 3rem;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .socials {
+        display: flex;
     }
 }
 
@@ -254,28 +259,34 @@ footer .credits-text {
         width: 300px;
         height: 200px;
     }
-    header .home-btn a {
-        font-size: 24px;
-    }
-    header div i {
-        padding: 0.1rem;
-    }
+    
 }
 
 /* Moto G4 width width=360px which Lighthouse runs audit on */
 @media screen and (max-width: 375px) {
     header {
-        margin: 3rem 2rem 1rem 2rem;
+        margin: 3em 3em 1em 3em;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
     }
-    header .home-btn a {
-        font-size: 20px;
+    .home-btn {
+        font-size: 1.2em;
+        margin-bottom: 15px;
     }
-    header .socials a {
-        padding: 0.5rem;
-        font-size: 20px;
+    header .socials {
+        margin-top: 1em;
+        padding-left: 0;
+    }
+    header .socials .link-one {
+        padding: 0 0.5em 0 0.3em;
+    }
+    header .socials .link-two {
+        padding:0 0 0 0.5em;
     }
     .page-banner {
-        height: 25rem;
+        height: 20em;
         margin: 1rem 3rem 1rem 3rem;
     }
     .featured-img h1 {
@@ -289,7 +300,7 @@ footer .credits-text {
     .image-grid {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
-        margin: 1rem;
+        margin: 0.5rem;
         gap: 3px;
     }
     .image-grid .image-container {
