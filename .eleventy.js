@@ -1,6 +1,6 @@
 const sharp = require('sharp');
 const fs = require('fs');
-const directory = "./images/";
+const directory = "./images";
 
 module.exports = (eleventyConfig) => {
    
@@ -13,31 +13,35 @@ module.exports = (eleventyConfig) => {
     // Using manual passthrough file copy to include /images and /css in _site output
     eleventyConfig.addPassthroughCopy("images");
     eleventyConfig.addPassthroughCopy("css");
-    
-    let resizeImgSmall = (fileName) => {
-        let shortName = fileName.slice(0, fileName.length - 4);
-        fs.readFileSync(fileName)
-            sharp(`${fileName}`, { failOnError: false })
-                .resize(320, 240)
-                .toFile(`${shortName}-small.jpg`);
-    };
-    // resizeImgSmall("./images/shop-plants.jpg");
 
-    let resizeImgMed = (fileName) => {
-        let shortName = fileName.slice(0, fileName.length - 4);
-        fs.readFileSync(fileName)
-            sharp(`${fileName}`, { failOnError: false })
-                .resize(640, 480)
-                .toFile(`${shortName}-med.jpg`);
-    };
-    // resizeImgMed("./images/shop-plants.jpg");
-    let resizeImgLarge = (fileName) => {
-        let shortName = fileName.slice(0, fileName.length - 4);
-        fs.readFileSync(`${fileName}`)
-            sharp(`${fileName}`, { failOnError: false })
-                .resize(1024, 768)
-                .toFile(`${shortName}-large.jpg`);
-    };
-    // resizeImgLarge("./images/shop-plants.jpg");
+    // Use resizeImage to create the 3 responsive sharp versions of a specified image file.
+    function sharpImages(fileName) {
+        let resizeImgSmall = () => {
+            let shortName = fileName.slice(0, fileName.length - 4);
+            fs.readFileSync(fileName)
+                sharp(`${fileName}`, { failOnError: false })
+                    .resize(320, 240)
+                    .toFile(`${shortName}-small.jpg`);
+        };
+        resizeImgSmall();
 
+        let resizeImgMed = () => {
+            let shortName = fileName.slice(0, fileName.length - 4);
+            fs.readFileSync(fileName)
+                sharp(`${fileName}`, { failOnError: false })
+                    .resize(640, 480)
+                    .toFile(`${shortName}-med.jpg`);
+        };
+        resizeImgMed();
+        let resizeImgLarge = () => {
+            let shortName = fileName.slice(0, fileName.length - 4);
+            fs.readFileSync(`${fileName}`)
+                sharp(`${fileName}`, { failOnError: false })
+                    .resize(1024, 768)
+                    .toFile(`${shortName}-large.jpg`);
+        };
+        resizeImgLarge();
+    }
+    // Comment out or remove the sharpImages invocation once you've created all the responsive images you need :)
+    // sharpImages("./images/road-fog.jpg");
 };
