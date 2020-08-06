@@ -89,8 +89,8 @@ header div i {
     object-fit: cover;
     height: 18rem;
     width: 100%;
-    transform-origin: 50% 50% !important;
-    transition: transform .2s ease-in-out;
+    transform-origin: 50% 50%;
+    transition: transform .3s ease-in-out;
 }
 
 .image-grid .image-container a img:hover {
