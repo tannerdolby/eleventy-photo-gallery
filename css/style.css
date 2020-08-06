@@ -41,36 +41,26 @@ header div i {
     font-size: 30px;
 }
 
-.twitter-icon {
-    transition: color .2s ease-out;
-    color: rgb(19, 163, 211);
-}
-.twitter-icon:hover {
-    color: rgb(34, 183, 233);
+.socials a {
+    color: #000;
+    padding: 0 1rem 0 1rem;
+    font-size: 26px;
 }
 
-.github-icon {
-    color: rgb(43, 47, 49);
-    transition: color .2s ease-out;
-    
-}
-.github-icon:hover {
-    color: rgb(0, 0, 0);
-    filter: brightness(110%);
-}
+
 
 .page-banner {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     margin: 1rem 6rem 1rem 6rem;
     height: 20rem;
     color: #000;
 }
 
 .page-banner h1 {
-    font-size: 44px;
+    font-size: 48px;
 }
 
 .page-banner p {
@@ -100,7 +90,7 @@ header div i {
     height: 18rem;
     width: 100%;
     transform-origin: 50% 50% !important;
-    transition: transform 1s ease-in-out;
+    transition: transform .2s ease-in-out;
 }
 
 .image-grid .image-container a img:hover {
@@ -213,10 +203,10 @@ footer .credits-text {
 
 @media screen and (max-width: 600px) {
     .page-banner h1 {
-        font-size: 38px;
+        font-size: 42px;
     }
     .page-banner p {
-        font-size: 20px;
+        font-size: 22px;
     }
     header .home-btn h1 {
         font-size: 28px;
@@ -224,6 +214,37 @@ footer .credits-text {
 
     header div i {
         font-size: 26px;
+    }
+}
+
+@media screen and (max-width: 565px) {
+
+    header {
+        margin: 3rem 2rem 1rem 2rem;
+    }
+
+    header .home-btn a {
+        font-size: 26px;
+    }
+
+    .page-banner {
+        margin: 1rem 3rem 1rem 3rem;
+    }
+
+    .page-banner h1 {
+        text-align: left;
+    }
+
+    .page-banner p {
+        font-size: 18px;
+    }
+
+    .image-grid {
+        margin: 1rem 3rem 1rem 3rem;
+    }
+
+    footer {
+        margin: 3rem 3rem 2rem 3rem;
     }
 }
 
@@ -243,10 +264,14 @@ footer .credits-text {
 /* Moto G4 width width=360px which Lighthouse runs audit on */
 @media screen and (max-width: 375px) {
     header {
-        margin: 3rem 2rem 3rem 2rem;
+        margin: 3rem 2rem 1rem 2rem;
+    }
+    header .home-btn a {
+        font-size: 20px;
     }
     header .socials a {
         padding: 0.5rem;
+        font-size: 20px;
     }
     .page-banner {
         height: 25rem;
@@ -254,7 +279,8 @@ footer .credits-text {
     }
     .featured-img h1 {
         font-size: 36px;
-        text-align:center;
+        text-align: center;
+        margin: 0;
     }
     .gallery {
         margin: 2rem;
