@@ -1,5 +1,8 @@
 # eleventy-stock-gallery
-A starter repository intended to help you build a photo gallery using the [Eleventy](https://github.com/11ty/eleventy) static site generator. I would like to work on making this more of a "template" in the future. My hopes are that newcomers to 11ty can clone this repo and quickly get a stock photo gallery static site up and running. 
+A starter repository intended to help you build a photo gallery using the [Eleventy](https://github.com/11ty/eleventy) static site generator. My hopes are that newcomers to 11ty can clone this repo and quickly get a stock photo gallery static site up and running. 
+
+### Live Demo
+* [Netlify](https://determined-mclean-3dcc25.netlify.app/)
 
 ## Getting started
 ### 1. Clone this Repository (SSH example)
@@ -46,7 +49,14 @@ imageTwelve:
 
 ---
 ```
-4. Make sure and update markdown files within `/gallery` to reflect the image metadata introducted into `base.njk` for new gallery images.
+- Make sure and update markdown files within `/gallery` to reflect the image metadata introducted into `base.njk` for new gallery images.
+
+### Serving responsinve images
+Utilize the sharp package for creating three versions of the original image.
+
+```sharpImages("./images/road-fog.jpg");```
+
+Output: road-fog-small.jpg, road-fog-med.jpg, road-fog-large.jpg
 
 ## 5. Run Eleventy! 
 To build your _site output
