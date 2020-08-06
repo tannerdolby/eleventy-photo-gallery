@@ -66,7 +66,14 @@ imageTwelve:
             <section class="gallery">
                 <div class="image-grid">
                     <div class="image-container">
-                        <a href="/gallery/image-one"><img src="{{imageOne.src}}" alt="{{imageOne.alt}}"></a>
+                        <a href="/gallery/image-one">
+                            <img srcset="/images/shop-plants-large.jpg 1024w,
+                                    /images/shop-plants-med.jpg 640w,
+                                    /images/shop-plants-small.jpg 320w"
+                                sizes="(min-width 15rem) 33.3vw, 100w"
+                                src="{{imageOne.src}}" 
+                                alt="{{imageOne.alt}}" />
+                        </a>
                     </div>
                     <div class="image-container">
                         <a href="/gallery/image-two"><img src="{{imageTwo.src}}" alt="{{imageTwo.alt}}"></a>
@@ -99,7 +106,14 @@ imageTwelve:
                         <a href="/gallery/image-eleven"><img src="{{imageEleven.src}}" alt="{{imageEleven.alt}}" /></a>
                     </div>
                     <div class="image-container">
-                        <a href="/gallery/image-twelve/"><img src="{{imageTwelve.src}}" alt="{{imageTwelve.alt}}" /></a>
+                        <a href="/gallery/image-twelve/">
+                            <img srcset="/images/gas-station-large.jpg 1024w,
+                                    /images/gas-station-med.jpg 640w,
+                                    /images/gas-station-small.jpg 320w"
+                                sizes="(min-width 400px) 33.3vw, 100w"
+                                src="{{imageTwelve.src}}" 
+                                alt="{{imageTwelve.alt}}" />
+                        </a>
                     </div>
                 </div>
             </section>
