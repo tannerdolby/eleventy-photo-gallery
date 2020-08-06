@@ -1,8 +1,6 @@
 # eleventy-stock-gallery
 A starter repository intended to help you build a photo gallery using the [Eleventy](https://github.com/11ty/eleventy) static site generator. I would like to work on making this more of a "template" in the future. My hopes are that newcomers to 11ty can clone this repo and quickly get a stock photo gallery static site up and running. 
 
-Currently scoring 100s across the board using [Lighthouse](https://developers.google.com/web/tools/lighthouse)!
-
 ## Getting started
 ### 1. Clone this Repository (SSH example)
 ```
@@ -82,3 +80,6 @@ Templating markdown engine used is [Nunjucks](https://mozilla.github.io/nunjucks
 Front matter data in a template - all of the `/gallery/.../index.md` files
 
 Front matter data in layouts -`_includes/layouts/base.njk` and `_includes/layouts/feature.njk`
+
+### Page Scores
+Currently scoring 100s across the board using [Lighthouse](https://developers.google.com/web/tools/lighthouse)
