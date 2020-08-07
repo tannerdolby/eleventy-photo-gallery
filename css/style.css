@@ -125,7 +125,7 @@ header .socials {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 800px;
+    width: 950px;
     height: 550px;
     margin: 1rem auto 1rem auto;
 }
@@ -161,7 +161,6 @@ footer .credits-text {
 
 .credits-text p {
     color: #000;
-    font-size: 18px;
     text-align: center;
     padding-left: .5rem;
 }
@@ -170,6 +169,18 @@ footer .credits-text {
     background: #000;
     height: 2px;
     width: 100%;
+}
+
+@media screen and (max-width: 975px) {
+    .featured-img img {
+        width: 850px;
+    }
+}
+
+@media screen and (max-width: 875px) {
+    .featured-img p img {
+        width: 800px;
+    }
 }
 
 @media screen and (max-width: 825px) {
@@ -181,7 +192,7 @@ footer .credits-text {
 
 @media screen and (max-width: 650px) {
     .featured-img p img {
-        width: 350px;
+        width: 450px;
         height: 300px;
     }
 }
@@ -303,12 +314,15 @@ footer .credits-text {
     .featured-img {
         margin: 0;
         padding: 0;
-        align-items: flex-start;
+        align-items: center;
     }
     .featured-img p {
         margin: auto;
     }
-
+    footer {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
 
 }
 
