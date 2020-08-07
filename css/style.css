@@ -190,6 +190,13 @@ footer .credits-text {
     }
 }
 
+@media screen and (max-width: 750px) {
+    .featured-img h1 {
+        margin: auto;
+        text-align: center;
+    }
+}
+
 @media screen and (max-width: 650px) {
     .featured-img p img {
         width: 450px;
