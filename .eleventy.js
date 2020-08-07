@@ -14,7 +14,7 @@ module.exports = (eleventyConfig) => {
     eleventyConfig.addPassthroughCopy("images");
     eleventyConfig.addPassthroughCopy("css");
 
-    // Use resizeImage to create the 3 responsive sharp versions of a specified image file.
+    // Use the sharpImages function to create the 3 responsive sharp versions of a specified image file.
     function sharpImages(fileName) {
         let resizeImgSmall = () => {
             let shortName = fileName.slice(0, fileName.length - 4);
@@ -42,6 +42,6 @@ module.exports = (eleventyConfig) => {
         };
         resizeImgLarge();
     }
-    // Comment out or remove the sharpImages invocation once you've created all the responsive images you need :)
+    // Comment out or remove the the function call once you've created all the responsive images you need :)
     // sharpImages("./images/road-fog.jpg");
 };
