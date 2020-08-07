@@ -7,8 +7,8 @@ alt: Person holding glass mason jar with night sky background
 
 ---
 
-# {{title}}
-
 ![{{ alt }}]({{ imgSrc }})
+
+# {{title}}
 
 {{credit}} on [Pexels]({{src}})

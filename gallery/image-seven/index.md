@@ -6,8 +6,8 @@ imgSrc: /images/radio-city.jpg
 alt: Music hall with bright lights during night time
 ---
 
-# {{title}}
-
 ![{{ alt }}]({{ imgSrc }})
+
+# {{title}}
 
 {{credit}} on [Pexels]({{url}})

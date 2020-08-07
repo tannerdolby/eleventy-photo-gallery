@@ -6,8 +6,8 @@ imgSrc: /images/street-flash.jpg
 alt: Red light streaks across a street intersection at night.
 ---
 
-# {{title}}
-
 ![{{ alt }}]({{ imgSrc }})
+
+# {{title}}
 
 {{credit}} on [Pexels]({{url}})

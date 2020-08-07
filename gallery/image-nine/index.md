@@ -6,8 +6,8 @@ imgSrc: /images/highrise-orange.jpg
 alt: Buildings during nighttime with orange lighting and water below
 ---
 
-# {{title}}
-
 ![{{ alt }}]({{ imgSrc }})
+
+# {{title}}
 
 {{credit}} on [Pexels]({{url}})

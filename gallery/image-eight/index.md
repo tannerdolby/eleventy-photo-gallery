@@ -6,8 +6,8 @@ imgSrc: /images/city-center.jpg
 alt: Building office with winding architecture
 ---
 
-# {{title}}
-
 ![{{ alt }}]({{ imgSrc }})
+
+# {{title}}
 
 {{credit}} on [Pexels]({{url}})

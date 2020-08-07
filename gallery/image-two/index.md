@@ -6,8 +6,8 @@ imgSrc: /images/wet-street.jpg
 alt: Highway covered in water
 ---
 
-# {{title}}
-
 ![{{ alt }}]({{ imgSrc }})
+
+# {{title}}
 
 {{credit}} on [Pexels]({{url}})

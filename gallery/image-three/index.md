@@ -6,8 +6,8 @@ imgSrc: /images/bench-light.jpg
 alt: Brown painted wall with two benches and dim light above
 ---
 
-# {{title}}
-
 ![{{ alt }}]({{ imgSrc }})
+
+# {{title}}
 
 {{credit}} on [Pexels]({{url}})

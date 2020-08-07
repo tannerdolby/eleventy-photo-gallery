@@ -6,8 +6,8 @@ imgSrc: /images/road-fog.jpg
 alt: Photo of an empty road during daytime with fog in background
 ---
 
-# {{title}}
-
 ![{{ alt }}]({{ imgSrc }})
+
+# {{title}}
 
 {{credit}} on [Pexels]({{url}})

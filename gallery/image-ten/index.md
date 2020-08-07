@@ -6,8 +6,8 @@ imgSrc: /images/water-droplet.jpg
 alt: Rain drop bursting water particles upwards
 ---
 
-# {{title}}
-
 ![{{ alt }}]({{ imgSrc }})
+
+# {{title}}
 
 {{credit}} [Pexels]({{url}})

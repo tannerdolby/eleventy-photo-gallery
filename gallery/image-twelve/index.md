@@ -6,8 +6,8 @@ imgSrc: /images/gas-station.jpg
 alt: Gasoline station during nighttime with glowing red roof lights
 ---
 
-# {{title}}
-
 ![{{ alt }}]({{ imgSrc }})
+
+# {{title}}
 
 {{credit}} on [Pexels]({{url}})

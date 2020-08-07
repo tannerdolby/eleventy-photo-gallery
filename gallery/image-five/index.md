@@ -6,9 +6,8 @@ imgSrc: /images/boardwalk.jpg
 alt: Abstract architecture black and white boardwalk with glass like floor
 ---
 
-# {{title}}
-
 ![{{ alt }}]({{ imgSrc }})
 
+# {{title}}
 
 {{credit}} on [Pexels]({{url}})
