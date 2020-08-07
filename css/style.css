@@ -116,14 +116,7 @@ header .socials {
     justify-content: center;
     align-items: center;
     padding: 1rem 1rem 1rem 1rem;
-    margin: 1rem 5rem 1rem 5rem;
-}
-
-.featured-img h1 {
-    font-size: 2em;
-}
-.featured-img p {
-    font-size: 1.5em;
+    margin: 1rem 2rem 1rem 2rem;
 }
 
 .featured-img img {
@@ -249,8 +242,11 @@ footer .credits-text {
 
 @media screen and (max-width: 415px) {
     .featured-img p img {
-        width: 300px;
+        width: 360px;
         height: 200px;
+    }
+    .container {
+        margin-top: 2rem;
     }
     
 }
@@ -285,6 +281,7 @@ footer .credits-text {
     .featured-img h1 {
         text-align: center;
         margin: 0 auto 1em auto;
+        font-size: 1.1em;
     }
     .gallery {
         margin: 2rem;
@@ -304,8 +301,12 @@ footer .credits-text {
         width: 100%;
     }
     .featured-img {
-        margin: 1.5em;
+        margin: 0;
         padding: 0;
+        align-items: flex-start;
+    }
+    .featured-img p {
+        margin: auto;
     }
 
 
