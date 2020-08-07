@@ -90,6 +90,3 @@ Templating markdown engine used is [Nunjucks](https://mozilla.github.io/nunjucks
 Front matter data in a template - all of the `/gallery/.../index.md` files
 
 Front matter data in layouts -`_includes/layouts/base.njk` and `_includes/layouts/feature.njk`
-
-### Page Scores
-Currently scoring 100s across the board using [Lighthouse](https://developers.google.com/web/tools/lighthouse)
