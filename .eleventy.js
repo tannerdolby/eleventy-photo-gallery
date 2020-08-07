@@ -1,6 +1,5 @@
 const sharp = require('sharp');
 const fs = require('fs');
-const directory = "./images";
 
 module.exports = (eleventyConfig) => {
    
@@ -10,11 +9,11 @@ module.exports = (eleventyConfig) => {
 
     markdownTemplateEngine: "njk";
 
-    // Using manual passthrough file copy to include /images and /css in _site output
+    // manual passthrough file copy to include /images and /css in _site output
     eleventyConfig.addPassthroughCopy("images");
     eleventyConfig.addPassthroughCopy("css");
 
-    // Use the sharpImages function to create the 3 responsive sharp versions of a specified image file.
+    // Use the sharpImages function to create 3 responsive sharp versions of a specified image file.
     function sharpImages(fileName) {
         let resizeImgSmall = () => {
             let shortName = fileName.slice(0, fileName.length - 4);
@@ -33,6 +32,7 @@ module.exports = (eleventyConfig) => {
                     .toFile(`${shortName}-med.jpg`);
         };
         resizeImgMed();
+        
         let resizeImgLarge = () => {
             let shortName = fileName.slice(0, fileName.length - 4);
             fs.readFileSync(`${fileName}`)
