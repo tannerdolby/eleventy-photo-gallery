@@ -54,7 +54,9 @@ imageTwelve:
 ### Serving responsive images
 Utilize the sharp package for creating three versions of the original image.
 
-```sharpImages("./images/road-fog.jpg");```
+```
+sharpImages("./images/road-fog.jpg");
+```
 
 Output: road-fog-small.jpg, road-fog-med.jpg, road-fog-large.jpg
 
@@ -89,4 +91,4 @@ Templating markdown engine used is [Nunjucks](https://mozilla.github.io/nunjucks
 ### Sources of Data
 Front matter data in a template - all of the `/gallery/.../index.md` files
 
-Front matter data in layouts -`_includes/layouts/base.njk` and `_includes/layouts/feature.njk`
+Front matter data in layouts - `_includes/layouts/base.njk` and `_includes/layouts/feature.njk`
