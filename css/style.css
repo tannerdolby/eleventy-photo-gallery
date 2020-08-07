@@ -110,16 +110,6 @@ header .socials {
     box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
 }
 
-/* .back {
-    position: absolute;
-    font-family: Arial, Helvetica, sans-serif;
-    top: 2rem;
-    left: 2rem;
-    font-size: 22px;
-    color: #000;
-    border-bottom: 4px solid orange;
-} */
-
 .featured-img {
     display: flex;
     flex-direction: column;
@@ -191,14 +181,14 @@ footer .credits-text {
 
 @media screen and (max-width: 825px) {
     .featured-img p img {
-        /* width: 600px; */
+        width: 600px;
         height: 400px;
     }
 }
 
 @media screen and (max-width: 650px) {
     .featured-img p img {
-        /* width: 350px; */
+        width: 350px;
         height: 300px;
     }
 }
