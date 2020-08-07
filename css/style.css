@@ -326,3 +326,9 @@ footer .credits-text {
 
 }
 
+@media screen and (max-width: 335px) {
+    .featured-img p img {
+        width: 320px;
+    }
+}
+
