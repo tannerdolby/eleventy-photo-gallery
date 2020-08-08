@@ -1,7 +1,7 @@
 {
   "name": "11ty-starter",
   "version": "1.0.0",
-  "description": "My starter 11ty static site",
+  "description": "Photo Gallery starter site built with Eleventy",
   "main": ".eleventy.js",
   "scripts": {
     "build": "eleventy",
@@ -10,11 +10,19 @@
     "watch": "eleventy --watch",
     "debug": "DEBUG=* eleventy"
   },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:tannerdolby/eleventy-stock-gallery.git"
+  },
+  "author": {
+    "name": "Tanner Dolby",
+    "email": "dolb.tanner@gmail.com",
+    "url": "https://github.com/tannerdolby"
+  },
   "keywords": [
-    "11ty",
-    "eleventy"
+    "Stock Photo Gallery",
+    "Eleventy"
   ],
-  "author": "Tanner Dolby",
   "license": "ISC",
   "dependencies": {
     "@11ty/eleventy": "^0.11.0",
