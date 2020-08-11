@@ -79,16 +79,21 @@ To run in debug mode
 npm run debug
 ```
 
+### Sources of Data
+Front matter data in a template:
+- all of the `/gallery/.../index.md` files
+
+Front matter data in layouts:  
+- `_includes/layouts/base.njk` 
+- `_includes/layouts/feature.njk`
+
 ### Project notes
 `/gallery` holds all of the markdown template files and front matter for each image in the gallery. These templates are using the layout `feature.njk` by utilizing the directory data file `gallery.11tydata.json`.
 
 `/_includes` houses the two layouts for this project.
+
 - _includes/layouts/base.njk: the home page template
+
 - _includes/layouts/feature.njk: the featured image page template
 
 Templating markdown engine used is [Nunjucks](https://mozilla.github.io/nunjucks/)
-
-### Sources of Data
-Front matter data in a template - all of the `/gallery/.../index.md` files
-
-Front matter data in layouts - `_includes/layouts/base.njk` and `_includes/layouts/feature.njk`
