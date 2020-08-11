@@ -1,5 +1,7 @@
-const sharp = require('sharp');
-const fs = require('fs');
+const sharp = require("sharp");
+const fs = require("fs");
+
+const Image = require("@11ty/eleventy-img");
 
 module.exports = (eleventyConfig) => {
    
