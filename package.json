@@ -1,7 +1,7 @@
 {
   "name": "11ty-starter",
   "version": "1.0.0",
-  "description": "A photo Gallery starter site built with the static site generator Eleventy",
+  "description": "A photo gallery starter site built with the static site generator Eleventy",
   "main": ".eleventy.js",
   "scripts": {
     "build": "eleventy",
