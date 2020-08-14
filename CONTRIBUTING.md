@@ -1,4 +1,4 @@
-# Contributing to elevety-stock-gallery
+# Contributing to eleventy-stock-gallery
 
 I welcome any and all community contributions to eleventy-stock-gallery. I'm in the process of transitioning out the basic [Sharp](https://www.npmjs.com/package/sharp) implementation for serving responsive images with [eleventy-img](https://github.com/11ty/eleventy-img). Feel free to open an issue and consider helping out with any aspect of the project. 
 
