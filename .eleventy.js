@@ -1,7 +1,7 @@
 const sharp = require("sharp");
 const fs = require("fs");
-
-const Image = require("@11ty/eleventy-img");
+const Image = require("@11ty/eleventy-img"); // future implementation (test code in log.txt)
+// Image.concurrency = 4; // default is 10
 
 module.exports = (eleventyConfig) => {
    
@@ -15,7 +15,7 @@ module.exports = (eleventyConfig) => {
     eleventyConfig.addPassthroughCopy("images");
     eleventyConfig.addPassthroughCopy("css");
 
-    // Use the sharpImages function to create 3 responsive sharp versions of a specified image file.
+    // Use the sharpImages function to create 3 resized sharp versions of a specified image file.
     function sharpImages(fileName) {
         let resizeImgSmall = () => {
             let shortName = fileName.slice(0, fileName.length - 4);
