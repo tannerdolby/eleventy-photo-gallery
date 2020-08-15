@@ -49,7 +49,7 @@ imageTwelve:
 
 ---
 ```
-4. Make sure and update markdown files within `/gallery` to reflect the image metadata introducted into `base.njk` for new gallery images.
+4. Make sure and update markdown files within `/gallery` to reflect the image metadata introduced into `base.njk` for new gallery images.
 
 ### Serving responsive images
 Utilize the sharp package for creating three versions of the original image.
