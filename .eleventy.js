@@ -1,7 +1,6 @@
 const sharp = require("sharp");
 const fs = require("fs");
-const Image = require("@11ty/eleventy-img"); // future implementation (test code in log.txt)
-// Image.concurrency = 4; // default is 10
+// const Image = require("@11ty/eleventy-img"); // future implementation (test code in log.txt)
 
 module.exports = (eleventyConfig) => {
    
