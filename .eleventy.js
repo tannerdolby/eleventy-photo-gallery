@@ -15,6 +15,11 @@ module.exports = (eleventyConfig) => {
     eleventyConfig.addPassthroughCopy("images");
     eleventyConfig.addPassthroughCopy("css");
 
+    // Configure image in a template paired shortcode
+    eleventyConfig.addPairedShortcode("image", (srcSet, src, alt, sizes="(min-width: 400px) 33.3vw, 100vw") => {
+        return `<img srcset="${srcSet}" src="${src}" alt="${alt}" sizes="${sizes}">`
+    });
+
     // Use the sharpImages function to create 3 resized sharp versions of a specified image file.
     function sharpImages(fileName) {
         let resizeImgSmall = () => {
@@ -44,6 +49,6 @@ module.exports = (eleventyConfig) => {
         };
         resizeImgLarge();
     }
-    // Comment out or remove the the function call once you've created all the responsive images you need :)
-    // sharpImages("./images/road-fog.jpg");
+    // Comment out or remove the the function call once you've created all the resized images you need :)
+    // sharpImages("./images/wet-street-cmp.jpg");
 };
