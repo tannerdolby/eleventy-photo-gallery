@@ -2,7 +2,7 @@
 A starter repository intended to help you build a photo gallery using the [Eleventy](https://github.com/11ty/eleventy) static site generator. My hopes are that newcomers to 11ty can clone this repo and quickly get a stock photo gallery static site up and running. 
 
 ### Live Demo
-* [Netlify](https://determined-mclean-3dcc25.netlify.app/)
+* [Netlify](https://eleventy-stock-gallery.netlify.app/)
 
 ## Getting started
 ### 1. Clone this Repository
@@ -83,7 +83,7 @@ To run in debug mode
 npm run debug
 ```
 
-### Sources of Data
+### Sources of data
 * Front matter data in a template:
     * all of the `/gallery/.../index.md` files
 
