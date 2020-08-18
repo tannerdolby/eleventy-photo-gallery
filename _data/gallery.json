@@ -1,0 +1,86 @@
+{
+    "imageOne": {
+        "src": "/images/shop-plants-cmp-large.jpg",
+        "largeSrc": "/images/shop-plants-cmp-large.jpg 1024w",
+        "medSrc": "/images/shop-plants-cmp-med.jpg 640w",
+        "smallSrc": "/images/shop-plants-cmp-small.jpg 320w",
+        "alt": "Terrace outside shop window with green plants and pink tree on night street"
+    },
+    "imageTwo": {
+        "src": "/images/wet-street-cmp-large.jpg",
+        "largeSrc": "/images/wet-street-cmp-large.jpg 1024w",
+        "medSrc": "/images/wet-street-cmp-med.jpg 640w",
+        "smallSrc": "/images/wet-street-cmp-small.jpg 320w",
+        "alt": "Skybridge over highway covered in water"
+    },
+    "imageThree": {
+        "src": "/images/bench-light-cmp-large.jpg",
+        "largeSrc": "/images/bench-light-cmp-large.jpg 1024w",
+        "medSrc": "/images/bench-light-cmp-med.jpg 640w",
+        "smallSrc": "/images/bench-light-cmp-small.jpg 320w",
+        "alt": "Brown painted wall with two benches and dim light above"
+    },
+    "imageFour": {
+        "src": "/images/street-flash-cmp-large.jpg",
+        "largeSrc": "/images/street-flash-cmp-large.jpg 1024w",
+        "medSrc": "/images/street-flash-cmp-med.jpg 640w",
+        "smallSrc": "/images/street-flash-cmp-small.jpg 320w",
+        "alt": "Red light streaks across a street intersection at night"
+    },
+    "imageFive": {
+        "src": "/images/boardwalk-cmp-large.jpg",
+        "largeSrc": "/images/boardwalk-cmp-large.jpg 1024w",
+        "medSrc": "/images/boardwalk-cmp-med.jpg 640w",
+        "smallSrc": "/images/boardwalk-cmp-small.jpg 320w",
+        "alt": "Abstract architecture black and white boardwalk with glass like floor"
+    },
+    "imageSix": {
+        "src": "/images/glass-jar-sky-cmp-large.jpg",
+        "largeSrc": "/images/glass-jar-sky-cmp-large.jpg 1024w",
+        "medSrc": "/images/glass-jar-sky-cmp-med.jpg 640w",
+        "smallSrc": "/images/glass-jar-sky-cmp-small.jpg 320w",
+        "alt": "Person holding glass mason jar with night sky background"
+    },
+    "imageSeven": {
+        "src": "/images/radio-city-cmp-large.jpg",
+        "largeSrc": "/images/radio-city-cmp-large.jpg 1024w",
+        "medSrc": "/images/radio-city-cmp-med.jpg 640w",
+        "smallSrc": "/images/radio-city-cmp-small.jpg 320w",
+        "alt": "Music hall with bright lights during night time"
+    },
+    "imageEight": {
+        "src": "/images/city-center-cmp-large.jpg",
+        "largeSrc": "/images/city-center-cmp-large.jpg 1024w",
+        "medSrc": "/images/city-center-cmp-med.jpg 640w",
+        "smallSrc": "/images/city-center-cmp-small.jpg 320w",
+        "alt": "Tall highrise office building with winding architecture"
+    },
+    "imageNine": {
+        "src": "/images/highrise-orange-cmp-large.jpg",
+        "largeSrc": "/images/highrise-orange-cmp-large.jpg 1024w",
+        "medSrc": "/images/highrise-orange-cmp-med.jpg 640w",
+        "smallSrc": "/images/highrise-orange-cmp-small.jpg 320w",
+        "alt": "Buildings during nighttime with orange lighting and water below"
+    },
+    "imageTen": {
+        "src": "/images/water-droplet-cmp-large.jpg",
+        "largeSrc": "/images/water-droplet-cmp-large.jpg 1024w",
+        "medSrc": "/images/water-droplet-cmp-med.jpg 640w",
+        "smallSrc": "/images/water-droplet-cmp-small.jpg 320w",
+        "alt": "Rain drop bursting water particles upwards into the air"
+    },
+    "imageEleven": {
+        "src": "/images/road-fog-cmp-large.jpg",
+        "largeSrc": "/images/road-fog-cmp-large.jpg 1024w",
+        "medSrc": "/images/road-fog-cmp-med.jpg 640w",
+        "smallSrc": "/images/road-fog-cmp-small.jpg 320w",
+        "alt": "An empty road during daytime with fog in the background"
+    },
+    "imageTwelve": {
+        "src": "/images/gas-station-cmp-large.jpg",
+        "largeSrc": "/images/gas-station-cmp-large.jpg 1024w",
+        "medSrc": "/images/gas-station-cmp-med.jpg 640w",
+        "smallSrc": "/images/gas-station-cmp-small.jpg 320w",
+        "alt": "Gasoline station during nighttime with glowing red roof lights"
+    }
+}
