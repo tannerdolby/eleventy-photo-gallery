@@ -24,32 +24,26 @@ npm install
 ```
 
 ### 4. Add your own photos or skip to step 5! 
-Update the `_includes/layouts/base.njk` layout to include the appropiate `src` and `alt` attributes for the new images added. 
+Edit `_data/gallery.json` to include the appropiate `src` and `alt` attributes for new images added. 
 
-Also, within `/gallery` lives all of the markdown template files for each separate image page within the gallery. Update each featured image ie `/gallery/image-one/index.md` with the image data you added to `base.njk`. 
+Inside `/gallery/` lives all of the markdown template files for each image within the gallery. Update each featured image ie `/gallery/image-one/index.md` with the necessary image data you added to `_data/gallery.json`. 
 
 ### How to add new images
-* Navigate to the `base.njk` file 
-* At the top of the file within the three opening and closing hypens (---)
-*  Update the front matter image data for imageOne through imageTwelve to include the image path and alt text for the new photos.
-
+* Navigate to `_data/gallery.json`
+* Edit image data for imageOne through imageTwelve to include the image src and alt text for new photos.
 ```
----
-imageOne:
-    src: new_image_path.jpg
-    alt: Descriptive text for image
-imageTwo:
-    src: new_image_two_path.jpg
-    alt: Descriptive text for image
-...
-
-imageTwelve:
-    src: new_image_twelve_path.jpg
-    alt: Descriptive text for image
-
----
+{
+    "imageOne": {
+        "src": "/images/shop-plants-cmp-large.jpg",
+        "largeSrc": "/images/shop-plants-cmp-large.jpg 1024w",
+        "medSrc": "/images/shop-plants-cmp-med.jpg 640w",
+        "smallSrc": "/images/shop-plants-cmp-small.jpg 320w",
+        "alt": "Terrace outside shop window with green plants and pink tree on night street"
+    },
+    ...
+}
 ```
-* Make sure and update markdown files within `/gallery` to reflect the image metadata introduced into `base.njk` for new gallery images.
+* Make sure and update markdown files within `/gallery/` to reflect the image data introduced into `_data/gallery.json` for new gallery images.
 
 ### Serving responsive images
 Utilize the `sharpImages` function to create three resized versions of the original image.
@@ -85,11 +79,13 @@ npm run debug
 ```
 
 ### Sources of data
-* Front matter data in a template:
-    * all of the `/gallery/.../index.md` files
+* Global data file:
+    * `_data/gallery.json`
 
-* Front matter data in layouts:  
-    * `_includes/layouts/base.njk` 
+* Front matter data in a template:
+    * all of the `/gallery/.../index.md` markdown files
+
+* Front matter data in a layout:  
     * `_includes/layouts/feature.njk`
 
 ### Project notes
