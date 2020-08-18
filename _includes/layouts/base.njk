@@ -1,77 +1,3 @@
----
-imageOne:
-    src: /images/shop-plants-cmp-large.jpg
-    largeSrc: /images/shop-plants-cmp-large.jpg 1024w
-    medSrc: /images/shop-plants-cmp-med.jpg 640w
-    smallSrc: /images/shop-plants-cmp-small.jpg 320w
-    alt: Terrace outside shop window with green plants and pink tree on night street
-imageTwo:
-    src: /images/wet-street-cmp-large.jpg
-    largeSrc: /images/wet-street-cmp-large.jpg 1024w
-    medSrc: /images/wet-street-cmp-med.jpg 640w
-    smallSrc: /images/wet-street-cmp-small.jpg 320w
-    alt: Skybridge over highway covered in water
-imageThree:
-    src: /images/bench-light-cmp-large.jpg
-    largeSrc: /images/bench-light-cmp-large.jpg 1024w
-    medSrc: /images/bench-light-cmp-med.jpg 640w
-    smallSrc: /images/bench-light-cmp-small.jpg 320w
-    alt: Brown painted wall with two benches and dim light above
-imageFour:
-    src: /images/street-flash-cmp-large.jpg
-    largeSrc: /images/street-flash-cmp-large.jpg 1024w
-    medSrc: /images/street-flash-cmp-med.jpg 640w
-    smallSrc: /images/street-flash-cmp-small.jpg 320w
-    alt: Red light streaks across a street intersection at night
-imageFive:
-    src: /images/boardwalk-cmp-large.jpg
-    largeSrc: /images/boardwalk-cmp-large.jpg 1024w
-    medSrc: /images/boardwalk-cmp-med.jpg 640w
-    smallSrc: /images/boardwalk-cmp-small.jpg 320w
-    alt: Abstract architecture black and white boardwalk with glass like floor
-imageSix:
-    src: /images/glass-jar-sky-cmp-large.jpg
-    largeSrc: /images/glass-jar-sky-cmp-large.jpg 1024w
-    medSrc: /images/glass-jar-sky-cmp-med.jpg 640w
-    smallSrc: /images/glass-jar-sky-cmp-small.jpg 320w
-    alt: Person holding glass mason jar with night sky background
-imageSeven:
-    src: /images/radio-city-cmp-large.jpg
-    largeSrc: /images/radio-city-cmp-large.jpg 1024w
-    medSrc: /images/radio-city-cmp-med.jpg 640w
-    smallSrc: /images/radio-city-cmp-small.jpg 320w
-    alt: Music hall with bright lights during night time
-imageEight:
-    src: /images/city-center-cmp-large.jpg
-    largeSrc: /images/city-center-cmp-large.jpg 1024w
-    medSrc: /images/city-center-cmp-med.jpg 640w
-    smallSrc: /images/city-center-cmp-small.jpg 320w
-    alt: Tall highrise office building with winding architecture
-imageNine:
-    src: /images/highrise-orange-cmp-large.jpg
-    largeSrc: /images/highrise-orange-cmp-large.jpg 1024w
-    medSrc: /images/highrise-orange-cmp-med.jpg 640w
-    smallSrc: /images/highrise-orange-cmp-small.jpg 320w
-    alt: Buildings during nighttime with orange lighting and water below
-imageTen:
-    src: /images/water-droplet-cmp-large.jpg
-    largeSrc: /images/water-droplet-cmp-large.jpg 1024w
-    medSrc: /images/water-droplet-cmp-med.jpg 640w
-    smallSrc: /images/water-droplet-cmp-small.jpg 320w
-    alt: Rain drop bursting water particles upwards into the air
-imageEleven:
-    src: /images/road-fog-cmp-large.jpg
-    largeSrc: /images/road-fog-cmp-large.jpg 1024w
-    medSrc: /images/road-fog-cmp-med.jpg 640w
-    smallSrc: /images/road-fog-cmp-small.jpg 320w
-    alt: An empty road during daytime with fog in the background
-imageTwelve:
-    src: /images/gas-station-cmp-large.jpg
-    largeSrc: /images/gas-station-cmp-large.jpg 1024w
-    medSrc: /images/gas-station-cmp-med.jpg 640w
-    smallSrc: /images/gas-station-cmp-small.jpg 320w
-    alt: Gasoline station during nighttime with glowing red roof lights
----
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -104,122 +30,122 @@ imageTwelve:
                 <div class="image-grid">
                     <div class="image-container">
                         <a href="/gallery/image-one">
-                            <img srcset="{{imageOne.largeSrc}},
-                                    {{imageOne.medSrc}},
-                                    {{imageOne.smallSrc}}"
+                            <img srcset="{{ gallery.imageOne.largeSrc }},
+                                    {{ gallery.imageOne.medSrc }},
+                                    {{ gallery.imageOne.smallSrc }}"
                                 sizes="(min-width 400px) 33.3vw, 100w"
-                                src="{{imageOne.src}}" 
-                                alt="{{imageOne.alt}}" />
+                                src="{{ gallery.imageOne.src }}" 
+                                alt="{{ gallery.imageOne.alt }}" />
                         </a>
                     </div>
                     <div class="image-container">
                         <a href="/gallery/image-two">
-                            <img srcset="{{imageTwo.largeSrc}},
-                                    {{imageTwo.medSrc}},
-                                    {{imageTwo.smallSrc}}"
+                            <img srcset="{{ gallery.imageTwo.largeSrc }},
+                                    {{ gallery.imageTwo.medSrc }},
+                                    {{ gallery.imageTwo.smallSrc }}"
                                 sizes="(min-width 400px) 33.3vw, 100w"
-                                src="{{imageTwo.src}}" 
-                                alt="{{imageTwo.alt}}" />
+                                src="{{ gallery.imageTwo.src }}" 
+                                alt="{{ gallery.imageTwo.alt }}" />
                         </a>
                     </div>
                     <div class="image-container">
                         <a href="/gallery/image-three">
-                            <img srcset="{{imageThree.largeSrc}},
-                                    {{imageThree.medSrc}},
-                                    {{imageThree.smallSrc}}"
+                            <img srcset="{{ gallery.imageThree.largeSrc }},
+                                    {{ gallery.imageThree.medSrc }},
+                                    {{ gallery.imageThree.smallSrc }}"
                                 sizes="(min-width: 400px) 33.3vw, 100w"
-                                src="{{imageThree.src}}" 
-                                alt="{{imageThree.alt}}" />
+                                src="{{ gallery.imageThree.src }}" 
+                                alt="{{ gallery.imageThree.alt }}" />
                         </a>
                     </div>
                     <div class="image-container">
                         <a href="/gallery/image-four">
-                            <img srcset="{{imageFour.largeSrc}},
-                                    {{imageFour.medSrc}},
-                                    {{imageFour.smallSrc}}"
+                            <img srcset="{{ gallery.imageFour.largeSrc }},
+                                    {{ gallery.imageFour.medSrc }},
+                                    {{ gallery.imageFour.smallSrc }}"
                                 sizes="(min-width: 400px) 33.3vw, 100w" 
-                                src="{{imageFour.src}}" 
-                                alt="{{imageFour.alt}}" />
+                                src="{{ gallery.imageFour.src }}" 
+                                alt="{{ gallery.imageFour.alt }}" />
                         </a>
                     </div>
                     <div class="image-container">
                         <a href="/gallery/image-five/">
-                            <img srcset="{{imageFive.largeSrc}},
-                                    {{imageFive.medSrc}},
-                                    {{imageFive.smallSrc}}"  
+                            <img srcset="{{ gallery.imageFive.largeSrc }},
+                                    {{ gallery.imageFive.medSrc }},
+                                    {{ gallery.imageFive.smallSrc }}"  
                                 sizes="(min-width: 400px) 33.3vw, 100w" 
-                                src="{{imageFive.src}}" 
-                                alt="{{imageFive.alt}}" />
+                                src="{{ gallery.imageFive.src }}" 
+                                alt="{{ gallery.imageFive.alt }}" />
                         </a>
                     </div>
                     <div class="image-container">
                         <a href="/gallery/image-six">
-                            <img srcset="{{imageSix.largeSrc}},
-                                    {{imageSix.medSrc}},
-                                    {{imageSix.smallSrc}}"   
+                            <img srcset="{{ gallery.imageSix.largeSrc }},
+                                    {{ gallery.imageSix.medSrc }},
+                                    {{ gallery.imageSix.smallSrc }}"   
                                 sizes="(min-width: 400px) 33.3vw, 100w"
-                                src="{{imageSix.src}}" 
-                                alt="{{imageSix.alt}}" />
+                                src="{{ gallery.imageSix.src }}" 
+                                alt="{{ gallery.imageSix.alt }}" />
                         </a>
                     </div>
                     <div class="image-container">
                         <a href="/gallery/image-seven">
-                            <img srcset="{{imageSeven.largeSrc}},
-                                    {{imageSeven.medSrc}},
-                                    {{imageSeven.smallSrc}}" 
+                            <img srcset="{{ gallery.imageSeven.largeSrc }},
+                                    {{ gallery.imageSeven.medSrc }},
+                                    {{ gallery.imageSeven.smallSrc }}" 
                                 sizes="(min-width: 400px) 33.3vw, 100w"
-                                src="{{imageSeven.src}}"
-                                alt="{{imageSeven.alt}}" />
+                                src="{{ gallery.imageSeven.src }}"
+                                alt="{{ galleryimageSeven.alt }}" />
                         </a>
                     </div>
                     <div class="image-container">
                         <a href="/gallery/image-eight">
-                            <img srcset="{{imageEight.largeSrc}},
-                                    {{imageEight.medSrc}},
-                                    {{imageEight.smallSrc}}" 
+                            <img srcset="{{ gallery.imageEight.largeSrc }},
+                                    {{ gallery.imageEight.medSrc }},
+                                    {{ gallery.imageEight.smallSrc }}" 
                                 sizes="(min-width: 400px) 33.3vw, 100w"
-                                src="{{imageEight.src}}" 
-                                alt="{{imageEight.alt}}" />
+                                src="{{ gallery.imageEight.src }}" 
+                                alt="{{ gallery.imageEight.alt }}" />
                         </a>
                     </div>
                     <div class="image-container">
                         <a href="/gallery/image-nine">
-                            <img srcset="{{imageNine.largeSrc}},
-                                    {{imageNine.medSrc}},
-                                    {{imageNine.smallSrc}}" 
+                            <img srcset="{{ gallery.imageNine.largeSrc }},
+                                    {{ gallery.imageNine.medSrc }},
+                                    {{ gallery.imageNine.smallSrc }}" 
                                 sizes="(min-width: 400px) 33.3vw, 100w"
-                                src="{{imageNine.src}}" 
-                                alt="{{imageNine.alt}}" />
+                                src="{{ gallery.imageNine.src }}" 
+                                alt="{{ gallery.imageNine.alt }}" />
                         </a>
                     </div>
                     <div class="image-container">
                         <a href="/gallery/image-ten">
-                            <img srcset="{{imageTen.largeSrc}},
-                                    {{imageTen.medSrc}},
-                                    {{imageTen.smallSrc}}" 
+                            <img srcset="{{ gallery.imageTen.largeSrc }},
+                                    {{ gallery.imageTen.medSrc }},
+                                    {{ gallery.imageTen.smallSrc }}" 
                                 sizes="(min-width: 400px) 33.3vw, 100w"
-                                src="{{imageTen.src}}" 
-                                alt="{{imageTen.alt}}" />
+                                src="{{ gallery.imageTen.src }}" 
+                                alt="{{ gallery.imageTen.alt }}" />
                         </a>
                     </div>
                     <div class="image-container">
                         <a href="/gallery/image-eleven">
-                            <img srcset="{{imageEleven.largeSrc}},
-                                    {{imageEleven.medSrc}},
-                                    {{imageEleven.smallSrc}}" 
+                            <img srcset="{{ gallery.imageEleven.largeSrc }},
+                                    {{ gallery.imageEleven.medSrc }},
+                                    {{ gallery.imageEleven.smallSrc }}" 
                                 sizes="(min-width: 400px) 33.3vw, 100w"
-                                src="{{imageEleven.src}}" 
-                                alt="{{imageEleven.alt}}" />
+                                src="{{ gallery.imageEleven.src }}" 
+                                alt="{{ gallery.imageEleven.alt }}" />
                         </a>
                     </div>
                     <div class="image-container">
                         <a href="/gallery/image-twelve/">
-                            <img srcset="{{imageTwelve.largeSrc}},
-                                    {{imageTwelve.medSrc}},
-                                    {{imageTwelve.smallSrc}}"
+                            <img srcset="{{ gallery.imageTwelve.largeSrc }},
+                                    {{ gallery.imageTwelve.medSrc }},
+                                    {{ gallery.imageTwelve.smallSrc }}"
                                 sizes="(min-width 400px) 33.3vw, 100w"
-                                src="{{imageTwelve.src}}" 
-                                alt="{{imageTwelve.alt}}" />
+                                src="{{ gallery.imageTwelve.src }}" 
+                                alt="{{ gallery.imageTwelve.alt }}" />
                         </a>
                     </div>
                 </div>
