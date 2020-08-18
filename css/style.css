@@ -227,11 +227,11 @@ footer .credits-text {
 @media screen and (max-width: 565px) {
 
     header {
-        margin: 3rem 4em 1rem 4em;
+        margin: 3rem 3em 1rem 3em;
     }
 
     .page-banner {
-        margin: 1rem 4em 1rem 4em;
+        margin: 1rem 3em 1rem 3em;
     }
 
     .page-banner h1 {
@@ -243,7 +243,7 @@ footer .credits-text {
     }
 
     .image-grid {
-        margin: 1rem 4em 1rem 4em;
+        margin: 1rem 3em 1rem 3em;
     }
 
     footer {
@@ -256,7 +256,7 @@ footer .credits-text {
     }
 }
 
-@media screen and (max-width: 475px) {
+@media screen and (max-width: 485px) {
     .socials {
         display: flex;
     }
@@ -276,7 +276,7 @@ footer .credits-text {
 /* Moto G4 width width=360px which Lighthouse runs audit on */
 @media screen and (max-width: 375px) {
     header {
-        margin: 3em 3em 1em 3em;
+        margin: 2em 2em 1em 2em;
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
@@ -298,7 +298,10 @@ footer .credits-text {
     }
     .page-banner {
         height: 20em;
-        margin: 1rem 3rem 1rem 3rem;
+        margin: 1rem 2em 1rem 2em;
+    }
+    .page-banner h1 {
+        font-size: 2.5rem;
     }
     .featured-img h1 {
         text-align: center;
@@ -306,7 +309,7 @@ footer .credits-text {
         font-size: 1.1em;
     }
     .gallery {
-        margin: 2rem;
+        margin: 1em;
     }
     .image-grid {
         display: grid;
