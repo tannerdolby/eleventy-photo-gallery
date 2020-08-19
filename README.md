@@ -26,7 +26,7 @@ npm install
 ### 4. Add your own photos or skip to step 5! 
 Edit `_data/gallery.json` to include the appropiate `src` and `alt` attributes for new images added. 
 
-Inside `/gallery/` lives all of the markdown template files for each image within the gallery. Update each featured image ie `/gallery/image-one/index.md` with the necessary image data you added to `_data/gallery.json`. 
+Update all featured image markdown files, for example: `/gallery/image-one/index.md` with the necessary image data you added to `_data/gallery.json`. 
 
 #### How to add new images
 * Navigate to `_data/gallery.json`
@@ -79,20 +79,18 @@ npm run debug
 ```
 
 ### Sources of data
-* Global data file:
-    * `_data/gallery.json`
 
-* Front matter data in a template:
-    * all of the `/gallery/.../index.md` markdown files
+#### Global Data File: 
+* `_data/gallery.json`
 
-* Front matter data in a layout:  
-    * `_includes/layouts/feature.njk`
+#### Front matter data in a template: 
+* all of the `/gallery/.../index.md` markdown files.
 
 ### Project notes
-* `/gallery` holds all of the markdown template files and front matter for each image in the gallery. These templates are using the layout `feature.njk` by utilizing the directory data file `gallery.11tydata.json`.
+`/gallery` holds all of the markdown template files and front matter for each image in the gallery. These templates are using the layout `feature.njk` by utilizing the directory data file `gallery.11tydata.json`.
 
-* `/_includes` houses the two layouts for this project.
+`/_includes` houses the two layouts for this project.
 
-    * `_includes/layouts/base.njk`: the home page template
+* `_includes/layouts/base.njk`: the home page template
 
-    * `_includes/layouts/feature.njk`: the featured image page template
+* `_includes/layouts/feature.njk`: the featured image page template
