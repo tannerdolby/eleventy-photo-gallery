@@ -13,7 +13,7 @@ git clone https://github.com/tannerdolby/eleventy-stock-gallery.git
 
 ### 2. Navigate to project folder
 ```
-cd-eleventy-stock-gallery
+cd eleventy-stock-gallery
 ``` 
 
 * `.eleventy.js` is currently configured to use manual passthrough file copy to include `/images` and `/css` directories in the _site output. 
