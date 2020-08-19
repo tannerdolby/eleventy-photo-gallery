@@ -28,7 +28,7 @@ Edit `_data/gallery.json` to include the appropiate `src` and `alt` attributes f
 
 Inside `/gallery/` lives all of the markdown template files for each image within the gallery. Update each featured image ie `/gallery/image-one/index.md` with the necessary image data you added to `_data/gallery.json`. 
 
-### How to add new images
+#### How to add new images
 * Navigate to `_data/gallery.json`
 * Edit image data for imageOne through imageTwelve to include the image src and alt text for new photos.
 ```
@@ -45,7 +45,7 @@ Inside `/gallery/` lives all of the markdown template files for each image withi
 ```
 * Make sure and update markdown files within `/gallery/` to reflect the image data introduced into `_data/gallery.json` for new gallery images.
 
-### Serving responsive images
+#### Serving responsive images
 Utilize the `sharpImages` function to create three resized versions of the original image.
 
 ```
