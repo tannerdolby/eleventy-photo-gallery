@@ -16,8 +16,6 @@ git clone https://github.com/tannerdolby/eleventy-stock-gallery.git
 cd eleventy-stock-gallery
 ``` 
 
-* `.eleventy.js` is currently configured to use manual passthrough file copy to include `/images` and `/css` directories in the _site output. 
-
 ### 3. Install dependencies
 ```
 npm install
@@ -46,7 +44,7 @@ Update all featured image markdown files, for example: `/gallery/image-one/index
 * Make sure and update markdown files within `/gallery/` to reflect the image data introduced into `_data/gallery.json` for new gallery images.
 
 #### Serving responsive images
-Utilize the `sharpImages` function to create three resized versions of the original image.
+Use the `sharpImages` function inside `.eleventy.js` to create three resized versions of the original image.
 
 ```
 sharpImages("./images/road-fog.jpg");
@@ -87,9 +85,11 @@ npm run debug
 * all of the `/gallery/.../index.md` markdown files.
 
 ### Project notes
-`/gallery` holds all of the markdown template files and front matter for each image in the gallery. These templates are using the layout `feature.njk` by utilizing the directory data file `gallery.11tydata.json`.
+`.eleventy.js` is currently configured to use manual passthrough file copy to include `/images` and `/css` directories in the _site output. 
 
-`/_includes` houses the two layouts for this project.
+`/gallery/` holds all of the markdown template files and front matter for each image in the gallery. These templates are using the layout `feature.njk` by utilizing the directory data file `gallery.11tydata.json`.
+
+`/_includes/` houses the two layouts for this project.
 
 * `_includes/layouts/base.njk`: the home page template
 
