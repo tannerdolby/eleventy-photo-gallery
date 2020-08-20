@@ -119,8 +119,18 @@ header .socials {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 1rem 1rem 1rem 1rem;
+    padding: 1rem;
     margin: 1rem 2rem 1rem 2rem;
+}
+
+.featured-img .image-link {
+    color: #000;
+    border-bottom: 2px solid transparent;
+}
+
+.featured-img .image-link:hover {
+    background: #CCC;
+    border-bottom: 2px solid #111;
 }
 
 .featured-img img {
