@@ -15,4 +15,4 @@ srcSet: /images/radio-city-cmp-large.jpg 1024w, /images/radio-city-cmp-med.jpg 6
 
 # {{title}}
 
-{{credit}} on [Pexels]({{url}})
+{{credit}} on {% link %} {{ url }} {% endlink %}

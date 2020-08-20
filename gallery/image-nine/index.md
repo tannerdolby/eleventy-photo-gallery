@@ -15,4 +15,4 @@ srcSet: /images/highrise-orange-cmp-large.jpg 1024w, /images/highrise-orange-cmp
 
 # {{title}}
 
-{{credit}} on [Pexels]({{url}})
+{{credit}} on {% link %} {{ url }} {% endlink %}

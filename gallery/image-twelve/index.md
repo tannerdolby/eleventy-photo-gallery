@@ -15,4 +15,4 @@ srcSet: /images/gas-station-cmp-large.jpg 1024w, /images/gas-station-cmp-med.jpg
 
 # {{title}}
 
-{{credit}} on [Pexels]({{url}})
+{{credit}} on {% link %} {{ url }} {% endlink %}

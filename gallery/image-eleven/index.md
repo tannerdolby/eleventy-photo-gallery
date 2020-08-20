@@ -15,4 +15,4 @@ srcSet: /images/road-fog-cmp-large.jpg 1024w, /images/road-fog-cmp-med.jpg 640w,
 
 # {{title}}
 
-{{credit}} on [Pexels]({{url}})
+{{credit}} on {% link %} {{ url }} {% endlink %}

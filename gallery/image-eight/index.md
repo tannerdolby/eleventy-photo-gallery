@@ -15,4 +15,4 @@ srcSet: /images/city-center-cmp-large.jpg 1024w, /images/city-center-cmp-med.jpg
 
 # {{title}}
 
-{{credit}} on [Pexels]({{url}})
+{{credit}} on {% link %} {{ url }} {% endlink %}

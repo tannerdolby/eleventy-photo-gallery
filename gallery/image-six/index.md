@@ -15,4 +15,4 @@ srcSet: /images/glass-jar-sky-cmp-large.jpg 1024w, /images/glass-jar-sky-cmp-med
 
 # {{title}}
 
-{{credit}} on [Pexels]({{url}})
+{{credit}} on {% link %} {{ url }} {% endlink %}

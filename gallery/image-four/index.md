@@ -15,4 +15,4 @@ srcSet: /images/street-flash-cmp-large.jpg 1024w, /images/street-flash-cmp-med.j
 
 # {{title}}
 
-{{credit}} on [Pexels]({{url}})
+{{credit}} on {% link %} {{ url }} {% endlink %}

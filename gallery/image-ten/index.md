@@ -15,4 +15,4 @@ srcSet: /images/water-droplet-cmp-large.jpg 1024w, /images/water-droplet-cmp-med
 
 # {{title}}
 
-{{credit}} [Pexels]({{url}})
+{{credit}} {% link %} {{ url }} {% endlink %}
