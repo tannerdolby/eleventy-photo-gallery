@@ -208,21 +208,25 @@ footer .credits-text {
     }
 }
 
-@media screen and (max-width: 600px) {
-    .page-banner h1 {
-        font-size: 42px;
+@media screen and (max-width: 630px) {
+    header {
+        margin: 2rem 4em 2rem 4em;
     }
-    .page-banner p {
-        font-size: 22px;
+    .page-banner {
+        margin-left: 4em;
+        margin-right: 4em;
     }
-    header .home-btn h1 {
-        font-size: 28px;
+    .image-grid {
+        margin-left: 4em;
+        margin-right: 4em;
     }
-
-    header div i {
-        font-size: 26px;
+    footer {
+        margin-left: 4em;
+        margin-right: 4em;
     }
 }
+
+
 
 @media screen and (max-width: 565px) {
 
@@ -250,15 +254,66 @@ footer .credits-text {
         margin: 3rem 3rem 2rem 3rem;
     }
 }
+
+@media screen and (max-width: 530px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .home-btn {
+        font-size: 1.1em;
+    }
+    header .socials {
+        padding: 0;
+        margin-top: 1.5rem;
+    }
+    header .socials a:hover {
+        text-decoration: underline;
+    }
+    .socials .link-one {
+        padding-left: .1em;
+    }
+}
+
 @media screen and (max-width: 500px) {
     header .socials {
-        font-size: 0.9em;
+        font-size: 1em;
     }
 }
 
 @media screen and (max-width: 485px) {
     .socials {
         display: flex;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    header .socials {
+        padding: 0;
+    }
+
+    .page-banner h1 {
+        font-size: 3em;
+    }
+
+    .socials {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 1rem;
+    }
+
+    .socials .link-one {
+        padding-left: 0;
     }
 }
 
@@ -282,16 +337,19 @@ footer .credits-text {
         align-items: flex-start;
         flex-direction: column;
     }
-    .home-btn {
-        font-size: 1.2em;
+    header .home-btn a {
+        font-size: 1.1em !important; 
         margin-bottom: 15px;
     }
     header .socials {
         margin-top: 1em;
         padding-left: 0;
     }
+    header .socials a {
+        font-size: 1em;
+    }
     header .socials .link-one {
-        padding: 0 0.5em 0 0.3em;
+        padding: 0 0.5em 0 0.2em;
     }
     header .socials .link-two {
         padding:0 0 0 0.5em;
