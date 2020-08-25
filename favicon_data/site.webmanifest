@@ -28,8 +28,7 @@
             "type":"image/png"
         }
     ],
-    "start_url": "/",
-    "theme_color":"#ffffff",
-    "background_color":"#ffffff",
+    "theme_color":"#fff",
+    "background_color":"#111",
     "display":"standalone"
 }
