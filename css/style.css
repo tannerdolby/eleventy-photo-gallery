@@ -11,6 +11,8 @@ body {
     padding: 0;
     height: 100vh;
     background: #FFF;
+    /* background: rgb(249, 249, 249); */
+    scroll-behavior: smooth;
 }
 
 img {
@@ -29,10 +31,16 @@ h1, p {
 }
 
 header {
-    margin: 2rem 6rem 2rem 6rem;
+    margin: 0 auto 0 auto;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    max-width: 1100px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    /* background: rgb(249, 249, 249); */
 }
 
 header .home-btn a {
@@ -58,9 +66,15 @@ header .socials {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    margin: 1em 6em 1em 6em;
+    margin: 0 auto 1em auto;
+    max-width: 1100px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    /* border-top: 2px solid #000;
+    border-bottom: 2px solid #000; */
     height: 20em;
     color: #000;
+    /* background: rgb(249, 249, 249); */
 }
 
 .page-banner h1 {
@@ -77,9 +91,12 @@ header .socials {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
     gap: 3px;
+    max-width: 1100px;
     margin-top: 1rem;
-    margin-left: 6rem;
-    margin-right: 6rem;
+    margin-left: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-right: auto;
     margin-bottom: 3rem;
 }
 
@@ -119,8 +136,6 @@ header .socials {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* padding: 1rem;
-    margin: 1rem 2rem 1rem 2rem; */
 }
 
 .featured-img .image-link {
@@ -139,19 +154,22 @@ header .socials {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 950px;
+    width: 1024px;
     height: 550px;
     margin: 1rem auto 1rem auto;
 }
 
 .container {
     background: transparent;
-    margin: 4rem auto 3rem auto;
+    margin: .5rem auto 2rem auto;
 }
 
 footer {
     position: relative;
-    margin: 3rem 6rem 2rem 6rem;
+    margin: 3rem auto 2rem auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    max-width: 1100px;
     bottom: 0;
 }
 
@@ -199,7 +217,7 @@ footer .credits-text {
 
 @media screen and (max-width: 825px) {
     .featured-img p img {
-        width: 600px;
+        width: 750px;
         height: 400px;
     }
 }
@@ -213,55 +231,17 @@ footer .credits-text {
 
 @media screen and (max-width: 650px) {
     .featured-img p img {
-        width: 450px;
+        width: 640px;
         height: 300px;
     }
 }
 
-@media screen and (max-width: 630px) {
-    header {
-        margin: 2rem 4em 2rem 4em;
-    }
-    .page-banner {
-        margin-left: 4em;
-        margin-right: 4em;
-    }
-    .image-grid {
-        margin-left: 4em;
-        margin-right: 4em;
-    }
-    footer {
-        margin-left: 4em;
-        margin-right: 4em;
-    }
-}
-
-
-
 @media screen and (max-width: 565px) {
-
-    header {
-        margin: 3rem 3em 1rem 3em;
-    }
-
-    .page-banner {
-        margin: 1rem 3em 1rem 3em;
-    }
-
     .page-banner h1 {
         text-align: left;
     }
-
     .page-banner p {
         font-size: 18px;
-    }
-
-    .image-grid {
-        margin: 1rem 3em 1rem 3em;
-    }
-
-    footer {
-        margin: 3rem 3rem 2rem 3rem;
     }
 }
 
@@ -329,7 +309,7 @@ footer .credits-text {
 
 @media screen and (max-width: 415px) {
     .featured-img p img {
-        width: 360px;
+        width: 375px;
         height: 200px;
     }
     .container {
@@ -341,7 +321,6 @@ footer .credits-text {
 /* Moto G4 width width=360px which Lighthouse runs audit on */
 @media screen and (max-width: 375px) {
     header {
-        margin: 2em 2em 1em 2em;
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
@@ -366,7 +345,6 @@ footer .credits-text {
     }
     .page-banner {
         height: 20em;
-        margin: 1rem 2em 1rem 2em;
     }
     .page-banner h1 {
         font-size: 2.5rem;
@@ -376,13 +354,9 @@ footer .credits-text {
         margin: 0 auto 1em auto;
         font-size: 1.1em;
     }
-    .gallery {
-        margin: 1em;
-    }
     .image-grid {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
-        margin: 0.5rem;
         gap: 3px;
     }
     .image-grid .image-container {
@@ -401,10 +375,6 @@ footer .credits-text {
     .featured-img p {
         margin: auto;
     }
-    footer {
-        margin-left: 2rem;
-        margin-right: 2rem;
-    }
 
 }
 
@@ -414,3 +384,8 @@ footer .credits-text {
     }
 }
 
+@media screen and (max-width: 300px) {
+    .featured-img p img {
+        width: 225px;
+    }
+}
