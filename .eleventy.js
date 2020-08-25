@@ -33,7 +33,7 @@ module.exports = (eleventyConfig) => {
             fs.readFileSync(fileName)
                 sharp(`${fileName}`, { failOnError: false })
                     .resize(320, 240)
-                    .toFile(`${shortName}-small.jpg`);
+                    .toFile(`${shortName}-small.webp`);
         };
         resizeImgSmall();
 
@@ -42,7 +42,7 @@ module.exports = (eleventyConfig) => {
             fs.readFileSync(fileName)
                 sharp(`${fileName}`, { failOnError: false })
                     .resize(640, 480)
-                    .toFile(`${shortName}-med.jpg`);
+                    .toFile(`${shortName}-med.webp`);
         };
         resizeImgMed();
         
@@ -51,10 +51,11 @@ module.exports = (eleventyConfig) => {
             fs.readFileSync(`${fileName}`)
                 sharp(`${fileName}`, { failOnError: false })
                     .resize(1024, 768)
-                    .toFile(`${shortName}-large.jpg`);
+                    .toFile(`${shortName}-large.webp`);
         };
         resizeImgLarge();
     }
     // Comment out or remove the the function call once you've created all the resized images you need :)
-    // sharpImages("./images/wet-street-cmp.jpg");
+    // sharpImages("./images/wet-street.jpg"); 
+    // Todo: create an array argument to pass mulitple images into instead of one by one (way too cumbersome)
 };
