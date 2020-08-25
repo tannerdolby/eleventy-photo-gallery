@@ -7,7 +7,7 @@
         <meta name="theme-color" content="#fff">
         <meta name="background-color" content="#fff">
         <link rel="apple-touch-icon" sizes="180x180" href="/favicon_data/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon_data/">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon_data/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon_data/favicon-16x16.png">
         <link rel="manifest" href="/favicon_data/site.webmanifest">
         <meta name="description" 
@@ -36,122 +36,206 @@
                 <div class="image-grid">
                     <div class="image-container">
                         <a href="/gallery/image-one" aria-label="Gallery Image One" rel="noopener">
-                            <img srcset="{{ gallery.imageOne.largeSrc }},
-                                    {{ gallery.imageOne.medSrc }},
-                                    {{ gallery.imageOne.smallSrc }}"
-                                sizes="(min-width 400px) 33.3vw, 100w"
-                                src="{{ gallery.imageOne.smallSrc }}" 
-                                alt="{{ gallery.imageOne.alt }}" />
+                            <picture>
+                                <source srcset="{{ gallery.imageOne.ng_large_src }}, 
+                                        {{ gallery.imageOne.ng_med_src }}, 
+                                        {{ gallery.imageOne.ng_small_src }}" 
+                                        type="image/webp">
+                                <source srcset="{{ gallery.imageOne.large_src }}, 
+                                        {{ gallery.imageOne.med_src }}, 
+                                        {{ gallery.imageOne.small_src }}" 
+                                        type="image/jpg">
+                                <source srcset="{{ gallery.imageOne.ng_small_src }}" type="image/webp" media="(min-width: 400px)">
+                                <source srcset="{{ gallery.imageOne.small_src }}" type="image/jpg" media="(min-width: 400px)">
+                                <img src="{{ gallery.imageOne.small_src }}" alt="{{ gallery.imageOne.alt }}">
+                            </picture>
                         </a>
                     </div>
                     <div class="image-container">
                         <a href="/gallery/image-two" aria-label="Gallery Image Two" rel="noopener">
-                            <img srcset="{{ gallery.imageTwo.largeSrc }},
-                                    {{ gallery.imageTwo.medSrc }},
-                                    {{ gallery.imageTwo.smallSrc }}"
-                                sizes="(min-width 400px) 33.3vw, 100w"
-                                src="{{ gallery.imageTwo.smallSrc }}" 
-                                alt="{{ gallery.imageTwo.alt }}" />
+                            <picture>
+                                <source srcset="{{ gallery.imageTwo.ng_large_src }}, 
+                                        {{ gallery.imageTwo.ng_med_src }}, 
+                                        {{ gallery.imageTwo.ng_small_src }}" 
+                                        type="image/webp">
+                                <source srcset="{{ gallery.imageTwo.large_src }}, 
+                                        {{ gallery.imageTwo.med_src }}, 
+                                        {{ gallery.imageTwo.small_src }}" 
+                                        type="image/jpg">
+                                <source srcset="{{ gallery.imageTwo.ng_small_src }}" type="image/webp" media="(min-width: 400px)">
+                                <source srcset="{{ gallery.imageTwo.small_src }}" type="image/jpg" media="(min-width: 400px)">
+                                <img src="{{ gallery.imageTwo.small_src }}" alt="{{ gallery.imageTwo.alt }}">
+                            </picture>
                         </a>
                     </div>
                     <div class="image-container">
                         <a href="/gallery/image-three" aria-label="Gallery Image Three" rel="noopener">
-                            <img srcset="{{ gallery.imageThree.largeSrc }},
-                                    {{ gallery.imageThree.medSrc }},
-                                    {{ gallery.imageThree.smallSrc }}"
-                                sizes="(min-width: 400px) 33.3vw, 100w"
-                                src="{{ gallery.imageThree.smallSrc }}" 
-                                alt="{{ gallery.imageThree.alt }}" />
+                            <picture>
+                                <source srcset="{{ gallery.imageThree.ng_large_src }}, 
+                                        {{ gallery.imageThree.ng_med_src }}, 
+                                        {{ gallery.imageThree.ng_small_src }}" 
+                                        type="image/webp">
+                                <source srcset="{{ gallery.imageThree.large_src }}, 
+                                        {{ gallery.imageThree.med_src }}, 
+                                        {{ gallery.imageThree.small_src }}" 
+                                        type="image/jpg">
+                                <source srcset="{{ gallery.imageThree.ng_small_src }}" type="image/webp" media="(min-width: 400px)">
+                                <source srcset="{{ gallery.imageThree.small_src }}" type="image/jpg" media="(min-width: 400px)">
+                                <img src="{{ gallery.imageThree.small_src }}" alt="{{ gallery.imageThree.alt }}">
+                            </picture>
                         </a>
                     </div>
                     <div class="image-container">
                         <a href="/gallery/image-four" aria-label="Gallery Image Four" rel="noopener">
-                            <img srcset="{{ gallery.imageFour.largeSrc }},
-                                    {{ gallery.imageFour.medSrc }},
-                                    {{ gallery.imageFour.smallSrc }}"
-                                sizes="(min-width: 400px) 33.3vw, 100w" 
-                                src="{{ gallery.imageFour.smallSrc }}" 
-                                alt="{{ gallery.imageFour.alt }}" />
+                            <picture>
+                                <source srcset="{{ gallery.imageFour.ng_large_src }}, 
+                                        {{ gallery.imageFour.ng_med_src }}, 
+                                        {{ gallery.imageFour.ng_small_src }}" 
+                                        type="image/webp">
+                                <source srcset="{{ gallery.imageFour.large_src }}, 
+                                        {{ gallery.imageFour.med_src }}, 
+                                        {{ gallery.imageFour.small_src }}" 
+                                        type="image/jpg">
+                                <source srcset="{{ gallery.imageFour.ng_small_src }}" type="image/webp" media="(min-width: 400px)">
+                                <source srcset="{{ gallery.imageFour.small_src }}" type="image/jpg" media="(min-width: 400px)">
+                                <img src="{{ gallery.imageFour.small_src }}" alt="{{ gallery.imageFour.alt }}">
+                            </picture>
                         </a>
                     </div>
                     <div class="image-container">
                         <a href="/gallery/image-five/" aria-label="Gallery Image Five" rel="noopener">
-                            <img srcset="{{ gallery.imageFive.largeSrc }},
-                                    {{ gallery.imageFive.medSrc }},
-                                    {{ gallery.imageFive.smallSrc }}"  
-                                sizes="(min-width: 400px) 33.3vw, 100w" 
-                                src="{{ gallery.imageFive.smallSrc }}" 
-                                alt="{{ gallery.imageFive.alt }}" />
+                            <picture>
+                                <source srcset="{{ gallery.imageFive.ng_large_src }}, 
+                                        {{ gallery.imageFive.ng_med_src }}, 
+                                        {{ gallery.imageFive.ng_small_src }}" 
+                                        type="image/webp">
+                                <source srcset="{{ gallery.imageFive.large_src }}, 
+                                        {{ gallery.imageFive.med_src }}, 
+                                        {{ gallery.imageFive.small_src }}" 
+                                        type="image/jpg">
+                                <source srcset="{{ gallery.imageFive.ng_small_src }}" type="image/webp" media="(min-width: 400px)">
+                                <source srcset="{{ gallery.imageFive.small_src }}" type="image/jpg" media="(min-width: 400px)">
+                                <img src="{{ gallery.imageFive.small_src }}" alt="{{ gallery.imageFive.alt }}">
+                            </picture>
                         </a>
                     </div>
                     <div class="image-container">
                         <a href="/gallery/image-six" aria-label="Gallery Image Six" rel="noopener">
-                            <img srcset="{{ gallery.imageSix.largeSrc }},
-                                    {{ gallery.imageSix.medSrc }},
-                                    {{ gallery.imageSix.smallSrc }}"   
-                                sizes="(min-width: 400px) 33.3vw, 100w"
-                                src="{{ gallery.imageSix.smallSsrc }}" 
-                                alt="{{ gallery.imageSix.alt }}" />
+                            <picture>
+                                <source srcset="{{ gallery.imageSix.ng_large_src }}, 
+                                        {{ gallery.imageSix.ng_med_src }}, 
+                                        {{ gallery.imageSix.ng_small_src }}" 
+                                        type="image/webp">
+                                <source srcset="{{ gallery.imageSix.large_src }}, 
+                                        {{ gallery.imageSix.med_src }}, 
+                                        {{ gallery.imageSix.small_src }}" 
+                                        type="image/jpg">
+                                <source srcset="{{ gallery.imageSix.ng_small_src }}" type="image/webp" media="(min-width: 400px)">
+                                <source srcset="{{ gallery.imageSix.small_src }}" type="image/jpg" media="(min-width: 400px)">
+                                <img src="{{ gallery.imageSix.small_src }}" alt="{{ gallery.imageSix.alt }}">
+                            </picture>
                         </a>
                     </div>
                     <div class="image-container">
                         <a href="/gallery/image-seven" aria-label="Gallery Image Seven" rel="noopener">
-                            <img srcset="{{ gallery.imageSeven.largeSrc }},
-                                    {{ gallery.imageSeven.medSrc }},
-                                    {{ gallery.imageSeven.smallSrc }}" 
-                                sizes="(min-width: 400px) 33.3vw, 100w"
-                                src="{{ gallery.imageSeven.smallSrc }}"
-                                alt="{{ galleryimageSeven.alt }}" />
+                            <picture>
+                                <source srcset="{{ gallery.imageSeven.ng_large_src }}, 
+                                        {{ gallery.imageSeven.ng_med_src }}, 
+                                        {{ gallery.imageSeven.ng_small_src }}" 
+                                        type="image/webp">
+                                <source srcset="{{ gallery.imageSeven.large_src }}, 
+                                        {{ gallery.imageSeven.med_src }}, 
+                                        {{ gallery.imageSeven.small_src }}"
+                                        type="image/jpg">
+                                <source srcset="{{ gallery.imageSeven.ng_small_src }}" type="image/webp" media="(min-width: 400px)">
+                                <source srcset="{{ gallery.imageSeven.small_src }}" type="image/jpg" media="(min-width: 400px)">
+                                <img src="{{ gallery.imageSeven.small_src }}" alt="{{ gallery.imageSeven.alt }}">
+                            </picture>
                         </a>
                     </div>
                     <div class="image-container">
                         <a href="/gallery/image-eight" aria-label="Gallery Image Eight" rel="noopener">
-                            <img srcset="{{ gallery.imageEight.largeSrc }},
-                                    {{ gallery.imageEight.medSrc }},
-                                    {{ gallery.imageEight.smallSrc }}" 
-                                sizes="(min-width: 400px) 33.3vw, 100w"
-                                src="{{ gallery.imageEight.smallSrc }}" 
-                                alt="{{ gallery.imageEight.alt }}" />
+                            <picture>
+                                <source srcset="{{ gallery.imageEight.ng_large_src }}, 
+                                        {{ gallery.imageEight.ng_med_src }}, 
+                                        {{ gallery.imageEight.ng_small_src }}" 
+                                        type="image/webp">
+                                <source srcset="{{ gallery.imageEight.large_src }}, 
+                                        {{ gallery.imageEight.med_src }}, 
+                                        {{ gallery.imageEight.small_src }}" 
+                                        type="image/jpg">
+                                <source srcset="{{ gallery.imageEight.ng_small_src }}" type="image/webp" media="(min-width: 400px)">
+                                <source srcset="{{ gallery.imageEight.small_src }}" type="image/jpg" media="(min-width: 400px)">
+                                <img src="{{ gallery.imageEight.small_src }}" alt="{{ gallery.imageEight.alt }}">
+                            </picture>
                         </a>
                     </div>
                     <div class="image-container">
                         <a href="/gallery/image-nine" aria-label="Gallery Image Nine" rel="noopener">
-                            <img srcset="{{ gallery.imageNine.largeSrc }},
-                                    {{ gallery.imageNine.medSrc }},
-                                    {{ gallery.imageNine.smallSrc }}" 
-                                sizes="(min-width: 400px) 33.3vw, 100w"
-                                src="{{ gallery.imageNine.smallSrc }}" 
-                                alt="{{ gallery.imageNine.alt }}" />
+                            <picture>
+                                <source srcset="{{ gallery.imageNine.ng_large_src }}, 
+                                        {{ gallery.imageNine.ng_med_src }}, 
+                                        {{ gallery.imageNine.ng_small_src }}" 
+                                        type="image/webp">
+                                <source srcset="{{ gallery.imageNine.large_src }}, 
+                                        {{ gallery.imageNine.med_src }}, 
+                                        {{ gallery.imageNine.small_src }}" 
+                                        type="image/jpg">
+                                <source srcset="{{ gallery.imageNine.ng_small_src }}" type="image/webp" media="(min-width: 400px)">
+                                <source srcset="{{ gallery.imageNine.small_src }}" type="image/jpg" media="(min-width: 400px)">
+                                <img src="{{ gallery.imageNine.small_src }}" alt="{{ gallery.imageNine.alt }}">
+                            </picture>
                         </a>
                     </div>
                     <div class="image-container">
                         <a href="/gallery/image-ten" aria-label="Gallery Image Ten" rel="noopener">
-                            <img srcset="{{ gallery.imageTen.largeSrc }},
-                                    {{ gallery.imageTen.medSrc }},
-                                    {{ gallery.imageTen.smallSrc }}" 
-                                sizes="(min-width: 400px) 33.3vw, 100w"
-                                src="{{ gallery.imageTen.smallSrc }}" 
-                                alt="{{ gallery.imageTen.alt }}" />
+                            <picture>
+                                <source srcset="{{ gallery.imageTen.ng_large_src }}, 
+                                        {{ gallery.imageTen.ng_med_src }}, 
+                                        {{ gallery.imageTen.ng_small_src }}" 
+                                        type="image/webp">
+                                <source srcset="{{ gallery.imageTen.large_src }}, 
+                                        {{ gallery.imageTen.med_src }}, 
+                                        {{ gallery.imageTen.small_src }}" 
+                                        type="image/jpg">
+                                <source srcset="{{ gallery.imageTen.ng_small_src }}" type="image/webp" media="(min-width: 400px)">
+                                <source srcset="{{ gallery.imageTen.small_src }}" type="image/jpg" media="(min-width: 400px)">
+                                <img src="{{ gallery.imageTen.small_src }}" alt="{{ gallery.imageTen.alt }}">
+                            </picture>
                         </a>
                     </div>
                     <div class="image-container">
                         <a href="/gallery/image-eleven" aria-label="Gallery Image Eleven" rel="noopener">
-                            <img srcset="{{ gallery.imageEleven.largeSrc }},
-                                    {{ gallery.imageEleven.medSrc }},
-                                    {{ gallery.imageEleven.smallSrc }}" 
-                                sizes="(min-width: 400px) 33.3vw, 100w"
-                                src="{{ gallery.imageEleven.smallSrc }}" 
-                                alt="{{ gallery.imageEleven.alt }}" />
+                            <picture>
+                                <source srcset="{{ gallery.imageEleven.ng_large_src }}, 
+                                        {{ gallery.imageEleven.ng_med_src }}, 
+                                        {{ gallery.imageEleven.ng_small_src }}" 
+                                        type="image/webp">
+                                <source srcset="{{ gallery.imageEleven.large_src }}, 
+                                        {{ gallery.imageEleven.med_src }}, 
+                                        {{ gallery.imageEleven.small_src }}" 
+                                        type="image/jpg">
+                                <source srcset="{{ gallery.imageEleven.ng_small_src }}" type="image/webp" media="(min-width: 400px)">
+                                <source srcset="{{ gallery.imageEleven.small_src }}" type="image/jpg" media="(min-width: 400px)">
+                                <img src="{{ gallery.imageEleven.small_src }}" alt="{{ gallery.imageEleven.alt }}">
+                            </picture>
                         </a>
                     </div>
                     <div class="image-container">
                         <a href="/gallery/image-twelve/" aria-label="Gallery Image Twelve" rel="noopener">
-                            <img srcset="{{ gallery.imageTwelve.largeSrc }},
-                                    {{ gallery.imageTwelve.medSrc }},
-                                    {{ gallery.imageTwelve.smallSrc }}"
-                                sizes="(min-width 400px) 33.3vw, 100w"
-                                src="{{ gallery.imageTwelve.smallSrc }}" 
-                                alt="{{ gallery.imageTwelve.alt }}" />
+                            <picture>
+                                <source srcset="{{ gallery.imageTwelve.ng_large_src }}, 
+                                        {{ gallery.imageTwelve.ng_med_src }}, 
+                                        {{ gallery.imageTwelve.ng_small_src }}" 
+                                        type="image/webp">
+                                <source srcset="{{ gallery.imageTwelve.large_src }}, 
+                                        {{ gallery.imageTwelve.med_src }}, 
+                                        {{ gallery.imageTwelve.small_src }}" 
+                                        type="image/jpg">
+                                <source srcset="{{ gallery.imageTwelve.ng_small_src }}" type="image/webp" media="(min-width: 400px)">
+                                <source srcset="{{ gallery.imageTwelve.small_src }}" type="image/jpg" media="(min-width: 400px)">
+                                <img src="{{ gallery.imageTwelve.small_src }}" alt="{{ gallery.imageTwelve.alt }}">
+                            </picture>
                         </a>
                     </div>
                 </div>
