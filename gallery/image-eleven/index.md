@@ -4,12 +4,12 @@ credit: Photo by Marco Trinidad from
 id: Image Eleven
 permalink: "/gallery/{{ id | slug }}/"
 url: https://www.pexels.com/photo/photo-of-empty-road-during-daytime-3295140/
-src: /images/road-fog-cmp-large.jpg
+src: /images/road-fog-smalljpg
 alt: An empty road during daytime with fog in the background
-srcSet: /images/road-fog-cmp-large.jpg 1024w, /images/road-fog-cmp-med.jpg 640w, /images/road-fog-cmp-small.jpg 320w
+srcSet: /images/road-fog-large.jpg 1024w, /images/road-fog-med.jpg 640w, /images/road-fog-small.jpg 320w
 ---
 
-{% image "/images/road-fog-cmp-large.jpg", "An empty road during daytime with fog in the background" %}
+{% image "/images/road-fog-small.jpg", "An empty road during daytime with fog in the background" %}
 {{srcSet}}
 {% endimage %}
 
