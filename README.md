@@ -32,10 +32,10 @@ Update all featured image markdown files, for example: `/gallery/image-one/index
 ```
 {
     "imageOne": {
-        "src": "/images/shop-plants-cmp-large.jpg",
-        "largeSrc": "/images/shop-plants-cmp-large.jpg 1024w",
-        "medSrc": "/images/shop-plants-cmp-med.jpg 640w",
-        "smallSrc": "/images/shop-plants-cmp-small.jpg 320w",
+        "src": "/images/shop-plants-large.jpg",
+        "large_src": "/images/shop-plants-large.jpg 1024w",
+        "med_src": "/images/shop-plants-med.jpg 640w",
+        "small_src": "/images/shop-plants-small.jpg 320w",
         "alt": "Terrace outside shop window with green plants and pink tree on night street"
     },
     ...
