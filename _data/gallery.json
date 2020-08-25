@@ -1,50 +1,50 @@
 {
     "imageOne": {
         "src": "/images/shop-plants-small.jpg",
-        "ng_large_src": "/images/shop-plants-large.webp 1024w",
+        "ng_large_src": "/images/shop-plants-large.webp 1080w",
         "ng_med_src": "/images/shop-plants-med.webp 640w",
         "ng_small_src": "/images/shop-plants-small.webp 320w",
-        "large_src": "/images/shop-plants-large.jpg 1024w",
+        "large_src": "/images/shop-plants-large.jpg 1080w",
         "med_src": "/images/shop-plants-med.jpg 640w",
         "small_src": "/images/shop-plants-small.jpg 320w",
         "alt": "Terrace outside shop window with green plants and pink tree on night street"
     },
     "imageTwo": {
         "src": "/images/wet-street-small.jpg",
-        "ng_large_src": "/images/wet-street-large.webp 1024w",
+        "ng_large_src": "/images/wet-street-large.webp 1080w",
         "ng_med_src": "/images/wet-street-med.webp 640w",
         "ng_small_src": "/images/wet-street-small.webp 320w",
-        "large_src": "/images/wet-street-large.jpg 1024w",
+        "large_src": "/images/wet-street-large.jpg 1080w",
         "med_src": "/images/wet-street-med.jpg 640w",
         "small_src": "/images/wet-street-small.jpg 320w",
         "alt": "Skybridge over highway covered in water"
     },
     "imageThree": {
         "src": "/images/bench-light-small.jpg",
-        "ng_large_src": "/images/bench-light-large.webp 1024w",
+        "ng_large_src": "/images/bench-light-large.webp 1080w",
         "ng_med_src": "/images/bench-light-med.webp 640w",
         "ng_small_src": "/images/bench-light-small.webp 320w",
-        "large_src": "/images/bench-light-large.jpg 1024w",
+        "large_src": "/images/bench-light-large.jpg 1080w",
         "med_src": "/images/bench-light-med.jpg 640w",
         "small_src": "/images/bench-light-small.jpg 320w",
         "alt": "Brown painted wall with two benches and dim light above"
     },
     "imageFour": {
         "src": "/images/street-flash-small.jpg",
-        "ng_large_src": "/images/street-flash-large.webp 1024w",
+        "ng_large_src": "/images/street-flash-large.webp 1080w",
         "ng_med_src": "/images/street-flash-med.webp 640w",
         "ng_small_src": "/images/street-flash-small.webp 320w",
-        "large_src": "/images/street-flash-large.jpg 1024w",
+        "large_src": "/images/street-flash-large.jpg 1080w",
         "med_src": "/images/street-flash-med.jpg 640w",
         "small_src": "/images/street-flash-small.jpg 320w",
         "alt": "Red light streaks across a street intersection at night"
     },
     "imageFive": {
         "src": "/images/boardwalk-small.jpg",
-        "ng_large_src": "/images/boardwalk-large.webp 1024w",
+        "ng_large_src": "/images/boardwalk-large.webp 1080w",
         "ng_med_src": "/images/boardwalk-med.webp 640w",
         "ng_small_src": "/images/boardwalk-small.webp 320w",
-        "large_src": "/images/boardwalk-large.jpg 1024w",
+        "large_src": "/images/boardwalk-large.jpg 1080w",
         "med_src": "/images/boardwalk-med.jpg 640w",
         "small_src": "/images/boardwalk-small.jpg 320w",
         "alt": "Abstract architecture black and white boardwalk with glass like floor"
