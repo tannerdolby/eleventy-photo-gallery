@@ -40,13 +40,15 @@
                                 <source srcset="{{ gallery.imageOne.ng_large_src }}, 
                                         {{ gallery.imageOne.ng_med_src }}, 
                                         {{ gallery.imageOne.ng_small_src }}" 
+                                        sizes="(min-width: 375px) 33.3vw, 100vw"
                                         type="image/webp">
                                 <source srcset="{{ gallery.imageOne.large_src }}, 
                                         {{ gallery.imageOne.med_src }}, 
                                         {{ gallery.imageOne.small_src }}" 
+                                        sizes="(min-width: 375px) 33.3vw, 100vw"
                                         type="image/jpg">
-                                <source srcset="{{ gallery.imageOne.ng_small_src }}" type="image/webp" media="(min-width: 400px)">
-                                <source srcset="{{ gallery.imageOne.small_src }}" type="image/jpg" media="(min-width: 400px)">
+                                <source srcset="{{ gallery.imageOne.ng_small_src }}" type="image/webp" media="(min-width: 375px)">
+                                <source srcset="{{ gallery.imageOne.small_src }}" type="image/jpg" media="(min-width: 375px)">
                                 <img src="{{ gallery.imageOne.small_src }}" alt="{{ gallery.imageOne.alt }}">
                             </picture>
                         </a>
