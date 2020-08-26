@@ -68,8 +68,6 @@ npm run debug
 ### Project notes
 `.eleventy.js` is currently configured to use manual passthrough file copy to include `/images` and `/css` directories in the _site output. 
 
-`/gallery/` holds all of the markdown template files and front matter for each image in the gallery. These templates are using the layout `feature.njk` by utilizing the directory data file `gallery.11tydata.json`.
-
 `/_includes/` houses the two layouts for this project.
 
 * `_includes/layouts/base.njk`: the home page template
