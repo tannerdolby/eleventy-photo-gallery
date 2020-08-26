@@ -1,6 +1,10 @@
-{
-    "imageOne": {
+[
+    {
+        "name": "Image One",
         "src": "/images/shop-plants-small.jpg",
+        "img_title": "Terrace with green plants on night street",
+        "img_credit": "Photo by Aldiyar Seitkassymov",
+        "img_public_url": "https://www.pexels.com/photo/terrace-with-green-plants-on-night-street-3100835/",
         "ng_large_src": "/images/shop-plants-large.webp 1024w",
         "ng_med_src": "/images/shop-plants-med.webp 640w",
         "ng_small_src": "/images/shop-plants-small.webp 320w",
@@ -9,8 +13,12 @@
         "small_src": "/images/shop-plants-small.jpg 320w",
         "alt": "Terrace outside shop window with green plants and pink tree on night street"
     },
-    "imageTwo": {
+    {
+        "name": "Image Two",
         "src": "/images/wet-street-small.jpg",
+        "img_title": "Highway covered in water",
+        "img_credit": "Photo by Josh Hild",
+        "img_public_url": "https://www.pexels.com/photo/highway-covered-in-water-2524368/",
         "ng_large_src": "/images/wet-street-large.webp 1024w",
         "ng_med_src": "/images/wet-street-med.webp 640w",
         "ng_small_src": "/images/wet-street-small.webp 320w",
@@ -19,8 +27,12 @@
         "small_src": "/images/wet-street-small.jpg 320w",
         "alt": "Skybridge over highway covered in water"
     },
-    "imageThree": {
+    {
+        "name": "Image Three",
         "src": "/images/bench-light-small.jpg",
+        "img_title": "Brown painted wall on dim light",
+        "img_credit": "Photo by Lukas Hartmann",
+        "img_public_url": "https://www.pexels.com/photo/brown-painted-wall-on-dim-light-1055613/",
         "ng_large_src": "/images/bench-light-large.webp 1024w",
         "ng_med_src": "/images/bench-light-med.webp 640w",
         "ng_small_src": "/images/bench-light-small.webp 320w",
@@ -29,8 +41,12 @@
         "small_src": "/images/bench-light-small.jpg 320w",
         "alt": "Brown painted wall with two benches and dim light above"
     },
-    "imageFour": {
+    {
+        "name": "Image Four",
         "src": "/images/street-flash-small.jpg",
+        "img_title": "Red light streaks across a street intersection at night",
+        "img_credit": "Photo by Jan Kopřiva",
+        "img_public_url": "https://www.pexels.com/photo/light-streaks-3290601/",
         "ng_large_src": "/images/street-flash-large.webp 1024w",
         "ng_med_src": "/images/street-flash-med.webp 640w",
         "ng_small_src": "/images/street-flash-small.webp 320w",
@@ -39,8 +55,12 @@
         "small_src": "/images/street-flash-small.jpg 320w",
         "alt": "Red light streaks across a street intersection at night"
     },
-    "imageFive": {
+    {
+        "name": "Image Five",
         "src": "/images/boardwalk-small.jpg",
+        "img_title": "Abstract architecture black and white boardwalk",
+        "img_credit": "Photo by Pixabay",
+        "img_public_url": "https://www.pexels.com/photo/abstract-architecture-black-and-white-boardwalk-262367/",
         "ng_large_src": "/images/boardwalk-large.webp 1024w",
         "ng_med_src": "/images/boardwalk-med.webp 640w",
         "ng_small_src": "/images/boardwalk-small.webp 320w",
@@ -49,8 +69,12 @@
         "small_src": "/images/boardwalk-small.jpg 320w",
         "alt": "Abstract architecture black and white boardwalk with glass like floor"
     },
-    "imageSix": {
+    {
+        "name": "Image Six",
         "src": "/images/glass-jar-sky-small.jpg",
+        "img_title": "Person holding glass mason jar with night sky background",
+        "img_credit": "Photo by Rakicevic Nenad",
+        "img_public_url": "https://www.pexels.com/photo/silhouette-of-person-holding-glass-mason-jar-1274260/",
         "ng_large_src": "/images/glass-jar-sky-large.webp 1024w",
         "ng_med_src": "/images/glass-jar-sky-med.webp 640w",
         "ng_small_src": "/images/glass-jar-sky-large.webp 320w",
@@ -59,8 +83,12 @@
         "small_src": "/images/glass-jar-sky-small.jpg 320w",
         "alt": "Person holding glass mason jar with night sky background"
     },
-    "imageSeven": {
+    {
+        "name": "Image Seven",
         "src": "/images/radio-city-small.jpg",
+        "img_title": "Radio City Music Hall During Night Time",
+        "img_credit": "Photo by Bao Dang",
+        "img_public_url": "https://www.pexels.com/photo/radio-city-music-hall-during-night-time-3700369/",
         "ng_large_src": "/images/radio-city-large.webp 1024w",
         "ng_med_src": "/images/radio-city-med.webp 640w",
         "ng_small_src": "/images/radio-city-small.webp 320w",
@@ -69,8 +97,12 @@
         "small_src": "/images/radio-city-small.jpg 320w",
         "alt": "Music hall with bright lights during night time"
     },
-    "imageEight": {
+    {
+        "name": "Image Eight",
         "src": "/images/city-center-small.jpg",
+        "img_title": "City Building Office Architecture",
+        "img_credit": "Photo by Jayson Marquez",
+        "img_public_url": "https://www.pexels.com/photo/city-building-office-architecture-4850412/",
         "ng_large_src": "/images/city-center-large.webp 1024w",
         "ng_med_src": "/images/city-center-med.jpg 640w",
         "ng_small_src": "/images/city-center-small.webp 320w",
@@ -79,8 +111,12 @@
         "small_src": "/images/city-center-small.jpg 320w",
         "alt": "Tall highrise office building with winding architecture"
     },
-    "imageNine": {
+    {
+        "name": "Image Nine",
         "src": "/images/highrise-orange-small.jpg",
+        "img_title": "Buildings during nighttime",
+        "img_credit": "Photo by Aleksandar Pasaric",
+        "img_public_url": "https://www.pexels.com/photo/photo-of-buildings-during-nighttime-2603464/",
         "ng_large_src": "/images/highrise-orange-large.webp 1024w",
         "ng_med_src": "/images/highrise-orange-med.webp 640w",
         "ng_small_src": "/images/highrise-orange-small.webp 320w",
@@ -89,8 +125,12 @@
         "small_src": "/images/highrise-orange-small.jpg 320w",
         "alt": "Buildings during nighttime with orange lighting and water below"
     },
-    "imageTen": {
+    {
+        "name": "Image Ten",
         "src": "/images/water-droplet-smalljpg",
+        "img_title": "Water Droplet Digital Wallpaper",
+        "img_credit": "Photo by Sourav Mishra",
+        "img_public_url": "https://www.pexels.com/photo/water-droplet-digital-wallpaper-1100946/",
         "ng_large_src": "/images/water-droplet-large.webp 1024w",
         "ng_med_src": "/images/water-droplet-med.webp 640w",
         "ng_small_src": "/images/water-droplet-small.webp 320w",
@@ -99,8 +139,12 @@
         "small_src": "/images/water-droplet-small.jpg 320w",
         "alt": "Rain drop bursting water particles upwards into the air"
     },
-    "imageEleven": {
+    {
+        "name": "Image Eleven",
         "src": "/images/road-fog-small.jpg",
+        "img_title": "Man walking on the empty street",
+        "img_credit": "Photo by Marco Trinidad",
+        "img_public_url": "https://www.pexels.com/photo/photo-of-empty-road-during-daytime-3295140/",
         "ng_large_src": "/images/road-fog-large.webp 1024w", 
         "ng_med_src": "/images/road-fog-med.webp 640w",
         "ng_small_src": "/images/road-fog-small.webp 320w",
@@ -109,8 +153,12 @@
         "small_src": "/images/road-fog-small.jpg 320w",
         "alt": "An empty road during daytime with fog in the background"
     },
-    "imageTwelve": {
+    {
+        "name": "Image Twelve",
         "src": "/images/gas-station-small.jpg",
+        "img_title": "Gasoline station during nighttime",
+        "img_credit": "Photo by Artem Saranin",
+        "img_public_url": "https://www.pexels.com/photo/gasoline-station-during-nighttime-1453781/",
         "ng_large_src": "/images/gas-station-large.webp 1024w", 
         "ng_med_src": "/images/gas-station-med.webp 640w",
         "ng_small_src": "/images/gas-station-small.webp 320w",
@@ -119,4 +167,4 @@
         "small_src": "/images/gas-station-small.jpg 320w",
         "alt": "Gasoline station during nighttime with glowing red roof lights"
     }
-}
+]
