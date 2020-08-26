@@ -58,12 +58,7 @@ npm run debug
 ```
 
 ### Sources of data
-
-#### Global Data File: 
-* `_data/gallery.json`
-
-#### Front matter data in a template: 
-* all of the `/gallery/.../index.md` markdown files.
+* Global Data File: `_data/gallery.json`
 
 ### Project notes
 `.eleventy.js` is currently configured to use manual passthrough file copy to include `/images` and `/css` directories in the _site output. 
