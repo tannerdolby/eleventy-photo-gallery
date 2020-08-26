@@ -1,4 +1,9 @@
 ---
+pagination:
+    data: gallery
+    size: 1
+    alias: image
+permalink: "{{ image.name | slug }}/"
 credits: Created by your name
 ---
 <!doctype html>
@@ -19,7 +24,7 @@ credits: Created by your name
         can find it, author/creditor. Oh ya, I almost forgot! Make sure to replace my name 
         with yours when updating this meta description tag.">
     <link rel="stylesheet" href="/css/style.css">
-    <title>{{title}}</title>
+    <title>{{ image.img_title }}</title>
 </head>
 <body class="feature">
     <header>
@@ -33,7 +38,27 @@ credits: Created by your name
     </header>
     <main class="container">
         <section class="featured-img">
-            {{content | safe}}
+            <div class="image-container">
+                <picture>
+                    <source srcset="{{ image.ng_large_src }}, 
+                            {{ image.ng_med_src }}, 
+                            {{ image.ng_small_src }}" 
+                            type="image/webp"
+                            sizes="33.3vw, 50vw, 100vw">
+                    <source srcset="{{ imagelarge_src }}, 
+                            {{ image.med_src }}, 
+                            {{ image.small_src }}"
+                            sizes="33.3vw, 50vw, 100vw"
+                            type="image/jpg">
+                    <source srcset="{{ image.ng_small_src }}" type="image/webp" media="(min-width: 400px)">
+                    <source srcset="{{ image.small_src }}" type="image/jpg" media="(min-width: 400px)">
+                    <img src="{{ image.small_src }}" alt="{{ image.alt }}">
+                </picture>
+                <div class="center">
+                    <h1>{{ image.img_title }}</h1>
+                    <p>{{ image.img_credit }} from <a rel="noopener" target="_blank" href="{{ image.img_public_url }}">Pexels</a></p>
+                </div>
+            </div>
         </section>
     </main>
     <footer class="credits">
