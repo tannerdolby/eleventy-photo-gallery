@@ -1,3 +1,4 @@
 _site
 node_modules
 .DS_store
+log.txt
