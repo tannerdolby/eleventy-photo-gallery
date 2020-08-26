@@ -22,26 +22,7 @@ npm install
 ```
 
 ### 4. Add your own photos or skip to step 5! 
-Edit `_data/gallery.json` to include the appropiate `src` and `alt` attributes for new images added. 
-
-Update all featured image markdown files, for example: `/gallery/image-one/index.md` with the necessary image data you added to `_data/gallery.json`. 
-
-#### How to add new images
-* Navigate to `_data/gallery.json`
-* Edit image data for imageOne through imageTwelve to include the image src and alt text for new photos.
-```
-{
-    "imageOne": {
-        "src": "/images/shop-plants-large.jpg",
-        "large_src": "/images/shop-plants-large.jpg 1024w",
-        "med_src": "/images/shop-plants-med.jpg 640w",
-        "small_src": "/images/shop-plants-small.jpg 320w",
-        "alt": "Terrace outside shop window with green plants and pink tree on night street"
-    },
-    ...
-}
-```
-* Make sure and update markdown files within `/gallery/` to reflect the image data introduced into `_data/gallery.json` for new gallery images.
+Edit `_data/gallery.json` to include the appropiate image metadata for new images added. 
 
 #### Serving responsive images
 Use the `sharpImages` function inside `.eleventy.js` to create three resized versions of the original image.
