@@ -38,19 +38,19 @@
                     <div class="image-container">
                         <a href="/{{ image.name | slug}}/" aria-label="Gallery Image One" rel="noopener">
                             <picture>
-                                <source srcset="{{ image.ng_large_src }}, 
-                                        {{ image.ng_med_src }}, 
-                                        {{ image.ng_small_src }}" 
+                                <source srcset="{{ image.ng_large.src }} {{ image.ng_large.width }}w, 
+                                        {{ image.ng_med.src }} {{ image.ng_med.width }}w, 
+                                        {{ image.ng_small.src }} {{ image.ng_small.width }}w" 
                                         type="image/webp"
                                         sizes="33.3vw, 50vw, 100vw">
-                                <source srcset="{{ imagelarge_src }}, 
-                                        {{ image.med_src }}, 
-                                        {{ image.small_src }}"
+                                <source srcset="{{ imagelarge.src }} {{ imagelarge.width }}w, 
+                                        {{ image.med.src }} {{ image.med.width }}w, 
+                                        {{ image.small.src }} {{ image.small.width }}w"
                                         sizes="33.3vw, 50vw, 100vw"
                                         type="image/jpg">
-                                <source srcset="{{ image.ng_small_src }}" type="image/webp" media="(min-width: 400px)">
-                                <source srcset="{{ image.small_src }}" type="image/jpg" media="(min-width: 400px)">
-                                <img src="{{ image.small_src }}" alt="{{ image.alt }}">
+                                <source srcset="{{ image.ng_small.src }} {{ image.ng_small.width }}w" type="image/webp" media="(min-width: 400px)">
+                                <source srcset="{{ image.small.src }} {{ image.small.width }}w" type="image/jpg" media="(min-width: 400px)">
+                                <img src="{{ image.small.src }}" alt="{{ image.alt }}">
                             </picture>
                         </a>
                     </div>
