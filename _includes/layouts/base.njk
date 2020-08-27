@@ -36,7 +36,7 @@
                 <div class="image-grid">
                     {% for image in gallery %}
                     <div class="image-container">
-                        <a href="/{{ image.name | slug}}/" aria-label="Gallery Image One" rel="noopener">
+                        <a href="/{{ image.name | slug}}/" aria-label="Gallery {{ image.name }}" rel="noopener">
                             <picture>
                                 <source srcset="{{ image.ng_large_src }}, 
                                         {{ image.ng_med_src }}, 
