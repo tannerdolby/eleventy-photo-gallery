@@ -48,7 +48,7 @@
                                             (min-width: 643px) calc(100vw - 2 * 2rem - 1 * 3px) / 2),
                                             calc(100vw - 2 * 2rem)
                                         ">
-                                <source srcset="{{ imagelarge.src }} {{ imagelarge.width }}w, 
+                                <img srcset="{{ imagelarge.src }} {{ imagelarge.width }}w, 
                                         {{ image.med.src }} {{ image.med.width }}w, 
                                         {{ image.small.src }} {{ image.small.width }}w"
                                         sizes="
@@ -57,8 +57,8 @@
                                             (min-width: 643px) calc(100vw - 2 * 2rem - 1 * 3px) / 2),
                                             calc(100vw - 2 * 2rem)
                                         "
-                                        type="image/jpg">
-                                <img src="{{ image.small.src }}" alt="{{ image.alt }}">
+                                        src="{{ image.small.src }}"
+                                        alt="{{ image.alt }}">
                             </picture>
                         </a>
                     </div>
