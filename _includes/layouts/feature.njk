@@ -4,6 +4,7 @@ pagination:
     size: 1
     alias: image
 permalink: "{{ image.name | slug }}/"
+homeBtn: Tanner's Gallery
 credits: Created by your name
 ---
 <!doctype html>
@@ -29,7 +30,7 @@ credits: Created by your name
 <body class="feature">
     <header>
         <div class="home-btn">
-            <a rel="noopener" href="/">Tanner's Gallery</a>
+            <a rel="noopener" href="/">{{ homeBtn }}</a>
         </div>
         <div class="socials">
             <a class="link-one" rel="noopener" href="/">Home</a>
@@ -40,19 +41,35 @@ credits: Created by your name
         <section class="featured-img">
             <div class="image-container">
                 <picture>
-                    <source srcset="{{ image.ng_large_src }}, 
-                            {{ image.ng_med_src }}, 
-                            {{ image.ng_small_src }}" 
-                            type="image/webp"
-                            sizes="33.3vw, 50vw, 100vw">
-                    <source srcset="{{ imagelarge_src }}, 
-                            {{ image.med_src }}, 
-                            {{ image.small_src }}"
-                            sizes="33.3vw, 50vw, 100vw"
-                            type="image/jpg">
-                    <source srcset="{{ image.ng_small_src }}" type="image/webp" media="(min-width: 400px)">
-                    <source srcset="{{ image.small_src }}" type="image/jpg" media="(min-width: 400px)">
-                    <img src="{{ image.small_src }}" alt="{{ image.alt }}">
+                    <source
+                        type="image/webp"
+                        srcset="
+                            {{ image.ng_large.src }} {{ image.ng_large.width }}w, 
+                            {{ image.ng_med.src }} {{ image.ng_med.width }}w, 
+                            {{ image.ng_small.src }} {{ image.ng_small.width }}w
+                            "
+                        sizes="
+                            (min-width: 1100px) calc((1100px - 2 * 2rem - 2 * 3px) / 3),
+                            (min-width: 934px) calc(100vw - 2 * 2rem - 2 * 3px) / 3),
+                            (min-width: 643px) calc(100vw - 2 * 2rem - 1 * 3px) / 2),
+                            calc(100vw - 2 * 2rem)
+                            "
+                    >
+                    <img
+                        srcset="
+                            {{ imagelarge.src }} {{ imagelarge.width }}w, 
+                            {{ image.med.src }} {{ image.med.width }}w, 
+                            {{ image.small.src }} {{ image.small.width }}w
+                            "
+                        sizes="
+                            (min-width: 1100px) calc((1100px - 2 * 2rem - 2 * 3px) / 3),
+                            (min-width: 934px) calc(100vw - 2 * 2rem - 2 * 3px) / 3),
+                            (min-width: 643px) calc(100vw - 2 * 2rem - 1 * 3px) / 2),
+                            calc(100vw - 2 * 2rem)
+                            "
+                        src="{{ image.small.src }}"
+                        alt="{{ image.alt }}"
+                    >
                 </picture>
                 <div class="center">
                     <h1>{{ image.img_title }}</h1>
