@@ -42,11 +42,21 @@
                                         {{ image.ng_med.src }} {{ image.ng_med.width }}w, 
                                         {{ image.ng_small.src }} {{ image.ng_small.width }}w" 
                                         type="image/webp"
-                                        sizes="33.3vw, 50vw, 100vw">
+                                        sizes="
+                                            (min-width: 1100px) calc((1100px - 2 * 2rem - 2 * 3px) / 3),
+                                            (min-width: 934px) calc(100vw - 2 * 2rem - 2 * 3px) / 3),
+                                            (min-width: 643px) calc(100vw - 2 * 2rem - 1 * 3px) / 2),
+                                            calc(100vw - 2 * 2rem)
+                                        ">
                                 <source srcset="{{ imagelarge.src }} {{ imagelarge.width }}w, 
                                         {{ image.med.src }} {{ image.med.width }}w, 
                                         {{ image.small.src }} {{ image.small.width }}w"
-                                        sizes="33.3vw, 50vw, 100vw"
+                                        sizes="
+                                            (min-width: 1100px) calc((1100px - 2 * 2rem - 2 * 3px) / 3),
+                                            (min-width: 934px) calc(100vw - 2 * 2rem - 2 * 3px) / 3),
+                                            (min-width: 643px) calc(100vw - 2 * 2rem - 1 * 3px) / 2),
+                                            calc(100vw - 2 * 2rem)
+                                        "
                                         type="image/jpg">
                                 <source srcset="{{ image.ng_small.src }} {{ image.ng_small.width }}w" type="image/webp" media="(min-width: 400px)">
                                 <source srcset="{{ image.small.src }} {{ image.small.width }}w" type="image/jpg" media="(min-width: 400px)">
