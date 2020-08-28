@@ -11,7 +11,6 @@ body {
     padding: 0;
     height: 100vh;
     background: #FFF;
-    /* background: rgb(249, 249, 249); */
     scroll-behavior: smooth;
 }
 
@@ -24,8 +23,6 @@ a {
 }
 
 h1, p {
-    /* font-family: Arial, Helvetica, sans-serif; */
-    /* font-family: system-ui, sans-serif; */
     font-family: var(--system-font);
     color: #000;
 }
@@ -40,7 +37,6 @@ header {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    /* background: rgb(249, 249, 249); */
 }
 
 header .home-btn a {
@@ -89,11 +85,8 @@ header .socials {
     max-width: 1100px;
     padding-left: 2rem;
     padding-right: 2rem;
-    /* border-top: 2px solid #000;
-    border-bottom: 2px solid #000; */
     height: 20em;
     color: #000;
-    /* background: rgb(249, 249, 249); */
 }
 
 .page-banner h1 {
@@ -145,7 +138,6 @@ header .socials {
     object-fit: cover;
     display: block;
     width: 100%;
-    height: 400px;
     margin: 1rem auto 2rem auto;
     box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
 }
@@ -176,7 +168,6 @@ header .socials {
     justify-content: center;
     align-items: center;
     width: 1024px;
-    height: 550px;
     margin: 1rem auto 1rem auto;
 }
 
@@ -224,22 +215,9 @@ footer .credits-text {
     width: 100%;
 }
 
-@media screen and (max-width: 975px) {
+@media screen and (min-width: 975px) {
     .featured-img img {
-        width: 850px;
-    }
-}
-
-@media screen and (max-width: 875px) {
-    .featured-img p img {
-        width: 800px;
-    }
-}
-
-@media screen and (max-width: 825px) {
-    .featured-img p img {
-        width: 750px;
-        height: 400px;
+        height: 650px;
     }
 }
 
@@ -247,13 +225,6 @@ footer .credits-text {
     .featured-img h1 {
         margin: auto;
         text-align: center;
-    }
-}
-
-@media screen and (max-width: 650px) {
-    .featured-img p img {
-        width: 640px;
-        height: 300px;
     }
 }
 
@@ -331,12 +302,10 @@ footer .credits-text {
 @media screen and (max-width: 415px) {
     .featured-img p img {
         width: 375px;
-        height: 200px;
     }
     .container {
         margin-top: 2rem;
     }
-    
 }
 
 /* Moto G4 width width=360px which Lighthouse runs audit on */
@@ -373,7 +342,6 @@ footer .credits-text {
     .featured-img h1 {
         text-align: center;
         margin: 0 auto 1em auto;
-        font-size: 1.1em;
     }
     .image-grid {
         display: grid;
