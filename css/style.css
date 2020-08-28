@@ -300,9 +300,6 @@ footer .credits-text {
 }
 
 @media screen and (max-width: 415px) {
-    .featured-img p img {
-        width: 375px;
-    }
     .container {
         margin-top: 2rem;
     }
@@ -363,18 +360,5 @@ footer .credits-text {
     }
     .featured-img p {
         margin: auto;
-    }
-
-}
-
-@media screen and (max-width: 335px) {
-    .featured-img p img {
-        width: 320px;
-    }
-}
-
-@media screen and (max-width: 300px) {
-    .featured-img p img {
-        width: 225px;
     }
 }
