@@ -1,5 +1,5 @@
 # eleventy-stock-gallery
-A starter repository intended to help you build a photo gallery using the [Eleventy](https://github.com/11ty/eleventy) static site generator. My hopes are that newcomers to 11ty can clone this repo and quickly get a stock photo gallery static site up and running. 
+A starter repository intended to help you build a photo gallery website using the [Eleventy](https://github.com/11ty/eleventy) static site generator.
 
 ### Live Demo
 * [Netlify demo](https://11tygallery.netlify.app/) - live template gallery
@@ -61,7 +61,7 @@ npm run debug
 * Global Data File: `_data/gallery.json`
 
 ### Project notes
-`.eleventy.js` is currently configured to use manual passthrough file copy to include `/images` and `/css` directories in the _site output. 
+`.eleventy.js` is currently configured to use manual passthrough file copy to include `/images`, `/css`, and `/favicon_data` directories in the _site output. 
 
 `/_includes/` houses the two layouts for this project.
 
