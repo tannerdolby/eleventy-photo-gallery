@@ -61,10 +61,10 @@ npm run debug
 * Global Data File: `_data/gallery.json`
 
 ### Project notes
-`.eleventy.js` is currently configured to use manual passthrough file copy to include `/images`, `/css`, and `/favicon_data` directories in the _site output. 
+* `.eleventy.js` is currently configured to use manual passthrough file copy to include the `/images`, `/css`, and `/favicon_data` directories in the _site output. 
 
-`/_includes/` houses the two layouts for this project.
+* `/_includes/` houses the two layouts for this project.
 
-* `_includes/layouts/base.njk`: the home page template
+    * `_includes/layouts/base.njk`: home page template
 
-* `_includes/layouts/feature.njk`: the featured image page template
+    * `_includes/layouts/feature.njk`: featured image page template
