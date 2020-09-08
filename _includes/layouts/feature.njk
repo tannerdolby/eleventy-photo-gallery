@@ -25,6 +25,7 @@ credits: Created by your name
         can find it, author/creditor. Oh ya, I almost forgot! Make sure to replace my name 
         with yours when updating this meta description tag.">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/speedlify-score.css">
     <title>{{ image.img_title }}</title>
 </head>
 <body class="feature">
@@ -69,13 +70,17 @@ credits: Created by your name
             </div>
         </section>
     </main>
-    <footer class="credits">
-        <div class="credits-text">
+    <footer>
+        <div class="footer-content">
             <hr class="colorful-bar">
-            <div class="footer-info">
-                <p>{{credits}}. Built with <a rel="noopener" href="https://www.11ty.dev/" target="_blank">11ty</a> and hosted on <a rel="noopener" href="https://www.netlify.com/" target="_blank">Netlify</a>.</p>
+            <div class="footer-info featured">
+                <p>{{ site.footer.created_by }}. Built with <a rel="noopener" href="https://www.11ty.dev/" target="_blank">11ty</a> and hosted on <a rel="noopener" href="https://www.netlify.com/" target="_blank">Netlify</a>.</p>
+                <a href="https://tdspeedlify.netlify.app/11ty-photo-gallery/" class="speedlify-link">
+                    <speedlify-score hash="{{ image.hash }}" speedlify-url="https://tdspeedlify.netlify.app" score weight requests></speedlify-score>
+                </a>
             </div>
         </div>
     </footer>
+    <script src="/js/speedlify-score.js" type="text/javascript"></script>
 </body>
 </html>
