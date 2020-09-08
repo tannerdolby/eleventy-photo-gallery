@@ -210,6 +210,7 @@ footer .footer-content {
     flex-direction: column;
     align-items: center;
     padding-top: 2rem;
+    padding-bottom: 1.5rem;
 }
 
 footer .footer-content .footer-info {
