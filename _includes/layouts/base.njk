@@ -16,7 +16,8 @@
                 Always make sure to have a meta description tag with content for each page to improve SEO. Feel free to update 
                 this description with any content of your choosing.">
         <link rel="stylesheet" type="text/css" href="/css/style.css">
-        <title>{{pageTitle}}</title>
+        <link rel="stylesheet" type="text/css" href="/css/speedlify-score.css">
+        <title>{{ site.page_title }}</title>
     </head>
     <body>
         <header>
@@ -75,13 +76,7 @@
                 </div>
             </section>
         </main>
-        <footer class="credits">
-            <div class="credits-text">
-                <hr class="colorful-bar">
-                <div class="footer-info">
-                    <p>{{footerTxt}} Built with <a rel="noopener" href="https://www.11ty.dev/" target="_blank">11ty</a> and hosted on <a rel="noopener" href="https://www.netlify.com/" target="_blank">Netlify</a>.</p>
-                </div>
-            </div>
-        </footer>
+       {% include "layouts/footer.njk" %}
+        <script src="/js/speedlify-score.js" type="text/javascript"></script>
     </body>
 </html>
