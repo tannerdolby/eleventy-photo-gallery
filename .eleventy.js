@@ -14,6 +14,7 @@ module.exports = (eleventyConfig) => {
     // manual passthrough file copy to include /images and /css in _site output
     eleventyConfig.addPassthroughCopy("images");
     eleventyConfig.addPassthroughCopy("css");
+    eleventyConfig.addPassthroughCopy("js");
     eleventyConfig.addPassthroughCopy("favicon_data");
 
     // Configure image in a template paired shortcode
