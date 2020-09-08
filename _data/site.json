@@ -1,0 +1,10 @@
+{
+    "page_title": "Your Gallery Name",
+    "home_banner": {
+        "content": "Photo Gallery",
+        "purpose": "Stock photos currently provided from Pexels. Add or remove images from the grid and customize your own image gallery!"
+    },
+    "footer": {
+        "created_by": "Created by your name"
+    }
+}
