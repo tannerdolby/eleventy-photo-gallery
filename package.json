@@ -1,7 +1,7 @@
 {
-  "name": "11ty-starter",
+  "name": "11ty-gallery",
   "version": "1.0.0",
-  "description": "A photo gallery starter site built with the static site generator Eleventy",
+  "description": "A photo gallery starter kit built with the static site generator Eleventy",
   "main": ".eleventy.js",
   "scripts": {
     "build": "eleventy",
@@ -12,21 +12,25 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:tannerdolby/eleventy-stock-gallery.git"
+    "url": "git+https://github.com/tannerdolby/eleventy-stock-gallery.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tannerdolby/eleventy-stock-gallery/issues"
   },
   "author": {
     "name": "Tanner Dolby",
     "email": "dolb.tanner@gmail.com",
     "url": "https://github.com/tannerdolby"
   },
-  "homepage": "https://github.com/tannerdolby/eleventy-stock-gallery/blob/master/index.md",
   "keywords": [
-    "Stock Photo Gallery",
+    "Photo Gallery Template",
     "Eleventy"
   ],
-  "license": "ISC",
+  "homepage": "https://github.com/tannerdolby/eleventy-stock-gallery#readme",
+  "license": "MIT",
   "dependencies": {
     "@11ty/eleventy": "^0.11.0",
+    "@11ty/eleventy-cache-assets": "^2.0.3",
     "@11ty/eleventy-img": "^0.3.0",
     "sharp": "^0.25.4"
   }
