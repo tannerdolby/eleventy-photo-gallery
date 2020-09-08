@@ -40,7 +40,7 @@ road-fog-small.jpg
 
 #### More options for image optimization
 * [Squoosh](https://squoosh.app/) - Make images smaller using best-in-class codecs, right in the browser.
-* [eleventy-img] - Utility to perform build-time image transformations.
+* [eleventy-img](https://github.com/11ty/eleventy-img) - Utility to perform build-time image transformations.
 
 ## 5. Run Eleventy! 
 To build your _site output
