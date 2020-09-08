@@ -38,6 +38,10 @@ road-fog-med.jpg
 road-fog-small.jpg
 ```
 
+#### More options for image optimization
+* [Squoosh](https://squoosh.app/) - Make images smaller using best-in-class codecs, right in the browser.
+* [eleventy-img] - Utility to perform build-time image transformations.
+
 ## 5. Run Eleventy! 
 To build your _site output
 
@@ -58,10 +62,17 @@ npm run debug
 ```
 
 ### Sources of data
-* Global Data File: `_data/gallery.json`
+* Global Data Files: 
+    * `_data/gallery.json` - Holds all image metadata
+    * `_data/site.json` - Some site data
+    * `_data/speedlify.js` - Speedlify API data files (static API with cached speedlify instance generated JSON)
 
 ### Project notes
-* `.eleventy.js` is currently configured to use manual passthrough file copy to include the `/images`, `/css`, and `/favicon_data` directories in the _site output. 
+* `.eleventy.js` is currently configured to use manual passthrough file copy to include the following directories in the `_site` output. 
+    * `/images/`
+    * `/css/`
+    * `/favicon_data/`
+    * `/js/` 
 
 * `/_includes/` houses the two layouts for this project.
 
