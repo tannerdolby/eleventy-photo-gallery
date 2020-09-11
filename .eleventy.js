@@ -59,4 +59,11 @@ module.exports = (eleventyConfig) => {
     // Comment out or remove the the function call once you've created all the resized images you need :)
     // sharpImages("./images/wet-street.jpg"); 
     // Todo: create an array argument to pass mulitple images into instead of one by one (way too cumbersome)
+    
+    return {
+        dir: {
+            input: ".",
+            output: "_site"
+        },
+    };
 };
