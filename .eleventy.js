@@ -60,10 +60,4 @@ module.exports = (eleventyConfig) => {
     // sharpImages("./images/wet-street.jpg"); 
     // Todo: create an array argument to pass mulitple images into instead of one by one (way too cumbersome)
     
-    return {
-        dir: {
-            input: ".",
-            output: "_site"
-        },
-    };
 };
