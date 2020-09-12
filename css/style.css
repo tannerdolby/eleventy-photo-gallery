@@ -32,16 +32,51 @@ main .gallery {
     margin-bottom: 2rem;
 }
 
-header {
+nav {
     margin: 0 auto 0 auto;
     padding-top: 2rem;
     padding-bottom: 2rem;
     padding-left: 2rem;
     padding-right: 2rem;
     max-width: 1100px;
+}
+nav header {
     display: flex;
-    justify-content: flex-start;
+}
+
+nav header h1 {
+    font-size: 20px;
+}
+
+nav .nav-list {
+    display: flex;
+    justify-content: center;
     align-items: center;
+    padding-left: 0;
+    list-style: none;
+}
+
+nav header h1 a {
+    text-decoration: none;
+    padding-right: .5rem;
+}
+
+nav header .nav-list a:hover,
+nav header a:hover {
+    text-decoration: underline;
+}
+
+nav .nav-list li {
+    padding-left: 2rem;
+}
+
+nav .nav-list li .link-one {
+    font-size: 20px;
+    text-decoration: none;
+}
+
+nav .nav-list .toggle-bg {
+    background: #fff;
 }
 
 a {
@@ -89,12 +124,15 @@ header .socials {
     padding-bottom: 1rem;
     padding-left: 1rem;
     padding-right: 1rem;
-
 }
 
 .center a {
     color: #000;
     text-decoration: underline;
+}
+
+.center a:hover {
+    text-decoration: none;
 }
 
 .page-banner {
@@ -136,6 +174,10 @@ header .socials {
     height: 18rem;
     overflow: hidden;
     border-radius: 2px;
+}
+
+.image-grid .image-container a:focus img {
+    border: 3px solid #07c;
 }
 
 .image-grid .image-container a img {
@@ -277,6 +319,9 @@ footer .footer-content .footer-info .speedlify-link {
         justify-content: flex-start;
         align-items: flex-start;
     }
+    nav .nav-list li {
+        padding-left: 0;
+    }
     .home-btn {
         font-size: 1.1em;
     }
@@ -371,9 +416,6 @@ footer .footer-content .footer-info .speedlify-link {
     }
     header .socials .link-one {
         padding: 0 0.5em 0 0.2em;
-    }
-    header .socials .link-two {
-        padding:0 0 0 0.5em;
     }
     .page-banner h1 {
         font-size: 2.5rem;
