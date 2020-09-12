@@ -1,0 +1,6 @@
+[build]
+    # Directory (relative to root of your repo) that contains the deploy-ready HTML files
+    publish = "_site"
+    
+    # Build command
+    command = "npm run build"
