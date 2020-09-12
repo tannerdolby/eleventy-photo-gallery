@@ -20,16 +20,17 @@
         <title>{{ site.page_title }}</title>
     </head>
     <body>
-        <header>
-            <div class="home-btn">
-                <a rel="noopener" href="/">Tanner's Gallery</a>
-            </div>
-            <div class="socials">
-                <a class="link-one" rel="noopener" href="/">Home</a>
-                <a class="link-two" rel="noopener" class="github-icon" href="https://github.com/tannerdolby/eleventy-stock-gallery" target="_blank">Github</a>
-            </div>
-        </header>
-        <main>
+        <nav role="navigation">
+            <header>
+                <h1>
+                    <a rel="noopener" href="/">{{ site.home_button_text }}</a>
+                </h1>
+                <ul class="nav-list">
+                    <li><a class="link-one" href="https://github.com/tannerdolby/eleventy-stock-gallery">Github</a></li>
+                </ul>
+            </header>
+        </nav>
+        <main role="main">
             <div class="page-banner">
                 {{ content | safe}}
             </div>

@@ -3,9 +3,7 @@ pagination:
     data: gallery
     size: 1
     alias: image
-permalink: "{{ image.name | slug }}/"
-homeBtn: Tanner's Gallery
-credits: Created by your name
+permalink: "/{{ image.name | slug }}/"
 ---
 <!doctype html>
 <html lang="en">
@@ -29,16 +27,17 @@ credits: Created by your name
     <title>{{ image.img_title }}</title>
 </head>
 <body class="feature">
-    <header>
-        <div class="home-btn">
-            <a rel="noopener" href="/">{{ homeBtn }}</a>
-        </div>
-        <div class="socials">
-            <a class="link-one" rel="noopener" href="/">Home</a>
-            <a class="link-two" rel="noopener" class="github-icon" href="https://github.com/tannerdolby/eleventy-stock-gallery" target="_blank">Github</a>
-        </div>
-    </header>
-    <main class="container">
+    <nav role="navigation">
+        <header>
+            <h1>
+                <a rel="noopener" href="/">{{ site.home_button_text }}</a>
+            </h1>
+            <ul class="nav-list">
+                <li><a class="link-one" href="https://github.com/tannerdolby/eleventy-stock-gallery">Github</a></li>
+            </ul>
+        </header>
+    </nav>
+    <main class="container" role="main">
         <section class="featured-img">
             <div class="image-container">
                 <picture>
