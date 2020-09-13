@@ -11,7 +11,6 @@ body {
     padding: 0;
     height: 100vh;
     background: #FFF;
-    scroll-behavior: smooth;
 }
 
 img {
@@ -22,7 +21,11 @@ a {
     text-decoration: none;
 }
 
-h1, p {
+p {
+    line-height: 1.5;
+}
+
+h1, h2, h3, h4, p {
     font-family: var(--system-font);
     color: #000;
 }
@@ -144,7 +147,6 @@ header .socials {
 .page-banner p {
     text-align: left;
     font-size: 1.5em;
-    line-height: 1.5;
 }
 
 .image-grid {
