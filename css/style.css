@@ -70,8 +70,8 @@ nav .nav-list li {
     padding-left: 2rem;
 }
 
-nav .nav-list li .link-one {
-    font-size: 22px;
+nav .nav-list li .link {
+    font-size: 20px;
     text-decoration: none;
 }
 
@@ -85,27 +85,7 @@ a:hover {
     text-decoration: none;
 }
 
-header .home-btn a {
-    font-size: 1.3em;
-    font-family: var(--system-font);
-    text-decoration: none;
-    font-weight: 600;
-    color: #000;
-}
-
-header .socials {
-    padding-left: 2rem;
-}
-
-.socials a {
-    color: #000;
-    font-family: var(--system-font);
-    text-decoration: none;
-    padding: 0 1rem 0 1rem;
-    font-size: 1.3em;
-}
-
-.socials a:hover {
+header a:hover {
     text-decoration: underline;
 }
 
@@ -224,12 +204,9 @@ header .socials {
     width: 1024px;
     margin: 1rem auto 1rem auto;
 }
-
-.container {
-    background: transparent;
+.main-container {
     margin: .5rem auto 2rem auto;
 }
-
 footer {
     position: relative;
     margin: 2rem auto 1rem auto;
@@ -238,7 +215,6 @@ footer {
     max-width: 1100px;
     bottom: 0;
 }
-
 footer .footer-content {
     display: flex;
     flex-direction: column;
@@ -257,7 +233,6 @@ footer .footer-content .footer-info {
 footer .footer-content p {
     color: #000;
     text-align: center;
-    padding-left: .5rem;
 }
 
 footer .footer-content hr {
@@ -268,8 +243,6 @@ footer .footer-content hr {
 
 footer .footer-content .footer-info .speedlify-link {
     text-decoration: none;
-    padding-left: 2rem;
-    padding-right: .5rem;
 }
 
 @media screen and (min-width: 975px) {
@@ -314,30 +287,12 @@ footer .footer-content .footer-info .speedlify-link {
     nav .nav-list li {
         padding-left: 0;
     }
-    .home-btn {
-        font-size: 1.1em;
+    .link {
+        padding-left: .5rem;
+        padding-right: .5rem;
     }
-    header .socials {
-        padding: 0;
-        margin-top: 1.5rem;
-    }
-    header .socials a:hover {
-        text-decoration: underline;
-    }
-    .socials .link-one {
-        padding-left: .1em;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    header .socials {
-        font-size: 1em;
-    }
-}
-
-@media screen and (max-width: 485px) {
-    .socials {
-        display: flex;
+    .link.one {
+        padding-left: .3rem;
     }
 }
 
@@ -348,26 +303,9 @@ footer .footer-content .footer-info .speedlify-link {
         justify-content: flex-start;
         align-items: flex-start;
     }
-
-    header .socials {
-        padding: 0;
-    }
-
     .page-banner h1 {
         font-size: 3em;
     }
-
-    .socials {
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        margin-top: 1rem;
-    }
-
-    .socials .link-one {
-        padding-left: 0;
-    }
-
     footer .footer-content .footer-info.home {
         justify-content: flex-start;
         align-items: center;
@@ -382,7 +320,7 @@ footer .footer-content .footer-info .speedlify-link {
 }
 
 @media screen and (max-width: 415px) {
-    .container {
+    .main-container {
         margin-top: 2rem;
     }
 }
@@ -394,20 +332,6 @@ footer .footer-content .footer-info .speedlify-link {
         justify-content: flex-start;
         align-items: flex-start;
         flex-direction: column;
-    }
-    header .home-btn a {
-        font-size: 1.1em !important; 
-        margin-bottom: 15px;
-    }
-    header .socials {
-        margin-top: 1em;
-        padding-left: 0;
-    }
-    header .socials a {
-        font-size: 1em;
-    }
-    header .socials .link-one {
-        padding: 0 0.5em 0 0.2em;
     }
     .page-banner h1 {
         font-size: 2.5rem;
