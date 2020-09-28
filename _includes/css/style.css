@@ -1,0 +1,400 @@
+:root {
+    --system-font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: #FFF;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    line-height: 1.5;
+}
+
+h1, h2, h3, h4, p {
+    font-family: var(--system-font);
+    color: #000;
+}
+
+main .gallery {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+nav {
+    margin: 0 auto 0 auto;
+    padding: 2rem;
+    max-width: 1100px;
+}
+nav header {
+    display: flex;
+}
+
+nav header h1 {
+    font-size: 22px;
+}
+
+nav .nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+    list-style: none;
+}
+
+nav header h1 a {
+    text-decoration: none;
+    padding-right: .5rem;
+}
+
+nav header .nav-list a:hover,
+nav header a:hover {
+    text-decoration: underline;
+}
+
+nav .nav-list li {
+    padding-left: 2rem;
+}
+
+nav .nav-list li .link {
+    font-size: 20px;
+    text-decoration: none;
+}
+
+a {
+    color: #333;
+    text-decoration: underline;
+    text-decoration-color: #333;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+}
+
+.center a {
+    color: #000;
+    text-decoration: underline;
+}
+
+.center a:hover {
+    text-decoration: none;
+}
+
+.page-banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0 auto 1em auto;
+    max-width: 1100px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    color: #000;
+}
+
+.page-banner h1 {
+    font-size: 3.5em;
+}
+
+.page-banner p {
+    text-align: left;
+    font-size: 1.5em;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+    gap: 3px;
+    max-width: 1100px;
+    margin-top: 1rem;
+    margin-left: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-right: auto;
+    margin-bottom: 3rem;
+}
+
+.image-grid .image-container {
+    height: 18rem;
+    overflow: hidden;
+    border-radius: 2px;
+}
+
+.image-grid .image-container a:focus img {
+    border: 3px solid #07c;
+}
+
+.image-grid .image-container a img {
+    object-fit: cover;
+    height: 18rem;
+    width: 100%;
+    transform-origin: 50% 50%;
+    filter: brightness(99%);
+    transition: filter 0.5s ease;
+}
+
+.image-grid .image-container a img:hover {
+    filter: brightness(110%);
+    box-shadow: 0px 0px 0px 2px #000;
+    transform-origin: 50% 50%;
+    cursor: pointer;
+}
+
+.large {
+    object-fit: cover;
+    display: block;
+    width: 100%;
+    margin: 1rem auto 2rem auto;
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+}
+
+.featured-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.featured-img .image-link {
+    color: #000;
+    border-bottom: 2px solid transparent;
+}
+
+.featured-img .image-link:hover {
+    background: #CCC;
+    border-bottom: 2px solid #111;
+}
+
+.featured-img img {
+    background: #FFF;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1024px;
+    margin: 1rem auto 1rem auto;
+}
+.main-container {
+    margin: .5rem auto 2rem auto;
+}
+footer {
+    position: relative;
+    margin: 2rem auto 1rem auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    max-width: 1100px;
+    bottom: 0;
+}
+footer .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+}
+
+footer .footer-content .footer-info {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .footer-content p {
+    color: #000;
+    text-align: center;
+}
+
+footer .footer-content hr {
+    background: #000;
+    height: 2px;
+    width: 100%;
+}
+
+footer .footer-content .footer-info .speedlify-link {
+    text-decoration: none;
+}
+
+.four-oh-four {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 700px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    height: 100vh;
+    overflow: hidden;
+    background: #26292b;
+    color: #fff;
+}
+
+.four-oh-four ul li {
+    margin: .5rem 0;
+}
+
+.four-oh-four h1,
+.four-oh-four h2,
+.four-oh-four p {
+    color: #fff;
+}
+
+.four-oh-four a {
+    color: #19C2FA !important;
+    text-decoration: underline;
+    text-decoration-color: #19C2FA;
+}
+
+.four-oh-four a:hover {
+    text-decoration: none;
+}
+
+@media screen and (min-width: 975px) {
+    .featured-img img {
+        height: 650px;
+    }
+}
+
+@media screen and (max-width: 875px) {
+    footer .footer-content .footer-info.home {
+        flex-direction: column;
+    }
+    footer .footer-content .footer-info.featured {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .featured-img h1 {
+        margin: auto;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 565px) {
+    .page-banner h1 {
+        text-align: left;
+    }
+    .page-banner p {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    nav .nav-list li {
+        padding-left: 0;
+    }
+    .link {
+        padding-left: .5rem;
+        padding-right: .5rem;
+    }
+    .link.one {
+        padding-left: .3rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .page-banner h1 {
+        font-size: 3em;
+    }
+    footer .footer-content .footer-info.home {
+        justify-content: flex-start;
+        align-items: center;
+    }
+    footer .footer-content .footer-info.featured {
+        flex-direction: column;
+        justify-content: center;
+    }
+    footer .footer-content .footer-info .speedlify-link {
+        padding-left: 1rem;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    .main-container {
+        margin-top: 2rem;
+    }
+}
+
+/* Moto G4 width width=360px which Lighthouse runs audit on */
+@media screen and (max-width: 375px) {
+    header {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .page-banner h1 {
+        font-size: 2.5rem;
+    }
+    .featured-img h1 {
+        text-align: center;
+        margin: 0 auto 1em auto;
+    }
+    .image-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+        gap: 3px;
+    }
+    .image-grid .image-container {
+        height: 15rem;
+    }
+    .image-grid .image-container a img {
+        object-fit: cover;
+        height: 15rem;
+        width: 100%;
+    }
+    .featured-img {
+        margin: 0;
+        padding: 0;
+        align-items: center;
+    }
+    .featured-img p {
+        margin: auto;
+    }
+}
