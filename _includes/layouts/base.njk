@@ -23,6 +23,12 @@
         <style lang="css">
             {{ css | cssmin | safe }}
         </style>
+        {% set js %}
+            {% include "js/speedlify-score.js" %}
+        {% endset %}
+        <script>
+            {{ js | jsmin | safe }}
+        </script>
     </head>
     <body>
         <nav role="navigation">
@@ -84,6 +90,5 @@
             </section>
         </main>
         {% include "layouts/footer.njk" %}
-        <script src="/js/speedlify-score.js" type="text/javascript"></script>
     </body>
 </html>
