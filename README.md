@@ -67,6 +67,10 @@ npm run debug
     * `_data/site.json` - Some site data
     * `_data/speedlify.js` - Speedlify API data files (static API with cached speedlify instance generated JSON)
 
+### Inline Minified CSS & JS
+* CSS Minifier - [clean-css](https://github.com/jakubpawlowicz/clean-css)
+* JS Minifier - [terser](https://github.com/terser/terser)
+
 ### Project notes
 * `.eleventy.js` is currently configured to use manual passthrough file copy to include the following directories in the `_site` output. 
     * `/images/`
