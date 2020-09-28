@@ -17,12 +17,23 @@ img {
     max-width: 100%;
 }
 
+p {
+    line-height: 1.5;
+    font-family: var(--system-font);
+}
+
 a {
+    color: #333;
+    text-decoration: underline;
+    text-decoration-color: #333;
+}
+
+a:hover {
     text-decoration: none;
 }
 
-p {
-    line-height: 1.5;
+header a:hover {
+    text-decoration: underline;
 }
 
 h1, h2, h3, h4, p {
@@ -37,9 +48,10 @@ main .gallery {
 
 nav {
     margin: 0 auto 0 auto;
-    padding: 2rem;
+    padding: .75rem 2rem;
     max-width: 1100px;
 }
+
 nav header {
     display: flex;
 }
@@ -73,20 +85,6 @@ nav .nav-list li {
 nav .nav-list li .link {
     font-size: 20px;
     text-decoration: none;
-}
-
-a {
-    color: #333;
-    text-decoration: underline;
-    text-decoration-color: #333;
-}
-
-a:hover {
-    text-decoration: none;
-}
-
-header a:hover {
-    text-decoration: underline;
 }
 
 .center {
@@ -205,7 +203,7 @@ header a:hover {
     margin: 1rem auto 1rem auto;
 }
 .main-container {
-    margin: .5rem auto 2rem auto;
+    margin: 1.5rem auto 2rem auto;
 }
 footer {
     position: relative;
