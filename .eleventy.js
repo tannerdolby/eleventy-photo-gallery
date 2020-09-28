@@ -1,5 +1,6 @@
 const sharp = require("sharp");
 const fs = require("fs");
+const CleanCSS = require("clean-css");
 // const Image = require("@11ty/eleventy-img"); // future implementation (test code in log.txt)
 
 module.exports = (eleventyConfig) => {
@@ -16,6 +17,12 @@ module.exports = (eleventyConfig) => {
     eleventyConfig.addPassthroughCopy("css");
     eleventyConfig.addPassthroughCopy("js");
     eleventyConfig.addPassthroughCopy("favicon_data");
+
+    // Use css-clean CSS Minifier filter
+    eleventyConfig.addFilter("css-min", function(code) {
+        console.log(new CleanCSS({}).minify(code).stats);
+        return new CleanCSS({}).minify(code).styles;
+    });
 
     // Configure image in a template paired shortcode
     eleventyConfig.addPairedShortcode("image", (srcSet, src, alt, sizes="(min-width: 400px) 33.3vw, 100vw") => {
