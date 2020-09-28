@@ -19,7 +19,7 @@ module.exports = (eleventyConfig) => {
     eleventyConfig.addPassthroughCopy("favicon_data");
 
     // Use css-clean CSS Minifier filter
-    eleventyConfig.addFilter("css-min", function(code) {
+    eleventyConfig.addFilter("cssmin", function(code) {
         console.log(new CleanCSS({}).minify(code).stats);
         return new CleanCSS({}).minify(code).styles;
     });
