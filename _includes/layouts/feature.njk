@@ -11,6 +11,7 @@ permalink: "/{{ image.name | slug }}/"
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{ image.img_title }}</title>
     <meta name="theme-color" content="#fff">
     <meta name="background-color" content="#fff">
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon_data/apple-touch-icon.png">
@@ -22,9 +23,13 @@ permalink: "/{{ image.name | slug }}/"
         This seperate page contains more about the image itself, a link to where someone 
         can find it, author/creditor. Oh ya, I almost forgot! Make sure to replace my name 
         with yours when updating this meta description tag.">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" type="text/css" href="/css/speedlify-score.css">
-    <title>{{ image.img_title }}</title>
+    {% set css %}
+        {% include "css/style.css" %}
+        {% include "css/speedlify-score.css" %}
+    {% endset %}
+    <style lang="css">
+        {{ css | cssmin | safe }}
+    </style>
 </head>
 <body class="feature">
     <nav role="navigation">
@@ -70,17 +75,7 @@ permalink: "/{{ image.name | slug }}/"
             </div>
         </section>
     </main>
-    <footer>
-        <div class="footer-content">
-            <hr class="colorful-bar">
-            <div class="footer-info featured">
-                <p>{{ site.footer.created_by }}. Built with <a rel="noopener" href="https://www.11ty.dev/" target="_blank">11ty</a> and hosted on <a rel="noopener" href="https://www.netlify.com/" target="_blank">Netlify</a>.</p>
-                <a href="https://tdspeedlify.netlify.app/11ty-photo-gallery/" class="speedlify-link">
-                    <speedlify-score hash="{{ image.hash }}" speedlify-url="https://tdspeedlify.netlify.app" score weight requests></speedlify-score>
-                </a>
-            </div>
-        </div>
-    </footer>
+    {% include "layouts/footer.njk" %}
     <script src="/js/speedlify-score.js" type="text/javascript"></script>
 </body>
 </html>
