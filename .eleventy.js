@@ -20,7 +20,7 @@ module.exports = (eleventyConfig) => {
 
     // Use css-clean CSS Minifier filter
     eleventyConfig.addFilter("cssmin", function(code) {
-        console.log(new CleanCSS({}).minify(code).stats);
+        // console.log(new CleanCSS({}).minify(code).stats);
         return new CleanCSS({}).minify(code).styles;
     });
 
