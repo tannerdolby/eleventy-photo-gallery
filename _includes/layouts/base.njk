@@ -11,11 +11,7 @@
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon_data/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon_data/favicon-16x16.png">
         <link rel="manifest" href="/favicon_data/site.webmanifest">
-        <meta name="description" 
-            content="Welcome! This is currently a photo gallery template with images provided by Pexels. Built with 
-                the static site generator Eleventy. Replace my name with yours above if you've cloned the starter repository. 
-                Always make sure to have a meta description tag with content for each page to improve SEO. Feel free to update 
-                this description with any content of your choosing.">
+        <meta name="description" content="{{ site.page_metadata.home.content }}">
         {% set css %}
             {% include "css/style.css" %}
             {% include "css/speedlify-score.css" %}
