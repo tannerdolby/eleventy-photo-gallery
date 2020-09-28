@@ -1,7 +1,7 @@
 const sharp = require("sharp");
 const fs = require("fs");
 const CleanCSS = require("clean-css");
-// const Image = require("@11ty/eleventy-img"); // future implementation (test code in log.txt)
+const { minify } = require("terser");
 
 module.exports = (eleventyConfig) => {
    
@@ -18,10 +18,25 @@ module.exports = (eleventyConfig) => {
     eleventyConfig.addPassthroughCopy("js");
     eleventyConfig.addPassthroughCopy("favicon_data");
 
-    // Use css-clean CSS Minifier filter
+    // Create css-clean CSS Minifier filter
     eleventyConfig.addFilter("cssmin", function(code) {
         // console.log(new CleanCSS({}).minify(code).stats);
         return new CleanCSS({}).minify(code).styles;
+    });
+
+    // Create terser JS Minifier async filter (Nunjucks)
+    eleventyConfig.addNunjucksAsyncFilter("jsmin", async function (
+        code,
+        callback
+    )   {
+        try {
+            const minified = await minify(code);
+            callback(null, minified.code);
+        } catch (err) {
+            console.log(`Terser error: ${err}`);
+            // Fail gracefully
+            callback(null, code);
+        }
     });
 
     // Configure image in a template paired shortcode
@@ -63,7 +78,7 @@ module.exports = (eleventyConfig) => {
         };
         resizeImgLarge();
     }
-    // Comment out or remove the the function call once you've created all the resized images you need :)
+    // Comment out or remove the the function call once you've created all the resized images you need.
     // sharpImages("./images/wet-street.jpg"); 
     // Todo: create an array argument to pass mulitple images into instead of one by one (way too cumbersome)
     
