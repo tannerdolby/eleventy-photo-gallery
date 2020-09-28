@@ -245,6 +245,36 @@ footer .footer-content .footer-info .speedlify-link {
     text-decoration: none;
 }
 
+.four-oh-four {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 700px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    height: 100vh;
+    overflow: hidden;
+    background: #26292b;
+    color: #fff;
+}
+
+.four-oh-four ul li {
+    margin: .5rem 0;
+}
+
+.four-oh-four h1,
+.four-oh-four h2,
+.four-oh-four p {
+    color: #fff;
+}
+
+.four-oh-four a {
+    color: #19C2FA !important;
+}
+
 @media screen and (min-width: 975px) {
     .featured-img img {
         height: 650px;
