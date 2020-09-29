@@ -12,7 +12,7 @@ module.exports = (eleventyConfig) => {
 
     markdownTemplateEngine: "njk";
 
-    // manual passthrough file copy to include /images and /css in _site output
+    // Perform manual passthrough file copy to include directories in the build output _site
     eleventyConfig.addPassthroughCopy("images");
     eleventyConfig.addPassthroughCopy("css");
     eleventyConfig.addPassthroughCopy("js");
