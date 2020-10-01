@@ -87,22 +87,7 @@ nav .nav-list li .link {
     text-decoration: none;
 }
 
-.center {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 1rem;
-}
-
-.center a {
-    color: #000;
-    text-decoration: underline;
-}
-
-.center a:hover {
+.desc p a:hover {
     text-decoration: none;
 }
 
