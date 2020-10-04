@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,22 +21,21 @@
         </style>
     </head>
     <body>
-        <nav role="navigation">
-            <header>
-                <h1>
-                    <a rel="noopener" href="/">{{ site.home_button_text }}</a>
-                </h1>
+        <nav>
+            <header class="nav-header">
+                <a href="/">{{ site.home_button_text }}</a>
                 <ul class="nav-list">
                     <li><a class="link one" href="/">Home</a></li>
                     <li><a class="link" href="https://github.com/tannerdolby/eleventy-stock-gallery">Github</a></li>
                 </ul>
             </header>
         </nav>
-        <main role="main">
+        <main>
             <div class="page-banner">
                 {{ content | safe}}
             </div>
             <section class="gallery">
+                <h2 class="gallery-header">Featured Images</h2>
                 <div class="image-grid">
                     {% for image in gallery %}
                     <div class="image-container">
@@ -50,7 +49,7 @@
                                         {{ image.ng_small.src }} {{ image.ng_small.width }}w
                                         "
                                     sizes="
-                                        (min-width: 1100px) calc((1100px - 2 * 2rem - 2 * 3px) / 3),
+                                        (min-width: 1100px) calc(1100px - 2 * 2rem - 2 * 3px) / 3),
                                         (min-width: 934px) calc(100vw - 2 * 2rem - 2 * 3px) / 3),
                                         (min-width: 643px) calc(100vw - 2 * 2rem - 1 * 3px) / 2),
                                         calc(100vw - 2 * 2rem)
@@ -63,7 +62,7 @@
                                         {{ image.small.src }} {{ image.small.width }}w
                                         "
                                     sizes="
-                                        (min-width: 1100px) calc((1100px - 2 * 2rem - 2 * 3px) / 3),
+                                        (min-width: 1100px) calc(1100px - 2 * 2rem - 2 * 3px) / 3),
                                         (min-width: 934px) calc(100vw - 2 * 2rem - 2 * 3px) / 3),
                                         (min-width: 643px) calc(100vw - 2 * 2rem - 1 * 3px) / 2),
                                         calc(100vw - 2 * 2rem)

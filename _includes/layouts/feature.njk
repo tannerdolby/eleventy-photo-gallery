@@ -6,42 +6,40 @@ pagination:
 permalink: "/{{ image.name | slug }}/"
 ---
 <!DOCTYPE html>
-<html lang="en-US">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>{{ image.img_title }}</title>
-    <meta name="theme-color" content="#fff">
-    <meta name="background-color" content="#fff">
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicon_data/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon_data/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon_data/favicon-16x16.png">
-    <link rel="manifest" href="/favicon_data/site.webmanifest">
-    <meta name="description" 
-        content="{{ site.page_metadata.feature.content }}">
-    {% set css %}
-        {% include "css/style.css" %}
-        {% include "css/speedlify-score.css" %}
-    {% endset %}
-    <style lang="css">
-        {{ css | cssmin | safe }}
-    </style>
-</head>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>{{ image.img_title }}</title>
+        <meta name="theme-color" content="#fff">
+        <meta name="background-color" content="#fff">
+        <link rel="apple-touch-icon" sizes="180x180" href="/favicon_data/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon_data/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon_data/favicon-16x16.png">
+        <link rel="manifest" href="/favicon_data/site.webmanifest">
+        <meta name="description" content="{{ site.page_metadata.feature.content }}">
+        {% set css %}
+            {% include "css/style.css" %}
+            {% include "css/speedlify-score.css" %}
+        {% endset %}
+        <style lang="css">
+            {{ css | cssmin | safe }}
+        </style>
+    </head>
 <body class="feature">
-    <nav role="navigation">
-        <header>
-            <h1>
-                <a rel="noopener" href="/">{{ site.home_button_text }}</a>
-            </h1>
+    <nav>
+        <header class="nav-header">
+            <a href="/">{{ site.home_button_text }}</a>
             <ul class="nav-list">
                 <li><a class="link one" href="/">Home</a></li>
                 <li><a class="link" href="https://github.com/tannerdolby/eleventy-stock-gallery">Github</a></li>
             </ul>
         </header>
     </nav>
-    <main class="main-container" role="main">
+    <main class="main-container">
         <section class="featured-img">
+
             <div class="image-container">
                 <picture>
                     <source
