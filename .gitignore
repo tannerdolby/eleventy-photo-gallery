@@ -1,7 +1,6 @@
 _site
 node_modules
 .DS_store
-log.txt
 
 # Eleventy cached API results from speedlify json
 .cache
