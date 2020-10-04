@@ -46,17 +46,27 @@ main .gallery {
     margin-bottom: 2rem;
 }
 
+main .gallery-header {
+    max-width: 1100px;
+    padding: 0 2rem;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    font-size: 30px;
+}
+
 nav {
     margin: 0 auto 0 auto;
     padding: .75rem 2rem;
     max-width: 1100px;
 }
 
-nav header {
+nav .nav-header {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-nav header h1 {
+nav .nav-header a {
     font-size: 22px;
 }
 
@@ -68,12 +78,12 @@ nav .nav-list {
     list-style: none;
 }
 
-nav header h1 a {
+nav .nav-header a {
     text-decoration: none;
     padding-right: .5rem;
 }
 
-nav header .nav-list a:hover,
+nav .nav-header .nav-list a:hover,
 nav header a:hover {
     text-decoration: underline;
 }
@@ -296,32 +306,7 @@ footer .footer-content .footer-info .speedlify-link {
     }
 }
 
-@media screen and (max-width: 530px) {
-    header {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-    }
-    nav .nav-list li {
-        padding-left: 0;
-    }
-    .link {
-        padding-left: .5rem;
-        padding-right: .5rem;
-    }
-    .link.one {
-        padding-left: .3rem;
-    }
-}
-
 @media screen and (max-width: 450px) {
-    header {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-    }
     .page-banner h1 {
         font-size: 3em;
     }
@@ -346,12 +331,6 @@ footer .footer-content .footer-info .speedlify-link {
 
 /* Moto G4 width width=360px which Lighthouse runs audit on */
 @media screen and (max-width: 375px) {
-    header {
-        display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
-        flex-direction: column;
-    }
     .page-banner h1 {
         font-size: 2.5rem;
     }
