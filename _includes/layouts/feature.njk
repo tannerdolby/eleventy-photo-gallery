@@ -47,13 +47,13 @@ permalink: "/{{ image.name | slug }}/"
                         srcset="{{ image.ng_large.src }} {{ image.ng_large.width }}w, 
                                 {{ image.ng_med.src }} {{ image.ng_med.width }}w, 
                                 {{ image.ng_small.src }} {{ image.ng_small.width }}w"
-                        sizes="33.3vw, 50vw, 100vw"
+                        sizes="(min-width: 500px) 33.3vw, 100vw"
                     >
                     <img
                         srcset="{{ image.large.src }} {{ image.large.width }}w, 
                                 {{ image.med.src }} {{ image.med.width }}w, 
                                 {{ image.small.src }} {{ image.small.width }}w"
-                        sizes="33.3vw, 50vw, 100vw"
+                        sizes="(min-width: 500px) 33.3vw, 100vw"
                         src="{{ image.small.src }}"
                         alt="{{ image.alt }}"
                         loading="lazy"
