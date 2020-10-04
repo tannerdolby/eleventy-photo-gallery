@@ -60,17 +60,17 @@ nav {
     max-width: 1100px;
 }
 
-nav .nav-header {
+header .nav-main {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-nav .nav-header a {
+header .nav-main a {
     font-size: 22px;
 }
 
-nav .nav-list {
+header .nav-main .nav-list {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -78,13 +78,13 @@ nav .nav-list {
     list-style: none;
 }
 
-nav .nav-header a {
+header .nav-main a {
     text-decoration: none;
     padding-right: .5rem;
 }
 
-nav .nav-header .nav-list a:hover,
-nav header a:hover {
+header .nav-main .nav-list a:hover,
+header .nav-main a:hover {
     text-decoration: underline;
 }
 
