@@ -28,15 +28,15 @@ permalink: "/{{ image.name | slug }}/"
         </style>
     </head>
 <body class="feature">
-    <nav>
-        <header class="nav-header">
+    <header>
+        <nav class="nav-header">
             <a href="/">{{ site.home_button_text }}</a>
             <ul class="nav-list">
                 <li><a class="link one" href="/">Home</a></li>
                 <li><a class="link" href="https://github.com/tannerdolby/eleventy-stock-gallery">Github</a></li>
             </ul>
-        </header>
-    </nav>
+        </nav>
+    </header>
     <main class="main-container">
         <section class="featured-img">
 
@@ -44,19 +44,15 @@ permalink: "/{{ image.name | slug }}/"
                 <picture>
                     <source
                         type="image/webp"
-                        srcset="
-                            {{ image.ng_large.src }} {{ image.ng_large.width }}w, 
-                            {{ image.ng_med.src }} {{ image.ng_med.width }}w, 
-                            {{ image.ng_small.src }} {{ image.ng_small.width }}w
-                            "
+                        srcset="{{ image.ng_large.src }} {{ image.ng_large.width }}w, 
+                                {{ image.ng_med.src }} {{ image.ng_med.width }}w, 
+                                {{ image.ng_small.src }} {{ image.ng_small.width }}w"
                         sizes="33.3vw, 50vw, 100vw"
                     >
                     <img
-                        srcset="
-                            {{ image.large.src }} {{ image.large.width }}w, 
-                            {{ image.med.src }} {{ image.med.width }}w, 
-                            {{ image.small.src }} {{ image.small.width }}w
-                            "
+                        srcset="{{ image.large.src }} {{ image.large.width }}w, 
+                                {{ image.med.src }} {{ image.med.width }}w, 
+                                {{ image.small.src }} {{ image.small.width }}w"
                         sizes="33.3vw, 50vw, 100vw"
                         src="{{ image.small.src }}"
                         alt="{{ image.alt }}"
