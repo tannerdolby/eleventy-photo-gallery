@@ -76,13 +76,13 @@ All `.html` files have been validated using the [Nu HTML Checker](https://valida
 
 ### Project notes
 `.eleventy.js` is currently configured to use manual passthrough file copy to include the following directories in the `_site` output. 
-    * `/images/`
-    * `/css/`
-    * `/favicon_data/`
-    * `/js/` 
+
+* `/images/`
+* `/css/`
+* `/favicon_data/`
+* `/js/` 
 
 `/_includes/` houses the two layouts for this project.
 
-    * `_includes/layouts/base.njk`: home page template
-
-    * `_includes/layouts/feature.njk`: featured image page template
+* `_includes/layouts/base.njk`: home page template
+* `_includes/layouts/feature.njk`: featured image page template
