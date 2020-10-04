@@ -71,14 +71,17 @@ npm run debug
 * CSS Minifier - [clean-css](https://github.com/jakubpawlowicz/clean-css)
 * JS Minifier - [terser](https://github.com/terser/terser)
 
+### HTML Validator
+All `.html` files have been validated using the [Nu HTML Checker](https://validator.w3.org/).
+
 ### Project notes
-* `.eleventy.js` is currently configured to use manual passthrough file copy to include the following directories in the `_site` output. 
+`.eleventy.js` is currently configured to use manual passthrough file copy to include the following directories in the `_site` output. 
     * `/images/`
     * `/css/`
     * `/favicon_data/`
     * `/js/` 
 
-* `/_includes/` houses the two layouts for this project.
+`/_includes/` houses the two layouts for this project.
 
     * `_includes/layouts/base.njk`: home page template
 
