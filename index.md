@@ -1,5 +1,5 @@
 ---
-layout: ./layouts/base.njk
+layout: layouts/base.njk
 ---
 
 # {{ site.home_banner.content }}

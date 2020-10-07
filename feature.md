@@ -1,3 +1,3 @@
 ---
-layout: ./layouts/feature.njk
+layout: layouts/feature.njk
 ---
