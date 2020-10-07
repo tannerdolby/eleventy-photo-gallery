@@ -49,6 +49,8 @@ permalink: "/{{ image.name | slug }}/"
                             sizes="(min-width: 500px) 33.3vw, 100vw"
                         >
                         <img
+                            width="640"
+                            height="480"
                             srcset="{{ image.large.src }} {{ image.large.width }}w, 
                                     {{ image.med.src }} {{ image.med.width }}w, 
                                     {{ image.small.src }} {{ image.small.width }}w"
