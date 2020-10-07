@@ -193,10 +193,8 @@ nav .nav-list li .link {
 .featured-img img {
     background: #FFF;
     object-fit: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 1024px;
+    max-width: 100%;
+    height: auto;
     margin: 1rem auto 1rem auto;
 }
 .main-container {
@@ -274,12 +272,6 @@ footer .footer-content .footer-info .speedlify-link {
 
 .four-oh-four a:hover {
     text-decoration: none;
-}
-
-@media screen and (min-width: 975px) {
-    .featured-img img {
-        height: 650px;
-    }
 }
 
 @media screen and (max-width: 875px) {
