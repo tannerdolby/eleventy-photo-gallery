@@ -52,7 +52,7 @@ npm run build
 To build your _site and serve it locally
 
 ```
-npm run --serve
+npm run serve
 ```
 
 To run in debug mode
