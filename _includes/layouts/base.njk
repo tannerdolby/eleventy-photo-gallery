@@ -35,9 +35,9 @@
                 {{ content | safe}}
             </div>
             <div class="gallery">
-                <ul class="image-grid" style="list-style: none">
+                <div class="image-grid">
                     {% for image in gallery %}
-                    <li class="image-container">
+                    <div class="image-container">
                         <a href="/{{ image.name | slug}}/" aria-label="Gallery {{ image.name }}" rel="noopener">
                             <picture>
                                 <source
@@ -64,9 +64,9 @@
                                 >
                             </picture>
                         </a>
-                    </li>
+                    </div>
                     {% endfor %}
-                </ul>
+                </div>
             </div>
         </main>
         <footer>
