@@ -34,11 +34,10 @@
             <div class="page-banner">
                 {{ content | safe}}
             </div>
-            <section class="gallery">
-                <h2 style="margin-top: 3rem" class="gallery-header">Featured Images</h2>
-                <div class="image-grid">
+            <div class="gallery">
+                <ul class="image-grid" style="list-style: none">
                     {% for image in gallery %}
-                    <div class="image-container">
+                    <li class="image-container">
                         <a href="/{{ image.name | slug}}/" aria-label="Gallery {{ image.name }}" rel="noopener">
                             <picture>
                                 <source
@@ -65,10 +64,10 @@
                                 >
                             </picture>
                         </a>
-                    </div>
+                    </li>
                     {% endfor %}
-                </div>
-            </section>
+                </ul>
+            </div>
         </main>
         <footer>
             <div class="footer-content">
