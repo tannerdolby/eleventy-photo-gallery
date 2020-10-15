@@ -1,6 +1,6 @@
 :root {
     --system-font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    --link-text-accessible: #2540AD;
+    --link-blue-accessible: #2540AD;
 }
 
 * {
@@ -10,7 +10,7 @@
 body {
     margin: 0;
     padding: 0;
-    height: 100vh;
+    min-height: 100vh;
     background: #FFF;
 }
 
@@ -19,13 +19,26 @@ img {
 }
 
 p {
+    --min-size: .9rem;
+    --pref-size: 1rem;
+    --max-size: 1.125rem;
+    font-size: clamp(var(--min-size), var(--pref-size), var(--max-size));
     line-height: 1.5;
     font-family: var(--system-font);
 }
 
 a {
-    color: #333;
+    color: var(--link-blue-accessible);
     text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--link-blue-accessible);
+}
+
+.speedlify-link {
+    color: #212121;
 }
 
 .speedlify-link:hover {
@@ -37,9 +50,23 @@ a:hover,
     text-decoration: underline !important;
 }
 
-h1, h2, h3, h4, p {
+h1, h2, h3, h4 {
     font-family: var(--system-font);
-    color: #000;
+    color: #212121;
+}
+
+h1, .h1 {
+    --min-size: 2.75rem;
+    --pref-size: 8vw;
+    --max-size: 3.25rem;
+    font-size: clamp(var(--min-size), var(--pref-size), var(--max-size));
+}
+
+h2, .h2 {
+    --min-size: 1.5rem;
+    --pref-size: 5vw;
+    --max-size: 1.8rem;
+    font-size: clamp(var(--min-size), var(--pref-size), var(--max-size));
 }
 
 main .gallery {
@@ -49,7 +76,7 @@ main .gallery {
 
 main .gallery-header {
     max-width: 1100px;
-    padding: 0 2rem;
+    padding: 0 1.5rem;
     margin: 0 auto;
     margin-bottom: 2rem;
     font-size: 30px;
@@ -57,7 +84,7 @@ main .gallery-header {
 
 nav {
     margin: 0 auto 0 auto;
-    padding: .75rem 2rem;
+    padding: .75rem 1.5rem;
     max-width: 1100px;
 }
 
@@ -69,6 +96,7 @@ header .nav-main {
 
 header .nav-main a {
     font-size: 22px;
+    color: #212121;
 }
 
 header .nav-main .nav-list {
@@ -90,7 +118,7 @@ header .nav-main a:hover {
 }
 
 nav .nav-list li {
-    padding-left: 2rem;
+    padding-right: 1rem;
 }
 
 nav .nav-list li .link {
@@ -109,19 +137,27 @@ nav .nav-list li .link {
     align-items: flex-start;
     margin: 0 auto 1em auto;
     max-width: 1100px;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    color: #000;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    color: #212141;
 }
 
 .page-banner h1 {
-    font-size: 3.5em;
     margin-bottom: .75rem;
 }
 
+.about-me-content {
+    max-width: 80ch;
+    margin: 2rem auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
 .page-banner p {
-    text-align: left;
-    font-size: 1.5em;
+    --min-size: 1rem;
+    --pref-size: 3vw;
+    --max-size: 1.4rem;
+    font-size: clamp(var(--min-size), var(--pref-size), var(--max-size));
 }
 
 .image-grid {
@@ -129,12 +165,9 @@ nav .nav-list li .link {
     grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
     gap: 3px;
     max-width: 1100px;
-    margin-top: 1rem;
-    margin-left: auto;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    margin-right: auto;
-    margin-bottom: 3rem;
+    margin: 1rem auto 3rem auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
 }
 
 .image-grid .image-container {
@@ -181,7 +214,7 @@ nav .nav-list li .link {
 }
 
 .featured-img .image-link {
-    color: #000;
+    color: var(--link-blue-accessible);
     border-bottom: 2px solid transparent;
 }
 
@@ -197,14 +230,16 @@ nav .nav-list li .link {
     height: auto;
     margin: 1rem auto 1rem auto;
 }
+
 .main-container {
-    margin: 1.5rem auto 2rem auto;
+    margin: 3rem auto 2rem auto;
 }
+
 footer {
     position: relative;
     margin: 2rem auto 1rem auto;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
     max-width: 1100px;
     bottom: 0;
 }
@@ -238,6 +273,18 @@ footer .footer-content .footer-info .speedlify-link {
     text-decoration: none;
 }
 
+footer .social-links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    padding-left: .5rem;
+}
+
+footer .social-links li {
+    padding-right: .75rem;
+}
+
 .four-oh-four {
     display: flex;
     flex-direction: column;
@@ -246,8 +293,8 @@ footer .footer-content .footer-info .speedlify-link {
     margin: 0 auto;
     width: 100%;
     max-width: 700px;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
     height: 100vh;
     overflow: hidden;
     background: #26292b;
@@ -284,13 +331,6 @@ footer .footer-content .footer-info .speedlify-link {
     }
 }
 
-@media screen and (max-width: 750px) {
-    .featured-img h1 {
-        margin: auto;
-        text-align: center;
-    }
-}
-
 @media screen and (max-width: 565px) {
     .page-banner h1 {
         text-align: left;
@@ -314,6 +354,15 @@ footer .footer-content .footer-info .speedlify-link {
     }
     footer .footer-content .footer-info .speedlify-link {
         padding-left: 1rem;
+    }
+    header .nav-main {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-top: 2rem;
+    }
+    header .nav-main .nav-list {
+        margin-top: 2rem;
     }
 }
 

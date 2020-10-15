@@ -18,7 +18,7 @@ permalink: "/{{ image.name | slug }}/"
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon_data/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon_data/favicon-16x16.png">
         <link rel="manifest" href="/favicon_data/site.webmanifest">
-        <meta name="description" content="{{ site.page_metadata.feature.content }}">
+        <meta name="description" content="{{ site.pageMetadata.feature.content }}">
         {% set css %}
             {% include "css/style.css" %}
             {% include "css/speedlify-score.css" %}
@@ -30,15 +30,15 @@ permalink: "/{{ image.name | slug }}/"
     <body class="feature">
         <header>
             <nav class="nav-main">
-                <a href="/">{{ site.home_button_text }}</a>
+                <a href="/">{{ firstName }}'s Gallery</a>
                 <ul class="nav-list">
-                    <li><a class="link one" href="/">Home</a></li>
+                    <li><a class="link one" href="/about/">About</a></li>
                     <li><a class="link" href="https://github.com/tannerdolby/eleventy-stock-gallery">Github</a></li>
                 </ul>
             </nav>
         </header>
         <main class="main-container">
-            <section class="featured-img">
+            <div class="featured-img" style="text-align: center">
                 <div class="image-container">
                     <picture>
                         <source
@@ -60,18 +60,18 @@ permalink: "/{{ image.name | slug }}/"
                             loading="lazy"
                         >
                     </picture>
-                    <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; margin-left: auto; margin-right: auto; padding: 1rem;" class="desc">
-                        <h1>{{ image.img_title }}</h1>
-                        <p>{{ image.img_credit }} from <a class="credit" style="text-decoration: none; color: var(--link-text-accessible);" href="{{ image.img_public_url }}">Pexels</a></p>
+                    <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; margin-left: auto; margin-right: auto;" class="desc">
+                        <h1 class="h2" style="margin-bottom: .4rem;">{{ image.img_title }}</h1>
+                        <p>{{ image.img_credit }} from <a class="credit" href="{{ image.img_public_url }}">Pexels</a></p>
                     </div>
                 </div>
-            </section>
+            </div>
         </main>
         <footer>
             <div class="footer-content">
                 <hr class="colorful-bar">
                 <div class="footer-info home">
-                    <p>{{ site.footer.created_by }}. Built with <a href="https://www.11ty.dev/">11ty</a> and hosted on <a href="https://www.netlify.com/">Netlify</a>.</p>
+                    <p>&copy; 2020 {{ firstName }} {{ lastName }}. Built with <a href="https://www.11ty.dev/">11ty</a> and hosted on <a href="https://www.netlify.com/">Netlify</a></p>
                     <a aria-label="Speedlify scores" href="https://tdspeedlify.netlify.app/" class="speedlify-link">
                         <speedlify-score hash="{{ image.hash }}" speedlify-url="https://tdspeedlify.netlify.app/" score weight requests></speedlify-score>
                     </a>

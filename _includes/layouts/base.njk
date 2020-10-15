@@ -11,7 +11,7 @@
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon_data/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon_data/favicon-16x16.png">
         <link rel="manifest" href="/favicon_data/site.webmanifest">
-        <meta name="description" content="{{ site.page_metadata.home.content }}">
+        <meta name="description" content="{{ site.pageMetadata.home.content }}">
         {% set css %}
             {% include "css/style.css" %}
             {% include "css/speedlify-score.css" %}
@@ -23,14 +23,14 @@
     <body>
         <header>
             <nav class="nav-main">
-                <a href="/">{{ site.home_button_text }}</a>
+                <a href="/">{{ firstName }}'s Gallery</a>
                 <ul class="nav-list">
-                    <li><a class="link one" href="/">Home</a></li>
+                    <li><a class="link" href="/about/">About</a></li>
                     <li><a class="link" href="https://github.com/tannerdolby/eleventy-stock-gallery">Github</a></li>
                 </ul>
             </nav>
         </header>
-        <main>
+        <main style="margin-top: 1.5rem;">
             <div class="page-banner">
                 {{ content | safe}}
             </div>
@@ -73,9 +73,9 @@
         </main>
         <footer>
             <div class="footer-content">
-                <hr class="colorful-bar">
+                <hr>
                 <div class="footer-info home">
-                    <p>{{ site.footer.created_by }}. Built with <a href="https://www.11ty.dev/">11ty</a> and hosted on <a href="https://www.netlify.com/">Netlify</a>.</p>
+                    <p>&copy; 2020 {{ firstName }} {{ lastName }}. Built with <a href="https://www.11ty.dev/">11ty</a> and hosted on <a href="https://www.netlify.com/">Netlify</a></p>
                     <a aria-label="Speedlify scores" href="https://tdspeedlify.netlify.app/" class="speedlify-link">
                         <speedlify-score hash="bc2c2d1a" speedlify-url="https://tdspeedlify.netlify.app/" score weight requests></speedlify-score>
                     </a>

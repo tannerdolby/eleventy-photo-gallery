@@ -3,6 +3,10 @@ speedlify-score {
 	flex-wrap: wrap;
 	align-items: center;
 }
+
+.speedlify-score a {
+	color: #212121;
+}
 /* The Lighthouse scoring circles */
 .speedlify-score {
 	font-size: 0.8125em; /* 13px /16 */
