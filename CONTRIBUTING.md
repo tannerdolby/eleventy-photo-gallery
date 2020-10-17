@@ -1,6 +1,6 @@
 # Contributing
 
-I welcome any and all community contributions to this project. Feel free to open an issue or submit a PR for any features or modifications you'd like to see the project have. If you need more info about a feature or clarification about anything, feel free to open an issue with the `education` label. 
+I welcome any and all community contributions to this project. Feel free to open an issue or submit a PR for any features or modifications you'd like to see the project have. If you need more info about a feature or want to discuss things, feel free to open an issue with the `education` label. 
 
 ## Setup
 
