@@ -11,6 +11,12 @@ A starter site for creating your own photo or art gallery using the [Eleventy](h
 - Featured image page
 - About me page
 
+## Contributing 🧡
+Feel free to contribute to this project by suggesting a new feature or wish to discuss anything. I built this for others to use, so let me know what you'd like to see added/modified.  
+
+- See a problem or have a suggestion? Open an [issue](https://github.com/tannerdolby/11ty-photo-gallery)
+- Take a look at [CONTRIBUTING.md](https://github.com/tannerdolby/11ty-photo-gallery/blob/master/CONTRIBUTING.md)
+
 ## Getting started
 
 ### 1. Clone this Repository
@@ -31,7 +37,7 @@ npm install
 ### 4. Add your own photos or skip to step 5! 
 Edit `_data/gallery.json` to include the appropiate image metadata for new images added. See [CONTRIBUTING.md](https://github.com/tannerdolby/11ty-photo-gallery/blob/master/CONTRIBUTING.md) for more on customizing your own photo/art gallery.
 
-## 5. Run Eleventy! 
+### 5. Run Eleventy! 
 To build your _site output
 
 ```
@@ -43,12 +49,6 @@ To build your _site and serve it locally
 ```
 npm run serve
 ```
-
-## Contributing 🧡
-Feel free to contribute to this project by suggesting a new feature or wish to discuss anything. I built this for others to use, so let me know what you'd like to see added/modified.  
-
-- See a problem or have a suggestion? Open an [issue](https://github.com/tannerdolby/11ty-photo-gallery)
-- Take a look at [CONTRIBUTING.md](https://github.com/tannerdolby/11ty-photo-gallery/blob/master/CONTRIBUTING.md)
 
 ### Sources of Data
 * Global Data Files: 
