@@ -2,7 +2,7 @@
 A starter site for creating your own art or photo gallery using the [Eleventy](https://github.com/11ty/eleventy) static site generator.
 
 ### Live Demo
-* [Netlify demo](https://11tygallery.netlify.app/) - live template gallery
+* [Live demo](https://11tygallery.netlify.app/) - View the project live
 * [Deploy on Netlify](https://app.netlify.com/) - host your own custom gallery
 
 ## Features 🌟
@@ -45,7 +45,6 @@ npm run serve
 ```
 
 ## Contributing 🧡
-
 Feel free to contribute to this project by suggesting a new feature or wish to discuss anything. I built this for others to use, so let me know what you'd like to see added/modified.  
 
 - See a problem or have a suggestion? Open an [issue](https://github.com/tannerdolby/11ty-photo-gallery)
@@ -67,14 +66,16 @@ All `.html` files have been validated using the [Nu HTML Checker](https://valida
 
 ### Project notes
 The eleventy configuration file, `.eleventy.js` is currently configured to use manual passthrough file copy to include the following directories in the `_site` output. 
-    - `/images/`
-    - `/css/`
-    - `/favicon_data/`
-    - `/js/` 
+
+- `/images/`
+- `/css/`
+- `/favicon_data/`
+- `/js/` 
 
 The `/_includes/` directory houses the two layouts for this project.
-    - `_includes/layouts/base.njk`: home page template
-    -`_includes/layouts/feature.njk`: featured image page template
+
+- `_includes/layouts/base.njk`: home page template
+- `_includes/layouts/feature.njk`: featured image page template
 
 ## Maintainer
 [@tannerdolby](https://github.com/tannerdolby)
