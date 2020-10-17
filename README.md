@@ -12,7 +12,7 @@ A starter site for creating your own photo or art gallery using the [Eleventy](h
 - About me page
 
 ## Contributing 🧡
-Feel free to contribute to this project by suggesting a new feature or wish to discuss anything. I built this for others to use, so let me know what you'd like to see added/modified.  
+Feel free to contribute to this project by suggesting a new feature or modification. I built this template for others to use, so let me know what you'd like to see added/modified. 
 
 - See a problem or have a suggestion? Open an [issue](https://github.com/tannerdolby/11ty-photo-gallery)
 - Take a look at [CONTRIBUTING.md](https://github.com/tannerdolby/11ty-photo-gallery/blob/master/CONTRIBUTING.md)
