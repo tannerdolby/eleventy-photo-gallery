@@ -1,7 +1,8 @@
-# 11ty-stock-gallery
+# 11ty-photo-gallery
+
 A starter site for creating your own art or photo gallery using the [Eleventy](https://github.com/11ty/eleventy) static site generator.
 
-### Live Demo
+### Live demo
 * [Live demo](https://11tygallery.netlify.app/) - View the project live
 * [Deploy on Netlify](https://app.netlify.com/) - host your own custom gallery
 
@@ -50,7 +51,7 @@ Feel free to contribute to this project by suggesting a new feature or wish to d
 - See a problem or have a suggestion? Open an [issue](https://github.com/tannerdolby/11ty-photo-gallery)
 - Take a look at [CONTRIBUTING.md](https://github.com/tannerdolby/11ty-photo-gallery/blob/master/CONTRIBUTING.md)
 
-### Sources of data
+### Sources of Data
 * Global Data Files: 
     * `_data/gallery.json` - Holds all image metadata
     * `_data/site.json` - Some site data
@@ -64,7 +65,7 @@ Feel free to contribute to this project by suggesting a new feature or wish to d
 ### HTML Validator
 All `.html` files have been validated using the [Nu HTML Checker](https://validator.w3.org/).
 
-### Project notes
+### Notes
 The eleventy configuration file, `.eleventy.js` is currently configured to use manual passthrough file copy to include the following directories in the `_site` output. 
 
 - `/images/`
