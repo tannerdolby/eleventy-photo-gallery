@@ -1,19 +1,26 @@
-# eleventy-stock-gallery
-A starter repository intended to help you build a photo gallery website using the [Eleventy](https://github.com/11ty/eleventy) static site generator.
+# 11ty-stock-gallery
+A starter site for creating your own art or photo gallery using the [Eleventy](https://github.com/11ty/eleventy) static site generator.
 
 ### Live Demo
 * [Netlify demo](https://11tygallery.netlify.app/) - live template gallery
 * [Deploy on Netlify](https://app.netlify.com/) - host your own custom gallery
 
+## Features 🌟
+- Responsive and optimized images using `<picture>`
+- Home page with CSS Grid representing gallery of images
+- Featured image page
+- About me page
+
 ## Getting started
+
 ### 1. Clone this Repository
 ```
-git clone https://github.com/tannerdolby/eleventy-stock-gallery.git
+git clone https://github.com/tannerdolby/11ty-photo-gallery.git
 ```
 
 ### 2. Navigate to project folder
 ```
-cd eleventy-stock-gallery
+cd 11ty-photo-gallery
 ``` 
 
 ### 3. Install dependencies
@@ -22,25 +29,7 @@ npm install
 ```
 
 ### 4. Add your own photos or skip to step 5! 
-Edit `_data/gallery.json` to include the appropiate image metadata for new images added. 
-
-#### Serving responsive images
-Use the `sharpImages` function inside `.eleventy.js` to create three resized versions of the original image.
-
-```
-sharpImages("./images/road-fog.jpg");
-```
-
-``` 
-# Output to /images/ directory
-road-fog-large.jpg
-road-fog-med.jpg
-road-fog-small.jpg
-```
-
-#### More options for image optimization
-* [Squoosh](https://squoosh.app/) - Make images smaller using best-in-class codecs, right in the browser.
-* [eleventy-img](https://github.com/11ty/eleventy-img) - Utility to perform build-time image transformations.
+Edit `_data/gallery.json` to include the appropiate image metadata for new images added. See [CONTRIBUTING.md](https://github.com/tannerdolby/11ty-photo-gallery/blob/master/CONTRIBUTING.md) for more on customizing your own photo/art gallery.
 
 ## 5. Run Eleventy! 
 To build your _site output
@@ -55,11 +44,12 @@ To build your _site and serve it locally
 npm run serve
 ```
 
-To run in debug mode
+## Contributing 🧡
 
-```
-npm run debug
-```
+Feel free to contribute to this project by suggesting a new feature or wish to discuss anything. I built this for others to use, so let me know what you'd like to see added/modified.  
+
+- See a problem or have a suggestion? Open an [issue](https://github.com/tannerdolby/11ty-photo-gallery)
+- Take a look at [CONTRIBUTING.md](https://github.com/tannerdolby/11ty-photo-gallery/blob/master/CONTRIBUTING.md)
 
 ### Sources of data
 * Global Data Files: 
@@ -76,12 +66,15 @@ npm run debug
 All `.html` files have been validated using the [Nu HTML Checker](https://validator.w3.org/).
 
 ### Project notes
-- `.eleventy.js` is currently configured to use manual passthrough file copy to include the following directories in the `_site` output. 
+The eleventy configuration file, `.eleventy.js` is currently configured to use manual passthrough file copy to include the following directories in the `_site` output. 
     - `/images/`
     - `/css/`
     - `/favicon_data/`
     - `/js/` 
 
-- `/_includes/` houses the two layouts for this project.
+The `/_includes/` directory houses the two layouts for this project.
     - `_includes/layouts/base.njk`: home page template
     -`_includes/layouts/feature.njk`: featured image page template
+
+## Maintainer
+[@tannerdolby](https://github.com/tannerdolby)
