@@ -1,6 +1,6 @@
 # 11ty-photo-gallery
 
-A starter site for creating your own art or photo gallery using the [Eleventy](https://github.com/11ty/eleventy) static site generator.
+A starter site for creating your own photo or art gallery using the [Eleventy](https://github.com/11ty/eleventy) static site generator.
 
 * [Live demo](https://11tygallery.netlify.app/) - View the project live
 * [Deploy on Netlify](https://app.netlify.com/) - host your own custom gallery
