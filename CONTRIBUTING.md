@@ -1,4 +1,5 @@
-# Contributing to eleventy-stock-gallery
+# Contributing to 11ty-photo-gallery
+
 I welcome any and all community contributions to this project. Feel free to open an issue or submit a PR for the addition of a new feature/modification.
 
 ## Setup
