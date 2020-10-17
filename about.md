@@ -16,5 +16,4 @@ Hi, I'm {{ firstName }}. I'm a novice photography who is trying to make my work 
 
 - [LinkedIn]({{ site.socials.linkedin }})
 
-## Note
 This is mock text, write whatever you'd like for the about me page. Maybe add a picture or some of your recent work!
