@@ -73,3 +73,30 @@ git push <branch> <remote>
 
 ## Closing Remarks
 Thank you for all of your help and contributions! 🚀
+
+## Notes
+The eleventy configuration file, `.eleventy.js` is currently configured to use manual passthrough file copy to include the following directories in the `_site` output. 
+
+- `/images/`
+- `/css/`
+- `/favicon_data/`
+- `/js/` 
+
+The `/_includes/` directory houses the two layouts for this project.
+
+- `_includes/layouts/base.njk`: home page template
+- `_includes/layouts/feature.njk`: featured image page template
+
+### Sources of Data
+* Global Data Files: 
+    * `_data/gallery.json` - Holds all image metadata
+    * `_data/site.json` - Some site data
+    * `_data/speedlify.js` - Speedlify API data files (static API with cached speedlify instance generated JSON)
+
+### Inline Minified CSS & JS
+- Packages used:
+    - CSS Minifier - [clean-css](https://github.com/jakubpawlowicz/clean-css)
+    - JS Minifier - [terser](https://github.com/terser/terser)
+
+### HTML Validator
+All `.html` files have been validated using the [Nu HTML Checker](https://validator.w3.org/).
