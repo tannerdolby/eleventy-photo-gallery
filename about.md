@@ -15,5 +15,8 @@ This is mock text, write whatever you'd like for the about me page. Maybe add a 
 
 ## Contact
 
-- [Twitter]({{ site.socials.twitter }})
-- [LinkedIn]({{ site.socials.linkedin }})
+<ul class="about-socials">
+    <li><a href="{{ site.socials.dribbble }}">Dribbble</a></li>
+    <li><a href="{{ site.socials.twitter }}">Twitter</a></li>
+    <li><a href="{{ site.socials.linkedin }}">LinkedIn</a></li>
+</ul>
