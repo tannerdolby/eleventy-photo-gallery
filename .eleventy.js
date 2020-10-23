@@ -49,7 +49,8 @@ module.exports = (eleventyConfig) => {
         return `<a class="${cls}" href="${href}" rel="${rel}" target="${target}">${btnTxt}</a>`;
     });
 
-    // Use the sharpImages function to create 3 resized sharp versions of a specified image file.
+    // Use https://squoosh.app/ for resizing images with more options
+    // sharpImages function creates 3 resized sharp versions of a specified image file
     function sharpImages(fileName) {
         let resizeImgSmall = () => {
             let shortName = fileName.slice(0, fileName.length - 4);
@@ -78,8 +79,15 @@ module.exports = (eleventyConfig) => {
         };
         resizeImgLarge();
     }
-    // Comment out or remove the the function call once you've created all the resized images you need.
-    // sharpImages("./images/wet-street.jpg"); 
-    // Todo: create an array argument to pass mulitple images into instead of one by one (way too cumbersome)
     
+    return {
+        dir: {
+            input: ".",
+            output: "_site",
+            layouts: "_includes/layouts",
+            includes: "_includes",
+        },
+        templateFormats: ["md", "liquid", "njk"],
+        passthroughFileCopy: true
+    }
 };
