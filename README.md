@@ -18,7 +18,7 @@ A starter site for creating your own photo or art gallery using the [Eleventy](h
 4. Build: `npm run build`
 5. Serve locally: `npm run serve`
 
-### Customize Photo Gallery
+## Customize Photo Gallery
 Edit `_data/gallery.json` to include the appropiate image metadata. See [CONTRIBUTING.md](https://github.com/tannerdolby/eleventy-photo-gallery/blob/master/CONTRIBUTING.md) for more on customizing your own photo/art gallery.
 
 ## Contributing 
