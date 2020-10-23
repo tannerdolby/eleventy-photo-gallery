@@ -1,21 +1,19 @@
 ---
-title: About - Your name
-heading: About Me
-firstName: Tanner
-lastName: Dolby
-email: dolb.tanner@gmail.com
+title: About
+firstName: John
+lastName: Smith
+email: foo.bar@gmail.com
 permalink: "/about/"
-layout: "layouts/about.njk"
+layout: about.njk
 ---
 
-# {{ heading }}
+# {{ title }}
 
-Hi, I'm {{ firstName }}. I'm a novice photography who is trying to make my work visible to a larger audience. This website acts as a compendium of images I've taken over the years. If you'd like to learn more about me, try [sending me an email](mailto:{{ email }}). 
+Hi, I'm {{ firstName }} {{ lastName}}. I'm a novice photography and designer. This website acts as a compendium of images I've taken over the years. If you'd like to learn more about me, try [sending me an email](mailto:{{ email }}). 
 
 This is mock text, write whatever you'd like for the about me page. Maybe add a picture or some of your recent work!
 
 ## Contact
 
 - [Twitter]({{ site.socials.twitter }})
-
 - [LinkedIn]({{ site.socials.linkedin }})
