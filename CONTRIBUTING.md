@@ -1,4 +1,4 @@
-# Contributing Eleventy Photo Gallery
+# Contributing
 
 I welcome any and all community contributions to this project. Feel free to open an issue or submit a PR. I'd love to hear about any features or modifications you think the project should have. If you need more info about a feature or want to discuss things, feel free to open an issue with the `education` label. 
 
