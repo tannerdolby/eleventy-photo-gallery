@@ -48,15 +48,11 @@ I welcome any and all community contributions to this project. Feel free to open
 
 ## Submitting changes
 
-1. Create a new branch or simply push from `master`.
-```
-git checkout -b <branch>
-```
-2. Commit your file changes and push
-```
-git push <branch> <remote>
-```
-3. Open a PR and wait for changes to be reviewed.
+1. Create a new branch or simply push from `master`: `git checkout -b <branch>`
+2. Add changes to staging area: `git add <filename>` or to add everything thats been changed `git add .`
+3. Commit changes: `git commit -m "Commit message"`
+4. Push changes: `git push -u origin master` 
+5. Open a PR and wait for changes to be reviewed.
 
 ## Closing Remarks
 Thank you for all of your help and contributions! 🚀
