@@ -370,9 +370,6 @@ footer .social-links li {
 
 /* Moto G4 width width=360px which Lighthouse runs audit on */
 @media screen and (max-width: 375px) {
-    .page-banner h1 {
-        font-size: 2.5rem;
-    }
     .featured-img h1 {
         text-align: center;
         margin: 0 auto 1em auto;
@@ -394,8 +391,5 @@ footer .social-links li {
         margin: 0;
         padding: 0;
         align-items: center;
-    }
-    .featured-img p {
-        margin: auto;
     }
 }
