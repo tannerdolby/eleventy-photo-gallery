@@ -12,7 +12,7 @@ A starter site for creating your own photo or art gallery using the [Eleventy](h
 - About me page
 
 ## Getting Started
-1. Clone this repo: `git clone https://github.com/tannerdolby/eleventy-gallery.git`
+1. Clone this repo: `git clone https://github.com/tannerdolby/eleventy-photo-gallery.git`
 2. Navigate to your local copy of the project: `cd eleventy-gallery`
 3. Install dependencies: `npm install`
 4. Build: `npm run build`
