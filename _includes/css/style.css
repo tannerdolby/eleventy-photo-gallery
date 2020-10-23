@@ -150,6 +150,10 @@ nav .nav-list li .link {
     margin-bottom: .75rem;
 }
 
+.about-socials li {
+    margin: .75rem auto;
+}
+
 .about-me-content {
     max-width: 80ch;
     margin: 2rem auto;
@@ -252,6 +256,7 @@ footer .footer-content .footer-info .footer-links {
     justify-content: space-evenly;
     align-items: center;
     margin-top: .5rem;
+    font-size: clamp(1rem, 3vw, 1.1rem);
 }
 
 footer .footer-content .footer-info .footer-links .footer-link {
