@@ -4,22 +4,13 @@ I welcome any and all community contributions to this project. Feel free to open
 
 ## Setup
 
-### 1. Clone this Repository
-```
-git clone https://github.com/tannerdolby/eleventy-photo-gallery.git
-```
+1. Clone this Repository: `git clone https://github.com/tannerdolby/eleventy-photo-gallery.git`
 
-### 2. Navigate to project folder
-```
-cd eleventy-photo-gallery
-``` 
+2. Navigate to project folder: `cd eleventy-photo-gallery`
 
-### 3. Install dependencies
-```
-npm install
-```
+3. Install dependencies: `npm install`
 
-### 4. Add your own photos or skip to step 5! 
+4. Add your own photos or skip to step 5! 
 Edit `_data/gallery.json` to include the appropiate image metadata for new images added. 
 
 ```json
@@ -52,23 +43,9 @@ Edit `_data/gallery.json` to include the appropiate image metadata for new image
 ```
 
 ## 5. Run Eleventy! 
-Build
-
-```
-npm run build
-```
-
-Serve locally
-
-```
-npm run serve
-```
-
-To run in debug mode
-
-```
-npm run debug
-```
+- Build: `npm run build`
+- Serve locally: `npm run serve`
+- Debug: `npm run debug`
 
 ## Submitting changes
 
