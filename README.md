@@ -24,8 +24,8 @@ Edit `_data/gallery.json` to include the appropiate image metadata. See [CONTRIB
 ## Contributing 
 Feel free to contribute to this project by suggesting a new feature or modification. I built this template for others to use, so let me know what you'd like to see added/modified. 
 
-- Take a look at [CONTRIBUTING.md](https://github.com/tannerdolby/11ty-photo-gallery/blob/master/CONTRIBUTING.md)
 - Open an [issue](https://github.com/tannerdolby/11ty-photo-gallery/issues) for any features/modifications you'd like to see! 
+- Have a look at the [contributing guidelines](https://github.com/tannerdolby/11ty-photo-gallery/blob/master/CONTRIBUTING.md) before submitting a PR!
 
 ## Maintainer
 [@tannerdolby](https://github.com/tannerdolby)
