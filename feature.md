@@ -1,8 +1,3 @@
 ---
-layout: layouts/feature.njk
-tags: 
-    - photo
-firstName: Tanner
-lastName: Dolby
-
+layout: feature.njk
 ---
