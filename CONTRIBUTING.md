@@ -1,17 +1,17 @@
-# Contributing
+# Contributing Eleventy Photo Gallery
 
-I welcome any and all community contributions to this project. Feel free to open an issue or submit a PR for any features or modifications you'd like to see the project have. If you need more info about a feature or want to discuss things, feel free to open an issue with the `education` label. 
+I welcome any and all community contributions to this project. Feel free to open an issue or submit a PR. I'd love to hear about any features or modifications you think the project should have. If you need more info about a feature or want to discuss things, feel free to open an issue with the `education` label. 
 
 ## Setup
 
 ### 1. Clone this Repository
 ```
-git clone https://github.com/tannerdolby/11ty-photo-gallery.git
+git clone https://github.com/tannerdolby/eleventy-photo-gallery.git
 ```
 
 ### 2. Navigate to project folder
 ```
-cd 11ty-photo-gallery
+cd eleventy-photo-gallery
 ``` 
 
 ### 3. Install dependencies
@@ -22,32 +22,43 @@ npm install
 ### 4. Add your own photos or skip to step 5! 
 Edit `_data/gallery.json` to include the appropiate image metadata for new images added. 
 
-#### Serving responsive images
-Use the `sharpImages` function inside `.eleventy.js` to create three resized versions of the original image.
-
+```json
+[
+    {
+        "title": "Terrace with green plants on night street",
+        "date": "October 20, 2020",
+        "credit": "Photo by Aldiyar Seitkassymov",
+        "linkToAuthor": "https://www.pexels.com/photo/terrace-with-green-plants-on-night-street-3100835/",
+        "imageData": {
+            "alt": "Terrace outside shop window with green plants and pink tree on night street",
+            "large": {
+                "webp": "/images/shop-plants-large.webp",
+                "jpg": "/images/shop-plants-large.jpg",
+                "width": "1024w"
+            },
+            "medium": {
+                "webp": "/images/shop-plants-med.webp",
+                "jpg": "/images/shop-plants-med.jpg",
+                "width": "640w"
+            },
+            "small": {
+                "webp": "/images/shop-plants-small.webp",
+                "jpg": "/images/shop-plants-small.jpg",
+                "width": "320w"
+            }
+        }
+    }
+]
 ```
-sharpImages("./images/road-fog.jpg");
-```
-
-``` 
-# Output to /images/ directory
-road-fog-large.jpg
-road-fog-med.jpg
-road-fog-small.jpg
-```
-
-#### More options for image optimization
-* [Squoosh](https://squoosh.app/) - Make images smaller using best-in-class codecs, right in the browser.
-* [eleventy-img](https://github.com/11ty/eleventy-img) - Utility to perform build-time image transformations.
 
 ## 5. Run Eleventy! 
-To build your _site output
+Build
 
 ```
 npm run build
 ```
 
-To build your _site and serve it locally
+Serve locally
 
 ```
 npm run serve
@@ -74,7 +85,7 @@ git push <branch> <remote>
 ## Closing Remarks
 Thank you for all of your help and contributions! 🚀
 
-## Notes
+### Notes (Not necessary to read in order to contribute)
 The eleventy configuration file, `.eleventy.js` is currently configured to use manual passthrough file copy to include the following directories in the `_site` output. 
 
 - `/images/`
