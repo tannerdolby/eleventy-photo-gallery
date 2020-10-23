@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <meta name="description" content="{{ site.pageMetadata.about.content }}">
-        <title>{{ title }}</title>
+        <title>{{ title }} - {{ firstName }} {{ lastName }} </title>
         <link rel="apple-touch-icon" sizes="180x180" href="/favicon_data/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon_data/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon_data/favicon-16x16.png">
@@ -19,10 +19,11 @@
     <body style="min-height: 100vh; display: flex; flex-direction: column;">
         <header>
             <nav class="nav-main">
-                <a href="/">{{ firstName }}'s Gallery</a>
+                <a class="home-button" href="/">{{ firstName }} {{ lastName }}</a>
                 <ul class="nav-list">
+                    <li><a class="link" href="/">Home</a></li>
                     <li><a class="link" href="/about/">About</a></li>
-                    <li><a class="link" href="https://github.com/tannerdolby/11ty-photo-gallery">Github</a></li>
+                    <li><a class="link" href="https://github.com/tannerdolby/eleventy-photo-gallery">Code</a></li>
                 </ul>
             </nav>
         </header>
@@ -31,13 +32,11 @@
         </main>
         <footer style="margin-top: auto">
             <div class="footer-content">
-                <div class="footer-info home" style="width: auto;">
-                    <p>&copy; 2020 {{ firstName }} {{ lastName }}. Built with <a href="https://www.11ty.dev/">11ty</a> and hosted on <a href="https://www.netlify.com/">Netlify</a></p>
-                    <a aria-label="Speedlify scores" href="https://tdspeedlify.netlify.app/" class="speedlify-link">
-                        <speedlify-score hash="bc2c2d1a" speedlify-url="https://tdspeedlify.netlify.app/" score weight requests></speedlify-score>
-                    </a>
+                <div class="footer-info about">
+                    <p>&copy; 2020 {{ firstName }} {{ lastName }}. Built with <a href="https://www.11ty.dev/">Eleventy</a></p>
                 </div>
             </div>
+               
         </footer>
     </body>
 </html>
