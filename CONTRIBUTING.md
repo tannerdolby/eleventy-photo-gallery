@@ -10,9 +10,7 @@ I welcome any and all community contributions to this project. Feel free to open
 
 3. Install dependencies: `npm install`
 
-4. Add your own photos or skip to step 5! 
-
-Edit `_data/gallery.json` to include the appropiate image metadata for new images added. 
+4. Add your own photos by editing `_data/gallery.json` to include the appropiate image metadata for new images added. 
 
 ```json
 [
