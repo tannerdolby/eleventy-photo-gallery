@@ -37,14 +37,6 @@ a:hover {
     text-decoration-color: var(--link-blue-accessible);
 }
 
-.speedlify-link {
-    color: #212121;
-}
-
-.speedlify-link:hover {
-    text-decoration: none !important;
-}
-
 a:hover,
 .credit:hover {
     text-decoration: underline !important;
@@ -70,8 +62,8 @@ h2, .h2 {
 }
 
 main .gallery {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
 main .gallery-header {
@@ -94,9 +86,13 @@ header .nav-main {
     align-items: center;
 }
 
-header .nav-main a {
-    font-size: 22px;
+header .nav-main .home-button {
+    text-decoration: none;
     color: #212121;
+    padding-right: .5rem;
+    font-size: 24px;
+    font-size: clamp(1.3rem, 4vw, 1.5rem);
+    font-weight: 500;
 }
 
 header .nav-main .nav-list {
@@ -107,26 +103,34 @@ header .nav-main .nav-list {
     list-style: none;
 }
 
-header .nav-main a {
-    text-decoration: none;
-    padding-right: .5rem;
-}
-
 header .nav-main .nav-list a:hover,
 header .nav-main a:hover {
     text-decoration: underline;
 }
 
 nav .nav-list li {
-    padding-right: 1rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
 }
 
 nav .nav-list li .link {
+    color: #212121;
+    font-weight: 500;
     font-size: 20px;
+    font-size: clamp(1.2rem, 4vw, 1.3rem);
     text-decoration: none;
 }
 
-.desc p a:hover {
+.image-description {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.image-description p a:hover {
     text-decoration: none;
 }
 
@@ -154,9 +158,9 @@ nav .nav-list li .link {
 }
 
 .page-banner p {
-    --min-size: 1rem;
+    --min-size: 1.1rem;
     --pref-size: 3vw;
-    --max-size: 1.4rem;
+    --max-size: 1.3rem;
     font-size: clamp(var(--min-size), var(--pref-size), var(--max-size));
 }
 
@@ -196,14 +200,6 @@ nav .nav-list li .link {
     cursor: pointer;
 }
 
-.large {
-    object-fit: cover;
-    display: block;
-    width: 100%;
-    margin: 1rem auto 2rem auto;
-    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
-}
-
 .featured-img {
     display: flex;
     flex-direction: column;
@@ -211,16 +207,6 @@ nav .nav-list li .link {
     align-items: center;
     padding-left: 2rem;
     padding-right: 2rem;
-}
-
-.featured-img .image-link {
-    color: var(--link-blue-accessible);
-    border-bottom: 2px solid transparent;
-}
-
-.featured-img .image-link:hover {
-    background: #CCC;
-    border-bottom: 2px solid #111;
 }
 
 .featured-img img {
@@ -256,6 +242,21 @@ footer .footer-content .footer-info {
     width: 100%;
     justify-content: space-between;
     align-items: center;
+    padding-top: .5rem;
+}
+
+footer .footer-content .footer-info .footer-links {
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: .5rem;
+}
+
+footer .footer-content .footer-info .footer-links .footer-link {
+    margin: 0 .5rem;
+    font-weight: 500;
 }
 
 footer .footer-content p {
@@ -267,10 +268,6 @@ footer .footer-content hr {
     background: #000;
     height: 2px;
     width: 100%;
-}
-
-footer .footer-content .footer-info .speedlify-link {
-    text-decoration: none;
 }
 
 footer .social-links {
@@ -329,21 +326,18 @@ footer .social-links li {
         flex-direction: column;
         justify-content: center;
     }
+    footer .footer-content p {
+        margin-top: 1.5rem;
+    }
 }
 
 @media screen and (max-width: 565px) {
     .page-banner h1 {
         text-align: left;
     }
-    .page-banner p {
-        font-size: 18px;
-    }
 }
 
 @media screen and (max-width: 450px) {
-    .page-banner h1 {
-        font-size: 3em;
-    }
     footer .footer-content .footer-info.home {
         justify-content: flex-start;
         align-items: center;
@@ -351,9 +345,6 @@ footer .social-links li {
     footer .footer-content .footer-info.featured {
         flex-direction: column;
         justify-content: center;
-    }
-    footer .footer-content .footer-info .speedlify-link {
-        padding-left: 1rem;
     }
     header .nav-main {
         flex-direction: column;
