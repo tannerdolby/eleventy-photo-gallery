@@ -236,6 +236,7 @@ footer {
 
 footer a {
     color: #212121;
+    font-size: 1.0625rem;
 }
 footer .footer-content {
     display: flex;
