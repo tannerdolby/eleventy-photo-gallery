@@ -41,6 +41,23 @@ I welcome any and all community contributions to this project. Feel free to open
 ]
 ```
 
+Use the `sharpImages` function inside `.eleventy.js` to create three resized versions of the original image.
+
+```
+sharpImages("./images/road-fog.jpg");
+```
+
+``` 
+# Output to /images/ directory
+road-fog-large.jpg
+road-fog-med.jpg
+road-fog-small.jpg
+```
+
+### More options for image optimization
+* [Squoosh](https://squoosh.app/) - Make images smaller using best-in-class codecs, right in the browser.
+* [eleventy-img](https://github.com/11ty/eleventy-img) - Utility to perform build-time image transformations.
+
 ## 5. Run Eleventy! 
 - Build: `npm run build`
 - Serve locally: `npm run serve`
