@@ -10,7 +10,26 @@ I welcome any and all community contributions to this project. Feel free to open
 
 3. Install dependencies: `npm install`
 
-4. Add your own photos by editing `_data/gallery.json` to include the appropiate image metadata for new images added. 
+4. Add new photos to the gallery
+    - Get an image from somewhere (your file system, a stock photo website, etc)
+    - Add the original image to the `/images/` folder.
+    - Go into `.eleventy.js` and utilize `sharpImages`
+    - This creates three resized images from the original, which outputs to the `/images/` folder:
+
+```
+sharpImages("./images/road-fog.jpg");
+```
+
+``` 
+road-fog-large.webp
+road-fog-med.webp
+road-fog-small.webp
+```
+
+- Include the images in `/images/` if you create the resized images externally.
+- Go into `_data/gallery.json` and create a new object with the image metadata
+
+5. Update `_data/gallery.json` to include the appropiate image metadata for new images added. 
 
 ```json
 [
@@ -39,19 +58,6 @@ I welcome any and all community contributions to this project. Feel free to open
         }
     }
 ]
-```
-
-Use the `sharpImages` function inside `.eleventy.js` to create three resized versions of the original image.
-
-```
-sharpImages("./images/road-fog.jpg");
-```
-
-``` 
-# Output to /images/ directory
-road-fog-large.jpg
-road-fog-med.jpg
-road-fog-small.jpg
 ```
 
 ### More options for image optimization
