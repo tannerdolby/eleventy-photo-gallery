@@ -10,26 +10,7 @@ I welcome any and all community contributions to this project. Feel free to open
 
 3. Install dependencies: `npm install`
 
-4. Add new photos to the gallery
-    - Get an image from somewhere (your file system, a stock photo website, etc)
-    - Add the original image to the `/images/` folder.
-    - Go into `.eleventy.js` and utilize `sharpImages`
-    - This creates three resized images from the original, which outputs to the `/images/` folder:
-
-```
-sharpImages("./images/road-fog.jpg");
-```
-
-``` 
-road-fog-large.webp
-road-fog-med.webp
-road-fog-small.webp
-```
-
-- Include the images in `/images/` if you create the resized images externally.
-- Go into `_data/gallery.json` and create a new object with the image metadata
-
-5. Update `_data/gallery.json` to include the appropiate image metadata for new images added. 
+4. Update `_data/gallery.json` to include the appropiate image metadata for new images added. 
 
 ```json
 [
@@ -60,14 +41,35 @@ road-fog-small.webp
 ]
 ```
 
-### More options for image optimization
-* [Squoosh](https://squoosh.app/) - Make images smaller using best-in-class codecs, right in the browser.
-* [eleventy-img](https://github.com/11ty/eleventy-img) - Utility to perform build-time image transformations.
-
 ## 5. Run Eleventy! 
 - Build: `npm run build`
 - Serve locally: `npm run serve`
 - Debug: `npm run debug`
+
+## Add new photos to the gallery
+1. Get an image from somewhere (your file system, a stock photo website, etc)
+2. Add the original image to the `/images/` folder.
+3. Go into `.eleventy.js` and utilize `sharpImages`
+4. This creates three resized images from the original, which outputs to the `/images/` folder:
+
+```
+sharpImages("./images/road-fog.jpg");
+```
+
+``` 
+road-fog-large.webp
+road-fog-med.webp
+road-fog-small.webp
+```
+
+5. Include the images in `/images/` if you create the resized images externally.
+6. Go into `_data/gallery.json` and create a new object with the image metadata
+
+If you don't use the above method, head over to [squoosh.app](https://squoosh.app) and create the three resized `.webp` formats from your original (1024px, 640px, 320px)
+
+### More options for image optimization
+* [Squoosh](https://squoosh.app/) - Make images smaller using best-in-class codecs, right in the browser.
+* [eleventy-img](https://github.com/11ty/eleventy-img) - Utility to perform build-time image transformations.
 
 ## Submitting changes
 

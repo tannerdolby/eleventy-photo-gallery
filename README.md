@@ -41,7 +41,7 @@ road-fog-small.webp
 5. Include the images in `/images/` if you create the resized images externally.
 6. Go into `_data/gallery.json` and create a new object with the image metadata
 
-If you don't use the above method, head over to [squoosh.app](https://squoosh.app) and create the three resized `.webp` formats from your original (1024px, 640px, 320px)
+See [CONTRIBUTING.md](https://github.com/tannerdolby/eleventy-photo-gallery/blob/master/CONTRIBUTING.md) for more on customizing the image gallery.
 
 ### More options for image optimization
 * [Squoosh](https://squoosh.app/) - Make images smaller using best-in-class codecs, right in the browser.
