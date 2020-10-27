@@ -28,12 +28,10 @@ I welcome any and all community contributions to this project. Feel free to open
             },
             "medium": {
                 "webp": "/images/shop-plants-med.webp",
-                "jpg": "/images/shop-plants-med.jpg",
                 "width": "640w"
             },
             "small": {
                 "webp": "/images/shop-plants-small.webp",
-                "jpg": "/images/shop-plants-small.jpg",
                 "width": "320w"
             }
         }
@@ -92,16 +90,10 @@ The eleventy configuration file, `.eleventy.js` is currently configured to use m
 - `/favicon_data/`
 - `/js/` 
 
-The `/_includes/` directory houses the two layouts for this project.
-
-- `_includes/layouts/base.njk`: home page template
-- `_includes/layouts/feature.njk`: featured image page template
-
 ### Sources of Data
 * Global Data Files: 
     * `_data/gallery.json` - Holds all image metadata
     * `_data/site.json` - Some site data
-    * `_data/speedlify.js` - Speedlify API data files (static API with cached speedlify instance generated JSON)
 
 ### Inline Minified CSS & JS
 - Packages used:
