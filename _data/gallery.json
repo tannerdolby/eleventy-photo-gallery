@@ -13,12 +13,10 @@
             },
             "medium": {
                 "webp": "/images/shop-plants-med.webp",
-                "jpg": "/images/shop-plants-med.jpg",
                 "width": "640w"
             },
             "small": {
                 "webp": "/images/shop-plants-small.webp",
-                "jpg": "/images/shop-plants-small.jpg",
                 "width": "320w"
             }
         }
@@ -37,12 +35,10 @@
             },
             "medium": {
                 "webp": "/images/wet-street-med.webp",
-                "jpg": "/images/wet-street-med.jpg",
                 "width": "640w"
             },
             "small": {
                 "webp": "/images/wet-street-small.webp",
-                "jpg": "/images/wet-street-small.jpg",
                 "width": "320w"
             }
         }
@@ -61,12 +57,10 @@
             },
             "medium": {
                 "webp": "/images/bench-light-med.webp",
-                "jpg": "/images/bench-light-med.jpg",
                 "width": "640w"
             },
             "small": {
                 "webp": "/images/bench-light-small.webp",
-                "jpg": "/images/bench-light-small.jpg",
                 "width": "320w"
             }
         }
@@ -85,12 +79,10 @@
             },
             "medium": {
                 "webp": "/images/street-flash-med.webp",
-                "jpg": "/images/street-flash-med.jpg",
                 "width": "640w"
             },
             "small": {
                 "webp": "/images/street-flash-small.webp",
-                "jpg": "/images/street-flash-small.jpg",
                 "width": "320w"
             }
         }
@@ -109,12 +101,10 @@
             },
             "medium": {
                 "webp": "/images/boardwalk-med.webp",
-                "jpg": "/images/boardwalk-med.jpg",
                 "width": "640w"
             },
             "small": {
                 "webp": "/images/boardwalk-small.webp",
-                "jpg": "/images/boardwalk-small.jpg",
                 "width": "320w"
             }
         }
@@ -133,12 +123,10 @@
             },
             "medium": {
                 "webp": "/images/glass-jar-sky-med.webp",
-                "jpg": "/images/glass-jar-sky-med.jpg",
                 "width": "640w"
             },
             "small": {
                 "webp": "/images/glass-jar-sky-small.webp",
-                "jpg": "/images/glass-jar-sky-small.jpg",
                 "width": "320w"
             }
         }
@@ -157,12 +145,10 @@
             },
             "medium": {
                 "webp": "/images/radio-city-med.webp",
-                "jpg": "/images/radio-city-med.jpg",
                 "width": "640w"
             },
             "small": {
                 "webp": "/images/radio-city-small.webp",
-                "jpg": "/images/radio-city-small.jpg",
                 "width": "320w"
             }
         }
@@ -181,12 +167,10 @@
             },
             "medium": {
                 "webp": "/images/city-center-med.webp",
-                "jpg": "/images/city-center-med.jpg",
                 "width": "640w"
             },
             "small": {
                 "webp": "/images/city-center-small.webp",
-                "jpg": "/images/city-center-small.jpg",
                 "width": "320w"
             }
         }
@@ -205,12 +189,10 @@
             },
             "medium": {
                 "webp": "/images/highrise-orange-med.webp",
-                "jpg": "/images/highrise-orange-med.jpg",
                 "width": "640w"
             },
             "small": {
                 "webp": "/images/highrise-orange-small.webp",
-                "jpg": "/images/highrise-orange-small.jpg",
                 "width": "320w"
             }
         }
@@ -229,12 +211,10 @@
             },
             "medium": {
                 "webp": "/images/water-droplet-med.webp",
-                "jpg": "/images/water-droplet-med.jpg",
                 "width": "640w"
             },
             "small": {
                 "webp": "/images/water-droplet-small.webp",
-                "jpg": "/images/water-droplet-small.jpg",
                 "width": "320w"
             }
         }
@@ -253,12 +233,10 @@
             },
             "medium": {
                 "webp": "/images/road-fog-med.webp",
-                "jpg": "/images/road-fog-med.jpg",
                 "width": "640w"
             },
             "small": {
                 "webp": "/images/road-fog-small.webp",
-                "jpg": "/images/road-fog-small.jpg",
                 "width": "320w"
             }
         }
@@ -277,12 +255,10 @@
             },
             "medium": {
                 "webp": "/images/gas-station-med.webp",
-                "jpg": "/images/gas-station-med.jpg",
                 "width": "640w"
             },
             "small": {
                 "webp": "/images/gas-station-small.webp",
-                "jpg": "/images/gas-station-small.jpg",
                 "width": "320w"
             }
         }
