@@ -20,8 +20,6 @@ A starter site for creating your own photo or art gallery using the [Eleventy](h
 
 ## Usage 
 
-🚧Working to automate this... stay tuned 🚧
-
 Edit `_data/gallery.json` to include the appropiate image metadata. See [CONTRIBUTING.md](https://github.com/tannerdolby/eleventy-photo-gallery/blob/master/CONTRIBUTING.md) for more on customizing your own photo/art gallery.
 
 Use the `sharpImages` function inside `.eleventy.js` to create three resized versions of the original image.
@@ -45,6 +43,8 @@ road-fog-small.webp
 6. Go into `_data/gallery.json` and create a new object with the image metadata
 
 See [CONTRIBUTING.md](https://github.com/tannerdolby/eleventy-photo-gallery/blob/master/CONTRIBUTING.md) for more on customizing the image gallery.
+
+🚧 Working to automate this with local build time image transformations... stay tuned  🚧
 
 ### More options for image optimization
 * [Squoosh](https://squoosh.app/) - Make images smaller using best-in-class codecs, right in the browser.
