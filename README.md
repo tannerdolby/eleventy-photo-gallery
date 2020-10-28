@@ -18,7 +18,10 @@ A starter site for creating your own photo or art gallery using the [Eleventy](h
 - Featured image page
 - About me page
 
-## Usage 🚀
+## Usage 
+
+🚧Working to automate this... stay tuned 🚧
+
 Edit `_data/gallery.json` to include the appropiate image metadata. See [CONTRIBUTING.md](https://github.com/tannerdolby/eleventy-photo-gallery/blob/master/CONTRIBUTING.md) for more on customizing your own photo/art gallery.
 
 Use the `sharpImages` function inside `.eleventy.js` to create three resized versions of the original image.
