@@ -46,14 +46,18 @@ permalink: "/gallery/{{ image.title | slug }}/"
                             srcset="{{ image.imageData.large.webp }} {{ image.imageData.large.width }}, 
                                     {{ image.imageData.medium.webp }} {{ image.imageData.medium.width }}, 
                                     {{ image.imageData.small.webp }} {{ image.imageData.small.width }}"
-                            sizes="(min-width: 500px) 33.3vw, 100vw"
+                            sizes="(min-width: 450px) 33.3vw, 100vw"
                         >
                         <img
-                            width="640"
-                            height="480"
-                            src="{{ image.imageData.large.jpg }}"
+                            srcset="{{ image.imageData.large.webp }} {{ image.imageData.large.width }}, 
+                                    {{ image.imageData.medium.webp }} {{ image.imageData.medium.width }}, 
+                                    {{ image.imageData.small.webp }} {{ image.imageData.small.width }}"
+                            sizes="(min-width: 450px) 33.3vw, 100vw"
+                            src="{{ image.imageData.small.jpg }}"
                             alt="{{ image.imageData.alt }}"
                             loading="lazy"
+                            width="640"
+                            height="480"
                         >
                     </picture>
                     <div class="image-description">

@@ -52,7 +52,11 @@
                                             calc(100vw - 2 * 2rem)"
                                 >
                                 <img
-                                    src="{{ image.imageData.large.jpg }}"
+                                    srcset="{{ image.imageData.large.jpg }} {{ image.imageData.large.width }}, 
+                                            {{ image.imageData.medium.jpg }} {{ image.imageData.medium.width }}, 
+                                            {{ image.imageData.small.jpg }} {{ image.imageData.small.width }}"
+                                    sizes="(min-width: 450px) 33.3vw, 100vw"
+                                    src="{{ image.imageData.small.jpg }}"
                                     alt="{{ image.imageData.alt }}"
                                     loading="lazy"
                                     width="1024"
