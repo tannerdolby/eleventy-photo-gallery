@@ -28,10 +28,12 @@ I welcome any and all community contributions to this project. Feel free to open
             },
             "medium": {
                 "webp": "/images/shop-plants-med.webp",
+                "jpg": "/images/shop-plants-med.jpg",
                 "width": "640w"
             },
             "small": {
                 "webp": "/images/shop-plants-small.webp",
+                "jpg": "/images/shop-plants-small.jpg",
                 "width": "320w"
             }
         }
@@ -58,9 +60,9 @@ road-fog-small.webp
 5. Include the images in `/images/` if you create the resized images externally.
 6. Go into `_data/gallery.json` and create a new object with the image metadata
 
-For ease of use, the fallback img src can be whatever size as the browser will most likely be able to support the .webp sources. But use the 1024px large source for best results.
+> Note: `.webp` and `.jpg` formats are required to utilize `srcSet` for both the WebP images in `<picture>` as well as the fallback `<img>` to account for the 15% of Web users that still don't have WebP support.
 
-If you don't use the above method, head over to [squoosh.app](https://squoosh.app) and create the three resized `.webp` formats from your original (1024px, 640px, 320px)
+If you don't use `sharpImages`, head over to [squoosh.app](https://squoosh.app) and create the three resized (1024px, 640px, 320px) `.webp` and `.jpg` formats from your original image.
 
 ### More options for image optimization
 * [Squoosh](https://squoosh.app/) - Make images smaller using best-in-class codecs, right in the browser.
