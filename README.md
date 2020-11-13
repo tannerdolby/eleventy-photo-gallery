@@ -6,17 +6,20 @@ A starter site for creating your own photo or art gallery using the [Eleventy](h
 - [Deploy on Netlify](https://app.netlify.com/) - Host your own custom gallery
 
 ## Getting Started
-1. Clone this repo: `git clone https://github.com/tannerdolby/eleventy-photo-gallery.git`
-2. Navigate to your local copy of the project: `cd eleventy-photo-gallery`
-3. Install dependencies: `npm install`
-4. Build: `npm run build`
-5. Serve locally: `npm run serve`
+You can quickly generate a new repository from this template by clicking the green [Use Template](https://github.com/tannerdolby/eleventy-photo-gallery/generate) button. Creating a template repository provides the same directory structure and files as the original project.
 
 ## Features ✨
 - Responsive and optimized images using `<picture>`
 - Home page with CSS Grid representing gallery of images
 - Featured image page
 - About me page
+
+## Local Setup
+1. Clone this repo: `git clone https://github.com/tannerdolby/eleventy-photo-gallery.git`
+2. Navigate to your local copy of the project: `cd eleventy-photo-gallery`
+3. Install dependencies: `npm install`
+4. Build: `npm run build`
+5. Serve locally: `npm run serve`
 
 ## Usage 🚀
 
