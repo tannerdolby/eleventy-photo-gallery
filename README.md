@@ -8,7 +8,7 @@ A starter site for creating your own photo or art gallery using the [Eleventy](h
 ## Getting Started
 You can quickly generate a new repository from this template by clicking the green [Use Template](https://github.com/tannerdolby/eleventy-photo-gallery/generate) button. Creating a template repository provides the same directory structure and files as the original project.
 
-## Features ✨
+## Features
 - Responsive and optimized images using `<picture>`
 - Home page with CSS Grid representing gallery of images
 - Featured image page
@@ -21,7 +21,7 @@ You can quickly generate a new repository from this template by clicking the gre
 4. Build: `npm run build`
 5. Serve locally: `npm run serve`
 
-## Usage 🚀
+## Usage
 
 Edit `_data/gallery.json` to include the appropiate image metadata. See [CONTRIBUTING.md](https://github.com/tannerdolby/eleventy-photo-gallery/blob/master/CONTRIBUTING.md) for more on customizing your own photo/art gallery.
 
