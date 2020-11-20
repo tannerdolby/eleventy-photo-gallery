@@ -2,9 +2,12 @@ const sharp = require("sharp");
 const fs = require("fs");
 const CleanCSS = require("clean-css");
 const { minify } = require("terser");
+const metagen = require("eleventy-plugin-metagen");
 
 module.exports = (eleventyConfig) => {
    
+    eleventyConfig.addPlugin(metagen);
+    
     eleventyConfig.setTemplateFormats([
         "md",
         "njk"
