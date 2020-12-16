@@ -16,7 +16,6 @@
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon_data/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon_data/favicon-16x16.png">
         <link rel="manifest" href="/favicon_data/site.webmanifest">
-        <meta name="description" content="{{ site.pageMetadata.home.content }}">
         {% set css %}
             {% include "css/style.css" %}
         {% endset %}
@@ -25,49 +24,33 @@
         </style>
     </head>
     <body>
-        <header>
+        <header class="top-nav">
             <nav class="nav-main">
                 <a class="home-button" href="/">{{ firstName }} {{ lastName }}</a>
                 <ul class="nav-list">
                     <li style="margin-left: 0"><a class="link" href="/">Home</a></li>
                     <li><a class="link" href="/about/">About</a></li>
-                    <!-- Replace Get Started with any nav button you want, and/or add more nav links -->
+                    <!-- Replace Code with any nav button you need, or add more nav links -->
                     <li><a class="link" href="https://github.com/tannerdolby/eleventy-photo-gallery">Code</a></li>
                 </ul>
             </nav>
         </header>
-        <main style="margin-top: 1.5rem;">
+        <main class="main-home">
             <div class="page-banner">
                 {{ content | safe}}
             </div>
             <div class="gallery">
-                <ul class="image-grid" style="list-style: none;">
+                <ul class="image-grid">
                     {% for image in gallery %}
                     <li class="image-container">
                         <a href="/gallery/{{ image.title | slug }}" aria-label="Gallery image {{ image.title }}">
-                            <picture>
-                                <source
-                                    type="image/webp"
-                                    srcset="{{ image.imageData.large.webp }} {{ image.imageData.large.width }}, 
-                                            {{ image.imageData.medium.webp }} {{ image.imageData.medium.width }}, 
-                                            {{ image.imageData.small.webp }} {{ image.imageData.small.width }}"
-                                    sizes="(min-width: 1100px) calc((1100px - 2 * 2rem - 2 * 3px) / 3),
-                                            (min-width: 934px) calc((100vw - 2 * 2rem - 2 * 3px) / 3),
-                                            (min-width: 643px) calc((100vw - 2 * 2rem - 1 * 3px) / 2),
-                                            calc(100vw - 2 * 2rem)"
-                                >
-                                <img
-                                    srcset="{{ image.imageData.large.jpg }} {{ image.imageData.large.width }}, 
-                                            {{ image.imageData.medium.jpg }} {{ image.imageData.medium.width }}, 
-                                            {{ image.imageData.small.jpg }} {{ image.imageData.small.width }}"
-                                    sizes="(min-width: 450px) 33.3vw, 100vw"
-                                    src="{{ image.imageData.small.jpg }}"
-                                    alt="{{ image.imageData.alt }}"
-                                    loading="lazy"
-                                    width="1024"
-                                    height="768"
-                                >
-                            </picture>
+                            {% respimg 
+                                image.src,
+                                image.alt,
+                                image.imgDir,
+                                image.widths,
+                                image.sizes
+                            %}{% endrespimg %}
                         </a>
                     </li>
                     {% endfor %}
@@ -76,7 +59,7 @@
         </main>
         <footer>
             <div class="footer-content">
-                <div class="footer-info home" style="border-top: 1px solid lightgray;">
+                <div class="footer-info home">
                     <p>&copy; 2020 {{ firstName }} {{ lastName }}. Built with <a href="https://www.11ty.dev/">Eleventy</a></p>
                     <ul class="footer-links">
                         <li class="footer-link"><a href="{{ site.socials.dribbble }}">Dribbble</a></li>
