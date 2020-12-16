@@ -1,6 +1,11 @@
+# Eleventy site output
 _site
+
+# Node modules
 node_modules
+
+# DS Store
 .DS_store
 
-# Eleventy cached API results from speedlify json
+# Eleventy cached API results
 .cache
