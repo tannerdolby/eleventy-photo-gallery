@@ -3,10 +3,12 @@ const fs = require("fs");
 const CleanCSS = require("clean-css");
 const { minify } = require("terser");
 const metagen = require("eleventy-plugin-metagen");
+const respimg = require("eleventy-plugin-sharp-respimg");
 
 module.exports = (eleventyConfig) => {
    
     eleventyConfig.addPlugin(metagen);
+    eleventyConfig.addPlugin(respimg);
     
     eleventyConfig.setTemplateFormats([
         "md",
@@ -17,6 +19,7 @@ module.exports = (eleventyConfig) => {
 
     // Perform manual passthrough file copy to include directories in the build output _site
     eleventyConfig.addPassthroughCopy("images");
+    eleventyConfig.addPassthroughCopy("photos");
     eleventyConfig.addPassthroughCopy("css");
     eleventyConfig.addPassthroughCopy("js");
     eleventyConfig.addPassthroughCopy("favicon_data");
