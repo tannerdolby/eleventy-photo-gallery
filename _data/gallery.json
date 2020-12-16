@@ -12,12 +12,7 @@
             "med": 640,
             "large": 1024
         },
-        "sizes": "(min-width: 450px) 33.3vw, 100vw",
-        "data": {
-            "small": "/photos/terrace-window-small",
-            "med": "/photos/terrace-window-med",
-            "large": "/photos/terrace-window-large"
-        }
+        "sizes": "(min-width: 450px) 33.3vw, 100vw"
     },
     {
         "title": "Highway covered in water",
@@ -32,12 +27,7 @@
             "med": 640,
             "large": 1024
         },
-        "sizes": "(min-width: 450px) 33.3vw, 100vw",
-        "data": {
-            "small": "/photos/highway-water-small",
-            "med": "/photos/highway-water-med",
-            "large": "/photos/highway-water-large"
-        }
+        "sizes": "(min-width: 450px) 33.3vw, 100vw"
     },
     {
         "title": "Brown painted wall on dim light",
@@ -52,12 +42,7 @@
             "med": 640,
             "large": 1024
         },
-        "sizes": "(min-width: 450px) 33.3vw, 100vw",
-        "data": {
-            "small": "/photos/benches-small",
-            "med": "/photos/benches-med",
-            "large": "/photos/benches-large"
-        }
+        "sizes": "(min-width: 450px) 33.3vw, 100vw"
     },
     {
         "title": "Red light streaks across a street intersection at night",
@@ -72,12 +57,7 @@
             "med": 640,
             "large": 1024
         },
-        "sizes": "(min-width: 450px) 33.3vw, 100vw",
-        "data": {
-            "small": "/photos/light-streaks-small",
-            "med": "/photos/light-streaks-med",
-            "large": "/photos/light-streaks-large"
-        }
+        "sizes": "(min-width: 450px) 33.3vw, 100vw"
     },
     {
         "title": "Abstract architecture black and white boardwalk",
@@ -92,12 +72,7 @@
             "med": 640,
             "large": 1024
         },
-        "sizes": "(min-width: 450px) 33.3vw, 100vw",
-        "data": {
-            "small": "/photos/boardwalk-small",
-            "med": "/photos/boardwalk-med",
-            "large": "/photos/boardwalk-large"
-        }
+        "sizes": "(min-width: 450px) 33.3vw, 100vw"
     },
     {
         "title": "Person holding glass mason jar with night sky background",
@@ -112,12 +87,7 @@
             "med": 640,
             "large": 1024
         },
-        "sizes": "(min-width: 450px) 33.3vw, 100vw",
-        "data": {
-            "small": "/photos/glass-jar-small",
-            "med": "/photos/glass-jar-med",
-            "large": "/photos/glass-jar-large"
-        }
+        "sizes": "(min-width: 450px) 33.3vw, 100vw"
     },
     {
         "title": "Radio City Music Hall During Night Time",
@@ -132,12 +102,7 @@
             "med": 640,
             "large": 1024
         },
-        "sizes": "(min-width: 450px) 33.3vw, 100vw",
-        "data": {
-            "small": "/photos/music-hall-small",
-            "med": "/photos/music-hall-med",
-            "large": "/photos/music-hall-large"
-        }
+        "sizes": "(min-width: 450px) 33.3vw, 100vw"
     },
     {
         "title": "City Building Office Architecture",
@@ -152,12 +117,7 @@
             "med": 640,
             "large": 1024
         },
-        "sizes": "(min-width: 450px) 33.3vw, 100vw",
-        "data": {
-            "small": "/photos/business-center-small",
-            "med": "/photos/business-center-med",
-            "large": "/photos/business-center-large"
-        }
+        "sizes": "(min-width: 450px) 33.3vw, 100vw"
     },
     {
         "title": "Buildings during nighttime",
@@ -172,12 +132,7 @@
             "med": 640,
             "large": 1024
         },
-        "sizes": "(min-width: 450px) 33.3vw, 100vw",
-        "data": {
-            "small": "/photos/highrises-night-small",
-            "med": "/photos/highrises-night-med",
-            "large": "/photos/highrises-night-large"
-        }
+        "sizes": "(min-width: 450px) 33.3vw, 100vw"
     },
     {
         "title": "Water Droplet Digital Wallpaper",
@@ -192,12 +147,7 @@
             "med": 640,
             "large": 1024
         },
-        "sizes": "(min-width: 450px) 33.3vw, 100vw",
-        "data": {
-            "small": "/photos/water-drop-small",
-            "med": "/photos/water-drop-med",
-            "large": "/photos/water-drop-large"
-        }
+        "sizes": "(min-width: 450px) 33.3vw, 100vw"
     },
     {
         "title": "Man walking on the empty street",
@@ -212,12 +162,7 @@
             "med": 640,
             "large": 1024
         },
-        "sizes": "(min-width: 450px) 33.3vw, 100vw",
-        "data": {
-            "small": "/photos/empty-road-small",
-            "med": "/photos/empty-road-med",
-            "large": "/photos/empty-road-large"
-        }
+        "sizes": "(min-width: 450px) 33.3vw, 100vw"
     },
     {
         "title": "Gasoline station during nighttime",
@@ -232,11 +177,6 @@
             "med": 640,
             "large": 1024
         },
-        "sizes": "(min-width: 450px) 33.3vw, 100vw",
-        "data": {
-            "small": "/photos/gas-station-small",
-            "med": "/photos/gas-station-med",
-            "large": "/photos/gas-station-large"
-        }
+        "sizes": "(min-width: 450px) 33.3vw, 100vw"
     }
 ]
