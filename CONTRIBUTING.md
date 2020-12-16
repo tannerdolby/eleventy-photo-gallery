@@ -10,7 +10,7 @@ I welcome any and all community contributions to this project. Feel free to open
 
 3. Install dependencies: `npm install`
 
-4. Update `_data/gallery.json` to include the appropiate image metadata for new images added. 
+4. Update `_data/gallery.json` to include the appropiate image metadata for new images added. The fields after `linkToAuthor` must be provided in order to use the `respimg` utility for transforming images at build-time.
 
 ```json
 [
@@ -19,23 +19,19 @@ I welcome any and all community contributions to this project. Feel free to open
         "date": "October 20, 2020",
         "credit": "Photo by Aldiyar Seitkassymov",
         "linkToAuthor": "https://www.pexels.com/photo/terrace-with-green-plants-on-night-street-3100835/",
-        "imageData": {
-            "alt": "Terrace outside shop window with green plants and pink tree on night street",
-            "large": {
-                "webp": "/images/shop-plants-large.webp",
-                "jpg": "/images/shop-plants-large.jpg",
-                "width": "1024w"
-            },
-            "medium": {
-                "webp": "/images/shop-plants-med.webp",
-                "jpg": "/images/shop-plants-med.jpg",
-                "width": "640w"
-            },
-            "small": {
-                "webp": "/images/shop-plants-small.webp",
-                "jpg": "/images/shop-plants-small.jpg",
-                "width": "320w"
-            }
+        "src": "terrace-window.jpg",
+        "alt": "Terrace outside shop window with green plants and pink tree on night street",
+        "imgDir": "./images/",
+        "widths": {
+            "small": 320,
+            "med": 640,
+            "large": 1024
+        },
+        "sizes": "(min-width: 450px) 33.3vw, 100vw",
+        "data": {
+            "small": "/photos/terrace-window-small",
+            "med": "/photos/terrace-window-med",
+            "large": "/photos/terrace-window-large"
         }
     }
 ]
@@ -44,29 +40,8 @@ I welcome any and all community contributions to this project. Feel free to open
 ## Add new photos to the gallery
 1. Get an image from somewhere (your file system, a stock photo website, etc)
 2. Add the original image to the `/images/` folder.
-3. Go into `.eleventy.js` and utilize `sharpImages`
-4. This creates three resized images from the original, which outputs to the `/images/` folder:
-
-```
-sharpImages("./images/road-fog.jpg");
-```
-
-``` 
-road-fog-large.webp
-road-fog-med.webp
-road-fog-small.webp
-```
-
-5. Include the images in `/images/` if you create the resized images externally.
-6. Go into `_data/gallery.json` and create a new object with the image metadata
-
-> Note: `.webp` and `.jpg` formats are required to utilize `srcSet` for both the WebP images in `<picture>` as well as the fallback `<img>` to account for the 15% of Web users that still don't have WebP support.
-
-If you don't use `sharpImages`, head over to [squoosh.app](https://squoosh.app) and create the three resized (1024px, 640px, 320px) `.webp` and `.jpg` formats from your original image.
-
-### More options for image optimization
-* [Squoosh](https://squoosh.app/) - Make images smaller using best-in-class codecs, right in the browser.
-* [eleventy-img](https://github.com/11ty/eleventy-img) - Utility to perform build-time image transformations.
+3. Utilize `respimg` for transforming images.
+4. This creates resized and reformatted `.jpeg` and `.webp` images from the original, which outputs to the `/images/` folder:
 
 ## Run Eleventy! 
 - Build: `npm run build`
