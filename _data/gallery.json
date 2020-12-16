@@ -4,23 +4,19 @@
         "date": "October 20, 2020",
         "credit": "Photo by Aldiyar Seitkassymov",
         "linkToAuthor": "https://www.pexels.com/photo/terrace-with-green-plants-on-night-street-3100835/",
-        "imageData": {
-            "alt": "Terrace outside shop window with green plants and pink tree on night street",
-            "large": {
-                "webp": "/images/shop-plants-large.webp",
-                "jpg": "/images/shop-plants-large.jpg",
-                "width": "1024w"
-            },
-            "medium": {
-                "webp": "/images/shop-plants-med.webp",
-                "jpg": "/images/shop-plants-med.jpg",
-                "width": "640w"
-            },
-            "small": {
-                "webp": "/images/shop-plants-small.webp",
-                "jpg": "/images/shop-plants-small.jpg",
-                "width": "320w"
-            }
+        "src": "terrace-window.jpg",
+        "alt": "Terrace outside shop window with green plants and pink tree on night street",
+        "imgDir": "./images/",
+        "widths": {
+            "small": 320,
+            "med": 640,
+            "large": 1024
+        },
+        "sizes": "(min-width: 450px) 33.3vw, 100vw",
+        "data": {
+            "small": "/photos/terrace-window-small",
+            "med": "/photos/terrace-window-med",
+            "large": "/photos/terrace-window-large"
         }
     },
     {
@@ -28,23 +24,19 @@
         "date": "October 20, 2020",
         "credit": "Photo by Josh Hild",
         "linkToAuthor": "https://www.pexels.com/photo/highway-covered-in-water-2524368/",
-        "imageData": {
-            "alt": "Skybridge over highway covered in water",
-            "large": {
-                "webp": "/images/wet-street-large.webp",
-                "jpg": "/images/wet-street-large.jpg",
-                "width": "1024w"
-            },
-            "medium": {
-                "webp": "/images/wet-street-med.webp",
-                "jpg": "/images/wet-street-med.jpg",
-                "width": "640w"
-            },
-            "small": {
-                "webp": "/images/wet-street-small.webp",
-                "jpg": "/images/wet-street-small.jpg",
-                "width": "320w"
-            }
+        "src": "highway-water.jpg",
+        "alt": "Skybridge over highway covered in water",
+        "imgDir": "./images/",
+        "widths": {
+            "small": 320,
+            "med": 640,
+            "large": 1024
+        },
+        "sizes": "(min-width: 450px) 33.3vw, 100vw",
+        "data": {
+            "small": "/photos/highway-water-small",
+            "med": "/photos/highway-water-med",
+            "large": "/photos/highway-water-large"
         }
     },
     {
@@ -52,23 +44,19 @@
         "date": "October 18, 2020",
         "credit": "Photo by Lukas Hartmann",
         "linkToAuthor": "https://www.pexels.com/photo/brown-painted-wall-on-dim-light-1055613/",
-        "imageData": {
-            "alt": "Brown painted wall with two benches and dim light above",
-            "large": {
-                "webp": "/images/bench-light-large.webp",
-                "jpg": "/images/bench-light-large.jpg",
-                "width": "1024w"
-            },
-            "medium": {
-                "webp": "/images/bench-light-med.webp",
-                "jpg": "/images/bench-light-med.jpg",
-                "width": "640w"
-            },
-            "small": {
-                "webp": "/images/bench-light-small.webp",
-                "jpg": "/images/bench-light-med.jpg",
-                "width": "320w"
-            }
+        "src": "benches.jpg",
+        "alt": "Brown painted wall with two benches and dim light above",
+        "imgDir": "./images/",
+        "widths": {
+            "small": 320,
+            "med": 640,
+            "large": 1024
+        },
+        "sizes": "(min-width: 450px) 33.3vw, 100vw",
+        "data": {
+            "small": "/photos/benches-small",
+            "med": "/photos/benches-med",
+            "large": "/photos/benches-large"
         }
     },
     {
@@ -76,23 +64,19 @@
         "date": "October 16, 2020",
         "credit": "Photo by Jan Kopriva",
         "linkToAuthor": "https://www.pexels.com/photo/light-streaks-3290601/",
-        "imageData": {
-            "alt": "Red light streaks across a street intersection at night",
-            "large": {
-                "webp": "/images/street-flash-large.webp",
-                "jpg": "/images/street-flash-large.jpg",
-                "width": "1024w"
-            },
-            "medium": {
-                "webp": "/images/street-flash-med.webp",
-                "jpg": "/images/street-flash-med.jpg",
-                "width": "640w"
-            },
-            "small": {
-                "webp": "/images/street-flash-small.webp",
-                "jpg": "/images/street-flash-small.jpg",
-                "width": "320w"
-            }
+        "src": "light-streaks.jpg",
+        "alt": "Red light streaks across a street intersection at night",
+        "imgDir": "./images/",
+        "widths": {
+            "small": 320,
+            "med": 640,
+            "large": 1024
+        },
+        "sizes": "(min-width: 450px) 33.3vw, 100vw",
+        "data": {
+            "small": "/photos/light-streaks-small",
+            "med": "/photos/light-streaks-med",
+            "large": "/photos/light-streaks-large"
         }
     },
     {
@@ -100,23 +84,19 @@
         "date": "October 14, 2020",
         "credit": "Photo by Pixabay",
         "linkToAuthor": "https://www.pexels.com/photo/abstract-architecture-black-and-white-boardwalk-262367/",
-        "imageData": {
-            "alt": "Abstract architecture black and white boardwalk with glass like floor",
-            "large": {
-                "webp": "/images/boardwalk-large.webp",
-                "jpg": "/images/boardwalk-large.jpg",
-                "width": "1024w"
-            },
-            "medium": {
-                "webp": "/images/boardwalk-med.webp",
-                "jpg": "/images/boardwalk-med.jpg",
-                "width": "640w"
-            },
-            "small": {
-                "webp": "/images/boardwalk-small.webp",
-                "jpg": "/images/boardwalk-small.jpg",
-                "width": "320w"
-            }
+        "src": "boardwalk.jpg",
+        "alt": "Abstract architecture black and white boardwalk with glass like floor",
+        "imgDir": "./images/",
+        "widths": {
+            "small": 320,
+            "med": 640,
+            "large": 1024
+        },
+        "sizes": "(min-width: 450px) 33.3vw, 100vw",
+        "data": {
+            "small": "/photos/boardwalk-small",
+            "med": "/photos/boardwalk-med",
+            "large": "/photos/boardwalk-large"
         }
     },
     {
@@ -124,23 +104,19 @@
         "date": "October 12, 2020",
         "credit": "Photo by Rakicevic Nenad",
         "linkToAuthor": "https://www.pexels.com/photo/silhouette-of-person-holding-glass-mason-jar-1274260/",
-        "imageData": {
-            "alt": "Person holding glass mason jar with night sky background",
-            "large": {
-                "webp": "/images/glass-jar-sky-large.webp",
-                "jpg": "/images/glass-jar-sky-large.jpg",
-                "width": "1024w"
-            },
-            "medium": {
-                "webp": "/images/glass-jar-sky-med.webp",
-                "jpg": "/images/glass-jar-sky-med.jpg",
-                "width": "640w"
-            },
-            "small": {
-                "webp": "/images/glass-jar-sky-small.webp",
-                "jpg": "/images/glass-jar-sky-small.jpg",
-                "width": "320w"
-            }
+        "src": "glass-jar.jpg",
+        "alt": "Person holding glass mason jar with night sky background",
+        "imgDir": "./images/",
+        "widths": {
+            "small": 320,
+            "med": 640,
+            "large": 1024
+        },
+        "sizes": "(min-width: 450px) 33.3vw, 100vw",
+        "data": {
+            "small": "/photos/glass-jar-small",
+            "med": "/photos/glass-jar-med",
+            "large": "/photos/glass-jar-large"
         }
     },
     {
@@ -148,23 +124,19 @@
         "date": "October 11, 2020",
         "credit": "Photo by Bao Dang",
         "linkToAuthor": "https://www.pexels.com/photo/radio-city-music-hall-during-night-time-3700369/",
-        "imageData": {
-            "alt": "Music hall with bright lights during night time",
-            "large": {
-                "webp": "/images/radio-city-large.webp",
-                "jpg": "/images/radio-city-large.jpg",
-                "width": "1024w"
-            },
-            "medium": {
-                "webp": "/images/radio-city-med.webp",
-                "jpg": "/images/radio-city-med.jpg",
-                "width": "640w"
-            },
-            "small": {
-                "webp": "/images/radio-city-small.webp",
-                "jpg": "/images/radio-city-small.jpg",
-                "width": "320w"
-            }
+        "src": "music-hall.jpg",
+        "alt": "Music hall with bright lights during night time",
+        "imgDir": "./images/",
+        "widths": {
+            "small": 320,
+            "med": 640,
+            "large": 1024
+        },
+        "sizes": "(min-width: 450px) 33.3vw, 100vw",
+        "data": {
+            "small": "/photos/music-hall-small",
+            "med": "/photos/music-hall-med",
+            "large": "/photos/music-hall-large"
         }
     },
     {
@@ -172,23 +144,19 @@
         "date": "October 10, 2020",
         "credit": "Photo by Jayson Marquez",
         "linkToAuthor": "https://www.pexels.com/photo/city-building-office-architecture-4850412/",
-        "imageData": {
-            "alt": "Tall highrise office building with winding architecture",
-            "large": {
-                "webp": "/images/city-center-large.webp",
-                "jpg": "/images/city-center-large.jpg",
-                "width": "1024w"
-            },
-            "medium": {
-                "webp": "/images/city-center-med.webp",
-                "jpg": "/images/city-center-med.jpg",
-                "width": "640w"
-            },
-            "small": {
-                "webp": "/images/city-center-small.webp",
-                "jpg": "/images/city-center-small.jpg",
-                "width": "320w"
-            }
+        "src": "business-center.jpg",
+        "alt": "Tall highrise office building with winding architecture",
+        "imgDir": "./images/",
+        "widths": {
+            "small": 320,
+            "med": 640,
+            "large": 1024
+        },
+        "sizes": "(min-width: 450px) 33.3vw, 100vw",
+        "data": {
+            "small": "/photos/business-center-small",
+            "med": "/photos/business-center-med",
+            "large": "/photos/business-center-large"
         }
     },
     {
@@ -196,23 +164,19 @@
         "date": "October 9, 2020",
         "credit": "Photo by Aleksandar Pasaric",
         "linkToAuthor": "https://www.pexels.com/photo/photo-of-buildings-during-nighttime-2603464/",
-        "imageData": {
-            "alt": "Buildings during nighttime with orange lighting and water below",
-            "large": {
-                "webp": "/images/highrise-orange-large.webp",
-                "jpg": "/images/highrise-orange-large.jpg",
-                "width": "1024w"
-            },
-            "medium": {
-                "webp": "/images/highrise-orange-med.webp",
-                "jpg": "/images/highrise-orange-med.jpg",
-                "width": "640w"
-            },
-            "small": {
-                "webp": "/images/highrise-orange-small.webp",
-                "jpg": "/images/highrise-orange-small.jpg",
-                "width": "320w"
-            }
+        "src": "highrises-night.jpg",
+        "alt": "Buildings during nighttime with orange lighting and water below",
+        "imgDir": "./images/",
+        "widths": {
+            "small": 320,
+            "med": 640,
+            "large": 1024
+        },
+        "sizes": "(min-width: 450px) 33.3vw, 100vw",
+        "data": {
+            "small": "/photos/highrises-night-small",
+            "med": "/photos/highrises-night-med",
+            "large": "/photos/highrises-night-large"
         }
     },
     {
@@ -220,23 +184,19 @@
         "date": "October 11, 2020",
         "credit": "Photo by Sourav Mishra",
         "linkToAuthor": "https://www.pexels.com/photo/water-droplet-digital-wallpaper-1100946/",
-        "imageData": {
-            "alt": "Rain drop bursting water particles upwards into the air",
-            "large": {
-                "webp": "/images/water-droplet-large.webp",
-                "jpg": "/images/water-droplet-large.jpg",
-                "width": "1024w"
-            },
-            "medium": {
-                "webp": "/images/water-droplet-med.webp",
-                "jpg": "/images/water-droplet-med.jpg",
-                "width": "640w"
-            },
-            "small": {
-                "webp": "/images/water-droplet-small.webp",
-                "jpg": "/images/water-droplet-small.jpg",
-                "width": "320w"
-            }
+        "src": "water-drop.jpg",
+        "alt": "Rain drop bursting water particles upwards into the air",
+        "imgDir": "./images/",
+        "widths": {
+            "small": 320,
+            "med": 640,
+            "large": 1024
+        },
+        "sizes": "(min-width: 450px) 33.3vw, 100vw",
+        "data": {
+            "small": "/photos/water-drop-small",
+            "med": "/photos/water-drop-med",
+            "large": "/photos/water-drop-large"
         }
     },
     {
@@ -244,23 +204,19 @@
         "date": "October 15, 2020",
         "credit": "Photo by Marco Trinidad",
         "linkToAuthor": "https://www.pexels.com/photo/photo-of-empty-road-during-daytime-3295140/",
-        "imageData": {
-            "alt": "An empty road during daytime with fog in the background",
-            "large": {
-                "webp": "/images/road-fog-large.webp",
-                "jpg": "/images/road-fog-large.jpg",
-                "width": "1024w"
-            },
-            "medium": {
-                "webp": "/images/road-fog-med.webp",
-                "jpg": "/images/road-fog-med.jpg",
-                "width": "640w"
-            },
-            "small": {
-                "webp": "/images/road-fog-small.webp",
-                "jpg": "/images/road-fog-small.jpg",
-                "width": "320w"
-            }
+        "src": "empty-road.jpg",
+        "alt": "An empty road during daytime with fog in the background",
+        "imgDir": "./images/",
+        "widths": {
+            "small": 320,
+            "med": 640,
+            "large": 1024
+        },
+        "sizes": "(min-width: 450px) 33.3vw, 100vw",
+        "data": {
+            "small": "/photos/empty-road-small",
+            "med": "/photos/empty-road-med",
+            "large": "/photos/empty-road-large"
         }
     },
     {
@@ -268,23 +224,19 @@
         "date": "October 23, 2020",
         "credit": "Photo by Artem Saranin",
         "linkToAuthor": "https://www.pexels.com/photo/gasoline-station-during-nighttime-1453781/",
-        "imageData": {
-            "alt": "Gasoline station during nighttime with glowing red roof lights",
-            "large": {
-                "webp": "/images/gas-station-large.webp",
-                "jpg": "/images/gas-station-large.jpg",
-                "width": "1024w"
-            },
-            "medium": {
-                "webp": "/images/gas-station-med.webp",
-                "jpg": "/images/gas-station-med.jpg",
-                "width": "640w"
-            },
-            "small": {
-                "webp": "/images/gas-station-small.webp",
-                "jpg": "/images/gas-station-small.jpg",
-                "width": "320w"
-            }
+        "src": "gas-station.jpg",
+        "alt": "Gasoline station during nighttime with glowing red roof lights",
+        "imgDir": "./images/",
+        "widths": {
+            "small": 320,
+            "med": 640,
+            "large": 1024
+        },
+        "sizes": "(min-width: 450px) 33.3vw, 100vw",
+        "data": {
+            "small": "/photos/gas-station-small",
+            "med": "/photos/gas-station-med",
+            "large": "/photos/gas-station-large"
         }
     }
 ]
