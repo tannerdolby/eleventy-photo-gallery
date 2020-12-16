@@ -206,7 +206,7 @@ nav .nav-list li .link {
     border: 3px solid #07c;
 }
 
-.image-grid .image-container a img {
+.image-grid .image-container a .grid-image {
     object-fit: cover;
     height: 18rem;
     width: 100%;
@@ -239,7 +239,7 @@ nav .nav-list li .link {
     margin-top: 2rem;
 }
 
-.featured-img img {
+.featured-img .showcase-img {
     object-fit: cover;
     /* object-fit: contain; this is best but need to find a way around letterboxing" */
     max-width: 100%;
