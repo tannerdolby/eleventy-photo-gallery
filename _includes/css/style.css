@@ -11,7 +11,7 @@ body {
     margin: 0;
     padding: 0;
     min-height: 100vh;
-    background: #FFF;
+    background: #f6f6f6;
 }
 
 img {
@@ -34,7 +34,6 @@ a {
 
 a:hover {
     text-decoration: underline;
-    text-decoration-color: var(--link-blue-accessible);
 }
 
 a:hover,
@@ -74,16 +73,13 @@ main .gallery-header {
     font-size: 30px;
 }
 
-nav {
-    margin: 0 auto 0 auto;
-    padding: .75rem 1.5rem;
-    max-width: 1100px;
-}
-
 header .nav-main {
+    margin: 0 auto 0 auto;
+    max-width: 1100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: .75rem 1.5rem;
 }
 
 header .nav-main .home-button {
@@ -121,6 +117,20 @@ nav .nav-list li .link {
     text-decoration: none;
 }
 
+.main-home {
+    margin-top: 1.5rem;
+}
+
+.about-page {
+    min-height: 100vh; 
+    display: flex; 
+    flex-direction: column;
+}
+
+.about-v {
+    margin-top: auto;
+}
+
 .image-description {
     display: flex; 
     flex-direction: column; 
@@ -128,6 +138,13 @@ nav .nav-list li .link {
     align-items: center; 
     margin-left: auto; 
     margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.image-description h1 {
+    margin-bottom: .4rem;
+    text-align: center;
 }
 
 .image-description p a:hover {
@@ -169,6 +186,7 @@ nav .nav-list li .link {
 }
 
 .image-grid {
+    list-style: none;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
     gap: 3px;
@@ -208,16 +226,25 @@ nav .nav-list li .link {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
     align-items: center;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.featured-img .prev-next {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 2rem;
 }
 
 .featured-img img {
-    background: #FFF;
     object-fit: cover;
+    /* object-fit: contain; this is best but need to find a way around letterboxing" */
     max-width: 100%;
     height: auto;
+    height: 90vh;
     margin: 1rem auto 1rem auto;
 }
 
@@ -252,6 +279,11 @@ footer .footer-content .footer-info {
     justify-content: space-between;
     align-items: center;
     padding-top: .5rem;
+    border-top: .1rem solid lightgray;
+}
+
+footer .footer-content .footer-info.about {
+    border: none !important;
 }
 
 footer .footer-content .footer-info .footer-links {
@@ -342,6 +374,12 @@ footer .social-links li {
     }
     footer .footer-content p {
         margin-top: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .featured-img img {
+        height: 80vh;
     }
 }
 
