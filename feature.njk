@@ -15,10 +15,10 @@ permalink: "/gallery/{{ image.title | slug }}/"
         %}
         <title>{{ image.title }}</title>
         <meta property="og:url" content="https://eleventy-gallery.netlify.app/gallery/{{ image.title | slug }}"> 
-        <meta property="og:img" content="https://eleventy-gallery.netlify.app/images/{{ image.imageData.large.jpg }}"> 
-        <meta property="og:img:alt" content="{{ image.imageData.alt }}"> 
-        <meta name="twitter:image" content="https://eleventy-gallery.netlify.app/images/{{ image.imageData.large.jpg }}"> 
-        <meta name="twitter:image:alt" content="{{ image.imageData.alt }}"> 
+        <meta property="og:img" content="https://eleventy-gallery.netlify.app/images/{{ image.src }}"> 
+        <meta property="og:img:alt" content="{{ image.alt }}"> 
+        <meta name="twitter:image" content="https://eleventy-gallery.netlify.app/images/{{ image.src }}"> 
+        <meta name="twitter:image:alt" content="{{ image.alt }}"> 
         <meta name="theme-color" content="#fff">
         <meta name="background-color" content="#fff">
         <link rel="apple-touch-icon" sizes="180x180" href="/favicon_data/apple-touch-icon.png">
