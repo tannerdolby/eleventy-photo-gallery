@@ -39,14 +39,16 @@ The `respimg` paired shortcode performs build-time image transformations and gen
 
 Next, make sure to include the appropiate image metadata to use the `respimg` utility:
 
-- `src`: Image filename.
-- `alt`: Image alt text.
-- `imgDir`: The directory where images are stored.
-- `widths`: An object containing three keys (small, med, large) and any integer width values.
-- `sizes`: The sizes attribute which defines a set of media conditions. 
-- `class`: Class name for the fallback image.
-- `width`: The fallback image width attribute.
-- `height`: The fallback image height attribute.
+| Parameter | Description |
+| ------    | -------     |
+| src       | The filename for an image. |
+| alt       | A text description of the image. |
+| image directory | The directory where the image file is located. |
+| widths    | The desired image widths. Supports any three integer values. |
+| sizes     | The `sizes` attribute which defines a set of media conditions. |
+| class     | Class name for the fallback image.   |
+| width     | The fallback image `width` attribute.  |
+| height    | The fallback image `height` attribute. |
 
 #### Using the `respimg` utility
 
