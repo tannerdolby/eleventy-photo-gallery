@@ -37,7 +37,7 @@ Edit `_data/gallery.json` to include general image metadata like this:
 ### Transforming Images
 The `respimg` paired shortcode performs build-time image transformations and generates responsive image markup with `<picture>`. Once images are resized/transformed you can use them anywhere in your project, this plugin removes the need for users to resize images on their own.
 
-Next, make sure to include the appropiate image metadata to use the `respimg` utility:
+Next, make sure to include the necessary parameters when using the `respimg` utility:
 
 | Parameter | Description |
 | ------    | -------     |
