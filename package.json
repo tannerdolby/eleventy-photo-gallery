@@ -1,7 +1,7 @@
 {
-  "name": "11ty-photo-gallery",
-  "version": "1.0.0",
-  "description": "A photo or art gallery starter kit built with the static site generator Eleventy",
+  "name": "eleventy-photo-gallery",
+  "version": "1.0.2",
+  "description": "A photo gallery starter kit built with the static site generator Eleventy",
   "main": ".eleventy.js",
   "scripts": {
     "build": "eleventy",
@@ -12,28 +12,30 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tannerdolby/11ty-photo-gallery.git"
+    "url": "git+https://github.com/tannerdolby/eleventy-photo-gallery.git"
   },
   "bugs": {
-    "url": "https://github.com/tannerdolby/11ty-photo-gallery/issues"
+    "url": "https://github.com/tannerdolby/eleventy-photo-gallery/issues"
   },
   "author": {
     "name": "Tanner Dolby",
-    "email": "dolb.tanner@gmail.com",
+    "email": "tannercdolby@gmail.com",
     "url": "https://github.com/tannerdolby"
   },
   "keywords": [
     "Eleventy",
+    "11ty",
+    "Photo Gallery",
     "Photo Gallery Template"
   ],
-  "homepage": "https://github.com/tannerdolby/11ty-photo-gallery#readme",
+  "homepage": "https://github.com/tannerdolby/eleventy-photo-gallery#readme",
   "license": "MIT",
   "dependencies": {
     "@11ty/eleventy": "^0.11.0",
     "@11ty/eleventy-cache-assets": "^2.0.3",
     "clean-css": "^4.2.3",
     "eleventy-plugin-metagen": "^1.0.2",
-    "sharp": "^0.25.4",
+    "eleventy-plugin-sharp-respimg": "^1.1.4",
     "terser": "^5.3.3"
   }
 }
