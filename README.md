@@ -6,11 +6,12 @@ A starter site for creating your own photo or art gallery using the [Eleventy](h
 - [Deploy on Netlify](https://app.netlify.com/) - Host your own custom gallery
 
 ## Getting Started
-You can quickly generate a new repository from this template by clicking the green [Use Template](https://github.com/tannerdolby/eleventy-photo-gallery/generate) button. Creating a template repository provides the same directory structure and files as the original project.
+Quickly generate a new repository from this template by clicking the green [Use Template](https://github.com/tannerdolby/eleventy-photo-gallery/generate) button. Creating a template repository provides the same directory structure and files as the original project.
 
-## Features
+## Features 
 - Responsive and optimized images using `<picture>`
 - Home page with CSS Grid representing gallery of images
+- Perform build-time image transformations and generate responsive image markup using the `respimg` paired shortcode.
 - Featured image page
 - About me page
 
@@ -23,29 +24,111 @@ You can quickly generate a new repository from this template by clicking the gre
 
 ## Usage
 
-Edit `_data/gallery.json` to include the appropiate image metadata. See [CONTRIBUTING.md](https://github.com/tannerdolby/eleventy-photo-gallery/blob/master/CONTRIBUTING.md) for more on customizing your own photo/art gallery.
+Edit `_data/gallery.json` to include image metadata like shown below:
 
-Use the `sharpImages` function inside `.eleventy.js` to create three resized versions of the original image.
+```
+{
+    "title": "Gasoline station during nighttime",
+    "date": "October 23, 2020",
+    "credit": "Photo by Artem Saranin",
+    "linkToAuthor": "https://www.pexels.com/photo/gasoline-station-during-nighttime-1453781/"
+}
+```
 
-1. Get an image from somewhere (your file system, a stock photo website, etc)
+
+### Transforming Images
+Next, make sure to include the appropiate image metadata to use the `respimg` utility:
+
+- `src`: Image filename.
+- `alt`: Image alt text.
+- `imgDir`: The directory where images are stored.
+- `widths`: An object containing three keys (small, med, large) and any integer width values.
+- `sizes`: The sizes attribute which defines a set of media conditions. 
+
+The `respimg` utility performs build-time image transformations and generates responsive image markup with `<picture>`. Once images are resized/transformed you can use them anywhere in your project, this plugin removes the need for users to resize images on their own.
+
+1. Get a large image from somewhere (your file system, a stock photo website, etc)
 2. Add the original image to the `/images/` folder.
-3. Go into `.eleventy.js` and utilize `sharpImages`
-4. This creates three resized images from the original, which outputs to the `/images/` folder:
+3. Use the `respimg` paired shortcode if you need to resize and reformat images.
+4. This performs image transformations at build-time, creating varying image dimensions and formats from the original image, which outputs to the `/images/` folder:
+
+Using the paired shortcode for a single large image like this: 
+```
+{% respimg 
+    "car.jpg",
+    "A photo of a car",
+    "./images/",
+    { small: 320, med: 640, large: 1024 },
+    "(min-width: 450px) 33.3vw, 100vw"
+%}{% endrespimg %}
+```
+will generate responsive image markup using `<picture>` tags like this:
+```
+ <picture>
+    <source 
+        type="image/webp"
+        srcSet="/images/car-large.webp 1024w,
+                /images/car-med.webp 640w,
+                /images/car-small.webp 320w"
+        sizes="(min-width: 450px) 33.3vw, 100vw"
+    >
+    <img 
+        srcSet="/images/car-large.jpg 1024w,
+                /images/car-med.jpg 640w,
+                /images/car-small.jpg 320w"
+        sizes="(min-width: 450px) 33.3vw, 100vw"
+        src="car-small.jpg"
+        alt="A photo of a car"
+        loading="lazy"
+    >
+</picture>
+```
+
+You can also transform multiple images at build-time using [global data](https://www.11ty.dev/docs/data-global/) or [front matter]() to handle all image resizing and reformatting needs in one go using a `for` loop. 
+
+Refer to [eleventy-plugin-sharp-respimg](https://github.com/tannerdolby/eleventy-plugin-sharp-respimg) docs for more information on usage. 
+
+### Transforming multiple images at build-time
+If you have an array of objects stored in `_data/gallery.json` like this:
+```
+[
+    {
+        "src": "car.jpg",
+        "alt": "Photo of a car",
+        "imgDir": "./images/",
+        "widths": {
+            "small": 320,
+            "med": 640,
+            "large": 1024
+        },
+        "sizes": "(min-width: 450px) 33.3vw, 100vw"
+    },
+    {
+        "src": "flower.jpg",
+        "alt": "Photo of a flower",
+        "imgDir": "./images/",
+        "widths": {
+            "small": 400,
+            "med": 600,
+            "large": 1024
+        },
+        "sizes": "(min-width: 450px) 33.3vw, 100vw"
+    }
+]
+```
+You can loop through each object performing build-time image transformations and generate responsive image markup using the paired shortcode like this:
 
 ```
-sharpImages("./images/road-fog.jpg");
+{% for image in gallery %}
+    {% respimg 
+        image.src, 
+        image.alt, 
+        image.imgDir,
+        image.widths, 
+        image.sizes 
+    %}{% endrespimg %}
+{% endfor %}
 ```
-
-``` 
-road-fog-large.webp
-road-fog-med.webp
-road-fog-small.webp
-```
-
-5. Include the images in `/images/` if you create the resized images externally.
-6. Go into `_data/gallery.json` and create a new object with the image metadata
-
-See [CONTRIBUTING.md](https://github.com/tannerdolby/eleventy-photo-gallery/blob/master/CONTRIBUTING.md) for more on customizing the image gallery.
 
 ## Contributing 
 Feel free to contribute to this project by suggesting a new feature or modification. I built this template for others to use, so let me know what you'd like to see added/modified. 
