@@ -1,3 +1,0 @@
----
-layout: feature.njk
----
