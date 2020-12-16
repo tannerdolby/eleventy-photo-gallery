@@ -14,6 +14,7 @@ Hi, I'm {{ firstName }} {{ lastName}}. I'm a novice photography and designer. Th
 This is mock text, write whatever you'd like for the about me page. Maybe add a picture or some of your recent work!
 
 ## Contact
+You can find me around the web at the following places:
 
 <ul class="about-socials">
     <li><a href="{{ site.socials.dribbble }}">Dribbble</a></li>
