@@ -23,7 +23,6 @@ Quickly generate a new photo gallery from this template by clicking the green [U
 5. Serve locally: `npm run serve`
 
 ## Usage
-
 Edit `_data/gallery.json` to include general image metadata like this:
 
 ```
@@ -94,6 +93,7 @@ will generate responsive image markup using `<picture>` tags like this:
 
 If you have already transformed an image and wish to only generate the responsive image markup using `<picture>`, simply use the `respimg` shortcode again anywhere within your project. Read more on the [plugin docs](https://github.com/tannerdolby/eleventy-plugin-sharp-respimg#using-the-paired-shortcode-more-than-once-for-the-same-image).
 
+### Transforming multiple images
 You can also transform multiple images at build-time using [global data](https://www.11ty.dev/docs/data-global/) or [front matter](https://www.11ty.dev/docs/data-frontmatter/) to handle all image resizing and reformatting needs in one go using a `for` loop. 
 
 Refer to [eleventy-plugin-sharp-respimg](https://github.com/tannerdolby/eleventy-plugin-sharp-respimg) documentation for more information on usage. 

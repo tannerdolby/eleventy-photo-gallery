@@ -12,8 +12,6 @@ I welcome any and all community contributions to this project. Feel free to open
 
 4. Update `_data/gallery.json` to include the appropiate image metadata for new images added. The fields after `linkToAuthor` must be provided in order to use the `respimg` utility for transforming images at build-time.
 
-Note: The `data` key is necessary for images to be generated on the featured image page.
-
 ```json
 [
     {
@@ -30,20 +28,35 @@ Note: The `data` key is necessary for images to be generated on the featured ima
             "large": 1024
         },
         "sizes": "(min-width: 450px) 33.3vw, 100vw",
-        "data": {
-            "small": "/photos/terrace-window-small",
-            "med": "/photos/terrace-window-med",
-            "large": "/photos/terrace-window-large"
-        }
+        "class": "my-img",
+        "width": 1024,
+        "height": 768
     }
 ]
+```
+
+If you don't need unique `class`, `width`, and `height` attributes, then simply use the shortcode like this:
+
+```
+{% for image in gallery %}
+    {% respimg 
+        image.src,
+        image.alt,
+        image.imgDir,
+        image.widths,
+        image.sizes,
+        "showcase-img",
+        "1024",
+        "768"
+    %}{% endrespimg %}
+{% endfor %}
 ```
 
 ## Add new photos to the gallery
 1. Get an image from somewhere (your file system, a stock photo website, etc)
 2. Add the original image to the `/images/` folder.
 3. Utilize `respimg` for transforming images.
-4. This creates resized and reformatted `.jpeg` and `.webp` images from the original, which outputs to the `/images/` folder:
+4. This creates resized and reformatted `.jpeg` and `.webp` images from the original, which outputs to the `/images/` folder and generates responsive image markup using `<picture>` in the template where the shortcode was used.
 
 ## Run Eleventy! 
 - Build: `npm run build`
