@@ -47,26 +47,16 @@ permalink: "/gallery/{{ image.title | slug }}/"
         <main class="main-container">
             <div class="featured-img">
                 <div class="image-container">
-                    <picture>
-                        <source
-                            type="image/webp"
-                            srcset="{{ image.data.large }}.webp {{ image.widths.large }}w, 
-                                    {{ image.data.med }}.webp {{ image.widths.med }}w, 
-                                    {{ image.data.small }}.webp {{ image.widths.small }}w"
-                            sizes="(min-width: 450px) 33.3vw, 100vw"
-                        >
-                        <img
-                            srcset="{{ image.data.large }}.jpg {{ image.widths.large }}w, 
-                                    {{ image.data.med }}.jpg {{ image.widths.med }}w, 
-                                    {{ image.data.small }}.jpg {{ image.widths.small }}w"
-                            sizes="(min-width: 450px) 33.3vw, 100vw"
-                            src="{{ image.data.small }}.jpg"
-                            alt="{{ image.alt }}"
-                            loading="lazy"
-                            width="1024"
-                            height="768"
-                        >
-                    </picture>
+                    {% respimg 
+                        image.src,
+                        image.alt,
+                        image.imgDir,
+                        image.widths,
+                        image.sizes,
+                        "showcase-img",
+                        "1024",
+                        "768"
+                    %}{% endrespimg %}
                     <div class="image-description">
                         <h1 class="h2">{{ image.title }}</h1>
                         <p>{{ image.credit }} on <a class="credit" href="{{ image.linkToAuthor }}">Pexels</a></p>
