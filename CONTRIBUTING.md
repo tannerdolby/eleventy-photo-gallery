@@ -12,6 +12,8 @@ I welcome any and all community contributions to this project. Feel free to open
 
 4. Update `_data/gallery.json` to include the appropiate image metadata for new images added. The fields after `linkToAuthor` must be provided in order to use the `respimg` utility for transforming images at build-time.
 
+Note: The `data` key is necessary for images to be generated on the featured image page.
+
 ```json
 [
     {
