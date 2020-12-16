@@ -35,6 +35,8 @@ Edit `_data/gallery.json` to include general image metadata like this:
 ```
 
 ### Transforming Images
+The `respimg` paired shortcode performs build-time image transformations and generates responsive image markup with `<picture>`. Once images are resized/transformed you can use them anywhere in your project, this plugin removes the need for users to resize images on their own.
+
 Next, make sure to include the appropiate image metadata to use the `respimg` utility:
 
 - `src`: Image filename.
@@ -46,7 +48,7 @@ Next, make sure to include the appropiate image metadata to use the `respimg` ut
 - `width`: The fallback image width attribute.
 - `height`: The fallback image height attribute.
 
-The `respimg` utility performs build-time image transformations and generates responsive image markup with `<picture>`. Once images are resized/transformed you can use them anywhere in your project, this plugin removes the need for users to resize images on their own.
+#### Using the `respimg` utility
 
 1. Get a large image from somewhere (your file system, a stock photo website, etc)
 2. Add the original image to the `/images/` folder.
