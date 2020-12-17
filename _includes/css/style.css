@@ -243,7 +243,6 @@ nav .nav-list li .link {
     object-fit: cover;
     /* object-fit: contain; this is best but need to find a way around letterboxing" */
     max-width: 100%;
-    height: auto;
     height: 90vh;
     margin: 1rem auto 1rem auto;
 }
@@ -379,7 +378,7 @@ footer .social-links li {
 
 @media screen and (max-width: 650px) {
     .featured-img img {
-        height: 80vh;
+        height: 70vh;
     }
 }
 
