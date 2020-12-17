@@ -23,15 +23,27 @@ Quickly generate a new photo gallery from this template by clicking the green [U
 5. Serve locally: `npm run serve`
 
 ## Usage
-Edit `_data/gallery.json` to include general image metadata like this:
+Edit `_data/gallery.json` to include image metadata like this:
 
 ```
 {
-    "title": "Gasoline station during nighttime",
-    "date": "October 23, 2020",
-    "credit": "Photo by Artem Saranin",
-    "linkToAuthor": "https://www.pexels.com/photo/gasoline-station-during-nighttime-1453781/"
-}
+        "title": "Terrace with green plants on night street",
+        "date": "October 20, 2020",
+        "credit": "Photo by Aldiyar Seitkassymov",
+        "linkToAuthor": "https://www.pexels.com/photo/terrace-with-green-plants-on-night-street-3100835/",
+        "src": "terrace-window.jpg",
+        "alt": "Terrace outside shop window with green plants and pink tree on night street",
+        "imgDir": "./images/",
+        "widths": {
+            "small": 320,
+            "med": 640,
+            "large": 1024
+        },
+        "sizes": "(min-width: 450px) 33.3vw, 100vw",
+        "class": "my-img",
+        "width": 1024,
+        "height": 768
+    }
 ```
 
 ### Transforming Images
