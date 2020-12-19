@@ -377,8 +377,8 @@ footer .social-links li {
 }
 
 @media screen and (max-width: 650px) {
-    .featured-img img {
-        height: 70vh;
+    .featured-img .showcase-img {
+        height: 65vh;
     }
 }
 
