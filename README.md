@@ -23,7 +23,7 @@ Quickly generate a new photo gallery from this template by clicking the green [U
 5. Serve locally: `npm run serve`
 
 ## Usage
-To add images to the home page gallery. Edit `_data/gallery.json` to include image metadata like this:
+To add images to the home page gallery and featured image pages. Edit `_data/gallery.json` to include image metadata like this:
 
 ```
 {
