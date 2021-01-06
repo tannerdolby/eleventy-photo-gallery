@@ -13,7 +13,7 @@ Quickly generate a new photo gallery from this template by clicking the green [U
 - Home page with CSS Grid representing gallery of images
 - Featured image page
 - About me page
-- Perform build-time image transformations and generate responsive image markup using the `respimg` paired shortcode.
+- Build-time image transformations which generate responsive image markup using the `respimg` paired shortcode
 
 ## Local Setup
 1. Clone this repo: `git clone https://github.com/tannerdolby/eleventy-photo-gallery.git`
@@ -23,7 +23,7 @@ Quickly generate a new photo gallery from this template by clicking the green [U
 5. Serve locally: `npm run serve`
 
 ## Usage
-Edit `_data/gallery.json` to include image metadata like this:
+To add images to the home page gallery. Edit `_data/gallery.json` to include image metadata like this:
 
 ```
 {
@@ -45,6 +45,8 @@ Edit `_data/gallery.json` to include image metadata like this:
         "height": 768
     }
 ```
+
+Once the image data is supplied within the global data file `_data/gallery.json` then the home page gallery images and featured image pages will display responsive images with `<picture>`.
 
 ### Transforming Images
 The `respimg` paired shortcode performs build-time image transformations and generates responsive image markup with `<picture>`. Once images are resized/transformed you can use them anywhere in your project, this plugin removes the need for users to resize images on their own.
