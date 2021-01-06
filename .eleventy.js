@@ -55,49 +55,11 @@ module.exports = (eleventyConfig) => {
         return `<a class="${cls}" href="${href}" rel="${rel}" target="${target}">${btnTxt}</a>`;
     });
 
-    /* This function accepts one 
-    * parameter (an image) and will create
-    * three resized images in the specified
-    * format. (.jpg, .webp, etc)
-    */
-    function sharpImages(fileName) {
-        let resizeImgSmall = () => {
-            let shortName = fileName.slice(0, fileName.length - 4);
-            fs.readFileSync(fileName)
-                sharp(`${fileName}`, { failOnError: false })
-                    .resize(320, 240)
-                    .toFile(`${shortName}-small.webp`);
-        };
-        resizeImgSmall();
-
-        let resizeImgMed = () => {
-            let shortName = fileName.slice(0, fileName.length - 4);
-            fs.readFileSync(fileName)
-                sharp(`${fileName}`, { failOnError: false })
-                    .resize(640, 480)
-                    .toFile(`${shortName}-med.webp`);
-        };
-        resizeImgMed();
-        
-        let resizeImgLarge = () => {
-            let shortName = fileName.slice(0, fileName.length - 4);
-            fs.readFileSync(`${fileName}`)
-                sharp(`${fileName}`, { failOnError: false })
-                    .resize(1024, 768)
-                    .toFile(`${shortName}-large.webp`);
-        };
-        resizeImgLarge();
-    }
-    // Make sure to comment or remove this function
-    // call once you've created the images you need
-    // as it will create new images on every build.
-    
-    //sharpImages("/images/bench-light.jpg");
-
-    /* 
-     Use https://squoosh.app/ for resizing images with more options
-     sharpImages function creates 3 resized sharp versions of a specified image file
-    */
+    // get the current year to be placed in the footer
+    eleventyConfig.addShortcode("getYear", function() {
+        const year = new Date().getFullYear();
+        return `${year}`;
+    });
     
     return {
         dir: {
