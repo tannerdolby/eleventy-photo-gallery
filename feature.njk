@@ -4,28 +4,26 @@ pagination:
     size: 1
     alias: image
 permalink: "/gallery/{{ image.title | slug }}/"
+url: https://eleventy-gallery.netlify.app
 ---
 <!DOCTYPE html>
 <html lang="en-US" dir="ltr">
     <head>
         {% metagen 
-            desc="Featured image from the image. This seperate page contains more about the image itself, a link to where someone can find it, author/creditor.",
-            twitterHandle="Tanner Dolby",
-            name="Tanner Dolby"
+            title=image.title,
+            desc=site.pageMetadata.featured.content,
+            url=url + "/gallery/" + image.title | slug + "/",
+            img=url + "/images/" + image.src,
+            img_alt=image.alt,
+            twitterHandle=site.author.twitterHandle,
+            name=site.author.firstName + " " + site.author.lastName
         %}
-        <title>{{ image.title }}</title>
-        <meta property="og:url" content="https://eleventy-gallery.netlify.app/gallery/{{ image.title | slug }}"> 
-        <meta property="og:img" content="https://eleventy-gallery.netlify.app/images/{{ image.src }}"> 
-        <meta property="og:img:alt" content="{{ image.alt }}"> 
-        <meta name="twitter:image" content="https://eleventy-gallery.netlify.app/images/{{ image.src }}"> 
-        <meta name="twitter:image:alt" content="{{ image.alt }}"> 
         <meta name="theme-color" content="#fff">
         <meta name="background-color" content="#fff">
         <link rel="apple-touch-icon" sizes="180x180" href="/favicon_data/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon_data/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon_data/favicon-16x16.png">
         <link rel="manifest" href="/favicon_data/site.webmanifest">
-        <link rel="canonical" content="https://eleventy-gallery.netlify.app/gallery/{{ image.title | slug }}"> 
         {% set css %}
             {% include "css/style.css" %}
         {% endset %}
@@ -36,7 +34,7 @@ permalink: "/gallery/{{ image.title | slug }}/"
     <body class="feature">
         <header class="top-nav">
             <nav class="nav-main">
-                <a class="home-button" href="/">John Smith</a>
+                <a class="home-button" href="/">{{ site.author.firstName }} {{ site.author.lastName }}</a>
                 <ul class="nav-list">
                     <li style="margin-left: 0"><a class="link" href="/">Home</a></li>
                     <li><a class="link" href="/about/">About</a></li>
@@ -75,7 +73,7 @@ permalink: "/gallery/{{ image.title | slug }}/"
         <footer>
             <div class="footer-content">
                 <div class="footer-info home">
-                    <p>&copy; {% getYear %} John Smith. Built with <a href="https://www.11ty.dev/">Eleventy</a></p>
+                    <p>&copy; {% getYear %} {{ site.author.firstName }} {{ site.author.lastName }}. Built with <a href="https://www.11ty.dev/">Eleventy</a></p>
                     <ul class="footer-links">
                         <li class="footer-link"><a href="{{ site.socials.dribbble }}">Dribbble</a></li>
                         <li class="footer-link"><a href="{{ site.socials.twitter }}">Twitter</a></li>
