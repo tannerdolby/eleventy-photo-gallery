@@ -5,16 +5,18 @@ pagination:
     alias: image
 permalink: "/gallery/{{ image.title | slug }}/"
 url: https://eleventy-gallery.netlify.app
+cardType: summary_large_image
 ---
 <!DOCTYPE html>
 <html lang="en-US" dir="ltr">
     <head>
         {% metagen 
             title=image.title,
-            desc=site.pageMetadata.featured.content,
+            desc=image.title + " " + site.pageMetadata.featured.content,
             url=url + "/gallery/" + image.title | slug + "/",
             img=url + "/images/" + image.src,
             img_alt=image.alt,
+            twitter_card_type=cardType,
             twitterHandle=site.author.twitterHandle,
             name=site.author.firstName + " " + site.author.lastName
         %}
