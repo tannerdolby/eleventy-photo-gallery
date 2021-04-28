@@ -31,11 +31,11 @@
   "homepage": "https://github.com/tannerdolby/eleventy-photo-gallery#readme",
   "license": "MIT",
   "dependencies": {
-    "@11ty/eleventy": "^0.11.1",
+    "@11ty/eleventy": "^0.12.1",
     "@11ty/eleventy-cache-assets": "^2.1.0",
     "clean-css": "^4.2.3",
-    "eleventy-plugin-metagen": "^1.1.0",
-    "eleventy-plugin-sharp-respimg": "^1.1.5",
-    "terser": "^5.5.1"
+    "eleventy-plugin-metagen": "^1.3.1",
+    "eleventy-plugin-sharp-respimg": "^1.1.6",
+    "terser": "^5.7.0"
   }
 }
