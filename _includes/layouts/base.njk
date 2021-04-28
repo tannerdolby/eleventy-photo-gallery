@@ -3,6 +3,7 @@ title: Eleventy Photo Gallery Template
 url: https://eleventy-gallery.netlify.app
 img: /images/highway-water-large.jpg
 alt: Terrace outside shop window with green plants and pink tree on night street
+card_type: summary_large_image
 ---
 <!DOCTYPE html>
 <html lang="en-US" dir="ltr">
@@ -13,6 +14,7 @@ alt: Terrace outside shop window with green plants and pink tree on night street
             url=url,
             img=url + img,
             img_alt=alt,
+            twitter_card_type=card_type,
             twitterHandle=site.author.twitterHandle,
             name=site.author.firstName + " " + site.author.lastName
         %}
