@@ -34,11 +34,7 @@ To add images to the home page gallery and featured image pages. Edit `_data/gal
         "src": "terrace-window.jpg",
         "alt": "Terrace outside shop window with green plants and pink tree on night street",
         "imgDir": "./images/",
-        "widths": {
-            "small": 320,
-            "med": 640,
-            "large": 1024
-        },
+        "widths": [320, 640, 1024],
         "sizes": "(min-width: 450px) 33.3vw, 100vw",
         "class": "my-img",
         "width": 1024,
@@ -57,10 +53,12 @@ Next, make sure to include the necessary parameters when using the `respimg` uti
 | ------    | -------     |
 | src       | The filename for an image. |
 | alt       | A text description of the image. |
-| image directory | The directory where the image file is located. |
+| inputDir | The `input` directory in your Eleventy config file. |
+| imgDir | The rdirectory where the image file is located. Relative to `inputDir`. |
 | widths    | The desired image widths. Supports any three integer values. |
 | sizes     | The `sizes` attribute which defines a set of media conditions. |
-| class     | Class name for the fallback image.   |
+| className     | Class attribute for the fallback image. |
+| id | The `id` attribute for fallback image. |
 | width     | The fallback image `width` attribute.  |
 | height    | The fallback image `height` attribute. |
 
@@ -74,15 +72,16 @@ Next, make sure to include the necessary parameters when using the `respimg` uti
 Using the paired shortcode for a single large image like this: 
 ```
 {% respimg 
-    "car.jpg",
-    "A photo of a car",
-    "./images/",
-    { small: 320, med: 640, large: 1024 },
-    "(min-width: 450px) 33.3vw, 100vw",
-    "my-img",
-    "1024",
-    "768"
-%}{% endrespimg %}
+    src="car.jpg",
+    alt="A photo of a car",
+    inputDir=".",
+    imgDir="/images/",
+    widths=[320, 640, 1024],
+    sizes="(min-width: 450px) 33.3vw, 100vw",
+    className="my-img",
+    width=1024,
+    height=768
+%}
 ```
 will generate responsive image markup using `<picture>` tags like this:
 ```
@@ -112,7 +111,7 @@ will generate responsive image markup using `<picture>` tags like this:
 If you have already transformed an image and wish to only generate the responsive image markup using `<picture>`, simply use the `respimg` shortcode again anywhere within your project. Read more on the [plugin docs](https://github.com/tannerdolby/eleventy-plugin-sharp-respimg#using-the-paired-shortcode-more-than-once-for-the-same-image).
 
 ### Transforming multiple images
-You can also transform multiple images at build-time using [global data](https://www.11ty.dev/docs/data-global/) or [front matter](https://www.11ty.dev/docs/data-frontmatter/) to handle all image resizing and reformatting needs in one go using a `for` loop. 
+You can also transform multiple images dynamincally at build-time using [global data](https://www.11ty.dev/docs/data-global/) or [front matter](https://www.11ty.dev/docs/data-frontmatter/) to handle all image resizing and reformatting needs in one go using a `for` loop. 
 
 Refer to [eleventy-plugin-sharp-respimg](https://github.com/tannerdolby/eleventy-plugin-sharp-respimg) documentation for more information on usage. 
 
