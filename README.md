@@ -54,7 +54,7 @@ Next, make sure to include the necessary parameters when using the `respimg` uti
 | src       | The filename for an image. |
 | alt       | A text description of the image. |
 | inputDir | The `input` directory in your Eleventy config file. |
-| imgDir | The rdirectory where the image file is located. Relative to `inputDir`. |
+| imgDir | Directory where the image file is located. Relative to `inputDir`. |
 | widths    | The desired image widths. Supports any three integer values. |
 | sizes     | The `sizes` attribute which defines a set of media conditions. |
 | className     | Class attribute for the fallback image. |
