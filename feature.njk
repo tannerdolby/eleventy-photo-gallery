@@ -48,15 +48,16 @@ cardType: summary_large_image
             <div class="featured-img">
                 <div class="image-container">
                     {% respimg 
-                        image.src,
-                        image.alt,
-                        image.imgDir,
-                        image.widths,
-                        image.sizes,
-                        "showcase-img",
-                        "1024",
-                        "768"
-                    %}{% endrespimg %}
+                        src=image.src,
+                        alt=image.alt,
+                        inputDir=".",
+                        imgDir=image.imgDir,
+                        widths=image.widths,
+                        sizes=image.sizes,
+                        className="showcase-img",
+                        width=1024,
+                        height=768
+                    %}
                     <div class="image-description">
                         <h1 class="h2">{{ image.title }}</h1>
                         <p>{{ image.credit }} on <a class="credit" href="{{ image.linkToAuthor }}">Pexels</a></p>
