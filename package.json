@@ -35,7 +35,7 @@
     "@11ty/eleventy-cache-assets": "^2.2.1",
     "clean-css": "^4.2.3",
     "eleventy-plugin-metagen": "^1.3.1",
-    "eleventy-plugin-sharp-respimg": "^1.1.6",
+    "eleventy-plugin-sharp-respimg": "^1.2.8",
     "terser": "^5.7.0"
   }
 }
