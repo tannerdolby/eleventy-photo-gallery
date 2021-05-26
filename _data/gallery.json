@@ -6,12 +6,8 @@
         "linkToAuthor": "https://www.pexels.com/photo/terrace-with-green-plants-on-night-street-3100835/",
         "src": "terrace-window.jpg",
         "alt": "Terrace outside shop window with green plants and pink tree on night street",
-        "imgDir": "./images/",
-        "widths": {
-            "small": 320,
-            "med": 640,
-            "large": 1024
-        },
+        "imgDir": "/images/",
+        "widths": [320, 640, 1024],
         "sizes": "(min-width: 450px) 33.3vw, 100vw"
     },
     {
@@ -21,12 +17,8 @@
         "linkToAuthor": "https://www.pexels.com/photo/highway-covered-in-water-2524368/",
         "src": "highway-water.jpg",
         "alt": "Skybridge over highway covered in water",
-        "imgDir": "./images/",
-        "widths": {
-            "small": 320,
-            "med": 640,
-            "large": 1024
-        },
+        "imgDir": "/images/",
+        "widths": [320, 640, 1024],
         "sizes": "(min-width: 450px) 33.3vw, 100vw"
     },
     {
@@ -36,12 +28,8 @@
         "linkToAuthor": "https://www.pexels.com/photo/brown-painted-wall-on-dim-light-1055613/",
         "src": "benches.jpg",
         "alt": "Brown painted wall with two benches and dim light above",
-        "imgDir": "./images/",
-        "widths": {
-            "small": 320,
-            "med": 640,
-            "large": 1024
-        },
+        "imgDir": "/images/",
+        "widths": [320, 640, 1024],
         "sizes": "(min-width: 450px) 33.3vw, 100vw"
     },
     {
@@ -51,12 +39,8 @@
         "linkToAuthor": "https://www.pexels.com/photo/light-streaks-3290601/",
         "src": "light-streaks.jpg",
         "alt": "Red light streaks across a street intersection at night",
-        "imgDir": "./images/",
-        "widths": {
-            "small": 320,
-            "med": 640,
-            "large": 1024
-        },
+        "imgDir": "/images/",
+        "widths": [320, 640, 1024],
         "sizes": "(min-width: 450px) 33.3vw, 100vw"
     },
     {
@@ -66,12 +50,8 @@
         "linkToAuthor": "https://www.pexels.com/photo/abstract-architecture-black-and-white-boardwalk-262367/",
         "src": "boardwalk.jpg",
         "alt": "Abstract architecture black and white boardwalk with glass like floor",
-        "imgDir": "./images/",
-        "widths": {
-            "small": 320,
-            "med": 640,
-            "large": 1024
-        },
+        "imgDir": "/images/",
+        "widths": [320, 640, 1024],
         "sizes": "(min-width: 450px) 33.3vw, 100vw"
     },
     {
@@ -81,12 +61,8 @@
         "linkToAuthor": "https://www.pexels.com/photo/silhouette-of-person-holding-glass-mason-jar-1274260/",
         "src": "glass-jar.jpg",
         "alt": "Person holding glass mason jar with night sky background",
-        "imgDir": "./images/",
-        "widths": {
-            "small": 320,
-            "med": 640,
-            "large": 1024
-        },
+        "imgDir": "/images/",
+        "widths": [320, 640, 1024],
         "sizes": "(min-width: 450px) 33.3vw, 100vw"
     },
     {
@@ -96,12 +72,8 @@
         "linkToAuthor": "https://www.pexels.com/photo/radio-city-music-hall-during-night-time-3700369/",
         "src": "music-hall.jpg",
         "alt": "Music hall with bright lights during night time",
-        "imgDir": "./images/",
-        "widths": {
-            "small": 320,
-            "med": 640,
-            "large": 1024
-        },
+        "imgDir": "/images/",
+        "widths": [320, 640, 1024],
         "sizes": "(min-width: 450px) 33.3vw, 100vw"
     },
     {
@@ -111,12 +83,8 @@
         "linkToAuthor": "https://www.pexels.com/photo/city-building-office-architecture-4850412/",
         "src": "business-center.jpg",
         "alt": "Tall highrise office building with winding architecture",
-        "imgDir": "./images/",
-        "widths": {
-            "small": 320,
-            "med": 640,
-            "large": 1024
-        },
+        "imgDir": "/images/",
+        "widths": [320, 640, 1024],
         "sizes": "(min-width: 450px) 33.3vw, 100vw"
     },
     {
@@ -126,12 +94,8 @@
         "linkToAuthor": "https://www.pexels.com/photo/photo-of-buildings-during-nighttime-2603464/",
         "src": "highrises-night.jpg",
         "alt": "Buildings during nighttime with orange lighting and water below",
-        "imgDir": "./images/",
-        "widths": {
-            "small": 320,
-            "med": 640,
-            "large": 1024
-        },
+        "imgDir": "/images/",
+        "widths": [320, 640, 1024],
         "sizes": "(min-width: 450px) 33.3vw, 100vw"
     },
     {
@@ -141,12 +105,8 @@
         "linkToAuthor": "https://www.pexels.com/photo/water-droplet-digital-wallpaper-1100946/",
         "src": "water-drop.jpg",
         "alt": "Rain drop bursting water particles upwards into the air",
-        "imgDir": "./images/",
-        "widths": {
-            "small": 320,
-            "med": 640,
-            "large": 1024
-        },
+        "imgDir": "/images/",
+        "widths": [320, 640, 1024],
         "sizes": "(min-width: 450px) 33.3vw, 100vw"
     },
     {
@@ -156,12 +116,8 @@
         "linkToAuthor": "https://www.pexels.com/photo/photo-of-empty-road-during-daytime-3295140/",
         "src": "empty-road.jpg",
         "alt": "An empty road during daytime with fog in the background",
-        "imgDir": "./images/",
-        "widths": {
-            "small": 320,
-            "med": 640,
-            "large": 1024
-        },
+        "imgDir": "/images/",
+        "widths": [320, 640, 1024],
         "sizes": "(min-width: 450px) 33.3vw, 100vw"
     },
     {
@@ -171,12 +127,8 @@
         "linkToAuthor": "https://www.pexels.com/photo/gasoline-station-during-nighttime-1453781/",
         "src": "gas-station.jpg",
         "alt": "Gasoline station during nighttime with glowing red roof lights",
-        "imgDir": "./images/",
-        "widths": {
-            "small": 320,
-            "med": 640,
-            "large": 1024
-        },
+        "imgDir": "/images/",
+        "widths": [320, 640, 1024],
         "sizes": "(min-width: 450px) 33.3vw, 100vw"
     }
 ]
