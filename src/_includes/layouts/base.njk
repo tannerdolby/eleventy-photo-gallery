@@ -1,0 +1,84 @@
+---
+title: Eleventy Photo Gallery Template
+url: https://eleventy-gallery.netlify.app
+img: /images/highway-water-large.jpg
+alt: Terrace outside shop window with green plants and pink tree on night street
+cardType: summary_large_image
+---
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+    <head>
+        {% metagen 
+            title=title,
+            desc=site.pageMetadata.home.content,
+            url=url,
+            img=url + img,
+            img_alt=alt,
+            twitter_card_type=cardType,
+            twitterHandle=site.author.twitterHandle,
+            name=site.author.firstName + " " + site.author.lastName
+        %}
+        <meta name="theme-color" content="#fff">
+        <meta name="background-color" content="#fff">
+        <link rel="apple-touch-icon" sizes="180x180" href="/favicon_data/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon_data/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon_data/favicon-16x16.png">
+        <link rel="manifest" href="/favicon_data/site.webmanifest">
+        {% set css %}
+            {% include "css/style.css" %}
+        {% endset %}
+        <style>
+            {{ css | cssmin | safe }}
+        </style>
+    </head>
+    <body>
+        <header class="top-nav">
+            <nav class="nav-main">
+                <a class="home-button" href="/">{{ site.author.firstName }} {{ site.author.lastName }}</a>
+                <ul class="nav-list">
+                    <li style="margin-left: 0"><a class="link" href="/">Home</a></li>
+                    <li><a class="link" href="/about/">About</a></li>
+                    <li><a class="link" href="https://github.com/tannerdolby/eleventy-photo-gallery">Code</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main-home">
+            <div class="page-banner">
+                {{ content | safe}}
+            </div>
+            <div class="gallery">
+                <ul class="image-grid">
+                    {% for image in gallery %}
+                    <li class="image-container">
+                        <a href="/gallery/{{ image.title | slug }}" aria-label="Gallery image {{ image.title }}">
+                            {% respimg 
+                                src=image.src,
+                                alt=image.alt,
+                                inputDir=".",
+                                imgDir=image.imgDir,
+                                widths=[320, 480, 640, 1024],
+                                sizes="(max-width: 480px) 33.3vw, (max-width: 640px) 50vw, 100vw",
+                                className="grid-image",
+                                width=640,
+                                height=800
+                            %}
+                        </a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </main>
+        <footer>
+            <div class="footer-content">
+                <div class="footer-info home">
+                    <p>&copy; {% getYear %} {{ site.author.firstName }} {{ site.author.lastName }}. Built with <a href="https://www.11ty.dev/">Eleventy</a></p>
+                    <ul class="footer-links">
+                        <li class="footer-link"><a href="{{ site.socials.dribbble }}">Dribbble</a></li>
+                        <li class="footer-link"><a href="{{ site.socials.twitter }}">Twitter</a></li>
+                        <li class="footer-link"><a href="{{ site.socials.linkedin }}">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
