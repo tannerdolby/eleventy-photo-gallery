@@ -94,3 +94,14 @@ The eleventy configuration file, `.eleventy.js` is currently configured to use m
 
 ### HTML Validator
 All `.html` files have been validated using the [Nu HTML Checker](https://validator.w3.org/).
+
+## Lighthouse Audit Scores 
+As of June 5, 2021 2:36pm (PST)
+
+Home page:
+
+![Home page Lighthouse Audit results](https://user-images.githubusercontent.com/48612525/120906123-b47d9100-c60b-11eb-98df-c5eec3c1f735.png)
+
+Feature page:
+
+![Feature page Lighthouse Audit results](https://user-images.githubusercontent.com/48612525/120906119-b21b3700-c60b-11eb-86a9-d6d243375f89.png)

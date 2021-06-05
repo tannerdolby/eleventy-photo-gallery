@@ -6,7 +6,7 @@ A starter site for creating your own photo or art gallery using the [Eleventy](h
 - [Deploy on Netlify](https://app.netlify.com/) - Host your own custom gallery
 
 ## Getting Started
-Quickly generate a new photo gallery from this template by clicking the green [Use Template](https://github.com/tannerdolby/eleventy-photo-gallery/generate) button. Creating a template repository provides the same directory structure and files as the original project.
+Quickly generate a [highly performant](https://github.com/tannerdolby/eleventy-photo-gallery/blob/master/CONTRIBUTING.md#lighthouse-audit-scores) photo gallery from this template by clicking the green [Use Template](https://github.com/tannerdolby/eleventy-photo-gallery/generate) button. Creating a template repository provides the same directory structure and files as the original project.
 
 ## Features 
 - Responsive and optimized images using `<picture>`
