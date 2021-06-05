@@ -237,6 +237,7 @@ nav .nav-list li .link {
     justify-content: space-between;
     align-items: center;
     margin-top: 2rem;
+    padding: 0 1.25rem;
 }
 
 .featured-img .showcase-img {
