@@ -1,5 +1,3 @@
-const sharp = require("sharp");
-const fs = require("fs");
 const CleanCSS = require("clean-css");
 const { minify } = require("terser");
 const metagen = require("eleventy-plugin-metagen");
@@ -26,7 +24,6 @@ module.exports = (eleventyConfig) => {
 
     // Create css-clean CSS Minifier filter
     eleventyConfig.addFilter("cssmin", function(code) {
-        // console.log(new CleanCSS({}).minify(code).stats);
         return new CleanCSS({}).minify(code).styles;
     });
 
