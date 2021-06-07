@@ -32,16 +32,7 @@ cardType: summary_large_image
         </style>
     </head>
     <body>
-        <header class="top-nav">
-            <nav class="nav-main">
-                <a class="home-button" href="/">{{ site.author.firstName }} {{ site.author.lastName }}</a>
-                <ul class="nav-list">
-                    <li style="margin-left: 0"><a class="link" href="/">Home</a></li>
-                    <li><a class="link" href="/about/">About</a></li>
-                    <li><a class="link" href="https://github.com/tannerdolby/eleventy-photo-gallery">Code</a></li>
-                </ul>
-            </nav>
-        </header>
+        {% include "layouts/nav.njk" %}
         <main class="main-home">
             <div class="page-banner">
                 {{ content | safe}}

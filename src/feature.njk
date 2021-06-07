@@ -34,16 +34,7 @@ cardType: summary_large_image
         </style>
     </head>
     <body class="feature">
-        <header class="top-nav">
-            <nav class="nav-main">
-                <a class="home-button" href="/">{{ site.author.firstName }} {{ site.author.lastName }}</a>
-                <ul class="nav-list">
-                    <li style="margin-left: 0"><a class="link" href="/">Home</a></li>
-                    <li><a class="link" href="/about/">About</a></li>
-                    <li><a class="link" href="https://github.com/tannerdolby/eleventy-photo-gallery">Code</a></li>
-                </ul>
-            </nav>
-        </header>
+        {% include "layouts/nav.njk" %}
         <main class="main-container">
             <div class="featured-img">
                 <div class="image-container">
@@ -64,10 +55,14 @@ cardType: summary_large_image
                     </div>
                     <div class="prev-next">
                         {% if pagination.href.previous %}
-                            <a class="prev" href="{{ pagination.href.previous }}">&lt; Previous Photo</a>
+                            <a class="prev" href="{{ pagination.href.previous }}">Previous</a>
                         {% endif %}
                         {% if pagination.href.next %}
-                            <a class="next" href="{{ pagination.href.next }}">Next Photo &gt;</a>
+                            {% if not pagination.href.previous %}
+                            <a class="next" style="margin-left: auto; margin-right: 0;" href="{{ pagination.href.next }}">Next Photo &gt;</a>
+                            {% else %}
+                            <a class="next" href="{{ pagination.href.next }}">Next</a>
+                            {% endif %}
                         {% endif %}
                     </div>
                 </div>
