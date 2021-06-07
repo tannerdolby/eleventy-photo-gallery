@@ -12,6 +12,8 @@ body {
     padding: 0;
     min-height: 100vh;
     background: #f6f6f6;
+    font-size: 16px;
+    line-height: 1.6;
 }
 
 img {
@@ -41,7 +43,7 @@ a:hover,
     text-decoration: underline;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
     font-family: var(--system-font);
     color: #212121;
 }
@@ -237,7 +239,19 @@ nav .nav-list li .link {
     justify-content: space-between;
     align-items: center;
     margin-top: 2rem;
-    padding: 0 1.25rem;
+    padding: 0 .5rem;
+}
+
+.prev-next a {
+    padding: .3rem .85rem;
+    border: 1px solid #777;
+    border-radius: 3px;
+    text-decoration: none;
+    color: #333;
+}
+
+.prev-next a:hover {
+    background: rgb(241, 241, 241);
 }
 
 .featured-img .showcase-img {
@@ -254,7 +268,7 @@ nav .nav-list li .link {
 
 footer {
     position: relative;
-    margin: 2rem auto 1rem auto;
+    margin: 0 auto 1rem auto;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     max-width: 1100px;
@@ -412,6 +426,10 @@ footer .social-links li {
 @media screen and (max-width: 415px) {
     .main-container {
         margin-top: 2rem;
+    }
+
+    nav {
+        border-bottom: 1px solid #ccc;
     }
 }
 
