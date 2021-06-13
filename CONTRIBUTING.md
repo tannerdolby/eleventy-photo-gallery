@@ -22,11 +22,7 @@ I welcome any and all community contributions to this project. Feel free to open
         "src": "terrace-window.jpg",
         "alt": "Terrace outside shop window with green plants and pink tree on night street",
         "imgDir": "./images/",
-        "widths": {
-            "small": 320,
-            "med": 640,
-            "large": 1024
-        },
+        "widths": [320, 640, 1024],
         "sizes": "(min-width: 450px) 33.3vw, 100vw",
         "class": "my-img",
         "width": 1024,
@@ -77,10 +73,10 @@ Thank you for all of your help and contributions! 🚀
 ### Notes (Not necessary to read in order to contribute)
 The eleventy configuration file, `.eleventy.js` is currently configured to use manual passthrough file copy to include the following directories in the `_site` output. 
 
-- `/images/`
-- `/css/`
-- `/favicon_data/`
-- `/js/` 
+- `./src/images/`
+- `./src/css/`
+- `./src/favicon_data/`
+- `./src/js/` 
 
 ### Sources of Data
 * Global Data Files: 
@@ -98,7 +94,7 @@ All `.html` files have been validated using the [Nu HTML Checker](https://valida
 ## Current Ranking on Speedlify (05-13-2021)
 #4 (Top 5)- https://www.11ty.dev/speedlify#details-b2ed2b46
 
-## Lighthouse Audit Scores 
+### Lighthouse Audit Scores 
 As of June 5, 2021 2:36pm (PST)
 
 Home page:
