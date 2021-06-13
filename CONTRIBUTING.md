@@ -95,6 +95,9 @@ The eleventy configuration file, `.eleventy.js` is currently configured to use m
 ### HTML Validator
 All `.html` files have been validated using the [Nu HTML Checker](https://validator.w3.org/).
 
+## Current Ranking on Speedlify (05-13-2021)
+#4 (Top 5)- https://www.11ty.dev/speedlify#details-b2ed2b46
+
 ## Lighthouse Audit Scores 
 As of June 5, 2021 2:36pm (PST)
 
