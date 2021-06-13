@@ -16,11 +16,11 @@ module.exports = (eleventyConfig) => {
     markdownTemplateEngine: "njk";
 
     // Perform manual passthrough file copy to include directories in the build output _site
-    eleventyConfig.addPassthroughCopy("images");
-    eleventyConfig.addPassthroughCopy("photos");
-    eleventyConfig.addPassthroughCopy("css");
-    eleventyConfig.addPassthroughCopy("js");
-    eleventyConfig.addPassthroughCopy("favicon_data");
+    eleventyConfig.addPassthroughCopy("./src/images");
+    eleventyConfig.addPassthroughCopy("./src/photos");
+    eleventyConfig.addPassthroughCopy("./src/css");
+    eleventyConfig.addPassthroughCopy("./src/js");
+    eleventyConfig.addPassthroughCopy("./src/favicon_data");
 
     // Create css-clean CSS Minifier filter
     eleventyConfig.addFilter("cssmin", function(code) {
