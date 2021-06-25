@@ -74,7 +74,7 @@ Using the paired shortcode for a single large image like this:
 {% respimg 
     src="car.jpg",
     alt="A photo of a car",
-    inputDir=".",
+    inputDir="./src",
     imgDir="/images/",
     widths=[320, 640, 1024],
     sizes="(min-width: 450px) 33.3vw, 100vw",
