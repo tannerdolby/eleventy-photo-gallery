@@ -98,7 +98,7 @@ will generate responsive image markup using `<picture>` tags like this:
                 /images/car-640.jpg 640w,
                 /images/car-320.jpg 320w"
         sizes="(min-width: 450px) 33.3vw, 100vw"
-        src="car-small.jpg"
+        src="/images/car-320.jpg"
         alt="A photo of a car"
         loading="lazy"
         class="my-img"
