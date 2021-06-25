@@ -88,15 +88,15 @@ will generate responsive image markup using `<picture>` tags like this:
  <picture>
     <source 
         type="image/webp"
-        srcSet="/images/car-large.webp 1024w,
-                /images/car-med.webp 640w,
-                /images/car-small.webp 320w"
+        srcSet="/images/car-1024.webp 1024w,
+                /images/car-640.webp 640w,
+                /images/car-320.webp 320w"
         sizes="(min-width: 450px) 33.3vw, 100vw"
     >
     <img 
-        srcSet="/images/car-large.jpg 1024w,
-                /images/car-med.jpg 640w,
-                /images/car-small.jpg 320w"
+        srcSet="/images/car-1024.jpg 1024w,
+                /images/car-640.jpg 640w,
+                /images/car-320.jpg 320w"
         sizes="(min-width: 450px) 33.3vw, 100vw"
         src="car-small.jpg"
         alt="A photo of a car"
