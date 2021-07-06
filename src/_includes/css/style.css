@@ -243,15 +243,27 @@ nav .nav-list li .link {
 }
 
 .prev-next a {
-    padding: .3rem .85rem;
-    border: 1px solid #777;
+    padding: 7px 10px;
+    border: 1px solid lightgray;
     border-radius: 3px;
     text-decoration: none;
-    color: #333;
+    background: inherit;
+    font-size: 1em;
+    color: #444;
+    background: #eee;
+}
+
+.gt {
+    margin-left: 3px;
+}
+
+.lt {
+    margin-right: 3px;
 }
 
 .prev-next a:hover {
     background: rgb(241, 241, 241);
+    background: rgb(233, 233, 233);
 }
 
 .featured-img .showcase-img {
@@ -297,7 +309,7 @@ footer .footer-content .footer-info {
 }
 
 footer .footer-content .footer-info.about {
-    border: none !important;
+    border: none;
 }
 
 footer .footer-content .footer-info .footer-links {
