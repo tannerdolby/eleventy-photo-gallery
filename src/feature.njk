@@ -55,13 +55,13 @@ cardType: summary_large_image
                     </div>
                     <div class="prev-next">
                         {% if pagination.href.previous %}
-                            <a class="prev" href="{{ pagination.href.previous }}">Previous</a>
+                            <a class="prev" href="{{ pagination.href.previous }}"><span class="lt">&lt;</span> Prev</a>
                         {% endif %}
                         {% if pagination.href.next %}
                             {% if not pagination.href.previous %}
-                            <a class="next" style="margin-left: auto; margin-right: 0;" href="{{ pagination.href.next }}">Next Photo &gt;</a>
+                            <a class="next" style="margin-left: auto; margin-right: 0;" href="{{ pagination.href.next }}">Next <span class="gt">&gt;</span></a>
                             {% else %}
-                            <a class="next" href="{{ pagination.href.next }}">Next</a>
+                            <a class="next" href="{{ pagination.href.next }}">Next <span class="gt">&gt;</span></a>
                             {% endif %}
                         {% endif %}
                     </div>
