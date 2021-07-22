@@ -121,7 +121,7 @@ header {
         
 
             li {
-                margin: 0 .75rem;
+                margin: 0 1rem;
             }
             
             a {
@@ -592,6 +592,10 @@ footer .social-links li {
                 height: 90vh;
             }
         }
+    }
+
+    header .nav-main .nav-list li {
+        margin: 0 .75rem;
     }
 }
  
