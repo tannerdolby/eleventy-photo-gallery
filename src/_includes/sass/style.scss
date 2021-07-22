@@ -128,6 +128,7 @@ header {
             a {
                 &:hover {
                     background: rgb(233, 233, 233);
+                    background: rgb(237, 237, 237);
                     text-decoration: none;
                 }
             }
@@ -185,6 +186,7 @@ header {
             border-radius: 3px;
             background: #1e262b;
             color: #fff;
+            font-weight: 500;
             white-space: nowrap;
 
             &:hover {
@@ -364,75 +366,11 @@ header {
 
 footer {
     position: relative;
-    margin: 0 auto 1rem auto;
+    margin: 0 auto 2rem auto;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     max-width: 1100px;
     bottom: 0;
-
-    .social-links {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        list-style: none;
-        padding-left: .5rem;
-
-        li {
-            padding-right: .75rem;
-        }
-    }
-
-    .footer-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-top: 2rem;
-        padding-bottom: 1.5rem;
-
-        hr {
-            background: #000;
-            height: 2px;
-            width: 100%;
-        }
-
-        p {
-            color: #000;
-            text-align: center;
-        }
-
-        .footer-info {
-            display: flex;
-            width: 100%;
-            justify-content: space-between;
-            align-items: center;
-            padding-top: .5rem;
-            border-top: .1rem solid lightgray;
-
-            .footer-links {
-                padding-left: 0;
-                list-style: none;
-                display: flex;
-                justify-content: space-evenly;
-                align-items: center;
-                margin-top: .5rem;
-                font-size: clamp(1rem, 3vw, 1.1rem);
-
-
-                .footer-link {
-                    margin: 0 .5rem;
-                    font-weight: 500;
-
-                    a {
-                        color: #212121;
-                    }
-                }
-            }
-
-            &.about {
-                border: none;
-            }
-        }
-    }
 
     a {
         color: #212121;
@@ -441,6 +379,69 @@ footer {
         &:hover {
             color: $link-blue-accessible-hover;
         }
+    }
+}
+
+.social-links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    padding-left: .5rem;
+
+    li {
+        padding-right: .75rem;
+    }
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+
+    hr {
+        background: #000;
+        height: 2px;
+        width: 100%;
+    }
+
+    p {
+        color: #000;
+        text-align: center;
+    }
+}
+
+.footer-info {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    border-top: .1rem solid lightgray;
+
+    .footer-links {
+        padding-left: 0;
+        list-style: none;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        font-size: clamp(1rem, 3vw, 1.1rem);
+
+
+        .footer-link {
+            margin: 0 .5rem;
+            font-weight: 500;
+
+            a {
+                color: #212121;
+            }
+        }
+    }
+
+    &.about {
+        border: none;
     }
 }
 
@@ -470,13 +471,17 @@ footer .social-links li {
     grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
     max-width: 1100px;
     padding: 0 1rem;
-    gap: 60px;
+    gap: 20px;
     margin: 1.5rem auto 1rem auto;
     list-style: none;
 }
     
 .gallery-item {
     margin: 1rem 0;
+
+    &:last-child {
+        border-bottom: none;
+    }
 
     .image-block {
         display: flex;
@@ -502,9 +507,11 @@ footer .social-links li {
             height: 500px;
             object-fit: cover;
             border-radius: 2px;
+            filter: brightness(99%);
+            transition: filter 0.5s ease;
 
             &:hover {
-                filter: brightness(95%);
+                filter: brightness(105%);
                 transform-origin: 50% 50%;
                 cursor: pointer;
             }
@@ -555,6 +562,7 @@ footer .social-links li {
         .footer-content {
             p {
                 margin-top: 1.5rem;
+                margin-bottom: 24px;
             }
             .footer-info {
                 &.home {
@@ -566,6 +574,13 @@ footer .social-links li {
                 }
             }
         }
+    }
+}
+
+@media screen and (max-width: 862px) {
+    .gallery-item {
+        border-bottom: 1px solid lightgray;
+        padding-bottom: 1.5rem;
     }
 }
 
