@@ -91,16 +91,27 @@ The eleventy configuration file, `.eleventy.js` is currently configured to use m
 ### HTML Validator
 All `.html` files have been validated using the [Nu HTML Checker](https://validator.w3.org/).
 
-## Current Ranking on Speedlify (05-13-2021)
-#4 (Top 5)- https://www.11ty.dev/speedlify#details-b2ed2b46
+## Current Ranking on Speedlify
+
+#4 (Top 5) - 07/22/2021 - https://www.11ty.dev/speedlify
+
+![Eleventy Leaderboards](https://user-images.githubusercontent.com/48612525/126697505-92204180-5546-44d2-be42-8210c5d39ca6.png)
 
 ### Lighthouse Audit Scores 
-As of June 5, 2021 2:36pm (PST)
+As of July 7, 2021 12:24pm (PST)
 
-Home page:
+#### Home page
 
-![Home page Lighthouse Audit results](https://user-images.githubusercontent.com/48612525/120906123-b47d9100-c60b-11eb-98df-c5eec3c1f735.png)
+![Home page Lighthouse Audit results](https://user-images.githubusercontent.com/48612525/126694878-8f42aad8-562e-4a76-bcc9-9feea3a9abdc.png)
 
-Feature page:
+#### Feature page
 
-![Feature page Lighthouse Audit results](https://user-images.githubusercontent.com/48612525/120906119-b21b3700-c60b-11eb-86a9-d6d243375f89.png)
+![Feature page Lighthouse Audit results](https://user-images.githubusercontent.com/48612525/126696957-714cad9e-f764-4318-b510-f5c5453f3a24.png)
+
+#### Gallery Page
+
+![Gallery page Lighthouse Audit results](https://user-images.githubusercontent.com/48612525/126696676-8c3bbc7d-9618-4cf6-accd-3b6172e7f2c1.png)
+
+#### About Page
+
+![About page Lighthouse Audit results](https://user-images.githubusercontent.com/48612525/126697060-3e00a210-9772-4f6f-9738-2126755a0639.png)
