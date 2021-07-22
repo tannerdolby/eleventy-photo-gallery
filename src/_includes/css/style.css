@@ -293,11 +293,9 @@ header .intro .hire-me:hover {
   background: inherit;
   font-size: 1em;
   color: #333;
-  background: #f0f0f0;
   background: #f2f2f2;
 }
 .featured-img .prev-next a:hover {
-  background: #eaeaea;
   background: #ededed;
 }
 
