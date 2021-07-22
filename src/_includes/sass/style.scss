@@ -166,6 +166,9 @@ header {
         padding: 0 1.5rem;
 
         div {
+            p {
+                color: #333;
+            }
             &:first-child {
                 margin-right: 2rem;
             }
@@ -174,7 +177,7 @@ header {
         .home-button {
             display: block;
             font-size: 30px;
-            color: #333;
+            color: #222;
             margin-bottom: 14px;
         }
 
@@ -281,14 +284,14 @@ header {
     padding-right: 1.5rem;
 
     .image-container {
-        height: 18rem;
+        height: 20rem;
         overflow: hidden;
         border-radius: 2px;
 
         a {
             .grid-image {
                 object-fit: cover;
-                height: 18rem;
+                height: 100%;
                 width: 100%;
                 transform-origin: 50% 50%;
                 filter: brightness(99%);
@@ -342,11 +345,11 @@ header {
             text-decoration: none;
             background: inherit;
             font-size: 1em;
-            color: #444;
-            background: #eee;
+            color: #333;
+            background: rgb(242, 242, 242);
 
             &:hover {
-                background: rgb(233, 233, 233);
+                background: rgb(237, 237, 237);
             }
         }
     }
@@ -398,8 +401,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 2rem;
-    padding-bottom: 1.5rem;
+    margin-bottom: 3rem;
 
     hr {
         background: #000;
@@ -418,7 +420,7 @@ footer {
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    padding-top: 1rem;
+    padding-top: 1.4rem;
     border-top: .1rem solid lightgray;
 
     .footer-links {
@@ -471,13 +473,13 @@ footer .social-links li {
     grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
     max-width: 1100px;
     padding: 0 1rem;
-    gap: 20px;
+    gap: 50px;
     margin: 1.5rem auto 1rem auto;
     list-style: none;
 }
     
 .gallery-item {
-    margin: 1rem 0;
+    margin: 1rem auto;
 
     &:last-child {
         border-bottom: none;
@@ -580,7 +582,7 @@ footer .social-links li {
 @media screen and (max-width: 862px) {
     .gallery-item {
         border-bottom: 1px solid lightgray;
-        padding-bottom: 1.5rem;
+        padding-bottom: 1.25rem;
     }
 }
 
@@ -688,17 +690,5 @@ footer .social-links li {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
         gap: 3px;
-
-        .image-container {
-            height: 15rem;
-
-            a {
-                img {
-                    object-fit: cover;
-                    height: 15rem;
-                    width: 100%;
-                }
-            }
-        }
     }
 }
