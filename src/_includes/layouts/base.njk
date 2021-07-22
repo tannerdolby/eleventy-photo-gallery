@@ -26,6 +26,7 @@ cardType: summary_large_image
         <link rel="manifest" href="/favicon_data/site.webmanifest">
         {% set css %}
             {% include "css/style.css" %}
+            {% include "css/reset.css" %}
         {% endset %}
         <style>
             {{ css | cssmin | safe }}
