@@ -57,7 +57,7 @@ main h1, main h2, main h3, main h4, main h5, main h6 {
 main .gallery {
   margin: 3rem auto;
   max-width: 1100px;
-  padding: 0 1rem;
+  padding: 0 1.5rem;
 }
 main .gallery-header {
   max-width: 1100px;
@@ -109,6 +109,7 @@ header .nav-main .nav-list li {
 }
 header .nav-main .nav-list a:hover {
   background: #e9e9e9;
+  background: #ededed;
   text-decoration: none;
 }
 header .nav-main .nav-list .link {
@@ -155,6 +156,7 @@ header .intro .hire-me {
   border-radius: 3px;
   background: #1e262b;
   color: #fff;
+  font-weight: 500;
   white-space: nowrap;
 }
 header .intro .hire-me:hover {
@@ -308,64 +310,11 @@ header .intro .hire-me:hover {
 
 footer {
   position: relative;
-  margin: 0 auto 1rem auto;
+  margin: 0 auto 2rem auto;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   max-width: 1100px;
   bottom: 0;
-}
-footer .social-links {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  list-style: none;
-  padding-left: 0.5rem;
-}
-footer .social-links li {
-  padding-right: 0.75rem;
-}
-footer .footer-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 2rem;
-  padding-bottom: 1.5rem;
-}
-footer .footer-content hr {
-  background: #000;
-  height: 2px;
-  width: 100%;
-}
-footer .footer-content p {
-  color: #000;
-  text-align: center;
-}
-footer .footer-content .footer-info {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 0.5rem;
-  border-top: 0.1rem solid lightgray;
-}
-footer .footer-content .footer-info .footer-links {
-  padding-left: 0;
-  list-style: none;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  margin-top: 0.5rem;
-  font-size: clamp(1rem, 3vw, 1.1rem);
-}
-footer .footer-content .footer-info .footer-links .footer-link {
-  margin: 0 0.5rem;
-  font-weight: 500;
-}
-footer .footer-content .footer-info .footer-links .footer-link a {
-  color: #212121;
-}
-footer .footer-content .footer-info.about {
-  border: none;
 }
 footer a {
   color: #212121;
@@ -373,6 +322,61 @@ footer a {
 }
 footer a:hover {
   color: #1836AF;
+}
+
+.social-links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+  padding-left: 0.5rem;
+}
+.social-links li {
+  padding-right: 0.75rem;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2rem;
+  padding-bottom: 1.5rem;
+}
+.footer-content hr {
+  background: #000;
+  height: 2px;
+  width: 100%;
+}
+.footer-content p {
+  color: #000;
+  text-align: center;
+}
+
+.footer-info {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+  border-top: 0.1rem solid lightgray;
+}
+.footer-info .footer-links {
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: clamp(1rem, 3vw, 1.1rem);
+}
+.footer-info .footer-links .footer-link {
+  margin: 0 0.5rem;
+  font-weight: 500;
+}
+.footer-info .footer-links .footer-link a {
+  color: #212121;
+}
+.footer-info.about {
+  border: none;
 }
 
 footer .social-links {
@@ -400,13 +404,16 @@ footer .social-links li {
   grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
   max-width: 1100px;
   padding: 0 1rem;
-  gap: 60px;
+  gap: 20px;
   margin: 1.5rem auto 1rem auto;
   list-style: none;
 }
 
 .gallery-item {
   margin: 1rem 0;
+}
+.gallery-item:last-child {
+  border-bottom: none;
 }
 .gallery-item .image-block {
   display: flex;
@@ -429,9 +436,11 @@ footer .social-links li {
   height: 500px;
   object-fit: cover;
   border-radius: 2px;
+  filter: brightness(99%);
+  transition: filter 0.5s ease;
 }
 .gallery-item a .gallery-photo:hover {
-  filter: brightness(95%);
+  filter: brightness(105%);
   transform-origin: 50% 50%;
   cursor: pointer;
 }
@@ -471,6 +480,7 @@ footer .social-links li {
 @media screen and (max-width: 875px) {
   footer .footer-content p {
     margin-top: 1.5rem;
+    margin-bottom: 24px;
   }
   footer .footer-content .footer-info.home {
     flex-direction: column;
@@ -478,6 +488,12 @@ footer .social-links li {
   footer .footer-content .footer-info.featured {
     flex-direction: column;
     justify-content: center;
+  }
+}
+@media screen and (max-width: 862px) {
+  .gallery-item {
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 1.5rem;
   }
 }
 @media screen and (max-width: 750px) {
