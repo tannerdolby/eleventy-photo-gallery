@@ -136,7 +136,7 @@ header .intro {
   justify-content: space-between;
   margin: 2rem auto 1rem auto;
   max-width: 1100px;
-  padding: 0 1rem;
+  padding: 0 1.5rem;
 }
 header .intro div:first-child {
   margin-right: 2rem;
