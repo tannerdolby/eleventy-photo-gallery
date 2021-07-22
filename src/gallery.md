@@ -6,4 +6,4 @@ layout: gallery.njk
 permalink: "/gallery/"
 ---
 
-# My Photo Gallery
+# John's Photo Gallery
