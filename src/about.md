@@ -1,4 +1,7 @@
 ---
+eleventyNavigation:
+  key: About
+  order: 2
 heading: About
 permalink: "/about/"
 layout: about.njk
