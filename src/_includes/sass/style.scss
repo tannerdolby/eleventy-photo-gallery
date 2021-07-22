@@ -478,7 +478,7 @@ footer .social-links li {
 }
     
 .gallery-item {
-    margin: 1rem auto;
+    margin: .5rem auto;
 
     &:last-child {
         border-bottom: none;
@@ -504,7 +504,6 @@ footer .social-links li {
 
         .gallery-photo {
             max-width: 100%;
-            width: 100%;
             height: 500px;
             object-fit: cover;
             border-radius: 2px;

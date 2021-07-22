@@ -411,7 +411,7 @@ footer .social-links li {
 }
 
 .gallery-item {
-  margin: 1rem auto;
+  margin: 0.5rem auto;
 }
 .gallery-item:last-child {
   border-bottom: none;
@@ -433,7 +433,6 @@ footer .social-links li {
 }
 .gallery-item a .gallery-photo {
   max-width: 100%;
-  width: 100%;
   height: 500px;
   object-fit: cover;
   border-radius: 2px;
