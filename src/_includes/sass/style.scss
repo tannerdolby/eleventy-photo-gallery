@@ -568,13 +568,22 @@ footer .social-links li {
         }
     }
 }
- 
- @media screen and (max-width: 650px) {
 
+@media screen and (max-width: 750px) {
     .gallery-item {
         a {
             .gallery-photo {
-                height: 65vh;
+                height: 90vh;
+            }
+        }
+    }
+}
+ 
+ @media screen and (max-width: 650px) {
+    .gallery-item {
+        a {
+            .gallery-photo {
+                height: 70vh;
             }
         }
     }
@@ -632,9 +641,11 @@ footer .social-links li {
         margin-top: 2rem;
      }
 
-     .gallery .gallery-list {
-        grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
-        gap: 0;
+     .gallery {
+        .gallery-list {
+            grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+            gap: 0;
+        }
     }
 
     header .nav-main .nav-list .link {
