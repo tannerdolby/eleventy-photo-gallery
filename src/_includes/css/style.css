@@ -578,13 +578,6 @@ footer .social-links li {
     grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
     gap: 3px;
   }
-  .image-grid .image-container {
-    height: 15rem;
-  }
-  .image-grid .image-container a img {
-    object-fit: cover;
-    width: 100%;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */
