@@ -480,9 +480,14 @@ footer .social-links li {
     justify-content: center;
   }
 }
+@media screen and (max-width: 750px) {
+  .gallery-item a .gallery-photo {
+    height: 90vh;
+  }
+}
 @media screen and (max-width: 650px) {
   .gallery-item a .gallery-photo {
-    height: 65vh;
+    height: 70vh;
   }
 
   .featured-img .showcase-img {
