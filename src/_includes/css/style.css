@@ -536,6 +536,10 @@ footer .social-links li {
 }
 /* Moto G4 width width=360px which Lighthouse runs audit on */
 @media screen and (max-width: 375px) {
+  header .nav-main .nav-list .link {
+    padding: 0;
+  }
+
   .featured-img {
     margin: 0;
     padding: 0;
