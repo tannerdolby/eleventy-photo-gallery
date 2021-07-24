@@ -1,0 +1,36 @@
+/* 404 page styles */
+.four-oh-four {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 700px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    height: 100vh;
+    overflow: hidden;
+    background: #1e2022;
+
+    a {
+        color: #19C2FA !important;
+        text-decoration: none;
+        text-decoration-color: #19C2FA;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    h1, h2, p {
+        color: #fff;
+    }
+
+    ul {
+        li {
+            margin: .5rem 0;
+            color: #fff;
+        }
+    }
+}

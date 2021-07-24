@@ -1,0 +1,95 @@
+@use "../vars/" as *;
+
+footer {
+    position: relative;
+    margin: 0 auto 3rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    max-width: 1100px;
+    bottom: 0;
+
+    a {
+        color: #212121;
+        font-size: 1.0625rem;
+
+        &:hover {
+            color: $link-blue-accessible-hover;
+        }
+    }
+}
+
+.social-links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    padding-left: .5rem;
+
+    li {
+        padding-right: .75rem;
+    }
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    hr {
+        background: #000;
+        height: 2px;
+        width: 100%;
+    }
+
+    p {
+        color: #000;
+        text-align: center;
+    }
+}
+
+.footer-info {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1.4rem;
+    border-top: .1rem solid lightgray;
+
+    .footer-links {
+        padding-left: 0;
+        list-style: none;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        font-size: clamp(1rem, 3vw, 1.1rem);
+
+
+        .footer-link {
+            margin: 0 .5rem;
+            font-weight: 500;
+
+            a {
+                color: #212121;
+                &:hover {
+                    color: $link-blue-accessible-hover;
+                }
+            }
+        }
+    }
+
+    &.about {
+        border: none;
+    }
+}
+
+footer .social-links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    padding-left: .5rem;
+}
+
+footer .social-links li {
+    padding-right: .75rem;
+}
