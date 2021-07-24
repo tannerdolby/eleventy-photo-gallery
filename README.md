@@ -124,7 +124,7 @@ All of the projects CSS is compiled from Sass at build-time. The main Sass file 
 
 If you want to change up the styles, you can write Sass (_or CSS_) directly in `style.scss` for the changes to be compiled and used. Otherwise, if you want to continue using a "modular" approach like the project follows. You can:
 
-1. Create a new partial file in a specific directory ('sass/vars', 'sass/mixins', 'sass/vars') like `_some-file.scss` where the underscore prefixed at the beginning signals that the file is a [partial](https://sass-lang.com/documentation/at-rules/use#partials). These files are meant to be loaded as modules and not directly compiled.
+1. Create a new partial file in a specific directory ('sass/partials', 'sass/mixins', 'sass/vars') like `_some-file.scss` where the underscore prefixed at the beginning signals that the file is a [partial](https://sass-lang.com/documentation/at-rules/use#partials). These files are meant to be loaded as modules and not directly compiled.
 
 2. Write Sass code and style away!
 
