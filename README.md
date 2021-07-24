@@ -117,7 +117,17 @@ If you have already transformed an image and wish to only generate the responsiv
 ### Transforming multiple images
 You can also transform multiple images dynamincally at build-time using [global data](https://www.11ty.dev/docs/data-global/) or [front matter](https://www.11ty.dev/docs/data-frontmatter/) to handle all image resizing and reformatting needs in one go using a `for` loop. 
 
-Refer to [eleventy-plugin-sharp-respimg](https://github.com/tannerdolby/eleventy-plugin-sharp-respimg) documentation for more information on usage. 
+Refer to [eleventy-plugin-sharp-respimg](https://github.com/tannerdolby/eleventy-plugin-sharp-respimg) documentation for more information on usage.
+
+## Compiling Sass to CSS
+All of the projects CSS is compiled from Sass at build-time. The main Sass file is `src/_includes/sass/style.scss` and thats where partials, mixins, and variables are loaded in with `@use` rules. 
+
+If you want to change up the styles, you can write Sass (_or CSS_) directly in `style.scss` for the changes to be compiled and used. Otherwise, if you want to continue using a "modular" approach like the project follows. You can:
+
+1. Create a new partial file in a specific directory ('sass/vars', 'sass/mixins', 'sass/vars') like `_some-file.scss` where the underscore prefixed at the beginning signals that the file is a [partial](https://sass-lang.com/documentation/at-rules/use#partials). These files are meant to be loaded as modules and not directly compiled.
+2. Write Sass code and style away!
+3. Load the stylesheets with a `@forward` rule in the [index files](https://sass-lang.com/documentation/at-rules/use#index-files) ie `_index.scss` within the directory so they can be loaded with `@use` in the scss file that is compiled to CSS.
+4. Load the stylesheets using `@use` rules from the directory in which you need a specific file. Therefore, if I created a new file within `sass/mixins` called `_url-short.scss` and wanted to load that file in `style.scss`, I would use `@use "mixins" as *` to ensure the module isn't loaded with a namespace. _Read more about loading members and namespaces here in [Sass docs](https://sass-lang.com/documentation/at-rules/use#loading-members)_
 
 ## Contributing 
 Feel free to contribute to this project by suggesting a new feature or modification. I built this template for others to use, so let me know what you'd like to see added/modified. 
