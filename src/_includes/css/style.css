@@ -90,6 +90,7 @@ header .intro .hire-me:hover {
 }
 .main-gallery h1 {
   text-align: center;
+  padding: 0 1.5rem;
 }
 
 .gallery-list {
@@ -528,6 +529,10 @@ h2, .h2 {
   }
   header .nav-main .nav-list li {
     margin: 0 0.5rem;
+  }
+
+  .gallery .gallery-list {
+    grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
   }
 
   footer .footer-content .footer-info.home {
