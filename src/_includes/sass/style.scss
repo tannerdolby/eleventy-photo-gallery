@@ -239,6 +239,12 @@ h2, .h2 {
             text-align: left;
         }
     }
+
+    .main-gallery {
+        h1 {
+            padding: 0 1rem;
+        }
+    }
  }
  
 @media screen and (max-width: 450px) {
@@ -318,6 +324,10 @@ h2, .h2 {
         margin: 0;
         padding: 0;
         align-items: center;
+
+        .prev-next {
+            padding: 0 1.5rem;
+        }
 
         h1 {
             text-align: center;
