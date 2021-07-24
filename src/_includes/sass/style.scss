@@ -256,6 +256,12 @@ h2, .h2 {
         }
     }
 
+    .gallery {
+        .gallery-list {
+            grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+        }
+    }
+
     footer {
         .footer-content {
             .footer-info {
@@ -281,11 +287,11 @@ h2, .h2 {
 }
  
  @media screen and (max-width: 415px) {
-     .main-container {
+    .main-container {
         margin-top: 2rem;
-     }
+    }
 
-     .gallery {
+    .gallery {
         .gallery-list {
             grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
         }
