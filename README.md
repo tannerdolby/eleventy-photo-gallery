@@ -124,17 +124,14 @@ All of the projects CSS is compiled from Sass at build-time. The main Sass file 
 
 If you want to change up the styles, you can write Sass (_or CSS_) directly in `style.scss` for the changes to be compiled and used. Otherwise, if you want to continue using a "modular" approach like the project follows. You can:
 
-### Step 1 
-Create a new partial file in a specific directory ('sass/vars', 'sass/mixins', 'sass/vars') like `_some-file.scss` where the underscore prefixed at the beginning signals that the file is a [partial](https://sass-lang.com/documentation/at-rules/use#partials). These files are meant to be loaded as modules and not directly compiled.
+1. Create a new partial file in a specific directory ('sass/vars', 'sass/mixins', 'sass/vars') like `_some-file.scss` where the underscore prefixed at the beginning signals that the file is a [partial](https://sass-lang.com/documentation/at-rules/use#partials). These files are meant to be loaded as modules and not directly compiled.
 
-### Step 2
-Write Sass code and style away!
+2. Write Sass code and style away!
 
-### Step 3
-Load the stylesheets with a `@forward` rule in the [index files](https://sass-lang.com/documentation/at-rules/use#index-files) like `@forward "./some-file";` within `_index.scss` within the directory so they can be loaded with `@use` in the scss file that is compiled to CSS.
 
-### Step 4
-Load the stylesheets using `@use` rules from the directory in which you need a specific file. Therefore, if I created a new file within `sass/mixins` called `_url-short.scss` and wanted to load that file in `style.scss`, I would use `@use "mixins" as *` to load the stylesheets within the `mixins` directory as one module while also ensuring the module isn't loaded with a namespace. 
+3. Load the stylesheets with a `@forward` rule in the [index files](https://sass-lang.com/documentation/at-rules/use#index-files) like `@forward "./some-file";` within `_index.scss` within the directory so they can be loaded with `@use` in the scss file that is compiled to CSS.
+
+4. Load the stylesheets using `@use` rules from the directory in which you need a specific file. Therefore, if I created a new file within `sass/mixins` called `_url-short.scss` and wanted to load that file in `style.scss`, I would use `@use "mixins" as *` to load the stylesheets within the `mixins` directory as one module while also ensuring the module isn't loaded with a namespace. 
 
 _Read more about loading members and namespaces here in [Sass docs](https://sass-lang.com/documentation/at-rules/use#loading-members)_
 
