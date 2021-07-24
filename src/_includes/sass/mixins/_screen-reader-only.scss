@@ -1,4 +1,4 @@
-@mixin sr-only() {
+@mixin visually-hidden() {
     clip: rect(1px,1px,1px,1px);
     clip-path: inset(1px);
     display: block;
