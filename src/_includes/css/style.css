@@ -31,11 +31,10 @@ header .nav-main .nav-list a:hover {
 }
 header .nav-main .nav-list .link {
   color: #212121;
-  font-weight: 500;
   padding: 0.75rem 1rem;
   border-radius: 5px;
-  font-size: 20px;
-  font-size: clamp(1.2rem, 4vw, 1.3rem);
+  font-size: 16px;
+  font-size: clamp(1.1rem, 4vw, 1.2rem);
   text-decoration: none;
 }
 header .nav-main .nav-list .link:first-child {
@@ -78,7 +77,7 @@ header .intro .hire-me {
   border-radius: 3px;
   background: #1e262b;
   color: #fff;
-  font-weight: 500;
+  font-weight: 400;
   white-space: nowrap;
 }
 header .intro .hire-me:hover {
@@ -191,6 +190,7 @@ header .intro .hire-me:hover {
   justify-content: space-between;
   align-items: center;
   margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 .featured-img .prev-next a {
   padding: 7px 10px;
@@ -206,6 +206,75 @@ header .intro .hire-me:hover {
   background: #ededed;
 }
 
+.about-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-v {
+  margin-top: auto;
+}
+
+.about-me-content .about-socials {
+  padding-left: 30px;
+}
+
+.about-socials li {
+  margin: 0.75rem auto;
+  list-style: disc;
+}
+
+.about-me-content {
+  max-width: 80ch;
+  margin: 3rem auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.contact-form {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  max-width: 60ch;
+}
+.contact-form label.form-label {
+  margin-top: 0.5rem;
+}
+.contact-form input, .contact-form textarea {
+  margin: 0.2rem 0;
+  border: 1px solid lightgray;
+  padding: 0.5rem;
+  border-radius: 0.15rem;
+  font-size: 16px;
+}
+.contact-form input {
+  height: 2.75rem;
+}
+.contact-form textarea {
+  resize: vertical;
+  min-height: 9rem;
+}
+.contact-form button {
+  margin-top: 1.5rem;
+  margin-bottom: 36px;
+  background: #1b6ee2;
+  background: #1a6bdd;
+  padding: 0.6rem 1.35rem;
+  border-radius: 3px;
+  border: none;
+  color: #fff;
+  margin-top: 1.35rem;
+  font-weight: 600;
+  max-width: fit-content;
+  max-width: -moz-fit-content;
+}
+.contact-form button:hover {
+  border: none;
+  cursor: pointer;
+  background: #1764d1;
+}
+
 footer {
   position: relative;
   margin: 0 auto 3rem;
@@ -216,7 +285,6 @@ footer {
 }
 footer a {
   color: #212121;
-  font-size: 1.0625rem;
 }
 footer a:hover {
   color: #1836AF;
@@ -244,8 +312,7 @@ footer a:hover {
   width: 100%;
 }
 .footer-content p {
-  color: #000;
-  text-align: center;
+  color: #222;
 }
 
 .footer-info {
@@ -262,11 +329,11 @@ footer a:hover {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  font-size: clamp(1rem, 3vw, 1.1rem);
+  font-size: 1rem;
+  font-size: clamp(1rem, 3vw, 1.0625rem);
 }
 .footer-info .footer-links .footer-link {
-  margin: 0 0.5rem;
-  font-weight: 500;
+  margin: 0 0.6rem;
 }
 .footer-info .footer-links .footer-link a {
   color: #212121;
@@ -354,7 +421,8 @@ img {
 }
 
 p {
-  font-size: clamp(.9rem, 1rem, 1.125rem);
+  font-size: 1rem;
+  font-size: clamp(1rem, 3vw, 1.0625rem);
   line-height: 1.5;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
@@ -362,6 +430,7 @@ p {
 a {
   color: #2540AD;
   text-decoration: none;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 a:hover {
   text-decoration: underline;
@@ -427,7 +496,7 @@ h2, .h2 {
   padding-right: 1rem;
 }
 .image-description h1 {
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.8rem;
   text-align: center;
 }
 
@@ -443,7 +512,8 @@ h2, .h2 {
   color: #212141;
 }
 .page-banner p {
-  font-size: clamp(1.1rem, 3vw, 1.3rem);
+  font-size: 1rem;
+  font-size: clamp(1.0625rem, 3vw, 1.2rem);
 }
 .page-banner h1 {
   margin-bottom: 0.75rem;
@@ -451,6 +521,7 @@ h2, .h2 {
 
 .about-me-content .about-socials {
   padding-left: 30px;
+  margin-bottom: 24px;
 }
 
 .about-socials li {
