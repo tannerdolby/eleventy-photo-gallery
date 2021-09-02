@@ -125,6 +125,7 @@ header .intro .hire-me:hover {
 .gallery-item a .gallery-photo {
   max-width: 100%;
   height: 500px;
+  max-height: 500px;
   object-fit: cover;
   border-radius: 2px;
   filter: brightness(99%);
@@ -580,6 +581,7 @@ h2, .h2 {
 @media screen and (max-width: 650px) {
   .gallery-item a .gallery-photo {
     height: 70vh;
+    max-height: 400px;
   }
 
   .featured-img .showcase-img {
@@ -644,7 +646,7 @@ h2, .h2 {
 /* Moto G4 width width=360px which Lighthouse runs audit on */
 @media screen and (max-width: 375px) {
   header .nav-main .nav-list .link {
-    padding: 3px;
+    padding: 0.7rem 3px;
   }
 
   .featured-img {
@@ -664,6 +666,11 @@ h2, .h2 {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
     gap: 3px;
+  }
+}
+@media screen and (max-width: 350px) {
+  header .nav-main .nav-list .link {
+    padding: 0.6rem 2px;
   }
 }
 

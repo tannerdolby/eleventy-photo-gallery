@@ -223,6 +223,7 @@ h2, .h2 {
         a {
             .gallery-photo {
                 height: 70vh;
+                max-height: 400px;
             }
         }
     }
@@ -315,7 +316,7 @@ h2, .h2 {
         .nav-main {
             .nav-list {
                 .link {
-                    padding: 3px;
+                    padding: .7rem 3px;
                 }
             }
         }
@@ -339,5 +340,17 @@ h2, .h2 {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
         gap: 3px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    header {
+        .nav-main {
+            .nav-list {
+                .link {
+                    padding: .6rem 2px;
+                }
+            }
+        }
     }
 }
