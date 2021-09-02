@@ -25,8 +25,6 @@ header {
             padding: .8rem 0;
             width: 100%;
 
-        
-
             li {
                 margin: 0 1rem;
             }
@@ -41,11 +39,10 @@ header {
 
             .link {
                 color: #212121;
-                font-weight: 500;
                 padding: .75rem 1rem;
                 border-radius: 5px;
-                font-size: 20px;
-                font-size: clamp(1.2rem, 4vw, 1.3rem);
+                font-size: 16px;
+                font-size: clamp(1.1rem, 4vw, 1.2rem);
                 text-decoration: none;
 
                 &:first-child {
@@ -97,7 +94,7 @@ header {
             border-radius: 3px;
             background: #1e262b;
             color: #fff;
-            font-weight: 500;
+            font-weight: 400;
             white-space: nowrap;
 
             &:hover {
