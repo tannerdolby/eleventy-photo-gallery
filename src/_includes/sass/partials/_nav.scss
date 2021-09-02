@@ -22,7 +22,6 @@ header {
             list-style: none;
             border-top: 1px solid lightgray;
             border-bottom: 1px solid lightgray;
-            padding: .8rem 0;
             width: 100%;
 
             li {
@@ -39,11 +38,12 @@ header {
 
             .link {
                 color: #212121;
-                padding: .75rem 1rem;
-                border-radius: 5px;
+                padding: .8rem .75rem;
+                margin: 0 .4rem;
                 font-size: 16px;
-                font-size: clamp(1.1rem, 4vw, 1.2rem);
+                font-size: clamp(1.0625rem, 4vw, 1.2rem);
                 text-decoration: none;
+                display: block;
 
                 &:first-child {
                     margin-left: 0;
