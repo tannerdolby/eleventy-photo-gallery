@@ -13,11 +13,24 @@ Hi, I'm {{ site.author.firstName }} {{ site.author.lastName}}. I'm a novice phot
 
 This is mock text, write whatever you'd like for the about me page. Maybe add a picture or some of your recent work!
 
-## Contact
 You can find me around the web at the following places:
 
 <ul class="about-socials">
-    <li><a href="{{ site.socials.dribbble }}">Dribbble</a></li>
+    <li><a href="{{ site.socials.github}}">GitHub</a></li>
     <li><a href="{{ site.socials.twitter }}">Twitter</a></li>
     <li><a href="{{ site.socials.linkedin }}">LinkedIn</a></li>
 </ul>
+
+<h2 id="contact-me">Contact</h2>
+
+Feel free to reach out to me by email or on social media. I usually take 24-48hrs to respond. If you think my work aligns with your projects needs, I'd love to hear from you!
+
+<form class="contact-form" onsubmit="sendMail()">
+    <label for="name">What's Your Name?</label>
+    <input type="text" name="name" id="name" required>
+    <label class="form-label" for="subject">Subject</label>
+    <input class="email-subject" type="text" name="subject" id="subject" required>
+    <label class="form-label" for="message">Message</label>
+    <textarea class="email-msg" rows="5" cols="30" name="message" id="message" required></textarea>
+    <button type="submit" class="reach-me button submit-contact">Message me</button>
+</form>
