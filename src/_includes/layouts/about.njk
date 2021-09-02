@@ -40,4 +40,10 @@ alt: Terrace outside shop window with green plants and pink tree on night street
             </div>   
         </footer>
     </body>
+    {% set js %}
+        {% include "js/email.js" %}
+    {% endset %}
+    <script>
+        {{ js | jsmin | safe}}
+    </script>
 </html>
