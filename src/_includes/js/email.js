@@ -1,4 +1,5 @@
-const email = "tannercdolby@gmail.com";
+// update this variable with your email :)
+const email = "foobar@gmail.com";
 const submit = document.querySelector(".reach-me");
 
 function sendMail() {
