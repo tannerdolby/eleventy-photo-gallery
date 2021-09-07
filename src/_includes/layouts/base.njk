@@ -1,22 +1,16 @@
----
-title: Eleventy Photo Gallery Template
-url: https://eleventy-gallery.netlify.app
-img: /images/highway-water.jpg
-alt: Terrace outside shop window with green plants and pink tree on night street
-cardType: summary_large_image
----
 <!DOCTYPE html>
 <html lang="en-US" dir="ltr">
     <head>
         {% metagen 
             title=title,
-            desc=site.pageMetadata.home.content,
+            desc=meta_desc,
             url=url,
             img=url + img,
             img_alt=alt,
             twitter_card_type=cardType,
             twitterHandle=site.author.twitterHandle,
-            name=site.author.firstName + " " + site.author.lastName
+            name=site.author.firstName + " " + site.author.lastName,
+            comments=true
         %}
         <meta name="theme-color" content="#fff">
         <meta name="background-color" content="#fff">
@@ -33,33 +27,11 @@ cardType: summary_large_image
         </style>
     </head>
     <body>
+        <a href="#main" class="skip-link">Skip to main content</a>
         {% include "layouts/nav.njk" %}
-        <main class="main-home">
-            <div class="page-banner">
-                {{ content | safe}}
-            </div>
-            <div class="gallery">
-                <ul class="image-grid">
-                    {% for image in gallery %}
-                    <li class="image-container">
-                        <a href="/gallery/{{ image.title | slug }}" aria-label="Gallery image {{ image.title }}">
-                            {% respimg 
-                                src=image.src,
-                                alt=image.alt,
-                                inputDir="./src",
-                                imgDir=image.imgDir,
-                                widths=[320, 480, 640, 1024],
-                                sizes="(min-width: 600px) 50vw, (min-width: 800px) 100vw, 33.3vw",
-                                className="grid-image",
-                                width=640,
-                                height=400
-                            %}
-                        </a>
-                    </li>
-                    {% endfor %}
-                </ul>
-            </div>
-        </main>
+
+        {{ content | safe }}
+
         {% include "layouts/footer.njk" %}
     </body>
 </html>

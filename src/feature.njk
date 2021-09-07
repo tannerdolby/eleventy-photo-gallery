@@ -34,9 +34,10 @@ cardType: summary_large_image
             {{ css | cssmin | safe }}
         </style>
     </head>
-    <body class="feature">
+    <body>
+        <a href="#main" class="skip-link">Skip to main content</a>
         {% include "layouts/nav.njk" %}
-        <main class="main-container">
+        <main id="main" class="main-container">
             <div class="featured-img">
                 <div class="image-container">
                     {% respimg 

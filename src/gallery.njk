@@ -1,0 +1,17 @@
+---
+title: John's Photo Gallery
+eleventyNavigation:
+  key: Gallery
+  order: 2
+layout: main.njk
+permalink: "/gallery/"
+meta_desc: A collection of images from John Smith's gallery.
+url: https://eleventy-gallery.netlify.app/gallery
+img: /images/highway-water.jpg
+alt: Terrace outside shop window with green plants and pink tree on night street
+cardType: summary_large_image
+---
+
+<h1 class="ft-h1">{{ title }}</h1>
+
+{% include "feature-gallery.njk" %}

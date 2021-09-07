@@ -1,11 +1,18 @@
 ---
+title: About - Eleventy Photo Gallery Template
+meta_desc: A page about John Smith, and photography. This template is currently the default version so add your own about me page info here.
+url: https://eleventy-gallery.netlify.app
+img: /images/highway-water-large.jpg
+alt: Terrace outside shop window with green plants and pink tree on night street
 eleventyNavigation:
   key: About
   order: 2
 heading: About
 permalink: "/about/"
-layout: about.njk
+layout: main.njk
 ---
+
+<div class="about-me-content">
 
 # {{ heading }}
 
@@ -34,3 +41,5 @@ Feel free to reach out to me by email or on social media. I usually take 24-48hr
     <textarea class="email-msg" rows="5" cols="30" name="message" id="message" required></textarea>
     <button type="submit" class="reach-me button submit-contact">Message me</button>
 </form>
+
+</div>
