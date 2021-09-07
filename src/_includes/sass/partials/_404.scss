@@ -1,36 +1,21 @@
 /* 404 page styles */
 .four-oh-four {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
     margin: 0 auto;
     width: 100%;
-    max-width: 700px;
+    max-width: 90ch;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-    height: 100vh;
     overflow: hidden;
-    background: #1e2022;
-
-    a {
-        color: #19C2FA !important;
-        text-decoration: none;
-        text-decoration-color: #19C2FA;
-
-        &:hover {
-            text-decoration: underline;
-        }
-    }
-
-    h1, h2, p {
-        color: #fff;
-    }
+    background: inherit;
+    min-height: 100vh;
 
     ul {
+        padding-left: 0;
         li {
-            margin: .5rem 0;
-            color: #fff;
+            list-style: none;
+            padding: 12px 14px;
+            margin: 10px auto;
+            border: 1px solid lightgray;
         }
     }
 }

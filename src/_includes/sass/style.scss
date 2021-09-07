@@ -73,6 +73,21 @@ main {
     }
 }
 
+.skip-link {
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateY(-10rem);
+    transition: transform .3s ease-in-out;
+    padding: .5rem;
+    background: rgb(255, 255, 255);
+    color: #222;
+    z-index: 999;
+
+    &:focus {
+        transform: translateY(0);
+    }
+}
 
 h1, h2, h3, h4, h5 {
     font-family: $system-font;
@@ -93,7 +108,7 @@ h2, .h2 {
     font-size: clamp(1.5rem, 5vw, 1.8rem);
 }
 
-.main-home {
+#main {
     margin-top: 3rem;
 }
 

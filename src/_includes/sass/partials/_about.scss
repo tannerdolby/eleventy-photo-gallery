@@ -1,3 +1,5 @@
+@use "../vars/" as *;
+
 .about-page {
     min-height: 100vh; 
     display: flex; 
@@ -46,6 +48,7 @@
         padding: .5rem;
         border-radius: .15rem;
         font-size: 16px;
+        -webkit-appearance: none;
     }
 
     input {
@@ -58,16 +61,15 @@
     }
 
     button {
-        margin-top: 1.5rem;
         margin-bottom: 36px;
         background: rgb(27, 110, 226);
         background: rgb(26, 107, 221);
-        padding: .6rem 1.35rem;
+        padding: 11px 1.35rem;
         border-radius: 3px;
+        font-family: $system-font;
         border: none;
         color: #fff;
         margin-top: 1.35rem;
-        font-weight: 600;
         max-width: fit-content;
         max-width: -moz-fit-content;
     

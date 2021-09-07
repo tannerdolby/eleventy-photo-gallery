@@ -79,7 +79,8 @@ header {
 
         .home-button {
             display: block;
-            font-size: 30px;
+            font-size: 28px;
+            font-size: clamp(26px, 4vw, 28px);
             color: #222;
             margin-bottom: 14px;
         }
