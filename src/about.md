@@ -1,7 +1,7 @@
 ---
 title: About - Eleventy Photo Gallery Template
 meta_desc: A page about John Smith, and photography. This template is currently the default version so add your own about me page info here.
-url: https://eleventy-gallery.netlify.app
+url: https://eleventy-gallery.netlify.app/about
 img: /images/highway-water-large.jpg
 alt: Terrace outside shop window with green plants and pink tree on night street
 eleventyNavigation:
