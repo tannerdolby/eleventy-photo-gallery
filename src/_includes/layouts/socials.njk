@@ -1,0 +1,6 @@
+{% for social in ['Blog','Dribbble','500px','Flickr','SmugMug','Instagram','Pixelfed','YouTube','TikTok','Tumblr','Twitter','Facebook','Mastodon','GitHub','LinkedIn'] %}
+	{% if site.socials[social.toLowerCase()] %}
+	<li class="footer-link"><a href="{{ site.socials[social.toLowerCase()] }}">{{ social }}</a></li>
+	{% endif %}
+{% endfor %}
+
