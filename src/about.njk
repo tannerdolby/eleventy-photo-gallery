@@ -14,7 +14,7 @@ layout: main.njk
 
 <div class="about-me-content">
 
-# {{ heading }}
+<h1>{{ heading }}</h1>
 
 Hi, I'm {{ site.author.firstName }} {{ site.author.lastName}}. I'm a novice photography and designer. This website acts as a compendium of images I've taken over the years. If you'd like to learn more about me, try [sending me an email](mailto:{{ site.author.email }}). 
 
@@ -23,9 +23,7 @@ This is mock text, write whatever you'd like for the about me page. Maybe add a 
 You can find me around the web at the following places:
 
 <ul class="about-socials">
-    <li><a href="{{ site.socials.github}}">GitHub</a></li>
-    <li><a href="{{ site.socials.twitter }}">Twitter</a></li>
-    <li><a href="{{ site.socials.linkedin }}">LinkedIn</a></li>
+            {% include "layouts/socials.njk" %}
 </ul>
 
 <h2 id="contact-me">Contact</h2>
