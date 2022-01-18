@@ -14,7 +14,7 @@ cardType: summary_large_image
             title=image.title,
             desc=image.title + " " + site.pageMetadata.featured.content,
             url=url + "/gallery/" + image.title | slug + "/",
-            img=url + "/images/" + image.src,
+            img=url + image.imgDir + image.src,
             img_alt=image.alt,
             twitter_card_type=cardType,
             twitterHandle=site.author.twitterHandle,
