@@ -1,0 +1,27 @@
+<div class="gallery">
+    <ul class="gallery-list">
+        {% for image in gallery %}
+        <li class="gallery-item">
+            <div class="image-block">
+                <a href="{{ image.title | slug }}" aria-label="Gallery image {{ image.title }}">
+                {% respimg
+                    inputDir="./src",
+                    imgDir=image.imgDir,
+                    widths=[320, 480, 640, 1024],
+                    sizes="(max-width: 480px) 33.3vw, (min-width: 640px) 50vw, (min-width: 950px) 50vw, 33.3vw",
+                    src=image.src,
+                    alt=image.alt,
+                    width=768,
+                    height=600,
+                    className="gallery-photo"
+                %}
+                </a>
+                <div class="block-details">
+                    <p>{{ image.date }}</p>
+                    <h2><a href="/gallery/{{ image.title | slug }}">{{ image.title }}</a></h2>
+                </div>
+            </div>
+        </li>
+        {% endfor %}
+    </ul>
+</div>

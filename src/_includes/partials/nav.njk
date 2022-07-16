@@ -1,0 +1,18 @@
+{% set navigation = collections.all | eleventyNavigation %}
+<header class="top-nav">
+    <div class="intro">
+        <div>
+            <a class="home-button" href="/">{{ site.author.firstName }} {{ site.author.lastName }}</a>
+            <p class="home-about">{{ site.author.about }}</p>
+        </div>
+        <a class="hire-me" href="/about/#contact-me">Hire Me</a>
+    </div>
+    <nav class="nav-main">
+        <ul class="nav-list">
+            {% for link in navigation %}
+            <li><a href="{{ link.url | url }}" class="link">{{ link.title }}</a></li>
+            {% endfor %}
+            <li><a class="link" href="https://github.com/tannerdolby/eleventy-photo-gallery">Code</a></li>
+        </ul>
+    </nav>
+</header>
