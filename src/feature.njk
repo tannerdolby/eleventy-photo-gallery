@@ -17,8 +17,9 @@ cardType: summary_large_image
             img=url + image.imgDir + image.src,
             img_alt=image.alt,
             twitter_card_type=cardType,
-            twitterHandle=site.author.twitterHandle,
-            name=site.author.firstName + " " + site.author.lastName
+            twitter_handle=site.author.twitterHandle,
+            name=site.author.firstName + " " + site.author.lastName,
+            comments=true
         %}
         <meta name="theme-color" content="#fff">
         <meta name="background-color" content="#fff">
@@ -36,7 +37,7 @@ cardType: summary_large_image
     </head>
     <body>
         <a href="#main" class="skip-link">Skip to main content</a>
-        {% include "layouts/nav.njk" %}
+        {% include "partials/nav.njk" %}
         <main id="main" class="main-container">
             <div class="featured-img">
                 <div class="image-container">
@@ -70,6 +71,6 @@ cardType: summary_large_image
                 </div>
             </div>
         </main>
-        {% include "layouts/footer.njk" %}
+        {% include "partials/footer.njk" %}
     </body>
 </html>
