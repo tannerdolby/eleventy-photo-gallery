@@ -3,17 +3,15 @@
         {% for image in gallery %}
         <li class="gallery-item">
             <div class="image-block">
-                <a href="{{ image.title | slug }}" aria-label="Gallery image {{ image.title }}">
-                {% respimg
-                    inputDir="./src",
-                    imgDir=image.imgDir,
-                    widths=[320, 480, 640, 1024],
-                    sizes="(max-width: 480px) 33.3vw, (min-width: 640px) 50vw, (min-width: 950px) 50vw, 33.3vw",
+                <a
+                    href="{{ image.title | slug }}"
+                    aria-label="Gallery image {{ image.title }}"
+                >
+                {% img
                     src=image.src,
                     alt=image.alt,
-                    width=768,
-                    height=600,
-                    className="gallery-photo"
+                    className="gallery-photo",
+                    sizes="(max-width: 480px) 33.3vw, (min-width: 640px) 50vw, (min-width: 950px) 50vw, 33.3vw"
                 %}
                 </a>
                 <div class="block-details">

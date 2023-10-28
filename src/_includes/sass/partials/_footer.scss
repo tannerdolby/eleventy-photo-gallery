@@ -62,16 +62,8 @@ footer {
         font-size: 1rem;
         font-size: clamp(1rem, 3vw, 1.0625rem);
 
-
         .footer-link {
             margin: 0 .6rem;
-
-            a {
-                color: #212121;
-                &:hover {
-                    color: $link-blue-accessible-hover;
-                }
-            }
         }
     }
 

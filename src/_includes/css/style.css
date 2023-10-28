@@ -90,7 +90,7 @@ header .intro .hire-me:hover {
   margin: 3rem auto 0 auto;
 }
 
-.ft-h1 {
+.gallery-h1 {
   text-align: center;
   margin-bottom: 4.25rem;
 }
@@ -106,6 +106,7 @@ header .intro .hire-me:hover {
 
 .gallery-item {
   margin: 0.5rem auto;
+  width: 100%;
 }
 .gallery-item:last-child {
   border-bottom: none;
@@ -114,6 +115,7 @@ header .intro .hire-me:hover {
   display: flex;
   flex-direction: column;
   width: 100%;
+  max-width: 80ch;
 }
 .gallery-item .image-block .block-details {
   margin: 1rem 0 0;
@@ -151,6 +153,7 @@ header .intro .hire-me:hover {
   padding-right: 1.5rem;
 }
 .image-grid .image-container {
+  width: 100%;
   height: 20rem;
   overflow: hidden;
   border-radius: 2px;
@@ -182,6 +185,11 @@ header .intro .hire-me:hover {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
 }
+.featured-img .image-container {
+  width: 100%;
+  max-width: 1100px;
+  padding: 0 1.5rem;
+}
 .featured-img .showcase-img {
   object-fit: cover;
   /* object-fit: contain; this is best but causes letterboxing" */
@@ -209,6 +217,12 @@ header .intro .hire-me:hover {
 }
 .featured-img .prev-next a:hover {
   background: rgb(237, 237, 237);
+}
+.featured-img .image-description .credit {
+  text-decoration: underline;
+}
+.featured-img .image-description .credit:hover {
+  text-decoration: none;
 }
 
 .about-page {
@@ -340,12 +354,6 @@ footer a:hover {
 .footer-info .footer-links .footer-link {
   margin: 0 0.6rem;
 }
-.footer-info .footer-links .footer-link a {
-  color: #212121;
-}
-.footer-info .footer-links .footer-link a:hover {
-  color: #1836AF;
-}
 .footer-info.about {
   border: none;
 }
@@ -405,12 +413,14 @@ body {
   padding: 0;
   min-height: 100vh;
   background: #fcfcfc;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 16px;
   line-height: 1.6;
 }
 
 img {
   max-width: 100%;
+  width: 100%;
   height: 100%;
   object-fit: cover;
 }
@@ -427,12 +437,9 @@ a {
   text-decoration: none;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
-a:hover {
+a:hover, a:focus {
   text-decoration: underline;
   color: #1836AF;
-}
-a.credit:hover {
-  text-decoration: underline;
 }
 
 main p {
