@@ -48,7 +48,7 @@ Once the image data is supplied within the global data file `_data/gallery.json`
 
 Or simply define the image metadata in frontmatter or directly inside the shortcode. Any of the options work to generate responsive images (if not already generated) with the corresponding markup. If the image is already generated in your project files, the utility will only render the responsive image markup with `<picture>`.
 
-#### Creating responsive images in templates
+### Creating responsive images in templates
 
 1. Get a large image from somewhere (your file system, a stock photo website, etc)
 2. Add the original image to the `src/images/` folder (or a folder of your choice).
