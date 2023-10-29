@@ -1,39 +1,68 @@
 ---
-layout: main.njk
 pagination:
     data: gallery
     size: 1
     alias: image
 permalink: "/gallery/{{ image.title | slug }}/"
-title: About - Eleventy Photo Gallery Template
-meta_desc: A page about John Smith, and photography. This template is currently the default version so add your own about me page info here.
-url: https://eleventy-gallery.netlify.app/about
-img: /images/highway-water-large.jpg
-alt: Terrace outside shop window with green plants and pink tree on night street
+url: https://eleventy-gallery.netlify.app
 ---
-<div class="featured-img">
-    <div class="image-container">
-        {% img
-            src=image.src,
-            alt=image.alt,
-            className="showcase-img",
-            sizes="(max-width: 480px) 33.3vw, (min-width: 640px) 50vw, (min-width: 1000px) 100vw, 33.3vw"
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+    <head>
+        {% metagen 
+            title=image.title,
+            desc=image.title + " " + site.pageMetadata.featured.content,
+            url=url + "/gallery/" + image.title | slug + "/",
+            img=url + image.imgDir + image.src,
+            img_alt=image.alt,
+            twitter_card_type='summary_large_image',
+            twitter_handle=site.author.twitterHandle,
+            name=site.author.firstName + " " + site.author.lastName,
+            comments=true
         %}
-        <div class="image-description">
-            <h1 class="h2">{{ image.title }}</h1>
-            <p>{{ image.credit }} on <a class="credit" href="{{ image.linkToAuthor }}">Pexels</a></p>
-        </div>
-        <div class="prev-next">
-            {% if pagination.href.previous %}
-                <a class="prev" href="{{ pagination.href.previous }}"><span class="lt">&lt;</span> Prev</a>
-            {% endif %}
-            {% if pagination.href.next %}
-                {% if not pagination.href.previous %}
-                <a class="next" style="margin-left: auto; margin-right: 0;" href="{{ pagination.href.next }}">Next <span class="gt">&gt;</span></a>
-                {% else %}
-                <a class="next" href="{{ pagination.href.next }}">Next <span class="gt">&gt;</span></a>
-                {% endif %}
-            {% endif %}
-        </div>
-    </div>
-</div>
+        <link rel="apple-touch-icon" sizes="180x180" href="/favicon_data/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon_data/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon_data/favicon-16x16.png">
+        <link rel="manifest" href="/favicon_data/site.webmanifest">
+        {% set css %}
+            {% include "css/style.css" %}
+            {% include "css/reset.css" %}
+        {% endset %}
+        <style>
+            {{ css | cssmin | safe }}
+        </style>
+    </head>
+    <body>
+        <a href="#main" class="skip-link">Skip to main content</a>
+        {% include "partials/nav.njk" %}
+        <main id="main" class="main-container">
+            <div class="featured-img">
+                <div class="image-container">
+                    {% img
+                        src=image.src,
+                        alt=image.alt,
+                        className="showcase-img",
+                        sizes="(max-width: 480px) 33.3vw, (min-width: 640px) 50vw, (min-width: 1000px) 100vw, 33.3vw"
+                    %}
+                    <div class="image-description">
+                        <h1 class="h2">{{ image.title }}</h1>
+                        <p>{{ image.credit }} on <a class="credit" href="{{ image.linkToAuthor }}">Pexels</a></p>
+                    </div>
+                    <div class="prev-next">
+                        {% if pagination.href.previous %}
+                            <a class="prev" href="{{ pagination.href.previous }}"><span class="lt">&lt;</span> Prev</a>
+                        {% endif %}
+                        {% if pagination.href.next %}
+                            {% if not pagination.href.previous %}
+                            <a class="next" style="margin-left: auto; margin-right: 0;" href="{{ pagination.href.next }}">Next <span class="gt">&gt;</span></a>
+                            {% else %}
+                            <a class="next" href="{{ pagination.href.next }}">Next <span class="gt">&gt;</span></a>
+                            {% endif %}
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </main>
+        {% include "partials/footer.njk" %}
+    </body>
+</html>
