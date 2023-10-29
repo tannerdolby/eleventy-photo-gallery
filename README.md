@@ -55,6 +55,8 @@ Or simply define the image metadata in frontmatter or directly inside the shortc
 3. Use the `img` shortcode to generate responsive image markup
 4. This performs image transformations at build-time, creating varying image dimensions the specified formats (`.jpg`, `.webp`, etc) from the original image, which outputs to the specified `outputDir` in the `img` shortcode within .eleventy.js:
  
+{% raw %}
+
 ```
 {% img 
     src="car.jpg",
@@ -63,6 +65,8 @@ Or simply define the image metadata in frontmatter or directly inside the shortc
     className="my-img",
 %}
 ```
+
+{% endraw %}
 
 If you have already transformed an image and wish to only generate the responsive image markup using `<picture>`, simply use the `img` shortcode again anywhere within your templates to generate the responsive image markup.
 
