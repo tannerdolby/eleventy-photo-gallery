@@ -9,10 +9,10 @@ A starter site for creating your own photo or art gallery using the [Eleventy](h
 Quickly generate a [highly performant](https://github.com/tannerdolby/eleventy-photo-gallery/blob/master/CONTRIBUTING.md#lighthouse-audit-scores) photo gallery from this template by clicking the green [Use Template](https://github.com/tannerdolby/eleventy-photo-gallery/generate) button. Creating a template repository provides the same directory structure and files as the original project.
 
 ## Features 
-- Build-time image transformations and responsive image markup with @11ty/eleventy-img
+- Build-time image transformations and responsive image markup in templates with @11ty/eleventy-img
 - High performance site with 100s across the board on each page
-- Home page with CSS Grid representing gallery of images
-- Featured image page
+- Home page with CSS grid displaying the gallery of images
+- Featured image pages
 - Gallery page
 - About me page
 - Sass
@@ -25,7 +25,7 @@ Quickly generate a [highly performant](https://github.com/tannerdolby/eleventy-p
 5. Serve locally: `npm run start` or `npm run dev`
 
 ## Usage
-Add images to a folder in your project and then supply image metadata. To add images to the home page gallery and featured image pages. Edit `_data/gallery.json` to include image metadata like this:
+Add images to a folder in your project and then supply image metadata in the global data file `_data/gallery.json`:
 
 ```
 {
@@ -38,8 +38,6 @@ Add images to a folder in your project and then supply image metadata. To add im
     "widths": [320, 640, 1024],
     "sizes": "(min-width: 450px) 33.3vw, 100vw",
     "class": "my-img",
-    "width": 1024,
-    "height": 768,
     imgDir: "./src/images/"
 }
 ```
@@ -54,8 +52,6 @@ Or simply define the image metadata in frontmatter or directly inside the shortc
 2. Add the original image to the `src/images/` folder (or a folder of your choice).
 3. Use the `img` shortcode to generate responsive image markup
 4. This performs image transformations at build-time, creating varying image dimensions the specified formats (`.jpg`, `.webp`, etc) from the original image, which outputs to the specified `outputDir` in the `img` shortcode within .eleventy.js:
- 
-{% raw %}
 
 ```
 {% img 
@@ -65,8 +61,6 @@ Or simply define the image metadata in frontmatter or directly inside the shortc
     className="my-img",
 %}
 ```
-
-{% endraw %}
 
 If you have already transformed an image and wish to only generate the responsive image markup using `<picture>`, simply use the `img` shortcode again anywhere within your templates to generate the responsive image markup.
 
