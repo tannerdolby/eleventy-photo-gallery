@@ -91,8 +91,6 @@ module.exports = (eleventyConfig) => {
         loading="lazy"
         decoding="async"
         class="${className || ''}"
-        width="${width || ''}"
-        height="${height || ''}"
       >`;
 
     return `<picture>\n\t${sources}\n\t${img}</picture>`;
