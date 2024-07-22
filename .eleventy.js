@@ -52,10 +52,10 @@ module.exports = (eleventyConfig) => {
     return `<a class="${cls}" href="${href}" rel="${rel}" target="${target}">${btnTxt}</a>`;
   });
 
-  // get the current year to be placed in the footer
+  // Get the current year
   eleventyConfig.addShortcode("getYear", function () {
     const year = new Date().getFullYear();
-    return `${year}`;
+    return year.toString();
   });
 
   eleventyConfig.addShortcode("img", async function ({ src, alt, width, height, widths, className, imgDir, sizes = "100vw"}) {
@@ -78,9 +78,11 @@ module.exports = (eleventyConfig) => {
     let lowsrc = metadata.jpeg[0];
     let highsrc = metadata.jpeg[metadata.jpeg.length - 1];
 
-    const sources = `${Object.values(metadata).map(
-      imageFormat => `<source type="${imageFormat[0].sourceType}" srcset="${imageFormat.map(entry => entry.srcset).join(", ")}" sizes="${sizes}">`
-    ).join("\n")}`;
+    const sources = Object.values(metadata).map((imageFormat) => {
+      const srcType = imageFormat[0].sourceType;
+      const srcset = imageFormat.map(entry => entry.srcset).join(", ");
+      return `<source type="${srcType}" srcset="${srcset}" sizes="${sizes}">`
+    }).join("\n");
 
     const img = `
       <img
