@@ -10,9 +10,10 @@ Quickly generate a highly performant photo gallery from this template by clickin
 
 ## Features 
 - Build-time image transformations and responsive image markup in templates using [@11ty/eleventy-img](https://www.11ty.dev/docs/plugins/image/)
-- High performance scalable site with 100s across the board on each page using [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/)
+- High performance and scalable site with 100s across the board on each page using [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/). Check it out on the [Eleventy Leaderboards](https://www.11ty.dev/speedlify/eleventy-gallery-netlify-app/)
+- Document metadata populated for social share functionality via [eleventy-plugin-metagen](https://github.com/tannerdolby/eleventy-plugin-metagen)
 - Home page with CSS grid displaying the gallery of images
-- Featured image pages
+- Featured image pages with pagination
 - Gallery page
 - About me page
 - CSS preprocessor SCSS
@@ -82,7 +83,7 @@ _Read more about loading members and namespaces here in [Sass docs](https://sass
 </details>
 
 ## Contributing 
-Feel free to report any issues and contribute to this project by suggesting a new feature or modification. I built this template for others to use so don't hesitate to let me know what you'd like to see added or modified.
+Feel free to report any issues and submit feature requests. I built this template for others to use so don't hesitate to let me know what you'd like to see added or modified.
 
-- Open an [issue](https://github.com/tannerdolby/11ty-photo-gallery/issues) for any features/modifications you'd like to see! 
+- Open an [issue](https://github.com/tannerdolby/11ty-photo-gallery/issues) for any bugs or feature requests! 
 - Have a look at the [contributing guidelines](https://github.com/tannerdolby/11ty-photo-gallery/blob/master/CONTRIBUTING.md) before submitting a PR!
