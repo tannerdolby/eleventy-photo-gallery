@@ -58,7 +58,7 @@ module.exports = (eleventyConfig) => {
     return year.toString();
   });
 
-  eleventyConfig.addShortcode("img", async function ({ src, alt, width, height, widths, className, imgDir, sizes = "100vw"}) {
+  eleventyConfig.addShortcode("img", async function ({ src, alt, width, height, widths, className, id, imgDir, sizes = "100vw"}) {
     if (alt === undefined) {
       throw new Error(`Missing \`alt\` on responsive image from: ${src}`);
     }
@@ -93,6 +93,7 @@ module.exports = (eleventyConfig) => {
         loading="lazy"
         decoding="async"
         class="${className || ''}"
+        id="${id || ''}"
       >`;
 
     return `<picture>\n\t${sources}\n\t${img}</picture>`;
