@@ -191,7 +191,7 @@ header .intro .hire-me:hover {
   padding: 0;
 }
 .featured-img .showcase-img {
-  object-fit: contain; /* this is useful to ensure intrinsic image size to preventis used to prevent image cropping but causes letterboxing" */
+  object-fit: cover; /* use 'cover' to ensure the image fills the content box, but it may crop parts of the original image */
   max-width: 100%;
   height: 90vh;
   max-height: 600px;
