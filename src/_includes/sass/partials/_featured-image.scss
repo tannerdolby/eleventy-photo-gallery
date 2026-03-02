@@ -14,8 +14,8 @@
     }
 
     .showcase-img {
-        object-fit: cover;
-        /* object-fit: contain; this is best but causes letterboxing" */
+        // object-fit: cover; /* optionally use 'cover' to ensure the image fills the content box, but it may crop parts of the original image */
+        object-fit: contain; /* this is useful to ensure intrinsic image size is used to prevent image cropping but causes letterboxing" */
         max-width: 100%;
         height: 90vh;
         max-height: 600px;
