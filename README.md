@@ -1,7 +1,5 @@
 # Eleventy Photo Gallery
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/81e032ac-ed6f-4f89-a60f-fca16b8be347/deploy-status)](https://app.netlify.com/projects/eleventy-gallery/deploys)
-
 A starter site for creating your own photo or art gallery using the [Eleventy](https://github.com/11ty/eleventy) static site generator.
 
 - [Live demo](https://eleventy-gallery.netlify.app/) - View the project live
